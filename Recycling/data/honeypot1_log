@@ -1,0 +1,395 @@
+(node:4277) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '0.0.0.0',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'honeypot1',
+  containerIp: '10.0.3.33',
+  mitmPort: 1000,
+  autoAccessFixed: 3
+}
+2022-09-29 05:09:51.191 - [Info] MITM Version: 2
+2022-09-29 05:09:51.193 - [Info] Auto Access Enabled: true
+2022-09-29 05:09:51.193 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-09-29 05:09:51.201 - [Debug] listen EADDRINUSE: address already in use 0.0.0.0:1000
+2022-09-29 05:09:51.202 - [Error] Another MITM instance or another program is already listening on this port
+{"level":"error","message":"Forever detected script exited with code: 1"}
+(node:1968) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '0.0.0.0',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'honeypot1',
+  containerIp: '10.0.3.187',
+  mitmPort: 1000,
+  autoAccessFixed: 3
+}
+2022-09-29 05:13:34.812 - [Info] MITM Version: 2
+2022-09-29 05:13:34.815 - [Info] Auto Access Enabled: true
+2022-09-29 05:13:34.816 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-09-29 05:13:34.825 - [Info] SSH man-in-the-middle server for 10.0.3.187 listening on 0.0.0.0:1000
+2022-09-29 05:20:02.972 - [Debug] [Connection] Attacker connected: 192.168.11.5 | Client Identification: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.4
+2022-09-29 05:20:02.992 - [Debug] [Connection] Attacker closed the connection
+2022-09-29 05:20:11.932 - [Debug] [Connection] Attacker connected: 192.168.11.5 | Client Identification: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.4
+2022-09-29 05:20:13.254 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'none'
+2022-09-29 05:20:13.254 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-09-29 05:20:13.257 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'publickey'
+2022-09-29 05:20:13.259 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-09-29 05:20:13.260 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 1 attempts. Remaining: 5 attempts
+2022-09-29 05:20:13.827 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'password'
+2022-09-29 05:20:13.828 - [Debug] [Auto Access] Attacker: 192.168.11.5, Threshold: 3, Attempts: 1
+2022-09-29 05:20:13.829 - [Debug] [Auth] Attacker authentication error: Not yet compromised
+2022-09-29 05:20:13.829 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 2 attempts. Remaining: 4 attempts
+2022-09-29 05:20:14.145 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'password'
+2022-09-29 05:20:14.145 - [Debug] [Auto Access] Attacker: 192.168.11.5, Threshold: 3, Attempts: 2
+2022-09-29 05:20:14.146 - [Debug] [Auth] Attacker authentication error: Not yet compromised
+2022-09-29 05:20:14.146 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 3 attempts. Remaining: 3 attempts
+2022-09-29 05:20:14.540 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'password'
+2022-09-29 05:20:14.541 - [Debug] [Auto Access] Attacker: 192.168.11.5, Threshold: 3, Attempts: 3
+2022-09-29 05:20:14.541 - [Debug] [Auto Access] Compromising the honeypot
+2022-09-29 05:20:14.541 - [Debug] [Auto Access] Adding the following credentials: 'ksong126:y'
+2022-09-29 05:20:14.659 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-09-29 05:20:14.665 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-09-29 05:20:14.665 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.187
+2022-09-29 05:20:14.737 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-09-29 05:20:14.996 - [Debug] [SHELL] Opened shell for attacker
+2022-09-29 05:20:15.002 - [Debug] [LXC Streams] New Stream | Total Streams: 1
+2022-09-29 05:20:22.477 - [Debug] [SHELL] Attacker Keystroke: i
+2022-09-29 05:20:22.596 - [Debug] [SHELL] Attacker Keystroke: m
+2022-09-29 05:20:22.673 - [Debug] [SHELL] Attacker Keystroke: [Space]
+2022-09-29 05:20:22.749 - [Debug] [SHELL] Attacker Keystroke: i
+2022-09-29 05:20:22.825 - [Debug] [SHELL] Attacker Keystroke: n
+2022-09-29 05:20:22.906 - [Debug] [SHELL] Attacker Keystroke: [Space]
+2022-09-29 05:20:23.151 - [Debug] [SHELL] Attacker Keystroke: h
+2022-09-29 05:20:23.250 - [Debug] [SHELL] Attacker Keystroke: o
+2022-09-29 05:20:23.341 - [Debug] [SHELL] Attacker Keystroke: n
+2022-09-29 05:20:23.418 - [Debug] [SHELL] Attacker Keystroke: e
+2022-09-29 05:20:23.510 - [Debug] [SHELL] Attacker Keystroke: y
+2022-09-29 05:20:23.616 - [Debug] [SHELL] Attacker Keystroke: p
+2022-09-29 05:20:23.692 - [Debug] [SHELL] Attacker Keystroke: o
+2022-09-29 05:20:23.722 - [Debug] [SHELL] Attacker Keystroke: t
+2022-09-29 05:20:23.906 - [Debug] [SHELL] Attacker Keystroke: 1
+2022-09-29 05:20:24.121 - [Debug] [SHELL] Attacker Keystroke: [CR]
+2022-09-29 05:20:24.124 - [Debug] [SHELL] line from reader: im in honeypot1
+2022-09-29 05:20:24.125 - [Debug] [SHELL] Keystroke buffer: 105,109,32,105,110,32,104,111,110,101,121,112,111,116,49,13
+2022-09-29 05:20:24.685 - [Debug] [SHELL] Attacker Keystroke: e
+2022-09-29 05:20:24.830 - [Debug] [SHELL] Attacker Keystroke: x
+2022-09-29 05:20:24.935 - [Debug] [SHELL] Attacker Keystroke: i
+2022-09-29 05:20:25.040 - [Debug] [SHELL] Attacker Keystroke: t
+2022-09-29 05:20:25.163 - [Debug] [SHELL] Attacker Keystroke: [CR]
+2022-09-29 05:20:25.166 - [Debug] [SHELL] line from reader: exit
+2022-09-29 05:20:25.166 - [Debug] [SHELL] Keystroke buffer: 101,120,105,116,13
+2022-09-29 05:20:25.169 - [Debug] [LXC Streams] Removed Stream | Total streams: 0
+2022-09-29 05:20:25.169 - [Debug] [SHELL] Honeypot ended shell
+2022-09-29 05:20:25.171 - [Debug] [SHELL] Attacker ended the shell
+2022-09-29 05:20:25.173 - [Debug] [Connection] Attacker closed connection
+2022-09-29 05:20:25.182 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-09-29 05:20:25.182 - [Debug] [LXC] Container's OpenSSH server closed connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:6218) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '0.0.0.0',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'honeypot1',
+  containerIp: '10.0.3.112',
+  mitmPort: 1000,
+  autoAccessFixed: 3
+}
+2022-09-29 05:24:50.581 - [Info] MITM Version: 2
+2022-09-29 05:24:50.582 - [Info] Auto Access Enabled: true
+2022-09-29 05:24:50.583 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-09-29 05:24:50.591 - [Info] SSH man-in-the-middle server for 10.0.3.112 listening on 0.0.0.0:1000
+2022-09-29 05:25:02.068 - [Debug] [Connection] Attacker connected: 192.168.11.5 | Client Identification: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.4
+2022-09-29 05:25:02.086 - [Debug] [Connection] Attacker closed the connection
+2022-09-29 05:25:15.781 - [Debug] [Connection] Attacker connected: 192.168.11.5 | Client Identification: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.4
+2022-09-29 05:25:17.120 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'none'
+2022-09-29 05:25:17.120 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-09-29 05:25:17.123 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'publickey'
+2022-09-29 05:25:17.124 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-09-29 05:25:17.125 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 1 attempts. Remaining: 5 attempts
+2022-09-29 05:25:17.728 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'password'
+2022-09-29 05:25:17.729 - [Debug] [Auto Access] Attacker: 192.168.11.5, Threshold: 3, Attempts: 1
+2022-09-29 05:25:17.729 - [Debug] [Auth] Attacker authentication error: Not yet compromised
+2022-09-29 05:25:17.730 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 2 attempts. Remaining: 4 attempts
+2022-09-29 05:25:18.029 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'password'
+2022-09-29 05:25:18.029 - [Debug] [Auto Access] Attacker: 192.168.11.5, Threshold: 3, Attempts: 2
+2022-09-29 05:25:18.029 - [Debug] [Auth] Attacker authentication error: Not yet compromised
+2022-09-29 05:25:18.030 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 3 attempts. Remaining: 3 attempts
+2022-09-29 05:25:18.332 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'password'
+2022-09-29 05:25:18.333 - [Debug] [Auto Access] Attacker: 192.168.11.5, Threshold: 3, Attempts: 3
+2022-09-29 05:25:18.333 - [Debug] [Auto Access] Compromising the honeypot
+2022-09-29 05:25:18.333 - [Debug] [Auto Access] Adding the following credentials: 'ksong126:e'
+2022-09-29 05:25:18.424 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-09-29 05:25:18.426 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-09-29 05:25:18.426 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.112
+2022-09-29 05:25:18.489 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-09-29 05:25:18.716 - [Debug] [SHELL] Opened shell for attacker
+2022-09-29 05:25:18.718 - [Debug] [LXC Streams] New Stream | Total Streams: 1
+2022-09-29 05:25:41.188 - [Debug] [SHELL] Attacker Keystroke: t
+2022-09-29 05:25:41.310 - [Debug] [SHELL] Attacker Keystroke: o
+2022-09-29 05:25:41.401 - [Debug] [SHELL] Attacker Keystroke: u
+2022-09-29 05:25:41.591 - [Debug] [SHELL] Attacker Keystroke: c
+2022-09-29 05:25:41.732 - [Debug] [SHELL] Attacker Keystroke: h
+2022-09-29 05:25:41.981 - [Debug] [SHELL] Attacker Keystroke: [Space]
+2022-09-29 05:25:43.511 - [Debug] [SHELL] Attacker Keystroke: i
+2022-09-29 05:25:43.946 - [Debug] [SHELL] Attacker Keystroke: [BS]
+2022-09-29 05:25:44.097 - [Debug] [SHELL] Attacker Keystroke: b
+2022-09-29 05:25:44.203 - [Debug] [SHELL] Attacker Keystroke: i
+2022-09-29 05:25:44.355 - [Debug] [SHELL] Attacker Keystroke: g
+2022-09-29 05:25:44.720 - [Debug] [SHELL] Attacker Keystroke: _
+2022-09-29 05:25:45.006 - [Debug] [SHELL] Attacker Keystroke: p
+2022-09-29 05:25:45.174 - [Debug] [SHELL] Attacker Keystroke: e
+2022-09-29 05:25:45.279 - [Debug] [SHELL] Attacker Keystroke: n
+2022-09-29 05:25:45.386 - [Debug] [SHELL] Attacker Keystroke: i
+2022-09-29 05:25:45.508 - [Debug] [SHELL] Attacker Keystroke: s
+2022-09-29 05:25:45.843 - [Debug] [SHELL] Attacker Keystroke: [CR]
+2022-09-29 05:25:45.848 - [Debug] [SHELL] line from reader: touch big_penis
+2022-09-29 05:25:45.848 - [Debug] [SHELL] Keystroke buffer: 116,111,117,99,104,32,105,8,98,105,103,95,112,101,110,105,115,13
+2022-09-29 05:25:46.742 - [Debug] [SHELL] Attacker Keystroke: l
+2022-09-29 05:25:46.893 - [Debug] [SHELL] Attacker Keystroke: s
+2022-09-29 05:25:46.940 - [Debug] [SHELL] Attacker Keystroke: [CR]
+2022-09-29 05:25:46.947 - [Debug] [SHELL] line from reader: ls
+2022-09-29 05:25:46.947 - [Debug] [SHELL] Keystroke buffer: 108,115,13
+2022-09-29 05:25:53.280 - [Debug] [SHELL] Attacker Keystroke: e
+2022-09-29 05:25:53.471 - [Debug] [SHELL] Attacker Keystroke: x
+2022-09-29 05:25:53.565 - [Debug] [SHELL] Attacker Keystroke: i
+2022-09-29 05:25:53.776 - [Debug] [SHELL] Attacker Keystroke: t
+2022-09-29 05:25:53.912 - [Debug] [SHELL] Attacker Keystroke: [CR]
+2022-09-29 05:25:53.916 - [Debug] [SHELL] line from reader: exit
+2022-09-29 05:25:53.917 - [Debug] [SHELL] Keystroke buffer: 101,120,105,116,13
+2022-09-29 05:25:53.919 - [Debug] [LXC Streams] Removed Stream | Total streams: 0
+2022-09-29 05:25:53.919 - [Debug] [SHELL] Honeypot ended shell
+2022-09-29 05:25:53.922 - [Debug] [SHELL] Attacker ended the shell
+2022-09-29 05:25:53.923 - [Debug] [Connection] Attacker closed connection
+2022-09-29 05:25:53.933 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-09-29 05:25:53.934 - [Debug] [LXC] Container's OpenSSH server closed connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:7289) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '0.0.0.0',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'honeypot1',
+  containerIp: '10.0.3.144',
+  mitmPort: 1000,
+  autoAccessFixed: 3
+}
+2022-09-29 05:26:36.603 - [Info] MITM Version: 2
+2022-09-29 05:26:36.605 - [Info] Auto Access Enabled: true
+2022-09-29 05:26:36.605 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-09-29 05:26:36.612 - [Info] SSH man-in-the-middle server for 10.0.3.144 listening on 0.0.0.0:1000
+2022-09-29 05:26:49.235 - [Debug] [Connection] Attacker connected: 192.168.11.5 | Client Identification: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.4
+2022-09-29 05:26:49.253 - [Debug] [Connection] Attacker closed the connection
+2022-09-29 05:26:58.680 - [Debug] [Connection] Attacker connected: 192.168.11.5 | Client Identification: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.4
+2022-09-29 05:26:59.997 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'none'
+2022-09-29 05:26:59.998 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-09-29 05:27:00.000 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'publickey'
+2022-09-29 05:27:00.001 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-09-29 05:27:00.002 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 1 attempts. Remaining: 5 attempts
+2022-09-29 05:27:00.780 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'password'
+2022-09-29 05:27:00.781 - [Debug] [Auto Access] Attacker: 192.168.11.5, Threshold: 3, Attempts: 1
+2022-09-29 05:27:00.781 - [Debug] [Auth] Attacker authentication error: Not yet compromised
+2022-09-29 05:27:00.782 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 2 attempts. Remaining: 4 attempts
+2022-09-29 05:27:01.085 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'password'
+2022-09-29 05:27:01.086 - [Debug] [Auto Access] Attacker: 192.168.11.5, Threshold: 3, Attempts: 2
+2022-09-29 05:27:01.086 - [Debug] [Auth] Attacker authentication error: Not yet compromised
+2022-09-29 05:27:01.087 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 3 attempts. Remaining: 3 attempts
+2022-09-29 05:27:01.327 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'password'
+2022-09-29 05:27:01.327 - [Debug] [Auto Access] Attacker: 192.168.11.5, Threshold: 3, Attempts: 3
+2022-09-29 05:27:01.327 - [Debug] [Auto Access] Compromising the honeypot
+2022-09-29 05:27:01.328 - [Debug] [Auto Access] Adding the following credentials: 'ksong126:e'
+2022-09-29 05:27:01.421 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-09-29 05:27:01.424 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-09-29 05:27:01.424 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.144
+2022-09-29 05:27:01.486 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-09-29 05:27:01.711 - [Debug] [SHELL] Opened shell for attacker
+2022-09-29 05:27:01.713 - [Debug] [LXC Streams] New Stream | Total Streams: 1
+2022-09-29 05:27:02.498 - [Debug] [SHELL] Attacker Keystroke: l
+2022-09-29 05:27:02.589 - [Debug] [SHELL] Attacker Keystroke: s
+2022-09-29 05:27:02.680 - [Debug] [SHELL] Attacker Keystroke: [CR]
+2022-09-29 05:27:02.685 - [Debug] [SHELL] line from reader: ls
+2022-09-29 05:27:02.686 - [Debug] [SHELL] Keystroke buffer: 108,115,13
+2022-09-29 05:28:58.340 - [Debug] [SHELL] Attacker Keystroke: [ESC][A
+2022-09-29 05:28:58.717 - [Debug] [SHELL] Attacker Keystroke: [ESC][A
+2022-09-29 05:28:59.397 - [Debug] [SHELL] Attacker Keystroke: [BS]
+2022-09-29 05:28:59.564 - [Debug] [SHELL] Attacker Keystroke: [BS]
+2022-09-29 05:28:59.749 - [Debug] [SHELL] Attacker Keystroke: e
+2022-09-29 05:28:59.929 - [Debug] [SHELL] Attacker Keystroke: x
+2022-09-29 05:29:00.080 - [Debug] [SHELL] Attacker Keystroke: i
+2022-09-29 05:29:00.187 - [Debug] [SHELL] Attacker Keystroke: t
+2022-09-29 05:29:00.465 - [Debug] [SHELL] Attacker Keystroke: [CR]
+2022-09-29 05:29:00.467 - [Debug] [SHELL] line from reader: exit
+2022-09-29 05:29:00.472 - [Debug] [SHELL] Keystroke buffer: 27,91,65,27,91,65,8,8,101,120,105,116,13
+2022-09-29 05:29:00.474 - [Debug] [LXC Streams] Removed Stream | Total streams: 0
+2022-09-29 05:29:00.475 - [Debug] [SHELL] Honeypot ended shell
+2022-09-29 05:29:00.477 - [Debug] [SHELL] Attacker ended the shell
+2022-09-29 05:29:00.478 - [Debug] [Connection] Attacker closed connection
+2022-09-29 05:29:00.489 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-09-29 05:29:00.489 - [Debug] [LXC] Container's OpenSSH server closed connection
+2022-09-29 05:29:02.295 - [Debug] [Connection] Attacker connected: 192.168.11.5 | Client Identification: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.4
+2022-09-29 05:29:02.335 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'none'
+2022-09-29 05:29:02.336 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-09-29 05:29:02.338 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'publickey'
+2022-09-29 05:29:02.339 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-09-29 05:29:02.339 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 1 attempts. Remaining: 5 attempts
+2022-09-29 05:29:03.629 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'password'
+2022-09-29 05:29:03.631 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-09-29 05:29:03.632 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.144
+2022-09-29 05:29:03.671 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-09-29 05:29:03.765 - [Debug] [SHELL] Opened shell for attacker
+2022-09-29 05:29:03.766 - [Debug] [LXC Streams] New Stream | Total Streams: 1
+2022-09-29 05:29:03.892 - [Debug] [SHELL] Attacker Keystroke: [CR]
+2022-09-29 05:29:03.893 - [Debug] [SHELL] line from reader: 
+2022-09-29 05:29:03.893 - [Debug] [SHELL] Keystroke buffer: 13
+2022-09-29 05:29:04.029 - [Debug] [SHELL] Attacker Keystroke: e
+2022-09-29 05:29:05.230 - [Debug] [SHELL] Attacker Keystroke: [BS]
+2022-09-29 05:29:05.382 - [Debug] [SHELL] Attacker Keystroke: [BS]
+2022-09-29 05:29:10.322 - [Debug] [SHELL] Attacker Keystroke: e
+2022-09-29 05:29:10.472 - [Debug] [SHELL] Attacker Keystroke: x
+2022-09-29 05:29:10.597 - [Debug] [SHELL] Attacker Keystroke: i
+2022-09-29 05:29:10.722 - [Debug] [SHELL] Attacker Keystroke: t
+2022-09-29 05:29:10.916 - [Debug] [SHELL] Attacker Keystroke: '
+2022-09-29 05:29:11.791 - [Debug] [SHELL] Attacker Keystroke: [BS]
+2022-09-29 05:29:12.144 - [Debug] [SHELL] Attacker Keystroke: [ESC][A
+2022-09-29 05:29:12.496 - [Debug] [SHELL] Attacker Keystroke: [CR]
+2022-09-29 05:29:12.499 - [Debug] [SHELL] line from reader: exit
+2022-09-29 05:29:12.500 - [Debug] [SHELL] Keystroke buffer: 101,8,8,101,120,105,116,39,8,27,91,65,13
+2022-09-29 05:29:12.501 - [Debug] [LXC Streams] Removed Stream | Total streams: 0
+2022-09-29 05:29:12.501 - [Debug] [SHELL] Honeypot ended shell
+2022-09-29 05:29:12.503 - [Debug] [SHELL] Attacker ended the shell
+2022-09-29 05:29:12.504 - [Debug] [Connection] Attacker closed connection
+2022-09-29 05:29:12.512 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-09-29 05:29:12.513 - [Debug] [LXC] Container's OpenSSH server closed connection
+2022-09-29 05:29:27.460 - [Debug] [Connection] Attacker connected: 192.168.11.5 | Client Identification: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.4
+2022-09-29 05:29:27.487 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'none'
+2022-09-29 05:29:27.487 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-09-29 05:29:27.489 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'publickey'
+2022-09-29 05:29:27.490 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-09-29 05:29:27.490 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 1 attempts. Remaining: 5 attempts
+2022-09-29 05:29:28.611 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'password'
+2022-09-29 05:29:28.612 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2022-09-29 05:29:28.613 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 2 attempts. Remaining: 4 attempts
+2022-09-29 05:29:29.045 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'password'
+2022-09-29 05:29:29.046 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2022-09-29 05:29:29.046 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 3 attempts. Remaining: 3 attempts
+2022-09-29 05:29:29.455 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'password'
+2022-09-29 05:29:29.455 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2022-09-29 05:29:29.456 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 4 attempts. Remaining: 2 attempts
+2022-09-29 05:29:29.460 - [Debug] [Connection] Attacker closed the connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:8519) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '0.0.0.0',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'honeypot1',
+  containerIp: '10.0.3.142',
+  mitmPort: 1000,
+  autoAccessFixed: 3
+}
+2022-09-29 05:47:50.968 - [Info] MITM Version: 2
+2022-09-29 05:47:50.970 - [Info] Auto Access Enabled: true
+2022-09-29 05:47:50.970 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-09-29 05:47:50.977 - [Info] SSH man-in-the-middle server for 10.0.3.142 listening on 0.0.0.0:1000
+2022-09-29 05:49:06.017 - [Debug] [Connection] Attacker connected: 192.168.11.5 | Client Identification: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.4
+2022-09-29 05:49:06.035 - [Debug] [Connection] Attacker closed the connection
+2022-09-29 05:49:14.568 - [Debug] [Connection] Attacker connected: 192.168.11.5 | Client Identification: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.4
+2022-09-29 05:49:17.003 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'none'
+2022-09-29 05:49:17.004 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-09-29 05:49:17.006 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'publickey'
+2022-09-29 05:49:17.008 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-09-29 05:49:17.008 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 1 attempts. Remaining: 5 attempts
+2022-09-29 05:49:17.531 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'password'
+2022-09-29 05:49:17.532 - [Debug] [Auto Access] Attacker: 192.168.11.5, Threshold: 3, Attempts: 1
+2022-09-29 05:49:17.533 - [Debug] [Auth] Attacker authentication error: Not yet compromised
+2022-09-29 05:49:17.533 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 2 attempts. Remaining: 4 attempts
+2022-09-29 05:49:17.787 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'password'
+2022-09-29 05:49:17.788 - [Debug] [Auto Access] Attacker: 192.168.11.5, Threshold: 3, Attempts: 2
+2022-09-29 05:49:17.788 - [Debug] [Auth] Attacker authentication error: Not yet compromised
+2022-09-29 05:49:17.788 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 3 attempts. Remaining: 3 attempts
+2022-09-29 05:49:18.213 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'password'
+2022-09-29 05:49:18.213 - [Debug] [Auto Access] Attacker: 192.168.11.5, Threshold: 3, Attempts: 3
+2022-09-29 05:49:18.213 - [Debug] [Auto Access] Compromising the honeypot
+2022-09-29 05:49:18.214 - [Debug] [Auto Access] Adding the following credentials: 'ksong126:e'
+2022-09-29 05:49:18.314 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-09-29 05:49:18.317 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-09-29 05:49:18.317 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.142
+2022-09-29 05:49:18.391 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-09-29 05:49:18.648 - [Debug] [SHELL] Opened shell for attacker
+2022-09-29 05:49:18.650 - [Debug] [LXC Streams] New Stream | Total Streams: 1
+2022-09-29 05:49:44.572 - [Debug] [SHELL] Attacker Keystroke: f
+2022-09-29 05:49:45.053 - [Debug] [SHELL] Attacker Keystroke: [BS]
+2022-09-29 05:49:46.855 - [Debug] [SHELL] Attacker Keystroke: h
+2022-09-29 05:49:47.010 - [Debug] [SHELL] Attacker Keystroke: 1
+2022-09-29 05:49:47.192 - [Debug] [SHELL] Attacker Keystroke: [CR]
+2022-09-29 05:49:47.194 - [Debug] [SHELL] line from reader: h1
+2022-09-29 05:49:47.194 - [Debug] [SHELL] Keystroke buffer: 102,8,104,49,13
+2022-09-29 05:50:29.102 - [Debug] [SHELL] Attacker Keystroke: e
+2022-09-29 05:50:29.269 - [Debug] [SHELL] Attacker Keystroke: x
+2022-09-29 05:50:29.421 - [Debug] [SHELL] Attacker Keystroke: i
+2022-09-29 05:50:29.649 - [Debug] [SHELL] Attacker Keystroke: t
+2022-09-29 05:50:29.905 - [Debug] [SHELL] Attacker Keystroke: [CR]
+2022-09-29 05:50:29.909 - [Debug] [SHELL] line from reader: exit
+2022-09-29 05:50:29.909 - [Debug] [SHELL] Keystroke buffer: 101,120,105,116,13
+2022-09-29 05:50:29.912 - [Debug] [LXC Streams] Removed Stream | Total streams: 0
+2022-09-29 05:50:29.912 - [Debug] [SHELL] Honeypot ended shell
+2022-09-29 05:50:29.914 - [Debug] [SHELL] Attacker ended the shell
+2022-09-29 05:50:29.915 - [Debug] [Connection] Attacker closed connection
+2022-09-29 05:50:29.925 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-09-29 05:50:29.925 - [Debug] [LXC] Container's OpenSSH server closed connection

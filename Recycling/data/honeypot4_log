@@ -1,0 +1,146 @@
+(node:4810) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '0.0.0.0',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'honeypot4',
+  containerIp: '10.0.3.232',
+  mitmPort: 1003,
+  autoAccessFixed: 3
+}
+2022-09-29 05:19:26.687 - [Info] MITM Version: 2
+2022-09-29 05:19:26.688 - [Info] Auto Access Enabled: true
+2022-09-29 05:19:26.689 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-09-29 05:19:26.696 - [Info] SSH man-in-the-middle server for 10.0.3.232 listening on 0.0.0.0:1003
+2022-09-29 05:21:42.949 - [Debug] [Connection] Attacker connected: 192.168.11.5 | Client Identification: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.4
+2022-09-29 05:21:44.171 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'none'
+2022-09-29 05:21:44.172 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-09-29 05:21:44.175 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'publickey'
+2022-09-29 05:21:44.176 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-09-29 05:21:44.176 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 1 attempts. Remaining: 5 attempts
+2022-09-29 05:21:49.383 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'password'
+2022-09-29 05:21:49.384 - [Debug] [Auto Access] Attacker: 192.168.11.5, Threshold: 3, Attempts: 1
+2022-09-29 05:21:49.384 - [Debug] [Auth] Attacker authentication error: Not yet compromised
+2022-09-29 05:21:49.385 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 2 attempts. Remaining: 4 attempts
+2022-09-29 05:21:49.808 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'password'
+2022-09-29 05:21:49.808 - [Debug] [Auto Access] Attacker: 192.168.11.5, Threshold: 3, Attempts: 2
+2022-09-29 05:21:49.809 - [Debug] [Auth] Attacker authentication error: Not yet compromised
+2022-09-29 05:21:49.809 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 3 attempts. Remaining: 3 attempts
+2022-09-29 05:21:50.100 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'password'
+2022-09-29 05:21:50.101 - [Debug] [Auto Access] Attacker: 192.168.11.5, Threshold: 3, Attempts: 3
+2022-09-29 05:21:50.101 - [Debug] [Auto Access] Compromising the honeypot
+2022-09-29 05:21:50.101 - [Debug] [Auto Access] Adding the following credentials: 'ksong126:w'
+2022-09-29 05:21:50.192 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-09-29 05:21:50.194 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-09-29 05:21:50.194 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.232
+2022-09-29 05:21:50.260 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-09-29 05:21:50.479 - [Debug] [SHELL] Opened shell for attacker
+2022-09-29 05:21:50.482 - [Debug] [LXC Streams] New Stream | Total Streams: 1
+2022-09-29 05:22:10.605 - [Debug] [SHELL] Attacker Keystroke: i
+2022-09-29 05:22:10.757 - [Debug] [SHELL] Attacker Keystroke: m
+2022-09-29 05:22:10.816 - [Debug] [SHELL] Attacker Keystroke: [Space]
+2022-09-29 05:22:10.938 - [Debug] [SHELL] Attacker Keystroke: i
+2022-09-29 05:22:11.022 - [Debug] [SHELL] Attacker Keystroke: n
+2022-09-29 05:22:11.088 - [Debug] [SHELL] Attacker Keystroke: [Space]
+2022-09-29 05:22:11.316 - [Debug] [SHELL] Attacker Keystroke: h
+2022-09-29 05:22:11.440 - [Debug] [SHELL] Attacker Keystroke: o
+2022-09-29 05:22:11.517 - [Debug] [SHELL] Attacker Keystroke: n
+2022-09-29 05:22:11.582 - [Debug] [SHELL] Attacker Keystroke: e
+2022-09-29 05:22:11.671 - [Debug] [SHELL] Attacker Keystroke: y
+2022-09-29 05:22:11.788 - [Debug] [SHELL] Attacker Keystroke: p
+2022-09-29 05:22:11.850 - [Debug] [SHELL] Attacker Keystroke: o
+2022-09-29 05:22:11.894 - [Debug] [SHELL] Attacker Keystroke: t
+2022-09-29 05:22:12.079 - [Debug] [SHELL] Attacker Keystroke: 4
+2022-09-29 05:22:12.430 - [Debug] [SHELL] Attacker Keystroke: !
+2022-09-29 05:22:12.598 - [Debug] [SHELL] Attacker Keystroke: [CR]
+2022-09-29 05:22:12.601 - [Debug] [SHELL] line from reader: im in honeypot4!
+2022-09-29 05:22:12.601 - [Debug] [SHELL] Keystroke buffer: 105,109,32,105,110,32,104,111,110,101,121,112,111,116,52,33,13
+2022-09-29 05:22:12.988 - [Debug] [SHELL] Attacker Keystroke: e
+2022-09-29 05:22:13.118 - [Debug] [SHELL] Attacker Keystroke: x
+2022-09-29 05:22:13.160 - [Debug] [SHELL] Attacker Keystroke: s
+2022-09-29 05:22:13.281 - [Debug] [SHELL] Attacker Keystroke: i
+2022-09-29 05:22:13.387 - [Debug] [SHELL] Attacker Keystroke: t
+2022-09-29 05:22:13.554 - [Debug] [SHELL] Attacker Keystroke: [CR]
+2022-09-29 05:22:13.556 - [Debug] [SHELL] line from reader: exsit
+2022-09-29 05:22:13.556 - [Debug] [SHELL] Keystroke buffer: 101,120,115,105,116,13
+2022-09-29 05:22:13.935 - [Debug] [SHELL] Attacker Keystroke: e
+2022-09-29 05:22:14.103 - [Debug] [SHELL] Attacker Keystroke: x
+2022-09-29 05:22:14.179 - [Debug] [SHELL] Attacker Keystroke: i
+2022-09-29 05:22:14.298 - [Debug] [SHELL] Attacker Keystroke: t
+2022-09-29 05:22:14.405 - [Debug] [SHELL] Attacker Keystroke: [CR]
+2022-09-29 05:22:14.407 - [Debug] [SHELL] line from reader: exit
+2022-09-29 05:22:14.409 - [Debug] [SHELL] Keystroke buffer: 101,120,105,116,13
+2022-09-29 05:22:14.411 - [Debug] [LXC Streams] Removed Stream | Total streams: 0
+2022-09-29 05:22:14.411 - [Debug] [SHELL] Honeypot ended shell
+2022-09-29 05:22:14.414 - [Debug] [SHELL] Attacker ended the shell
+2022-09-29 05:22:14.415 - [Debug] [Connection] Attacker closed connection
+2022-09-29 05:22:14.424 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-09-29 05:22:14.425 - [Debug] [LXC] Container's OpenSSH server closed connection
+2022-09-29 05:35:13.896 - [Debug] [Connection] Attacker connected: 172.30.141.228 | Client Identification: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.5
+2022-09-29 05:35:15.104 - [Debug] [Auth] Attacker 172.30.141.228 trying to authenticate with 'none'
+2022-09-29 05:35:15.104 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-09-29 05:35:15.996 - [Debug] [Auth] Attacker 172.30.141.228 trying to authenticate with 'password'
+2022-09-29 05:35:15.997 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-09-29 05:35:15.998 - [Debug] [Auth] Attacker: 172.30.141.228 has so far made 1 attempts. Remaining: 5 attempts
+2022-09-29 05:35:16.468 - [Debug] [Auth] Attacker 172.30.141.228 trying to authenticate with 'password'
+2022-09-29 05:35:16.469 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-09-29 05:35:16.469 - [Debug] [Auth] Attacker: 172.30.141.228 has so far made 2 attempts. Remaining: 4 attempts
+2022-09-29 05:35:16.868 - [Debug] [Auth] Attacker 172.30.141.228 trying to authenticate with 'password'
+2022-09-29 05:35:16.869 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-09-29 05:35:16.869 - [Debug] [Auth] Attacker: 172.30.141.228 has so far made 3 attempts. Remaining: 3 attempts
+2022-09-29 05:35:16.870 - [Debug] [Connection] Attacker closed the connection
+2022-09-29 05:35:24.658 - [Debug] [Connection] Attacker connected: 172.30.141.228 | Client Identification: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.5
+2022-09-29 05:35:24.666 - [Debug] [Auth] Attacker 172.30.141.228 trying to authenticate with 'none'
+2022-09-29 05:35:24.666 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-09-29 05:35:25.980 - [Debug] [Auth] Attacker 172.30.141.228 trying to authenticate with 'password'
+2022-09-29 05:35:25.981 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Container user is disabled
+2022-09-29 05:35:25.981 - [Debug] [Auth] Attacker: 172.30.141.228 has so far made 1 attempts. Remaining: 5 attempts
+2022-09-29 05:35:27.612 - [Debug] [Auth] Attacker 172.30.141.228 trying to authenticate with 'password'
+2022-09-29 05:35:27.613 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Container user is disabled
+2022-09-29 05:35:27.613 - [Debug] [Auth] Attacker: 172.30.141.228 has so far made 2 attempts. Remaining: 4 attempts
+2022-09-29 05:35:28.020 - [Debug] [Auth] Attacker 172.30.141.228 trying to authenticate with 'password'
+2022-09-29 05:35:28.021 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Container user is disabled
+2022-09-29 05:35:28.022 - [Debug] [Auth] Attacker: 172.30.141.228 has so far made 3 attempts. Remaining: 3 attempts
+2022-09-29 05:35:28.023 - [Debug] [Connection] Attacker closed the connection
+2022-09-29 05:43:13.925 - [Debug] [Connection] Attacker connected: 172.30.141.228 | Client Identification: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.5
+2022-09-29 05:43:13.933 - [Debug] [Auth] Attacker 172.30.141.228 trying to authenticate with 'none'
+2022-09-29 05:43:13.933 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-09-29 05:43:14.422 - [Debug] [Auth] Attacker 172.30.141.228 trying to authenticate with 'password'
+2022-09-29 05:43:14.423 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Container user is disabled
+2022-09-29 05:43:14.424 - [Debug] [Auth] Attacker: 172.30.141.228 has so far made 1 attempts. Remaining: 5 attempts
+2022-09-29 05:43:14.911 - [Debug] [Auth] Attacker 172.30.141.228 trying to authenticate with 'password'
+2022-09-29 05:43:14.912 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Container user is disabled
+2022-09-29 05:43:14.912 - [Debug] [Auth] Attacker: 172.30.141.228 has so far made 2 attempts. Remaining: 4 attempts
+2022-09-29 05:43:15.286 - [Debug] [Auth] Attacker 172.30.141.228 trying to authenticate with 'password'
+2022-09-29 05:43:15.287 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Container user is disabled
+2022-09-29 05:43:15.287 - [Debug] [Auth] Attacker: 172.30.141.228 has so far made 3 attempts. Remaining: 3 attempts
+2022-09-29 05:43:15.289 - [Debug] [Connection] Attacker closed the connection
+2022-09-29 05:47:19.563 - [Debug] [Connection] Attacker connected: 192.168.11.5 | Client Identification: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.4
+2022-09-29 05:47:19.612 - [Debug] [Connection] Attacker closed the connection
+2022-09-29 05:47:25.087 - [Debug] [Connection] Attacker connected: 192.168.11.5 | Client Identification: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.4
+2022-09-29 05:47:26.449 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'none'
+2022-09-29 05:47:26.449 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-09-29 05:47:26.454 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'publickey'
+2022-09-29 05:47:26.454 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-09-29 05:47:26.454 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 1 attempts. Remaining: 5 attempts
+2022-09-29 05:47:27.358 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'password'
+2022-09-29 05:47:27.359 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-09-29 05:47:27.359 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 2 attempts. Remaining: 4 attempts
+2022-09-29 05:47:27.750 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'password'
+2022-09-29 05:47:27.750 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-09-29 05:47:27.751 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 3 attempts. Remaining: 3 attempts
+2022-09-29 05:47:28.070 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'password'
+2022-09-29 05:47:28.070 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-09-29 05:47:28.071 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 4 attempts. Remaining: 2 attempts
+2022-09-29 05:47:28.075 - [Debug] [Connection] Attacker closed the connection
