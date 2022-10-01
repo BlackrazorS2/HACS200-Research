@@ -22,8 +22,8 @@ fi
 # install ssh warning banner and place banner file inside container if requested
 if [[ $containerName == "honeypot3" ]] || [[ $containerName == "honeypot4" ]]
 then
-  sudo lxc-attach -n $containerName -- bash -c "echo \"Banner /etc/warning_banner\" >> /etc/ssh/sshd_config"
   sudo cp ./ssh_banner_info/warning_banner /var/lib/lxc/$containerName/rootfs/etc/
+  sudo lxc-attach -n $containerName -- bash -c "sudo mv /etc/warning_banner /etc/motd"
   sudo lxc-attach -n $containerName -- bash -c "sudo systemctl restart ssh"
 fi
 
