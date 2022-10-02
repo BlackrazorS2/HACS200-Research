@@ -1,0 +1,8 @@
+Call recycler.sh 4 times to launch 4 containers, once for each experimental condition.
+-For each honeypot, load its associated external IP from honeypot<number>_properties and pass it into recycler.sh
+-(these external IPs are rotated periodically via cronjob)
+
+Monitor the MITM logs for each honeypot.
+-If "exit" is noticed in the log, copy the MITM logs to our data collection directory.
+--Then, copy modified files to a private container for potential future analysis.
+--Then, call recycler.sh to destroy and replace the container.
