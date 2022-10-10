@@ -19,6 +19,8 @@ fi
 
 if [ $2 -eq 1 ]
 then
+  
+ ./copy_data.sh 
   temp=$honeypot4_ip
   honeypot4_ip=$honeypot3_ip
   honeypot3_ip=$honeypot2_ip
