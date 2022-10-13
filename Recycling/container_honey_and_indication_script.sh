@@ -10,7 +10,7 @@ sudo lxc-attach -n $1 -- bash -c "sudo apt-get -qq update"
 sudo lxc-attach -n $1 -- bash -c "sudo apt-get -qq install openssh-server"
 
 # install snoopylogger if requested
-if [[ $containerName == "honeypot2" ]] || [[ $containerName == "honeypot4" ]]
+if [[ $containerName == "DATABASE_2" ]] || [[ $containerName == "DATABASE_4" ]]
 then
   sudo lxc-attach -n $containerName -- bash -c "sudo apt-get install wget -y"
   sudo lxc-attach -n $containerName -- bash -c "sudo wget -O install-snoopy.sh https://github.com/a2o/snoopy/raw/install/install/install-snoopy.sh"
@@ -20,7 +20,7 @@ then
 fi
 
 # install ssh warning banner and place banner file inside container if requested
-if [[ $containerName == "honeypot3" ]] || [[ $containerName == "honeypot4" ]]
+if [[ $containerName == "DATABSE_3" ]] || [[ $containerName == "DATABASE_4" ]]
 then
   sudo cp ./ssh_banner_info/warning_banner /var/lib/lxc/$containerName/rootfs/etc/
   sudo lxc-attach -n $containerName -- bash -c "sudo mv /etc/warning_banner /etc/motd"
