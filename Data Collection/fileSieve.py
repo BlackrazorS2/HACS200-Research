@@ -92,10 +92,10 @@ def sort(time):
     for file in toSort:
         path = UNSORT+file # local file path
         if file in useful:
-            newpath = f"{SORTED}{time}_{num}_sorted/useful"
+            newpath = f"{SORTED}{time}_{num}_sorted/useful/{file}"
             os.rename(path, newpath)
         else: # if its not in useful it goes in junk
-            newpath = f"{SORTED}{time}_{num}_sorted/junk"
+            newpath = f"{SORTED}{time}_{num}_sorted/junk/{file}"
             os.rename(path, newpath)
 
 def cleanup():
