@@ -497,3 +497,447 @@ Started with the following options:
 2022-10-08 16:59:28.735 - [Debug] [Init] Auto Access Theshold Achieved: false
 2022-10-08 16:59:28.750 - [Info] SSH man-in-the-middle server for 10.0.3.135 listening on 0.0.0.0:1000
 {"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:291644) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '0.0.0.0',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'honeypot1',
+  containerIp: '10.0.3.129',
+  mitmPort: 1000,
+  autoAccessFixed: 3
+}
+2022-10-08 17:27:19.786 - [Info] MITM Version: 2
+2022-10-08 17:27:19.793 - [Info] Auto Access Enabled: true
+2022-10-08 17:27:19.793 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-08 17:27:19.811 - [Info] SSH man-in-the-middle server for 10.0.3.129 listening on 0.0.0.0:1000
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:312289) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '0.0.0.0',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'honeypot1',
+  containerIp: '10.0.3.23',
+  mitmPort: 1000,
+  autoAccessFixed: 3
+}
+2022-10-08 17:32:03.082 - [Info] MITM Version: 2
+2022-10-08 17:32:03.087 - [Info] Auto Access Enabled: true
+2022-10-08 17:32:03.088 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-08 17:32:03.104 - [Info] SSH man-in-the-middle server for 10.0.3.23 listening on 0.0.0.0:1000
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:2189) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '0.0.0.0',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'honeypot1',
+  containerIp: '10.0.3.13',
+  mitmPort: 1000,
+  autoAccessFixed: 3
+}
+2022-10-10 03:23:38.601 - [Info] MITM Version: 2
+2022-10-10 03:23:38.611 - [Info] Auto Access Enabled: true
+2022-10-10 03:23:38.611 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-10 03:23:38.633 - [Info] SSH man-in-the-middle server for 10.0.3.13 listening on 0.0.0.0:1000
+2022-10-10 03:24:37.045 - [Debug] [Connection] Attacker connected: 192.168.11.5 | Client Identification: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.4
+2022-10-10 03:24:37.070 - [Debug] [Connection] Attacker closed the connection
+2022-10-10 03:24:47.776 - [Debug] [Connection] Attacker connected: 192.168.11.5 | Client Identification: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.4
+2022-10-10 03:24:49.254 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'none'
+2022-10-10 03:24:49.254 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-10 03:24:49.257 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'publickey'
+2022-10-10 03:24:49.260 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-10 03:24:49.260 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-10 03:24:50.952 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'password'
+2022-10-10 03:24:50.953 - [Debug] [Auto Access] Attacker: 192.168.11.5, Threshold: 3, Attempts: 1
+2022-10-10 03:24:50.954 - [Debug] [Auth] Attacker authentication error: Not yet compromised
+2022-10-10 03:24:50.954 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 2 attempts. Remaining: 4 attempts
+2022-10-10 03:24:52.448 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'password'
+2022-10-10 03:24:52.448 - [Debug] [Auto Access] Attacker: 192.168.11.5, Threshold: 3, Attempts: 2
+2022-10-10 03:24:52.449 - [Debug] [Auth] Attacker authentication error: Not yet compromised
+2022-10-10 03:24:52.449 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 3 attempts. Remaining: 3 attempts
+2022-10-10 03:24:54.110 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'password'
+2022-10-10 03:24:54.110 - [Debug] [Auto Access] Attacker: 192.168.11.5, Threshold: 3, Attempts: 3
+2022-10-10 03:24:54.111 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-10 03:24:54.111 - [Debug] [Auto Access] Adding the following credentials: 'root:pssword'
+2022-10-10 03:24:54.351 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-10 03:24:54.357 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-10 03:24:54.358 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.13
+2022-10-10 03:24:57.079 - [Debug] [LXC] Authentication Failed
+2022-10-10 03:24:57.079 - [Debug] [Auth] Attacker authentication error: Error: All configured authentication methods failed
+2022-10-10 03:24:57.080 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 4 attempts. Remaining: 2 attempts
+2022-10-10 03:24:57.080 - [Debug] [Auth] Attacker authentication error: Error: All configured authentication methods failed
+2022-10-10 03:24:57.080 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 5 attempts. Remaining: 1 attempts
+2022-10-10 03:24:57.085 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-10 03:24:57.086 - [Debug] [Connection] Attacker closed the connection
+2022-10-10 03:24:57.088 - [Debug] [LXC] Container's OpenSSH server closed connection
+2022-10-10 03:26:15.966 - [Debug] [Connection] Attacker connected: 192.168.11.5 | Client Identification: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.4
+2022-10-10 03:26:16.080 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'none'
+2022-10-10 03:26:16.080 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-10 03:26:16.083 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'publickey'
+2022-10-10 03:26:16.085 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-10 03:26:16.085 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-10 03:26:19.864 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'password'
+2022-10-10 03:26:19.865 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-10 03:26:19.866 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.13
+2022-10-10 03:26:22.567 - [Debug] [LXC] Authentication Failed
+2022-10-10 03:26:22.567 - [Debug] [Auth] Attacker authentication error: Error: All configured authentication methods failed
+2022-10-10 03:26:22.568 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 2 attempts. Remaining: 4 attempts
+2022-10-10 03:26:22.568 - [Debug] [Auth] Attacker authentication error: Error: All configured authentication methods failed
+2022-10-10 03:26:22.568 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 3 attempts. Remaining: 3 attempts
+2022-10-10 03:26:22.570 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-10 03:26:22.571 - [Debug] [LXC] Container's OpenSSH server closed connection
+2022-10-10 03:26:50.214 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'password'
+2022-10-10 03:26:50.214 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-10 03:26:50.214 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.13
+2022-10-10 03:26:52.873 - [Debug] [LXC] Authentication Failed
+2022-10-10 03:26:52.873 - [Debug] [Auth] Attacker authentication error: Error: All configured authentication methods failed
+2022-10-10 03:26:52.874 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 4 attempts. Remaining: 2 attempts
+2022-10-10 03:26:52.874 - [Debug] [Auth] Attacker authentication error: Error: All configured authentication methods failed
+2022-10-10 03:26:52.874 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 5 attempts. Remaining: 1 attempts
+2022-10-10 03:26:52.876 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-10 03:26:52.877 - [Debug] [LXC] Container's OpenSSH server closed connection
+2022-10-10 03:26:56.180 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'password'
+2022-10-10 03:26:56.181 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-10 03:26:56.181 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.13
+2022-10-10 03:26:58.841 - [Debug] [LXC] Authentication Failed
+2022-10-10 03:26:58.841 - [Debug] [Auth] Attacker authentication error: Error: All configured authentication methods failed
+2022-10-10 03:26:58.842 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 6 attempts. Remaining: 0 attempts
+2022-10-10 03:26:58.842 - [Debug] [Connection] Max Login Attempts Reached - Closing connection on attacker
+2022-10-10 03:26:58.843 - [Debug] [Auth] Attacker authentication error: Error: All configured authentication methods failed
+2022-10-10 03:26:58.843 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 7 attempts. Remaining: -1 attempts
+2022-10-10 03:26:58.843 - [Debug] [Connection] Attacker closed the connection
+2022-10-10 03:26:58.846 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-10 03:26:58.846 - [Debug] [LXC] Container's OpenSSH server closed connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:23157) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '0.0.0.0',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'honeypot1',
+  containerIp: '10.0.3.98',
+  mitmPort: 1000,
+  autoAccessFixed: 3
+}
+2022-10-10 03:30:11.124 - [Info] MITM Version: 2
+2022-10-10 03:30:11.127 - [Info] Auto Access Enabled: true
+2022-10-10 03:30:11.128 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-10 03:30:11.135 - [Info] SSH man-in-the-middle server for 10.0.3.98 listening on 0.0.0.0:1000
+2022-10-10 03:30:20.703 - [Debug] [Connection] Attacker connected: 192.168.11.5 | Client Identification: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.4
+2022-10-10 03:30:20.722 - [Debug] [Connection] Attacker closed the connection
+2022-10-10 03:30:26.617 - [Debug] [Connection] Attacker connected: 192.168.11.5 | Client Identification: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.4
+2022-10-10 03:30:28.068 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'none'
+2022-10-10 03:30:28.069 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-10 03:30:28.072 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'publickey'
+2022-10-10 03:30:28.074 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-10 03:30:28.074 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-10 03:30:29.734 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'password'
+2022-10-10 03:30:29.735 - [Debug] [Auto Access] Attacker: 192.168.11.5, Threshold: 3, Attempts: 1
+2022-10-10 03:30:29.735 - [Debug] [Auth] Attacker authentication error: Not yet compromised
+2022-10-10 03:30:29.735 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 2 attempts. Remaining: 4 attempts
+2022-10-10 03:30:31.169 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'password'
+2022-10-10 03:30:31.170 - [Debug] [Auto Access] Attacker: 192.168.11.5, Threshold: 3, Attempts: 2
+2022-10-10 03:30:31.170 - [Debug] [Auth] Attacker authentication error: Not yet compromised
+2022-10-10 03:30:31.171 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 3 attempts. Remaining: 3 attempts
+2022-10-10 03:30:32.590 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'password'
+2022-10-10 03:30:32.591 - [Debug] [Auto Access] Attacker: 192.168.11.5, Threshold: 3, Attempts: 3
+2022-10-10 03:30:32.591 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-10 03:30:32.591 - [Debug] [Auto Access] Adding the following credentials: 'root:password'
+2022-10-10 03:30:32.636 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-10 03:30:32.640 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-10 03:30:32.640 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.98
+2022-10-10 03:30:35.717 - [Debug] [LXC] Authentication Failed
+2022-10-10 03:30:35.718 - [Debug] [Auth] Attacker authentication error: Error: All configured authentication methods failed
+2022-10-10 03:30:35.718 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 4 attempts. Remaining: 2 attempts
+2022-10-10 03:30:35.718 - [Debug] [Auth] Attacker authentication error: Error: All configured authentication methods failed
+2022-10-10 03:30:35.719 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 5 attempts. Remaining: 1 attempts
+2022-10-10 03:30:35.722 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-10 03:30:35.723 - [Debug] [LXC] Container's OpenSSH server closed connection
+2022-10-10 03:30:35.724 - [Debug] [Connection] Attacker closed the connection
+2022-10-10 03:32:25.549 - [Debug] [Connection] Attacker connected: 192.168.11.5 | Client Identification: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.4
+2022-10-10 03:32:25.570 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'none'
+2022-10-10 03:32:25.571 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-10 03:32:25.573 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'publickey'
+2022-10-10 03:32:25.574 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-10 03:32:25.574 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-10 03:32:27.710 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'password'
+2022-10-10 03:32:27.711 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-10 03:32:27.711 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 2 attempts. Remaining: 4 attempts
+2022-10-10 03:32:29.494 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'password'
+2022-10-10 03:32:29.495 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-10 03:32:29.495 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 3 attempts. Remaining: 3 attempts
+2022-10-10 03:32:31.011 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'password'
+2022-10-10 03:32:31.011 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-10 03:32:31.012 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 4 attempts. Remaining: 2 attempts
+2022-10-10 03:32:31.016 - [Debug] [Connection] Attacker closed the connection
+2022-10-10 03:43:44.612 - [Debug] [Connection] Attacker connected: 192.168.11.5 | Client Identification: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.4
+2022-10-10 03:43:44.635 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'none'
+2022-10-10 03:43:44.636 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-10 03:43:44.638 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'publickey'
+2022-10-10 03:43:44.639 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-10 03:43:44.639 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-10 03:43:48.314 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'password'
+2022-10-10 03:43:48.315 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-10 03:43:48.316 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 2 attempts. Remaining: 4 attempts
+2022-10-10 03:43:50.133 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'password'
+2022-10-10 03:43:50.134 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-10 03:43:50.134 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 3 attempts. Remaining: 3 attempts
+2022-10-10 03:43:53.074 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'password'
+2022-10-10 03:43:53.074 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-10 03:43:53.075 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 4 attempts. Remaining: 2 attempts
+2022-10-10 03:43:53.080 - [Debug] [Connection] Attacker closed the connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:24400) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '0.0.0.0',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'honeypot1',
+  containerIp: '10.0.3.74',
+  mitmPort: 1000,
+  autoAccessFixed: 3
+}
+2022-10-10 03:45:05.685 - [Info] MITM Version: 2
+2022-10-10 03:45:05.688 - [Info] Auto Access Enabled: true
+2022-10-10 03:45:05.688 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-10 03:45:05.695 - [Info] SSH man-in-the-middle server for 10.0.3.74 listening on 0.0.0.0:1000
+2022-10-10 03:45:14.157 - [Debug] [Connection] Attacker connected: 192.168.11.5 | Client Identification: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.4
+2022-10-10 03:45:14.176 - [Debug] [Connection] Attacker closed the connection
+2022-10-10 03:45:21.711 - [Debug] [Connection] Attacker connected: 192.168.11.5 | Client Identification: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.4
+2022-10-10 03:45:23.576 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'none'
+2022-10-10 03:45:23.577 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-10 03:45:23.580 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'publickey'
+2022-10-10 03:45:23.581 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-10 03:45:23.581 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-10 03:45:27.571 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'password'
+2022-10-10 03:45:27.572 - [Debug] [Auto Access] Attacker: 192.168.11.5, Threshold: 3, Attempts: 1
+2022-10-10 03:45:27.572 - [Debug] [Auth] Attacker authentication error: Not yet compromised
+2022-10-10 03:45:27.573 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 2 attempts. Remaining: 4 attempts
+2022-10-10 03:45:30.329 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'password'
+2022-10-10 03:45:30.330 - [Debug] [Auto Access] Attacker: 192.168.11.5, Threshold: 3, Attempts: 2
+2022-10-10 03:45:30.330 - [Debug] [Auth] Attacker authentication error: Not yet compromised
+2022-10-10 03:45:30.331 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 3 attempts. Remaining: 3 attempts
+2022-10-10 03:45:33.166 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'password'
+2022-10-10 03:45:33.167 - [Debug] [Auto Access] Attacker: 192.168.11.5, Threshold: 3, Attempts: 3
+2022-10-10 03:45:33.167 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-10 03:45:33.168 - [Debug] [Auto Access] Adding the following credentials: 'ydesilva:password'
+2022-10-10 03:45:33.249 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-10 03:45:33.252 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-10 03:45:33.252 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.74
+2022-10-10 03:45:33.308 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-10 03:45:33.531 - [Debug] [SHELL] Opened shell for attacker
+2022-10-10 03:45:33.535 - [Debug] [LXC Streams] New Stream | Total Streams: 1
+2022-10-10 03:45:54.704 - [Debug] [SHELL] Attacker Keystroke: e
+2022-10-10 03:45:54.920 - [Debug] [SHELL] Attacker Keystroke: x
+2022-10-10 03:45:55.072 - [Debug] [SHELL] Attacker Keystroke: i
+2022-10-10 03:45:55.421 - [Debug] [SHELL] Attacker Keystroke: t
+2022-10-10 03:45:55.635 - [Debug] [SHELL] Attacker Keystroke: [CR]
+2022-10-10 03:45:55.639 - [Debug] [SHELL] line from reader: exit
+2022-10-10 03:45:55.640 - [Debug] [SHELL] Keystroke buffer: 101,120,105,116,13
+2022-10-10 03:45:55.642 - [Debug] [LXC Streams] Removed Stream | Total streams: 0
+2022-10-10 03:45:55.642 - [Debug] [SHELL] Honeypot ended shell
+2022-10-10 03:45:55.645 - [Debug] [SHELL] Attacker ended the shell
+2022-10-10 03:45:55.646 - [Debug] [Connection] Attacker closed connection
+2022-10-10 03:45:55.655 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-10 03:45:55.655 - [Debug] [LXC] Container's OpenSSH server closed connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:25714) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '0.0.0.0',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'honeypot1',
+  containerIp: '10.0.3.197',
+  mitmPort: 1000,
+  autoAccessFixed: 3
+}
+2022-10-10 03:47:08.661 - [Info] MITM Version: 2
+2022-10-10 03:47:08.666 - [Info] Auto Access Enabled: true
+2022-10-10 03:47:08.667 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-10 03:47:08.682 - [Info] SSH man-in-the-middle server for 10.0.3.197 listening on 0.0.0.0:1000
+2022-10-10 03:47:32.036 - [Debug] [Connection] Attacker connected: 192.168.11.5 | Client Identification: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.4
+2022-10-10 03:47:32.068 - [Debug] [Connection] Attacker closed the connection
+2022-10-10 03:47:38.888 - [Debug] [Connection] Attacker connected: 192.168.11.5 | Client Identification: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.4
+2022-10-10 03:47:40.511 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'none'
+2022-10-10 03:47:40.512 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-10 03:47:40.516 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'publickey'
+2022-10-10 03:47:40.518 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-10 03:47:40.518 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-10 03:47:42.903 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'password'
+2022-10-10 03:47:42.904 - [Debug] [Auto Access] Attacker: 192.168.11.5, Threshold: 3, Attempts: 1
+2022-10-10 03:47:42.904 - [Debug] [Auth] Attacker authentication error: Not yet compromised
+2022-10-10 03:47:42.905 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 2 attempts. Remaining: 4 attempts
+2022-10-10 03:47:44.526 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'password'
+2022-10-10 03:47:44.527 - [Debug] [Auto Access] Attacker: 192.168.11.5, Threshold: 3, Attempts: 2
+2022-10-10 03:47:44.527 - [Debug] [Auth] Attacker authentication error: Not yet compromised
+2022-10-10 03:47:44.527 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 3 attempts. Remaining: 3 attempts
+2022-10-10 03:47:46.055 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'password'
+2022-10-10 03:47:46.055 - [Debug] [Auto Access] Attacker: 192.168.11.5, Threshold: 3, Attempts: 3
+2022-10-10 03:47:46.056 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-10 03:47:46.056 - [Debug] [Auto Access] Adding the following credentials: 'ydesilva:password'
+2022-10-10 03:47:46.227 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-10 03:47:46.235 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-10 03:47:46.236 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.197
+2022-10-10 03:47:46.351 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-10 03:47:46.682 - [Debug] [SHELL] Opened shell for attacker
+2022-10-10 03:47:46.686 - [Debug] [LXC Streams] New Stream | Total Streams: 1
+2022-10-10 03:48:35.550 - [Debug] [SHELL] Attacker Keystroke: e
+2022-10-10 03:48:35.805 - [Debug] [SHELL] Attacker Keystroke: x
+2022-10-10 03:48:36.247 - [Debug] [SHELL] Attacker Keystroke: i
+2022-10-10 03:48:36.407 - [Debug] [SHELL] Attacker Keystroke: t
+2022-10-10 03:48:36.819 - [Debug] [SHELL] Attacker Keystroke: [CR]
+2022-10-10 03:48:36.821 - [Debug] [SHELL] line from reader: exit
+2022-10-10 03:48:36.823 - [Debug] [SHELL] Keystroke buffer: 101,120,105,116,13
+2022-10-10 03:48:36.829 - [Debug] [LXC Streams] Removed Stream | Total streams: 0
+2022-10-10 03:48:36.832 - [Debug] [SHELL] Honeypot ended shell
+2022-10-10 03:48:36.837 - [Debug] [SHELL] Attacker ended the shell
+2022-10-10 03:48:36.839 - [Debug] [Connection] Attacker closed connection
+2022-10-10 03:48:36.854 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-10 03:48:36.854 - [Debug] [LXC] Container's OpenSSH server closed connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:64700) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '0.0.0.0',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_1',
+  containerIp: '10.0.3.105',
+  mitmPort: 1000,
+  autoAccessFixed: 3
+}
+2022-10-13 16:53:24.775 - [Info] MITM Version: 2
+2022-10-13 16:53:24.781 - [Info] Auto Access Enabled: true
+2022-10-13 16:53:24.782 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-13 16:53:24.802 - [Info] SSH man-in-the-middle server for 10.0.3.105 listening on 0.0.0.0:1000
+2022-10-13 17:01:21.930 - [Debug] [Connection] Attacker connected: 192.168.11.5 | Client Identification: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.4
+2022-10-13 17:01:21.954 - [Debug] [Connection] Attacker closed the connection
+2022-10-13 17:01:35.830 - [Debug] [Connection] Attacker connected: 192.168.11.5 | Client Identification: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.4
+2022-10-13 17:01:37.474 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'none'
+2022-10-13 17:01:37.475 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-13 17:01:37.478 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'publickey'
+2022-10-13 17:01:37.480 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-13 17:01:37.481 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-13 17:01:40.729 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'password'
+2022-10-13 17:01:40.730 - [Debug] [Auto Access] Attacker: 192.168.11.5, Threshold: 3, Attempts: 1
+2022-10-13 17:01:40.730 - [Debug] [Auth] Attacker authentication error: Not yet compromised
+2022-10-13 17:01:40.731 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 2 attempts. Remaining: 4 attempts
+2022-10-13 17:01:42.804 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'password'
+2022-10-13 17:01:42.805 - [Debug] [Auto Access] Attacker: 192.168.11.5, Threshold: 3, Attempts: 2
+2022-10-13 17:01:42.805 - [Debug] [Auth] Attacker authentication error: Not yet compromised
+2022-10-13 17:01:42.806 - [Debug] [Auth] Attacker: 192.168.11.5 has so far made 3 attempts. Remaining: 3 attempts
+2022-10-13 17:01:44.305 - [Debug] [Auth] Attacker 192.168.11.5 trying to authenticate with 'password'
+2022-10-13 17:01:44.306 - [Debug] [Auto Access] Attacker: 192.168.11.5, Threshold: 3, Attempts: 3
+2022-10-13 17:01:44.306 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-13 17:01:44.306 - [Debug] [Auto Access] Adding the following credentials: 'ydesilva:password'
+2022-10-13 17:01:44.424 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-13 17:01:44.430 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-13 17:01:44.430 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.105
+2022-10-13 17:01:44.527 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-13 17:01:44.817 - [Debug] [SHELL] Opened shell for attacker
+2022-10-13 17:01:44.822 - [Debug] [LXC Streams] New Stream | Total Streams: 1
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:85763) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '0.0.0.0',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_1',
+  containerIp: '10.0.3.137',
+  mitmPort: 1000,
+  autoAccessFixed: 3
+}
+2022-10-13 17:02:53.413 - [Info] MITM Version: 2
+2022-10-13 17:02:53.419 - [Info] Auto Access Enabled: true
+2022-10-13 17:02:53.420 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-13 17:02:53.435 - [Info] SSH man-in-the-middle server for 10.0.3.137 listening on 0.0.0.0:1000
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
