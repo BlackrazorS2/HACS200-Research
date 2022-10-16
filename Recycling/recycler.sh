@@ -12,6 +12,7 @@ if [ $status -ne 0 ]
 then
   sudo python3 /home/student/data/gatherer.py $1
   sudo python3 /home/student/data/fileSieve.py
+  sudo ./copy_data.sh $1 
   IP=$(sudo lxc-info -n $1 -iH)
   sudo forever stop $1
   sudo echo "IP:  $IP"
