@@ -1,7 +1,7 @@
 #!/bin/bash
 # pass in honeypot number through argument
 
-inotifywait -q -m -e close_write DATABASE_$1_log |
+inotifywait -q -m -e close_write data/DATABASE_$1_log |
 while read -r filename event; do
         if tail -1 "$filename" | grep -q "Attacker closed connection";
         then
