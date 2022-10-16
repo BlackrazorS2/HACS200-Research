@@ -35,24 +35,52 @@ from datetime import datetime
 
 # Note that modlist isn't currently being used but probably will get implemented
 # at some point to increase program efficiency
-#MOD_LIST = ["rm",
-#            "cp",
-#            "mv",
-#            "mkdir",
-#            "nano",
-#            "vim",
-#            "vi",
-#            "touch",
-#           "wget",
-#            "curl",
-#            "apt",
-#            "apt-get"
-#            ]
+MOD_LIST = ["rm",
+            "cp",
+            "mv",
+            "mkdir",
+            "nano",
+            "vim",
+            "vi",
+            "touch",
+            "wget",
+            "curl",
+            "apt",
+            "apt-get",
+            ">>"
+            ]
 
-UNSORT = "modfiles/"
-SORTED = "sorted/"
-LOGPATH = "path/to/mitm/log"
+UNSORT = "/home/student/data/modfiles/"
+SORTED = "/home/student/data/sorted/"
+# getting the latest logfile
+logs = os.listdir("/home/student/data")
+greatest = 0
+for log in logs:
+    num = log.split("_")[1]
+    if num > greatest:
+        greatest = num
+LOGPATH = f"/home/student/data/DATABASE_{greatest}_log"
 
+
+#def reconstruction():
+#    """Looks through the mitm log files and tries to reconstruct any removed files\n
+#       Looks for any 'rm' command that was run, then tries to find if file was created by the attacker before"""
+#        # first lets get a list of files that were removed - search for any rm commands
+#    rmNames = []
+#    with open(LOGPATH, "r") as logs:
+#        for line in logs:
+#            if "line from reader:" in line: # full command
+#                if "rm " in line:
+#                    # parse the line for filename
+#                    splits = line.split(' ')
+#                    filename = splits[-1] # filename should be the last item in the list
+#                    rmNames.append(filename)
+#        # go through again and look for anything that would indicate that a file is being reconstructed
+#        for line in logs:
+#            if "line from reader:" in line:
+#                splits = line.split(":")
+#                command = splits[-1]
+#
 
 def sort(time):
     """Sorts the files in modfiles\n
@@ -108,5 +136,6 @@ def cleanup():
 if __name__ in "__main__":
     now = datetime.now()
     formated = now.strftime('%Y-%m-%d-%H%M')
+    #reconstruction()
     sort(formated)
     cleanup()

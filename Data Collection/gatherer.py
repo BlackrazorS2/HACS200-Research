@@ -19,8 +19,16 @@ if n != 2: # the calling of the script counts as an argument
     sys.exit(1)
 
 BASEPATH = f"/var/lib/lxc/{sys.argv[1]}/rootfs/"
-PATHTODUMP = "/path/to/modified/file/dump"
-MITMLOG = "path/to/MITM/logs"
+PATHTODUMP = "/home/student/data/modfiles"
+
+# getting the latest logfile
+logs = os.listdir("/home/student/data")
+greatest = 0
+for log in logs:
+    num = log.split("_")[1]
+    if num > greatest:
+        greatest = num
+MITMLOG = f"/home/student/data/DATABASE_{greatest}_log"
 
 # get login time
 # attacker login is defined by [LXC-Auth] in a line
@@ -43,7 +51,7 @@ def main():
             stats = os.stats(os.path.join(path,file))
             modTime = stats.st_mtime # modified time in seconds since epoch
             if (modTime - connectEpoch) >= 60: # if the file was modified more than 1 minute after attacker connected
-                os.rename(os.path.join(path,file), os.path.join(PATHTODUMP, file))
+                os.rename(os.path.join(path,file), os.path.join(PATHTODUMP, file)) # move to the unsorted dir
             else:
                 continue
 
