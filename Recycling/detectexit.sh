@@ -7,7 +7,6 @@ while read -r filename event; do
         then
                 # copy the MITM logs to our data collection directory.
                 # copy modified files to a private container for potential future analysis.
-                ./copy_data.sh
                 ./recycler.sh
         fi
 done
