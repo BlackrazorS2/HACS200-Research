@@ -26,4 +26,3 @@ then
   sudo lxc-attach -n $containerName -- bash -c "sudo mv /etc/warning_banner /etc/motd"
   sudo lxc-attach -n $containerName -- bash -c "sudo systemctl restart ssh"
 fi
-

@@ -5,13 +5,15 @@ then
   echo "Usage ./recycler.sh [container name] [external IP] [create new container (1 for yes, 0 for no)]"
   exit 1
 fi
-port=$(cat ./properties/$1_properties | cut -d' ' -f2)
+port=$(sudo cat ./properties/$1_properties | cut -d' ' -f2)
 status=$(sudo lxc-ls | grep $1 | wc -l)
 
 if [ $status -ne 0 ]
 then
   IP=$(sudo lxc-info -n $1 -iH)
   sudo forever stop $1
+  sudo echo "IP:  $IP"
+  sudo echo "destination: $2"
   sudo iptables --table nat --delete PREROUTING --source 0.0.0.0/0 --destination $2 --jump DNAT --to-destination $IP
   sudo iptables --table nat --delete POSTROUTING --source $IP --destination 0.0.0.0/0 --jump SNAT --to-source $2
   sudo iptables --table nat --delete PREROUTING --source 0.0.0.0/0 --destination $2 --protocol tcp --dport 22 --jump DNAT --to-destination 127.0.0.1:$port
