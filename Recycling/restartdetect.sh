@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# kills all detectexit scripts and restarts them
+# kills all detectexit listeners for each honeypot and restarts them
 
 killall inotifywait
 
