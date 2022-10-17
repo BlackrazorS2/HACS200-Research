@@ -20,7 +20,7 @@ then
 fi
 
 # install ssh warning banner and place banner file inside container if requested
-if [[ $containerName == "DATABSE_3" ]] || [[ $containerName == "DATABASE_4" ]]
+if [[ $containerName == "DATABASE_3" ]] || [[ $containerName == "DATABASE_4" ]]
 then
   sudo cp ./ssh_banner_info/warning_banner /var/lib/lxc/$containerName/rootfs/etc/
   sudo lxc-attach -n $containerName -- bash -c "sudo mv /etc/warning_banner /etc/motd"
