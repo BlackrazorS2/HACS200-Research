@@ -42,6 +42,7 @@ MODE=2
 # Update this if your container IP address and network is different
 #
 CONTAINER_NETWORK="10.0.3.1/24"
+#CONTAINER_GATEWAY="$(hostname -I | awk '{print $1}')"
 CONTAINER_GATEWAY="10.0.3.1"
 CONTAINER_INTERFACE="lxcbr0"
 
@@ -155,12 +156,12 @@ if [ "$MODE" -eq 2 ]; then
 echo "DEBUG: Firewall MODE 2"
 for i in $hp_tcp;
 do
-	/sbin/iptables -A FORWARD -d $CONTAINER_NETWORK -p tcp --dport $i -m state --state NEW -j ACCEPT
+        /sbin/iptables -A FORWARD -d $CONTAINER_NETWORK -p tcp --dport $i -m state --state NEW -j ACCEPT
 done
 
 for i in $hp_udp;
 do
-	/sbin/iptables -A FORWARD -p udp -d $CONTAINER_NETWORK -m udp --dport $i -j ACCEPT
+        /sbin/iptables -A FORWARD -p udp -d $CONTAINER_NETWORK -m udp --dport $i -j ACCEPT
 done
 
 fi
@@ -212,5 +213,3 @@ fi
 /sbin/iptables -A FORWARD -s $CONTAINER_NETWORK -j ACCEPT -m comment --comment "Allow all other honeypot outgoing"
 
 exit 0
-
-
