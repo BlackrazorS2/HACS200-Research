@@ -96,15 +96,15 @@ def sort(time):
         pass
     # need to get the current attacker number
     # could hold it in a file but thats a little clunky
-    dirs = os.listdir(SORTED) # returns a list for sorted dirs
-    num = 1
-    for dir in dirs:
-        # get the attacker number
-        splits = dir.split("_")
-        no = splits[1]
-        if no > num:
-            num = no
-    num = num+1 # need to bump it up to advance
+    #dirs = os.listdir(SORTED) # returns a list for sorted dirs
+    #num = 1
+    #for dir in dirs:
+    #    # get the attacker number
+    #    splits = dir.split("_")
+    #    no = splits[1]
+    #    if no > num:
+    #        num = no
+    num = greatest+1 # need to bump it up to advance
     os.makedirs(f"{SORTED}{time}_{num}_sorted/useful")
     os.makedirs(f"{SORTED}{time}_{num}_sorted/junk")
 
