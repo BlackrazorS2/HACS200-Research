@@ -5,8 +5,7 @@ then
 fi
 
 curr_date=$(date +'%Y-%m-%d-%H%M')
-sudo mkdir ./data/$curr_date
 
-sudo cp ./data/$1_log ./data/$curr_date
+sudo cp ./data/$1_log ./data/copied_logs/$curr_date_$1_log
 
 sudo echo "" > ./data/$1_log
