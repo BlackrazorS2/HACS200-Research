@@ -1,29 +1,33 @@
 #!/bin/bash
 
-# kills all detectexit scripts and restarts them
+# kills all detectexit listeners for each honeypot and restarts them
 
-killall inotifywait
+sudo killall inotifywait
 
-echo "Killed all exit listeners"
+sudo echo "Killed all exit listeners"
 
-if [ -f DATABASE_1_log ]
+if [ -f data/DATABASE_1_log ]
 then
-        ./detectexit.sh 1 &
+        sudo echo "detectexit 1"
+        sudo ./detectexit.sh 1 &
 fi
 
-if [ -f DATABASE_2_log ]
+if [ -f data/DATABASE_2_log ]
 then
-        ./detectexit.sh 2 &
+        sudo echo "detectexit 2"
+        sudo ./detectexit.sh 2 &
 fi
 
-if [ -f DATABASE_3_log ]
+if [ -f data/DATABASE_3_log ]
 then
-        ./detectexit.sh 3 &
+        sudo echo "detectexit 3"
+        sudo ./detectexit.sh 3 &
 fi
 
-if [ -f DATABASE_4_log ]
+if [ -f data/DATABASE_4_log ]
 then
-        ./detectexit.sh 4 &
+        sudo echo "detectexit 4"
+        sudo ./detectexit.sh 4 &
 fi
 
-echo "Rebooted all exit listeners"
+sudo echo "Rebooted all exit listeners"
