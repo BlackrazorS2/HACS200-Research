@@ -26,7 +26,7 @@ logs = os.listdir("/home/student/data")
 greatest = 0
 for log in logs:
     num = log.split("_")[1]
-    if num > greatest:
+    if int(num) > greatest:
         greatest = num
 MITMLOG = f"/home/student/data/DATABASE_{greatest}_log"
 
