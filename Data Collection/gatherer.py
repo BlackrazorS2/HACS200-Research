@@ -26,8 +26,11 @@ logs = os.listdir("/home/student/data")
 greatest = 0
 for log in logs:
     num = log.split("_")[1]
-    if int(num) > greatest:
-        greatest = num
+    if "DATABASE" in log:
+        if int(num) > greatest:
+            greatest = num
+    else:
+        continue
 MITMLOG = f"/home/student/data/DATABASE_{greatest}_log"
 
 # get login time
