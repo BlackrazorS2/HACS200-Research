@@ -13,6 +13,6 @@ sudo sysctl -p /etc/sysctl.conf
 
 sudo ./firewall_rules.sh
 
-sudo ./container_rotate 1 0 1
+sudo ./container_rotate.sh 1 0 1
 
 sudo ./restartdetect.sh
