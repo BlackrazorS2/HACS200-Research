@@ -8,6 +8,8 @@ sudo echo "HOST REBOOTED, CONTAINER RECYCLED" >> ./data/DATABASE_2_log
 sudo echo "HOST REBOOTED, CONTAINER RECYCLED" >> ./data/DATABASE_3_log
 sudo echo "HOST REBOOTED, CONTAINER RECYCLED" >> ./data/DATABASE_4_log
 
+sudo ./firewall_rules.sh
+
 sudo ./container_rotate 1 0 1
 
 sudo ./restartdetect.sh
