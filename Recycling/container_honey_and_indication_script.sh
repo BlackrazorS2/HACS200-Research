@@ -3,7 +3,7 @@
 containerName=$1
 
 # copy honey files over from honey folder on host
-sudo cp -r ./honey/* /var/lib/lxc/$containerName/rootfs/root/
+sudo cp -r ./honey/* /var/lib/lxc/$containerName/rootfs/
 
 # install ssh on container
 sudo lxc-attach -n $1 -- bash -c "sudo apt-get -qq update"
