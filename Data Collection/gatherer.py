@@ -1,4 +1,5 @@
 import os
+import shutil
 import sys
 import datetime
 
@@ -54,7 +55,8 @@ def main():
             stats = os.stat(os.path.join(path,file))
             modTime = stats.st_mtime # modified time in seconds since epoch
             if modTime >= connectEpoch: # if the file was modified more than 1 minute after attacker connected
-                os.rename(os.path.join(path,file), os.path.join(PATHTODUMP, file)) # move to the unsorted dir
+                #os.rename(os.path.join(path,file), os.path.join(PATHTODUMP, file)) # move to the unsorted dir
+                shutil.copy(os.path.join(path,file), PATHTODUMP) # move to the unsorted dir
             else:
                 continue
 
