@@ -56,8 +56,8 @@ SORTED = "/home/student/data/sorted/"
 logs = os.listdir("/home/student/data")
 greatest = 0
 for log in logs:
-    num = log.split("_")[1]
     if "DATABASE" in log:
+        num = log.split("_")[1]
         if int(num) > greatest:
             greatest = num
     else:

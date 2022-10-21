@@ -25,8 +25,8 @@ PATHTODUMP = "/home/student/data/modfiles"
 logs = os.listdir("/home/student/data")
 greatest = 0
 for log in logs:
-    num = log.split("_")[1]
     if "DATABASE" in log:
+        num = log.split("_")[1]
         if int(num) > greatest:
             greatest = num
     else:
@@ -51,7 +51,7 @@ def main():
 
     for path, files, dirs in os.walk(BASEPATH):
         for file in files:
-            stats = os.stats(os.path.join(path,file))
+            stats = os.stat(os.path.join(path,file))
             modTime = stats.st_mtime # modified time in seconds since epoch
             if modTime >= connectEpoch: # if the file was modified more than 1 minute after attacker connected
                 os.rename(os.path.join(path,file), os.path.join(PATHTODUMP, file)) # move to the unsorted dir
