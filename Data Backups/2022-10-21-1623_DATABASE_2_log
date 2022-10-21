@@ -1,0 +1,54 @@
+
+(node:1529327) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_2',
+  containerIp: '10.0.3.241',
+  mitmPort: 1001,
+  autoAccessFixed: 3
+}
+2022-10-21 15:57:48.954 - [Info] MITM Version: 2
+2022-10-21 15:57:48.955 - [Info] Auto Access Enabled: true
+2022-10-21 15:57:48.956 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-21 15:57:48.962 - [Info] SSH man-in-the-middle server for 10.0.3.241 listening on 10.0.3.1:1001
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:1539424) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_2',
+  containerIp: '10.0.3.101',
+  mitmPort: 1001,
+  autoAccessFixed: 3
+}
+2022-10-21 15:58:54.404 - [Info] MITM Version: 2
+2022-10-21 15:58:54.407 - [Info] Auto Access Enabled: true
+2022-10-21 15:58:54.408 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-21 15:58:54.417 - [Info] SSH man-in-the-middle server for 10.0.3.101 listening on 10.0.3.1:1001
+2022-10-21 16:23:20.734 - [Debug] [Connection] Attacker connected: 114.35.196.92 | Client Identification: SSH-2.0-HELLOWORLD
+2022-10-21 16:23:21.821 - [Debug] [Connection] Attacker closed the connection

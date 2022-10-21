@@ -1,0 +1,31 @@
+
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:1430947) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_2',
+  containerIp: '10.0.3.43',
+  mitmPort: 1001,
+  autoAccessFixed: 3
+}
+2022-10-21 13:33:36.552 - [Info] MITM Version: 2
+2022-10-21 13:33:36.554 - [Info] Auto Access Enabled: true
+2022-10-21 13:33:36.554 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-21 13:33:36.565 - [Info] SSH man-in-the-middle server for 10.0.3.43 listening on 10.0.3.1:1001
+2022-10-21 13:44:00.634 - [Debug] [Connection] Attacker connected: 152.32.255.215 | Client Identification: SSH-2.0-Go
+2022-10-21 13:44:02.130 - [Debug] [Auth] Attacker 152.32.255.215 trying to authenticate with 'none'
+2022-10-21 13:44:02.131 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 13:44:02.654 - [Debug] [Connection] Attacker closed the connection

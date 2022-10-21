@@ -1,0 +1,34 @@
+
+2022-10-21 16:07:07.593 - [Debug] [Connection] Attacker connected: 114.92.195.10 | Client Identification: SSH-2.0-libssh2_1.8.2
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:1542975) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_1',
+  containerIp: '10.0.3.11',
+  mitmPort: 1000,
+  autoAccessFixed: 3
+}
+2022-10-21 16:07:35.138 - [Info] MITM Version: 2
+2022-10-21 16:07:35.139 - [Info] Auto Access Enabled: true
+2022-10-21 16:07:35.139 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-21 16:07:35.147 - [Info] SSH man-in-the-middle server for 10.0.3.11 listening on 10.0.3.1:1000
+2022-10-21 16:25:01.797 - [Debug] [Connection] Attacker connected: 194.26.229.59 | Client Identification: SSH-2.0-libssh2_1.4.3
+2022-10-21 16:25:02.866 - [Debug] [Auth] Attacker 194.26.229.59 trying to authenticate with 'password'
+2022-10-21 16:25:02.866 - [Debug] [Auto Access] Attacker: 194.26.229.59, Threshold: 3, Attempts: 1
+2022-10-21 16:25:02.867 - [Debug] [Auth] Attacker authentication error: Not yet compromised
+2022-10-21 16:25:02.868 - [Debug] [Auth] Attacker: 194.26.229.59 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 16:25:03.109 - [Debug] [Connection] Attacker closed the connection

@@ -1,0 +1,38 @@
+
+2022-10-21 03:30:03.198 - [Debug] [Auth] Attacker 34.159.210.80 trying to authenticate with 'password'
+2022-10-21 03:30:03.198 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-21 03:30:03.198 - [Debug] [Auth] Attacker: 34.159.210.80 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 03:30:03.227 - [Debug] [Auth] Attacker 34.159.210.80 trying to authenticate with 'password'
+2022-10-21 03:30:03.227 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2022-10-21 03:30:03.228 - [Debug] [Auth] Attacker: 34.159.210.80 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 03:30:03.232 - [Debug] [Auth] Attacker 34.159.210.80 trying to authenticate with 'password'
+2022-10-21 03:30:03.233 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2022-10-21 03:30:03.233 - [Debug] [Auth] Attacker: 34.159.210.80 has so far made 1 attempts. Remaining: 5 attempts
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:926290) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_3',
+  containerIp: '10.0.3.187',
+  mitmPort: 1002,
+  autoAccessFixed: 3
+}
+2022-10-21 03:30:37.388 - [Info] MITM Version: 2
+2022-10-21 03:30:37.390 - [Info] Auto Access Enabled: true
+2022-10-21 03:30:37.392 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-21 03:30:37.403 - [Info] SSH man-in-the-middle server for 10.0.3.187 listening on 10.0.3.1:1002
+2022-10-21 03:50:28.115 - [Debug] [Connection] Attacker connected: 207.68.218.3 | Client Identification: SSH-2.0-libssh-0.3.0
+2022-10-21 03:50:28.178 - [Debug] [Connection] Attacker closed the connection

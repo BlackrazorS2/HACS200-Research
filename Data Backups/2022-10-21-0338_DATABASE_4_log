@@ -1,0 +1,58 @@
+
+(node:944727) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_4',
+  containerIp: '10.0.3.32',
+  mitmPort: 1003,
+  autoAccessFixed: 3
+}
+2022-10-21 03:34:33.396 - [Info] MITM Version: 2
+2022-10-21 03:34:33.397 - [Info] Auto Access Enabled: true
+2022-10-21 03:34:33.397 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-21 03:34:33.404 - [Info] SSH man-in-the-middle server for 10.0.3.32 listening on 10.0.3.1:1003
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:954034) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_4',
+  containerIp: '10.0.3.23',
+  mitmPort: 1003,
+  autoAccessFixed: 3
+}
+2022-10-21 03:35:32.918 - [Info] MITM Version: 2
+2022-10-21 03:35:32.920 - [Info] Auto Access Enabled: true
+2022-10-21 03:35:32.921 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-21 03:35:32.931 - [Info] SSH man-in-the-middle server for 10.0.3.23 listening on 10.0.3.1:1003
+2022-10-21 03:38:22.956 - [Debug] [Connection] Attacker connected: 141.98.10.210 | Client Identification: SSH-2.0-libssh2_1.4.3
+2022-10-21 03:38:24.019 - [Debug] [Auth] Attacker 141.98.10.210 trying to authenticate with 'password'
+2022-10-21 03:38:24.019 - [Debug] [Auto Access] Attacker: 141.98.10.210, Threshold: 3, Attempts: 1
+2022-10-21 03:38:24.020 - [Debug] [Auth] Attacker authentication error: Not yet compromised
+2022-10-21 03:38:24.020 - [Debug] [Auth] Attacker: 141.98.10.210 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 03:38:24.296 - [Debug] [Connection] Attacker closed the connection

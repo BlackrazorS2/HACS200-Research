@@ -1,0 +1,59 @@
+
+(node:1692391) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_2',
+  containerIp: '10.0.3.247',
+  mitmPort: 1001,
+  autoAccessFixed: 3
+}
+2022-10-21 19:17:07.742 - [Info] MITM Version: 2
+2022-10-21 19:17:07.743 - [Info] Auto Access Enabled: true
+2022-10-21 19:17:07.743 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-21 19:17:07.751 - [Info] SSH man-in-the-middle server for 10.0.3.247 listening on 10.0.3.1:1001
+(node:1701740) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_2',
+  containerIp: '10.0.3.109',
+  mitmPort: 1001,
+  autoAccessFixed: 3
+}
+2022-10-21 19:18:07.881 - [Info] MITM Version: 2
+2022-10-21 19:18:07.883 - [Info] Auto Access Enabled: true
+2022-10-21 19:18:07.883 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-21 19:18:07.891 - [Debug] listen EADDRINUSE: address already in use 10.0.3.1:1001
+2022-10-21 19:18:07.891 - [Error] Another MITM instance or another program is already listening on this port
+{"level":"error","message":"Forever detected script exited with code: 1"}
+2022-10-21 19:33:31.448 - [Debug] [Connection] Attacker connected: 141.98.11.91 | Client Identification: SSH-2.0-libssh2_1.4.3
+2022-10-21 19:33:32.497 - [Debug] [Auth] Attacker 141.98.11.91 trying to authenticate with 'password'
+2022-10-21 19:33:32.498 - [Debug] [Auto Access] Attacker: 141.98.11.91, Threshold: 3, Attempts: 1
+2022-10-21 19:33:32.498 - [Debug] [Auth] Attacker authentication error: Not yet compromised
+2022-10-21 19:33:32.499 - [Debug] [Auth] Attacker: 141.98.11.91 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 19:33:32.776 - [Debug] [Connection] Attacker closed the connection

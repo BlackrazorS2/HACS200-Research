@@ -1,0 +1,91 @@
+
+2022-10-21 02:21:20.625 - [Debug] [Auth] Attacker 34.139.212.138 trying to authenticate with 'password'
+2022-10-21 02:21:20.625 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-21 02:21:20.626 - [Debug] [Auth] Attacker: 34.139.212.138 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 02:21:20.710 - [Debug] [Auth] Attacker 34.139.212.138 trying to authenticate with 'password'
+2022-10-21 02:21:20.711 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2022-10-21 02:21:20.711 - [Debug] [Auth] Attacker: 34.139.212.138 has so far made 1 attempts. Remaining: 5 attempts
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:797959) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_3',
+  containerIp: '10.0.3.16',
+  mitmPort: 1002,
+  autoAccessFixed: 3
+}
+2022-10-21 02:21:49.744 - [Info] MITM Version: 2
+2022-10-21 02:21:49.748 - [Info] Auto Access Enabled: true
+2022-10-21 02:21:49.749 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-21 02:21:49.759 - [Info] SSH man-in-the-middle server for 10.0.3.16 listening on 10.0.3.1:1002
+2022-10-21 02:36:16.665 - [Debug] [Connection] Attacker connected: 35.233.131.53 | Client Identification: SSH-2.0-Go
+2022-10-21 02:36:16.666 - [Debug] [Connection] Attacker connected: 35.233.131.53 | Client Identification: SSH-2.0-Go
+2022-10-21 02:36:16.666 - [Debug] [Connection] Attacker connected: 35.233.131.53 | Client Identification: SSH-2.0-Go
+2022-10-21 02:36:16.667 - [Debug] [Connection] Attacker connected: 35.233.131.53 | Client Identification: SSH-2.0-Go
+2022-10-21 02:36:16.677 - [Debug] [Connection] Attacker connected: 35.233.131.53 | Client Identification: SSH-2.0-Go
+2022-10-21 02:36:16.678 - [Debug] [Connection] Attacker connected: 35.233.131.53 | Client Identification: SSH-2.0-Go
+2022-10-21 02:36:16.678 - [Debug] [Connection] Attacker connected: 35.233.131.53 | Client Identification: SSH-2.0-Go
+2022-10-21 02:36:16.678 - [Debug] [Connection] Attacker connected: 35.233.131.53 | Client Identification: SSH-2.0-Go
+2022-10-21 02:36:18.417 - [Debug] [Connection] Attacker connected: 35.233.131.53 | Client Identification: SSH-2.0-Go
+2022-10-21 02:36:18.419 - [Debug] [Connection] Attacker connected: 35.233.131.53 | Client Identification: SSH-2.0-Go
+2022-10-21 02:36:18.420 - [Debug] [Connection] Attacker connected: 35.233.131.53 | Client Identification: SSH-2.0-Go
+2022-10-21 02:36:18.420 - [Debug] [Connection] Attacker connected: 35.233.131.53 | Client Identification: SSH-2.0-Go
+2022-10-21 02:36:18.421 - [Debug] [Connection] Attacker connected: 35.233.131.53 | Client Identification: SSH-2.0-Go
+2022-10-21 02:36:20.027 - [Debug] [Connection] Attacker connected: 35.233.131.53 | Client Identification: SSH-2.0-Go
+2022-10-21 02:36:20.027 - [Debug] [Connection] Attacker connected: 35.233.131.53 | Client Identification: SSH-2.0-Go
+2022-10-21 02:36:31.970 - [Debug] [Auth] Attacker 35.233.131.53 trying to authenticate with 'none'
+2022-10-21 02:36:31.970 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 02:36:31.972 - [Debug] [Auth] Attacker 35.233.131.53 trying to authenticate with 'none'
+2022-10-21 02:36:31.972 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 02:36:34.341 - [Debug] [Auth] Attacker 35.233.131.53 trying to authenticate with 'none'
+2022-10-21 02:36:34.341 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 02:36:35.116 - [Debug] [Auth] Attacker 35.233.131.53 trying to authenticate with 'none'
+2022-10-21 02:36:35.117 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 02:36:35.368 - [Debug] [Auth] Attacker 35.233.131.53 trying to authenticate with 'none'
+2022-10-21 02:36:35.368 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 02:36:35.469 - [Debug] [Auth] Attacker 35.233.131.53 trying to authenticate with 'password'
+2022-10-21 02:36:35.470 - [Debug] [Auto Access] Attacker: 35.233.131.53, Threshold: 3, Attempts: 1
+2022-10-21 02:36:35.470 - [Debug] [Auth] Attacker authentication error: Not yet compromised
+2022-10-21 02:36:35.471 - [Debug] [Auth] Attacker: 35.233.131.53 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 02:36:35.471 - [Debug] [Auth] Attacker 35.233.131.53 trying to authenticate with 'password'
+2022-10-21 02:36:35.471 - [Debug] [Auto Access] Attacker: 35.233.131.53, Threshold: 3, Attempts: 2
+2022-10-21 02:36:35.471 - [Debug] [Auth] Attacker authentication error: Not yet compromised
+2022-10-21 02:36:35.472 - [Debug] [Auth] Attacker: 35.233.131.53 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 02:36:36.168 - [Debug] [Auth] Attacker 35.233.131.53 trying to authenticate with 'none'
+2022-10-21 02:36:36.169 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 02:36:36.287 - [Debug] [Auth] Attacker 35.233.131.53 trying to authenticate with 'none'
+2022-10-21 02:36:36.287 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 02:36:38.440 - [Debug] [Auth] Attacker 35.233.131.53 trying to authenticate with 'password'
+2022-10-21 02:36:38.441 - [Debug] [Auto Access] Attacker: 35.233.131.53, Threshold: 3, Attempts: 3
+2022-10-21 02:36:38.441 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-21 02:36:38.441 - [Debug] [Auto Access] Adding the following credentials: 'root:abc123'
+2022-10-21 02:36:38.519 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-21 02:36:38.521 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-21 02:36:38.521 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.16
+2022-10-21 02:36:38.722 - [Debug] [Auth] Attacker 35.233.131.53 trying to authenticate with 'password'
+2022-10-21 02:36:38.723 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2022-10-21 02:36:38.724 - [Debug] [Auth] Attacker: 35.233.131.53 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 02:36:38.828 - [Debug] [Auth] Attacker 35.233.131.53 trying to authenticate with 'password'
+2022-10-21 02:36:38.828 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-21 02:36:38.829 - [Debug] [Auth] Attacker: 35.233.131.53 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 02:36:38.880 - [Debug] [Connection] Attacker closed the connection
+2022-10-21 02:36:38.881 - [Debug] [Connection] Attacker closed the connection
+2022-10-21 02:36:39.247 - [Debug] [Auth] Attacker 35.233.131.53 trying to authenticate with 'password'
+2022-10-21 02:36:39.248 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-21 02:36:39.249 - [Debug] [Auth] Attacker: 35.233.131.53 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 02:36:39.279 - [Debug] [Auth] Attacker 35.233.131.53 trying to authenticate with 'password'
+2022-10-21 02:36:39.280 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2022-10-21 02:36:39.280 - [Debug] [Auth] Attacker: 35.233.131.53 has so far made 1 attempts. Remaining: 5 attempts

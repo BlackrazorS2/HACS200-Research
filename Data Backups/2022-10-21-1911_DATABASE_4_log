@@ -1,0 +1,116 @@
+
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:1650838) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_4',
+  containerIp: '10.0.3.127',
+  mitmPort: 1003,
+  autoAccessFixed: 3
+}
+2022-10-21 18:35:24.019 - [Info] MITM Version: 2
+2022-10-21 18:35:24.021 - [Info] Auto Access Enabled: true
+2022-10-21 18:35:24.021 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-21 18:35:24.027 - [Info] SSH man-in-the-middle server for 10.0.3.127 listening on 10.0.3.1:1003
+2022-10-21 19:11:10.036 - [Debug] [Connection] Attacker connected: 35.225.49.62 | Client Identification: SSH-2.0-Go
+2022-10-21 19:11:10.039 - [Debug] [Connection] Attacker connected: 35.225.49.62 | Client Identification: SSH-2.0-Go
+2022-10-21 19:11:10.042 - [Debug] [Connection] Attacker connected: 35.225.49.62 | Client Identification: SSH-2.0-Go
+2022-10-21 19:11:10.042 - [Debug] [Connection] Attacker connected: 35.225.49.62 | Client Identification: SSH-2.0-Go
+2022-10-21 19:11:10.053 - [Debug] [Connection] Attacker connected: 35.225.49.62 | Client Identification: SSH-2.0-Go
+2022-10-21 19:11:10.057 - [Debug] [Connection] Attacker connected: 35.225.49.62 | Client Identification: SSH-2.0-Go
+2022-10-21 19:11:10.058 - [Debug] [Connection] Attacker connected: 35.225.49.62 | Client Identification: SSH-2.0-Go
+2022-10-21 19:11:10.058 - [Debug] [Connection] Attacker connected: 35.225.49.62 | Client Identification: SSH-2.0-Go
+2022-10-21 19:11:10.058 - [Debug] [Connection] Attacker connected: 35.225.49.62 | Client Identification: SSH-2.0-Go
+2022-10-21 19:11:10.059 - [Debug] [Connection] Attacker connected: 35.225.49.62 | Client Identification: SSH-2.0-Go
+2022-10-21 19:11:10.060 - [Debug] [Connection] Attacker connected: 35.225.49.62 | Client Identification: SSH-2.0-Go
+2022-10-21 19:11:10.062 - [Debug] [Connection] Attacker connected: 35.225.49.62 | Client Identification: SSH-2.0-Go
+2022-10-21 19:11:10.063 - [Debug] [Connection] Attacker connected: 35.225.49.62 | Client Identification: SSH-2.0-Go
+2022-10-21 19:11:10.082 - [Debug] [Connection] Attacker connected: 35.225.49.62 | Client Identification: SSH-2.0-Go
+2022-10-21 19:11:11.855 - [Debug] [Connection] Attacker connected: 35.225.49.62 | Client Identification: SSH-2.0-Go
+2022-10-21 19:11:22.478 - [Debug] [Auth] Attacker 35.225.49.62 trying to authenticate with 'none'
+2022-10-21 19:11:22.479 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 19:11:22.513 - [Debug] [Auth] Attacker 35.225.49.62 trying to authenticate with 'none'
+2022-10-21 19:11:22.513 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 19:11:22.521 - [Debug] [Auth] Attacker 35.225.49.62 trying to authenticate with 'none'
+2022-10-21 19:11:22.521 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 19:11:22.552 - [Debug] [Auth] Attacker 35.225.49.62 trying to authenticate with 'none'
+2022-10-21 19:11:22.552 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 19:11:22.598 - [Debug] [Auth] Attacker 35.225.49.62 trying to authenticate with 'none'
+2022-10-21 19:11:22.599 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 19:11:22.611 - [Debug] [Auth] Attacker 35.225.49.62 trying to authenticate with 'none'
+2022-10-21 19:11:22.611 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 19:11:22.617 - [Debug] [Auth] Attacker 35.225.49.62 trying to authenticate with 'none'
+2022-10-21 19:11:22.617 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 19:11:22.619 - [Debug] [Auth] Attacker 35.225.49.62 trying to authenticate with 'none'
+2022-10-21 19:11:22.619 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 19:11:27.041 - [Debug] [Auth] Attacker 35.225.49.62 trying to authenticate with 'none'
+2022-10-21 19:11:27.042 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 19:11:27.077 - [Debug] [Auth] Attacker 35.225.49.62 trying to authenticate with 'password'
+2022-10-21 19:11:27.078 - [Debug] [Auto Access] Attacker: 35.225.49.62, Threshold: 3, Attempts: 1
+2022-10-21 19:11:27.078 - [Debug] [Auth] Attacker authentication error: Not yet compromised
+2022-10-21 19:11:27.078 - [Debug] [Auth] Attacker: 35.225.49.62 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 19:11:27.099 - [Debug] [Auth] Attacker 35.225.49.62 trying to authenticate with 'none'
+2022-10-21 19:11:27.099 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 19:11:27.148 - [Debug] [Auth] Attacker 35.225.49.62 trying to authenticate with 'password'
+2022-10-21 19:11:27.148 - [Debug] [Auto Access] Attacker: 35.225.49.62, Threshold: 3, Attempts: 2
+2022-10-21 19:11:27.148 - [Debug] [Auth] Attacker authentication error: Not yet compromised
+2022-10-21 19:11:27.149 - [Debug] [Auth] Attacker: 35.225.49.62 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 19:11:27.150 - [Debug] [Auth] Attacker 35.225.49.62 trying to authenticate with 'password'
+2022-10-21 19:11:27.151 - [Debug] [Auto Access] Attacker: 35.225.49.62, Threshold: 3, Attempts: 3
+2022-10-21 19:11:27.151 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-21 19:11:27.151 - [Debug] [Auto Access] Adding the following credentials: 'user:123456'
+2022-10-21 19:11:27.263 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-21 19:11:27.265 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-21 19:11:27.265 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.127
+2022-10-21 19:11:27.270 - [Debug] [Auth] Attacker 35.225.49.62 trying to authenticate with 'password'
+2022-10-21 19:11:27.270 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Container user is disabled
+2022-10-21 19:11:27.271 - [Debug] [Auth] Attacker: 35.225.49.62 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 19:11:27.271 - [Debug] [Auth] Attacker 35.225.49.62 trying to authenticate with 'none'
+2022-10-21 19:11:27.271 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 19:11:27.271 - [Debug] [Auth] Attacker 35.225.49.62 trying to authenticate with 'password'
+2022-10-21 19:11:27.272 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Container user is disabled
+2022-10-21 19:11:27.272 - [Debug] [Auth] Attacker: 35.225.49.62 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 19:11:27.272 - [Debug] [Auth] Attacker 35.225.49.62 trying to authenticate with 'password'
+2022-10-21 19:11:27.272 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Container user is disabled
+2022-10-21 19:11:27.273 - [Debug] [Auth] Attacker: 35.225.49.62 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 19:11:27.273 - [Debug] [Auth] Attacker 35.225.49.62 trying to authenticate with 'password'
+2022-10-21 19:11:27.274 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2022-10-21 19:11:27.275 - [Debug] [Auth] Attacker: 35.225.49.62 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 19:11:27.275 - [Debug] [Auth] Attacker 35.225.49.62 trying to authenticate with 'password'
+2022-10-21 19:11:27.275 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-21 19:11:27.276 - [Debug] [Auth] Attacker: 35.225.49.62 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 19:11:27.276 - [Debug] [Auth] Attacker 35.225.49.62 trying to authenticate with 'none'
+2022-10-21 19:11:27.276 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 19:11:27.322 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-21 19:11:31.508 - [Debug] [Auth] Attacker 35.225.49.62 trying to authenticate with 'password'
+2022-10-21 19:11:31.508 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-21 19:11:31.509 - [Debug] [Auth] Attacker: 35.225.49.62 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 19:11:31.527 - [Debug] [Connection] Attacker closed the connection
+2022-10-21 19:11:31.536 - [Debug] [Auth] Attacker 35.225.49.62 trying to authenticate with 'password'
+2022-10-21 19:11:31.536 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-21 19:11:31.537 - [Debug] [Auth] Attacker: 35.225.49.62 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 19:11:31.603 - [Debug] [Connection] Attacker closed the connection
+2022-10-21 19:11:31.672 - [Debug] [Connection] Attacker closed the connection
+2022-10-21 19:11:31.673 - [Debug] [Auth] Attacker 35.225.49.62 trying to authenticate with 'password'
+2022-10-21 19:11:31.673 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-21 19:11:31.673 - [Debug] [Auth] Attacker: 35.225.49.62 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 19:11:31.674 - [Debug] [Connection] Attacker closed the connection
+2022-10-21 19:11:31.691 - [Debug] [Connection] Attacker closed the connection
+2022-10-21 19:11:31.692 - [Debug] [Auth] Attacker 35.225.49.62 trying to authenticate with 'password'
+2022-10-21 19:11:31.693 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-21 19:11:31.693 - [Debug] [Auth] Attacker: 35.225.49.62 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 19:11:31.693 - [Debug] [Connection] Attacker closed the connection
+2022-10-21 19:11:31.694 - [Debug] [Connection] Attacker closed the connection

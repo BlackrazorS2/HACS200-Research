@@ -1,0 +1,110 @@
+
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:613218) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_3',
+  containerIp: '10.0.3.214',
+  mitmPort: 1002,
+  autoAccessFixed: 3
+}
+2022-10-21 00:43:09.265 - [Info] MITM Version: 2
+2022-10-21 00:43:09.266 - [Info] Auto Access Enabled: true
+2022-10-21 00:43:09.267 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-21 00:43:09.273 - [Info] SSH man-in-the-middle server for 10.0.3.214 listening on 10.0.3.1:1002
+2022-10-21 01:01:13.528 - [Debug] [Connection] Attacker connected: 104.198.13.218 | Client Identification: SSH-2.0-Go
+2022-10-21 01:01:13.533 - [Debug] [Connection] Attacker connected: 104.198.13.218 | Client Identification: SSH-2.0-Go
+2022-10-21 01:01:13.537 - [Debug] [Connection] Attacker connected: 104.198.13.218 | Client Identification: SSH-2.0-Go
+2022-10-21 01:01:13.542 - [Debug] [Connection] Attacker connected: 104.198.13.218 | Client Identification: SSH-2.0-Go
+2022-10-21 01:01:13.543 - [Debug] [Connection] Attacker connected: 104.198.13.218 | Client Identification: SSH-2.0-Go
+2022-10-21 01:01:13.550 - [Debug] [Connection] Attacker connected: 104.198.13.218 | Client Identification: SSH-2.0-Go
+2022-10-21 01:01:13.552 - [Debug] [Connection] Attacker connected: 104.198.13.218 | Client Identification: SSH-2.0-Go
+2022-10-21 01:01:13.552 - [Debug] [Connection] Attacker connected: 104.198.13.218 | Client Identification: SSH-2.0-Go
+2022-10-21 01:01:13.556 - [Debug] [Connection] Attacker connected: 104.198.13.218 | Client Identification: SSH-2.0-Go
+2022-10-21 01:01:13.559 - [Debug] [Connection] Attacker connected: 104.198.13.218 | Client Identification: SSH-2.0-Go
+2022-10-21 01:01:13.559 - [Debug] [Connection] Attacker connected: 104.198.13.218 | Client Identification: SSH-2.0-Go
+2022-10-21 01:01:13.560 - [Debug] [Connection] Attacker connected: 104.198.13.218 | Client Identification: SSH-2.0-Go
+2022-10-21 01:01:13.560 - [Debug] [Connection] Attacker connected: 104.198.13.218 | Client Identification: SSH-2.0-Go
+2022-10-21 01:01:13.561 - [Debug] [Connection] Attacker connected: 104.198.13.218 | Client Identification: SSH-2.0-Go
+2022-10-21 01:01:13.563 - [Debug] [Connection] Attacker connected: 104.198.13.218 | Client Identification: SSH-2.0-Go
+2022-10-21 01:01:13.563 - [Debug] [Connection] Attacker connected: 104.198.13.218 | Client Identification: SSH-2.0-Go
+2022-10-21 01:01:13.563 - [Debug] [Connection] Attacker connected: 104.198.13.218 | Client Identification: SSH-2.0-Go
+2022-10-21 01:01:13.565 - [Debug] [Connection] Attacker connected: 104.198.13.218 | Client Identification: SSH-2.0-Go
+2022-10-21 01:01:13.565 - [Debug] [Connection] Attacker connected: 104.198.13.218 | Client Identification: SSH-2.0-Go
+2022-10-21 01:01:13.566 - [Debug] [Connection] Attacker connected: 104.198.13.218 | Client Identification: SSH-2.0-Go
+2022-10-21 01:01:28.140 - [Debug] [Auth] Attacker 104.198.13.218 trying to authenticate with 'none'
+2022-10-21 01:01:28.141 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 01:01:34.936 - [Debug] [Auth] Attacker 104.198.13.218 trying to authenticate with 'none'
+2022-10-21 01:01:34.936 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 01:01:34.937 - [Debug] [Auth] Attacker 104.198.13.218 trying to authenticate with 'none'
+2022-10-21 01:01:34.937 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 01:01:34.937 - [Debug] [Auth] Attacker 104.198.13.218 trying to authenticate with 'none'
+2022-10-21 01:01:34.937 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 01:01:34.938 - [Debug] [Auth] Attacker 104.198.13.218 trying to authenticate with 'none'
+2022-10-21 01:01:34.938 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 01:01:34.951 - [Debug] [Auth] Attacker 104.198.13.218 trying to authenticate with 'password'
+2022-10-21 01:01:34.951 - [Debug] [Auto Access] Attacker: 104.198.13.218, Threshold: 3, Attempts: 1
+2022-10-21 01:01:34.952 - [Debug] [Auth] Attacker authentication error: Not yet compromised
+2022-10-21 01:01:34.952 - [Debug] [Auth] Attacker: 104.198.13.218 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 01:01:34.958 - [Debug] [Auth] Attacker 104.198.13.218 trying to authenticate with 'none'
+2022-10-21 01:01:34.958 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 01:01:34.981 - [Debug] [Auth] Attacker 104.198.13.218 trying to authenticate with 'none'
+2022-10-21 01:01:34.981 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 01:01:34.996 - [Debug] [Auth] Attacker 104.198.13.218 trying to authenticate with 'none'
+2022-10-21 01:01:34.996 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 01:01:35.024 - [Debug] [Auth] Attacker 104.198.13.218 trying to authenticate with 'none'
+2022-10-21 01:01:35.024 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 01:01:35.037 - [Debug] [Auth] Attacker 104.198.13.218 trying to authenticate with 'none'
+2022-10-21 01:01:35.037 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 01:01:35.166 - [Debug] [Auth] Attacker 104.198.13.218 trying to authenticate with 'none'
+2022-10-21 01:01:35.166 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 01:01:35.214 - [Debug] [Auth] Attacker 104.198.13.218 trying to authenticate with 'none'
+2022-10-21 01:01:35.215 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 01:01:39.185 - [Debug] [Auth] Attacker 104.198.13.218 trying to authenticate with 'password'
+2022-10-21 01:01:39.185 - [Debug] [Auto Access] Attacker: 104.198.13.218, Threshold: 3, Attempts: 2
+2022-10-21 01:01:39.185 - [Debug] [Auth] Attacker authentication error: Not yet compromised
+2022-10-21 01:01:39.186 - [Debug] [Auth] Attacker: 104.198.13.218 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 01:01:39.197 - [Debug] [Auth] Attacker 104.198.13.218 trying to authenticate with 'password'
+2022-10-21 01:01:39.197 - [Debug] [Auto Access] Attacker: 104.198.13.218, Threshold: 3, Attempts: 3
+2022-10-21 01:01:39.197 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-21 01:01:39.197 - [Debug] [Auto Access] Adding the following credentials: 'root:vertex25ektks123'
+2022-10-21 01:01:39.251 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-21 01:01:39.253 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-21 01:01:39.253 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.214
+2022-10-21 01:01:39.256 - [Debug] [Auth] Attacker 104.198.13.218 trying to authenticate with 'password'
+2022-10-21 01:01:39.257 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-21 01:01:39.257 - [Debug] [Auth] Attacker: 104.198.13.218 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 01:01:39.257 - [Debug] [Auth] Attacker 104.198.13.218 trying to authenticate with 'password'
+2022-10-21 01:01:39.258 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2022-10-21 01:01:39.258 - [Debug] [Auth] Attacker: 104.198.13.218 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 01:01:39.259 - [Debug] [Auth] Attacker 104.198.13.218 trying to authenticate with 'password'
+2022-10-21 01:01:39.261 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-21 01:01:39.261 - [Debug] [Auth] Attacker: 104.198.13.218 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 01:01:39.261 - [Debug] [Auth] Attacker 104.198.13.218 trying to authenticate with 'password'
+2022-10-21 01:01:39.262 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2022-10-21 01:01:39.262 - [Debug] [Auth] Attacker: 104.198.13.218 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 01:01:39.262 - [Debug] [Auth] Attacker 104.198.13.218 trying to authenticate with 'none'
+2022-10-21 01:01:39.262 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 01:01:39.384 - [Debug] [Connection] Attacker closed the connection
+2022-10-21 01:01:39.457 - [Debug] [Auth] Attacker 104.198.13.218 trying to authenticate with 'password'
+2022-10-21 01:01:39.457 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2022-10-21 01:01:39.458 - [Debug] [Auth] Attacker: 104.198.13.218 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 01:01:39.470 - [Debug] [Auth] Attacker 104.198.13.218 trying to authenticate with 'password'
+2022-10-21 01:01:39.470 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-21 01:01:39.471 - [Debug] [Auth] Attacker: 104.198.13.218 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 01:01:39.493 - [Debug] [Auth] Attacker 104.198.13.218 trying to authenticate with 'password'
+2022-10-21 01:01:39.494 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2022-10-21 01:01:39.494 - [Debug] [Auth] Attacker: 104.198.13.218 has so far made 1 attempts. Remaining: 5 attempts

@@ -1,0 +1,43 @@
+
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:642993) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_3',
+  containerIp: '10.0.3.93',
+  mitmPort: 1002,
+  autoAccessFixed: 3
+}
+2022-10-21 01:02:08.237 - [Info] MITM Version: 2
+2022-10-21 01:02:08.238 - [Info] Auto Access Enabled: true
+2022-10-21 01:02:08.239 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-21 01:02:08.245 - [Info] SSH man-in-the-middle server for 10.0.3.93 listening on 10.0.3.1:1002
+2022-10-21 01:10:21.687 - [Debug] [Connection] Attacker connected: 189.71.29.19 | Client Identification: SSH-2.0-OpenSSH_7.9p1 Raspbian-10+deb10u2
+2022-10-21 01:10:21.942 - [Debug] [Connection] Attacker connected: 189.71.29.19 | Client Identification: SSH-2.0-OpenSSH_7.9p1 Raspbian-10+deb10u2
+2022-10-21 01:10:22.683 - [Debug] [Auth] Attacker 189.71.29.19 trying to authenticate with 'none'
+2022-10-21 01:10:22.683 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 01:10:22.933 - [Debug] [Auth] Attacker 189.71.29.19 trying to authenticate with 'none'
+2022-10-21 01:10:22.934 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 01:10:23.000 - [Debug] [Auth] Attacker 189.71.29.19 trying to authenticate with 'password'
+2022-10-21 01:10:23.004 - [Debug] [Auto Access] Attacker: 189.71.29.19, Threshold: 3, Attempts: 1
+2022-10-21 01:10:23.004 - [Debug] [Auth] Attacker authentication error: Not yet compromised
+2022-10-21 01:10:23.005 - [Debug] [Auth] Attacker: 189.71.29.19 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 01:10:23.245 - [Debug] [Auth] Attacker 189.71.29.19 trying to authenticate with 'password'
+2022-10-21 01:10:23.245 - [Debug] [Auto Access] Attacker: 189.71.29.19, Threshold: 3, Attempts: 2
+2022-10-21 01:10:23.245 - [Debug] [Auth] Attacker authentication error: Not yet compromised
+2022-10-21 01:10:23.246 - [Debug] [Auth] Attacker: 189.71.29.19 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 01:10:23.380 - [Debug] [Connection] Attacker closed the connection
+2022-10-21 01:10:23.611 - [Debug] [Connection] Attacker closed the connection

@@ -1,0 +1,105 @@
+
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:1517044) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_2',
+  containerIp: '10.0.3.208',
+  mitmPort: 1001,
+  autoAccessFixed: 3
+}
+2022-10-21 15:19:17.078 - [Info] MITM Version: 2
+2022-10-21 15:19:17.080 - [Info] Auto Access Enabled: true
+2022-10-21 15:19:17.080 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-21 15:19:17.090 - [Info] SSH man-in-the-middle server for 10.0.3.208 listening on 10.0.3.1:1001
+2022-10-21 15:56:42.898 - [Debug] [Connection] Attacker connected: 101.43.213.49 | Client Identification: SSH-2.0-Go
+2022-10-21 15:56:42.899 - [Debug] [Connection] Attacker connected: 101.43.213.49 | Client Identification: SSH-2.0-Go
+2022-10-21 15:56:42.900 - [Debug] [Connection] Attacker connected: 101.43.213.49 | Client Identification: SSH-2.0-Go
+2022-10-21 15:56:42.900 - [Debug] [Connection] Attacker connected: 101.43.213.49 | Client Identification: SSH-2.0-Go
+2022-10-21 15:56:42.901 - [Debug] [Connection] Attacker connected: 101.43.213.49 | Client Identification: SSH-2.0-Go
+2022-10-21 15:56:42.901 - [Debug] [Connection] Attacker connected: 101.43.213.49 | Client Identification: SSH-2.0-Go
+2022-10-21 15:56:42.901 - [Debug] [Connection] Attacker connected: 101.43.213.49 | Client Identification: SSH-2.0-Go
+2022-10-21 15:56:42.905 - [Debug] [Connection] Attacker connected: 101.43.213.49 | Client Identification: SSH-2.0-Go
+2022-10-21 15:56:42.906 - [Debug] [Connection] Attacker connected: 101.43.213.49 | Client Identification: SSH-2.0-Go
+2022-10-21 15:56:42.906 - [Debug] [Connection] Attacker connected: 101.43.213.49 | Client Identification: SSH-2.0-Go
+2022-10-21 15:56:43.891 - [Debug] [Connection] Attacker connected: 101.43.213.49 | Client Identification: SSH-2.0-Go
+2022-10-21 15:56:44.284 - [Debug] [Auth] Attacker 101.43.213.49 trying to authenticate with 'none'
+2022-10-21 15:56:44.285 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 15:56:44.285 - [Debug] [Auth] Attacker 101.43.213.49 trying to authenticate with 'none'
+2022-10-21 15:56:44.286 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 15:56:44.290 - [Debug] [Auth] Attacker 101.43.213.49 trying to authenticate with 'none'
+2022-10-21 15:56:44.290 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 15:56:44.292 - [Debug] [Auth] Attacker 101.43.213.49 trying to authenticate with 'none'
+2022-10-21 15:56:44.292 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 15:56:44.297 - [Debug] [Auth] Attacker 101.43.213.49 trying to authenticate with 'none'
+2022-10-21 15:56:44.297 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 15:56:44.309 - [Debug] [Auth] Attacker 101.43.213.49 trying to authenticate with 'none'
+2022-10-21 15:56:44.309 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 15:56:44.759 - [Debug] [Auth] Attacker 101.43.213.49 trying to authenticate with 'password'
+2022-10-21 15:56:44.760 - [Debug] [Auto Access] Attacker: 101.43.213.49, Threshold: 3, Attempts: 1
+2022-10-21 15:56:44.760 - [Debug] [Auth] Attacker authentication error: Not yet compromised
+2022-10-21 15:56:44.761 - [Debug] [Auth] Attacker: 101.43.213.49 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 15:56:44.761 - [Debug] [Auth] Attacker 101.43.213.49 trying to authenticate with 'password'
+2022-10-21 15:56:44.762 - [Debug] [Auto Access] Attacker: 101.43.213.49, Threshold: 3, Attempts: 2
+2022-10-21 15:56:44.762 - [Debug] [Auth] Attacker authentication error: Not yet compromised
+2022-10-21 15:56:44.762 - [Debug] [Auth] Attacker: 101.43.213.49 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 15:56:44.771 - [Debug] [Auth] Attacker 101.43.213.49 trying to authenticate with 'password'
+2022-10-21 15:56:44.771 - [Debug] [Auto Access] Attacker: 101.43.213.49, Threshold: 3, Attempts: 3
+2022-10-21 15:56:44.771 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-21 15:56:44.771 - [Debug] [Auto Access] Adding the following credentials: 'lisi:lisi'
+2022-10-21 15:56:44.893 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-21 15:56:44.895 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-21 15:56:44.895 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.208
+2022-10-21 15:56:44.906 - [Debug] [Auth] Attacker 101.43.213.49 trying to authenticate with 'password'
+2022-10-21 15:56:44.906 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-21 15:56:44.907 - [Debug] [Auth] Attacker: 101.43.213.49 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 15:56:44.907 - [Debug] [Auth] Attacker 101.43.213.49 trying to authenticate with 'none'
+2022-10-21 15:56:44.907 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 15:56:44.908 - [Debug] [Auth] Attacker 101.43.213.49 trying to authenticate with 'none'
+2022-10-21 15:56:44.908 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 15:56:44.912 - [Debug] [Connection] Attacker connected: 101.43.213.49 | Client Identification: SSH-2.0-Go
+2022-10-21 15:56:44.913 - [Debug] [Auth] Attacker 101.43.213.49 trying to authenticate with 'none'
+2022-10-21 15:56:44.913 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 15:56:44.952 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-21 15:56:44.954 - [Debug] [Auth] Attacker 101.43.213.49 trying to authenticate with 'none'
+2022-10-21 15:56:44.955 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 15:56:45.232 - [Debug] [Connection] Attacker closed the connection
+2022-10-21 15:56:45.240 - [Debug] [Auth] Attacker 101.43.213.49 trying to authenticate with 'none'
+2022-10-21 15:56:45.240 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 15:56:45.241 - [Debug] [Connection] Attacker closed the connection
+2022-10-21 15:56:45.250 - [Debug] [Auth] Attacker 101.43.213.49 trying to authenticate with 'password'
+2022-10-21 15:56:45.251 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-21 15:56:45.251 - [Debug] [Auth] Attacker: 101.43.213.49 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 15:56:45.280 - [Debug] [Auth] Attacker 101.43.213.49 trying to authenticate with 'password'
+2022-10-21 15:56:45.280 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-21 15:56:45.281 - [Debug] [Auth] Attacker: 101.43.213.49 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 15:56:45.380 - [Debug] [Auth] Attacker 101.43.213.49 trying to authenticate with 'password'
+2022-10-21 15:56:45.381 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Container user is disabled
+2022-10-21 15:56:45.382 - [Debug] [Auth] Attacker: 101.43.213.49 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 15:56:45.383 - [Debug] [Connection] Attacker closed the connection
+2022-10-21 15:56:45.387 - [Debug] [Auth] Attacker 101.43.213.49 trying to authenticate with 'password'
+2022-10-21 15:56:45.388 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-21 15:56:45.388 - [Debug] [Auth] Attacker: 101.43.213.49 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 15:56:45.393 - [Debug] [Auth] Attacker 101.43.213.49 trying to authenticate with 'password'
+2022-10-21 15:56:45.393 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-21 15:56:45.394 - [Debug] [Auth] Attacker: 101.43.213.49 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 15:56:45.449 - [Debug] [Auth] Attacker 101.43.213.49 trying to authenticate with 'password'
+2022-10-21 15:56:45.450 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-21 15:56:45.450 - [Debug] [Auth] Attacker: 101.43.213.49 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 15:56:45.711 - [Debug] [Auth] Attacker 101.43.213.49 trying to authenticate with 'password'
+2022-10-21 15:56:45.712 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-21 15:56:45.712 - [Debug] [Auth] Attacker: 101.43.213.49 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 15:56:45.723 - [Debug] [Connection] Attacker closed the connection

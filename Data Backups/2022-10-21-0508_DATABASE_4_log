@@ -1,0 +1,74 @@
+
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:1091544) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_4',
+  containerIp: '10.0.3.59',
+  mitmPort: 1003,
+  autoAccessFixed: 3
+}
+2022-10-21 04:57:38.702 - [Info] MITM Version: 2
+2022-10-21 04:57:38.703 - [Info] Auto Access Enabled: true
+2022-10-21 04:57:38.704 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-21 04:57:38.710 - [Info] SSH man-in-the-middle server for 10.0.3.59 listening on 10.0.3.1:1003
+2022-10-21 05:08:23.559 - [Debug] [Connection] Attacker connected: 34.89.131.233 | Client Identification: SSH-2.0-Go
+2022-10-21 05:08:23.560 - [Debug] [Connection] Attacker connected: 34.89.131.233 | Client Identification: SSH-2.0-Go
+2022-10-21 05:08:23.561 - [Debug] [Connection] Attacker connected: 34.89.131.233 | Client Identification: SSH-2.0-Go
+2022-10-21 05:08:23.561 - [Debug] [Connection] Attacker connected: 34.89.131.233 | Client Identification: SSH-2.0-Go
+2022-10-21 05:08:23.562 - [Debug] [Connection] Attacker connected: 34.89.131.233 | Client Identification: SSH-2.0-Go
+2022-10-21 05:08:25.157 - [Debug] [Connection] Attacker connected: 34.89.131.233 | Client Identification: SSH-2.0-Go
+2022-10-21 05:08:25.158 - [Debug] [Connection] Attacker connected: 34.89.131.233 | Client Identification: SSH-2.0-Go
+2022-10-21 05:08:25.158 - [Debug] [Connection] Attacker connected: 34.89.131.233 | Client Identification: SSH-2.0-Go
+2022-10-21 05:08:25.158 - [Debug] [Connection] Attacker connected: 34.89.131.233 | Client Identification: SSH-2.0-Go
+2022-10-21 05:08:25.159 - [Debug] [Connection] Attacker connected: 34.89.131.233 | Client Identification: SSH-2.0-Go
+2022-10-21 05:08:27.507 - [Debug] [Connection] Attacker connected: 34.89.131.233 | Client Identification: SSH-2.0-Go
+2022-10-21 05:08:27.510 - [Debug] [Connection] Attacker connected: 34.89.131.233 | Client Identification: SSH-2.0-Go
+2022-10-21 05:08:27.511 - [Debug] [Connection] Attacker connected: 34.89.131.233 | Client Identification: SSH-2.0-Go
+2022-10-21 05:08:36.201 - [Debug] [Auth] Attacker 34.89.131.233 trying to authenticate with 'none'
+2022-10-21 05:08:36.201 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 05:08:40.013 - [Debug] [Auth] Attacker 34.89.131.233 trying to authenticate with 'none'
+2022-10-21 05:08:40.013 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 05:08:40.347 - [Debug] [Auth] Attacker 34.89.131.233 trying to authenticate with 'none'
+2022-10-21 05:08:40.348 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 05:08:41.356 - [Debug] [Auth] Attacker 34.89.131.233 trying to authenticate with 'password'
+2022-10-21 05:08:41.357 - [Debug] [Auto Access] Attacker: 34.89.131.233, Threshold: 3, Attempts: 1
+2022-10-21 05:08:41.357 - [Debug] [Auth] Attacker authentication error: Not yet compromised
+2022-10-21 05:08:41.358 - [Debug] [Auth] Attacker: 34.89.131.233 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 05:08:41.454 - [Debug] [Auth] Attacker 34.89.131.233 trying to authenticate with 'none'
+2022-10-21 05:08:41.454 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 05:08:41.536 - [Debug] [Auth] Attacker 34.89.131.233 trying to authenticate with 'none'
+2022-10-21 05:08:41.537 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 05:08:41.723 - [Debug] [Connection] Attacker connected: 34.89.131.233 | Client Identification: SSH-2.0-Go
+2022-10-21 05:08:46.464 - [Debug] [Auth] Attacker 34.89.131.233 trying to authenticate with 'password'
+2022-10-21 05:08:46.465 - [Debug] [Auto Access] Attacker: 34.89.131.233, Threshold: 3, Attempts: 2
+2022-10-21 05:08:46.465 - [Debug] [Auth] Attacker authentication error: Not yet compromised
+2022-10-21 05:08:46.465 - [Debug] [Auth] Attacker: 34.89.131.233 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 05:08:46.758 - [Debug] [Auth] Attacker 34.89.131.233 trying to authenticate with 'password'
+2022-10-21 05:08:46.758 - [Debug] [Auto Access] Attacker: 34.89.131.233, Threshold: 3, Attempts: 3
+2022-10-21 05:08:46.759 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-21 05:08:46.759 - [Debug] [Auto Access] Adding the following credentials: 'vagrant:vagrant'
+2022-10-21 05:08:47.176 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-21 05:08:47.178 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-21 05:08:47.178 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.59
+2022-10-21 05:08:47.232 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-21 05:08:47.526 - [Debug] [Connection] Attacker closed the connection
+2022-10-21 05:08:47.661 - [Debug] [Auth] Attacker 34.89.131.233 trying to authenticate with 'password'
+2022-10-21 05:08:47.661 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-21 05:08:47.662 - [Debug] [Auth] Attacker: 34.89.131.233 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 05:08:47.663 - [Debug] [Auth] Attacker 34.89.131.233 trying to authenticate with 'password'
+2022-10-21 05:08:47.663 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-21 05:08:47.664 - [Debug] [Auth] Attacker: 34.89.131.233 has so far made 1 attempts. Remaining: 5 attempts

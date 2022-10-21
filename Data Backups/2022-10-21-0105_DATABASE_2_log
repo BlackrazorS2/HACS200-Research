@@ -1,0 +1,190 @@
+
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:632034) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_2',
+  containerIp: '10.0.3.159',
+  mitmPort: 1001,
+  autoAccessFixed: 3
+}
+2022-10-21 00:49:49.030 - [Info] MITM Version: 2
+2022-10-21 00:49:49.031 - [Info] Auto Access Enabled: true
+2022-10-21 00:49:49.032 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-21 00:49:49.039 - [Info] SSH man-in-the-middle server for 10.0.3.159 listening on 10.0.3.1:1001
+2022-10-21 01:05:08.786 - [Debug] [Connection] Attacker connected: 80.158.91.55 | Client Identification: SSH-2.0-Go
+2022-10-21 01:05:08.787 - [Debug] [Connection] Attacker connected: 80.158.91.55 | Client Identification: SSH-2.0-Go
+2022-10-21 01:05:08.788 - [Debug] [Connection] Attacker connected: 80.158.91.55 | Client Identification: SSH-2.0-Go
+2022-10-21 01:05:08.798 - [Debug] [Connection] Attacker connected: 80.158.91.55 | Client Identification: SSH-2.0-Go
+2022-10-21 01:05:08.799 - [Debug] [Connection] Attacker connected: 80.158.91.55 | Client Identification: SSH-2.0-Go
+2022-10-21 01:05:08.799 - [Debug] [Connection] Attacker connected: 80.158.91.55 | Client Identification: SSH-2.0-Go
+2022-10-21 01:05:08.799 - [Debug] [Connection] Attacker connected: 80.158.91.55 | Client Identification: SSH-2.0-Go
+2022-10-21 01:05:08.800 - [Debug] [Connection] Attacker connected: 80.158.91.55 | Client Identification: SSH-2.0-Go
+2022-10-21 01:05:08.800 - [Debug] [Connection] Attacker connected: 80.158.91.55 | Client Identification: SSH-2.0-Go
+2022-10-21 01:05:08.800 - [Debug] [Connection] Attacker connected: 80.158.91.55 | Client Identification: SSH-2.0-Go
+2022-10-21 01:05:08.801 - [Debug] [Connection] Attacker connected: 80.158.91.55 | Client Identification: SSH-2.0-Go
+2022-10-21 01:05:08.801 - [Debug] [Connection] Attacker connected: 80.158.91.55 | Client Identification: SSH-2.0-Go
+2022-10-21 01:05:08.802 - [Debug] [Connection] Attacker connected: 80.158.91.55 | Client Identification: SSH-2.0-Go
+2022-10-21 01:05:08.802 - [Debug] [Connection] Attacker connected: 80.158.91.55 | Client Identification: SSH-2.0-Go
+2022-10-21 01:05:08.802 - [Debug] [Connection] Attacker connected: 80.158.91.55 | Client Identification: SSH-2.0-Go
+2022-10-21 01:05:08.803 - [Debug] [Connection] Attacker connected: 80.158.91.55 | Client Identification: SSH-2.0-Go
+2022-10-21 01:05:08.803 - [Debug] [Connection] Attacker connected: 80.158.91.55 | Client Identification: SSH-2.0-Go
+2022-10-21 01:05:08.806 - [Debug] [Connection] Attacker connected: 80.158.91.55 | Client Identification: SSH-2.0-Go
+2022-10-21 01:05:08.806 - [Debug] [Connection] Attacker connected: 80.158.91.55 | Client Identification: SSH-2.0-Go
+2022-10-21 01:05:08.807 - [Debug] [Connection] Attacker connected: 80.158.91.55 | Client Identification: SSH-2.0-Go
+2022-10-21 01:05:08.807 - [Debug] [Connection] Attacker connected: 80.158.91.55 | Client Identification: SSH-2.0-Go
+2022-10-21 01:05:09.416 - [Debug] [Auth] Attacker 80.158.91.55 trying to authenticate with 'none'
+2022-10-21 01:05:09.418 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 01:05:09.419 - [Debug] [Auth] Attacker 80.158.91.55 trying to authenticate with 'none'
+2022-10-21 01:05:09.419 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 01:05:09.420 - [Debug] [Auth] Attacker 80.158.91.55 trying to authenticate with 'none'
+2022-10-21 01:05:09.420 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 01:05:09.430 - [Debug] [Auth] Attacker 80.158.91.55 trying to authenticate with 'none'
+2022-10-21 01:05:09.430 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 01:05:09.434 - [Debug] [Auth] Attacker 80.158.91.55 trying to authenticate with 'none'
+2022-10-21 01:05:09.434 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 01:05:09.435 - [Debug] [Auth] Attacker 80.158.91.55 trying to authenticate with 'none'
+2022-10-21 01:05:09.435 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 01:05:09.435 - [Debug] [Auth] Attacker 80.158.91.55 trying to authenticate with 'none'
+2022-10-21 01:05:09.435 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 01:05:09.446 - [Debug] [Auth] Attacker 80.158.91.55 trying to authenticate with 'none'
+2022-10-21 01:05:09.446 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 01:05:09.450 - [Debug] [Auth] Attacker 80.158.91.55 trying to authenticate with 'none'
+2022-10-21 01:05:09.451 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 01:05:09.451 - [Debug] [Auth] Attacker 80.158.91.55 trying to authenticate with 'none'
+2022-10-21 01:05:09.451 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 01:05:09.451 - [Debug] [Auth] Attacker 80.158.91.55 trying to authenticate with 'none'
+2022-10-21 01:05:09.452 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 01:05:09.452 - [Debug] [Auth] Attacker 80.158.91.55 trying to authenticate with 'none'
+2022-10-21 01:05:09.452 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 01:05:09.459 - [Debug] [Auth] Attacker 80.158.91.55 trying to authenticate with 'none'
+2022-10-21 01:05:09.459 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 01:05:09.461 - [Debug] [Auth] Attacker 80.158.91.55 trying to authenticate with 'none'
+2022-10-21 01:05:09.462 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 01:05:09.462 - [Debug] [Auth] Attacker 80.158.91.55 trying to authenticate with 'none'
+2022-10-21 01:05:09.462 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 01:05:09.466 - [Debug] [Auth] Attacker 80.158.91.55 trying to authenticate with 'none'
+2022-10-21 01:05:09.466 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 01:05:09.467 - [Debug] [Auth] Attacker 80.158.91.55 trying to authenticate with 'none'
+2022-10-21 01:05:09.467 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 01:05:09.487 - [Debug] [Auth] Attacker 80.158.91.55 trying to authenticate with 'none'
+2022-10-21 01:05:09.487 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 01:05:09.488 - [Debug] [Auth] Attacker 80.158.91.55 trying to authenticate with 'none'
+2022-10-21 01:05:09.488 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 01:05:09.490 - [Debug] [Auth] Attacker 80.158.91.55 trying to authenticate with 'none'
+2022-10-21 01:05:09.490 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 01:05:09.492 - [Debug] [Auth] Attacker 80.158.91.55 trying to authenticate with 'none'
+2022-10-21 01:05:09.492 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 01:05:09.654 - [Debug] [Auth] Attacker 80.158.91.55 trying to authenticate with 'password'
+2022-10-21 01:05:09.654 - [Debug] [Auto Access] Attacker: 80.158.91.55, Threshold: 3, Attempts: 1
+2022-10-21 01:05:09.654 - [Debug] [Auth] Attacker authentication error: Not yet compromised
+2022-10-21 01:05:09.655 - [Debug] [Auth] Attacker: 80.158.91.55 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 01:05:09.656 - [Debug] [Auth] Attacker 80.158.91.55 trying to authenticate with 'password'
+2022-10-21 01:05:09.656 - [Debug] [Auto Access] Attacker: 80.158.91.55, Threshold: 3, Attempts: 2
+2022-10-21 01:05:09.657 - [Debug] [Auth] Attacker authentication error: Not yet compromised
+2022-10-21 01:05:09.657 - [Debug] [Auth] Attacker: 80.158.91.55 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 01:05:09.657 - [Debug] [Auth] Attacker 80.158.91.55 trying to authenticate with 'password'
+2022-10-21 01:05:09.657 - [Debug] [Auto Access] Attacker: 80.158.91.55, Threshold: 3, Attempts: 3
+2022-10-21 01:05:09.657 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-21 01:05:09.657 - [Debug] [Auto Access] Adding the following credentials: 'postgres:postgres1234'
+2022-10-21 01:05:09.765 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-21 01:05:09.767 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-21 01:05:09.767 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.159
+2022-10-21 01:05:09.770 - [Debug] [Auth] Attacker 80.158.91.55 trying to authenticate with 'password'
+2022-10-21 01:05:09.771 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-21 01:05:09.775 - [Debug] [Auth] Attacker: 80.158.91.55 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 01:05:09.775 - [Debug] [Auth] Attacker 80.158.91.55 trying to authenticate with 'password'
+2022-10-21 01:05:09.776 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-21 01:05:09.776 - [Debug] [Auth] Attacker: 80.158.91.55 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 01:05:09.776 - [Debug] [Auth] Attacker 80.158.91.55 trying to authenticate with 'password'
+2022-10-21 01:05:09.776 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-21 01:05:09.777 - [Debug] [Auth] Attacker: 80.158.91.55 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 01:05:09.783 - [Debug] [Auth] Attacker 80.158.91.55 trying to authenticate with 'password'
+2022-10-21 01:05:09.783 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-21 01:05:09.783 - [Debug] [Auth] Attacker: 80.158.91.55 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 01:05:09.784 - [Debug] [Auth] Attacker 80.158.91.55 trying to authenticate with 'password'
+2022-10-21 01:05:09.784 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-21 01:05:09.785 - [Debug] [Auth] Attacker: 80.158.91.55 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 01:05:09.785 - [Debug] [Auth] Attacker 80.158.91.55 trying to authenticate with 'password'
+2022-10-21 01:05:09.786 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-21 01:05:09.786 - [Debug] [Auth] Attacker: 80.158.91.55 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 01:05:09.787 - [Debug] [Auth] Attacker 80.158.91.55 trying to authenticate with 'password'
+2022-10-21 01:05:09.787 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-21 01:05:09.788 - [Debug] [Auth] Attacker: 80.158.91.55 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 01:05:09.788 - [Debug] [Auth] Attacker 80.158.91.55 trying to authenticate with 'password'
+2022-10-21 01:05:09.788 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-21 01:05:09.789 - [Debug] [Auth] Attacker: 80.158.91.55 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 01:05:09.789 - [Debug] [Auth] Attacker 80.158.91.55 trying to authenticate with 'password'
+2022-10-21 01:05:09.789 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Container user is disabled
+2022-10-21 01:05:09.790 - [Debug] [Auth] Attacker: 80.158.91.55 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 01:05:09.790 - [Debug] [Auth] Attacker 80.158.91.55 trying to authenticate with 'password'
+2022-10-21 01:05:09.790 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-21 01:05:09.790 - [Debug] [Auth] Attacker: 80.158.91.55 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 01:05:09.791 - [Debug] [Auth] Attacker 80.158.91.55 trying to authenticate with 'password'
+2022-10-21 01:05:09.791 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-21 01:05:09.791 - [Debug] [Auth] Attacker: 80.158.91.55 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 01:05:09.791 - [Debug] [Auth] Attacker 80.158.91.55 trying to authenticate with 'password'
+2022-10-21 01:05:09.791 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-21 01:05:09.792 - [Debug] [Auth] Attacker: 80.158.91.55 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 01:05:09.792 - [Debug] [Auth] Attacker 80.158.91.55 trying to authenticate with 'password'
+2022-10-21 01:05:09.792 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-21 01:05:09.792 - [Debug] [Auth] Attacker: 80.158.91.55 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 01:05:09.793 - [Debug] [Auth] Attacker 80.158.91.55 trying to authenticate with 'password'
+2022-10-21 01:05:09.793 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-21 01:05:09.793 - [Debug] [Auth] Attacker: 80.158.91.55 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 01:05:09.793 - [Debug] [Auth] Attacker 80.158.91.55 trying to authenticate with 'password'
+2022-10-21 01:05:09.794 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-21 01:05:09.794 - [Debug] [Auth] Attacker: 80.158.91.55 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 01:05:09.794 - [Debug] [Auth] Attacker 80.158.91.55 trying to authenticate with 'password'
+2022-10-21 01:05:09.794 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-21 01:05:09.794 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.159
+2022-10-21 01:05:09.795 - [Debug] [Auth] Attacker 80.158.91.55 trying to authenticate with 'password'
+2022-10-21 01:05:09.795 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-21 01:05:09.797 - [Debug] [Auth] Attacker: 80.158.91.55 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 01:05:09.797 - [Debug] [Auth] Attacker 80.158.91.55 trying to authenticate with 'password'
+2022-10-21 01:05:09.797 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-21 01:05:09.797 - [Debug] [Auth] Attacker: 80.158.91.55 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 01:05:09.820 - [Debug] [Connection] Attacker connected: 80.158.91.55 | Client Identification: SSH-2.0-Go
+2022-10-21 01:05:09.827 - [Debug] [Connection] Attacker connected: 80.158.91.55 | Client Identification: SSH-2.0-Go
+2022-10-21 01:05:09.827 - [Debug] [Connection] Attacker connected: 80.158.91.55 | Client Identification: SSH-2.0-Go
+2022-10-21 01:05:09.828 - [Debug] [Connection] Attacker connected: 80.158.91.55 | Client Identification: SSH-2.0-Go
+2022-10-21 01:05:09.828 - [Debug] [Connection] Attacker connected: 80.158.91.55 | Client Identification: SSH-2.0-Go
+2022-10-21 01:05:09.830 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-21 01:05:09.834 - [Debug] [Connection] Attacker connected: 80.158.91.55 | Client Identification: SSH-2.0-Go
+2022-10-21 01:05:09.852 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-21 01:05:09.896 - [Debug] [Connection] Attacker closed the connection
+2022-10-21 01:05:09.897 - [Debug] [Connection] Attacker closed the connection
+2022-10-21 01:05:10.014 - [Debug] [Connection] Attacker closed the connection
+2022-10-21 01:05:10.021 - [Debug] [Connection] Attacker closed the connection
+2022-10-21 01:05:10.021 - [Debug] [Connection] Attacker closed the connection
+2022-10-21 01:05:10.027 - [Debug] [Connection] Attacker closed the connection
+2022-10-21 01:05:10.030 - [Debug] [Connection] Attacker closed the connection
+2022-10-21 01:05:10.030 - [Debug] [Connection] Attacker closed the connection
+2022-10-21 01:05:10.038 - [Debug] [Connection] Attacker closed the connection
+2022-10-21 01:05:10.046 - [Debug] [Connection] Attacker closed the connection
+2022-10-21 01:05:10.048 - [Debug] [Connection] Attacker closed the connection
+2022-10-21 01:05:10.051 - [Debug] [Connection] Attacker closed the connection
+2022-10-21 01:05:10.051 - [Debug] [Connection] Attacker closed the connection
+2022-10-21 01:05:10.055 - [Debug] [Connection] Attacker closed the connection
+2022-10-21 01:05:10.056 - [Debug] [Connection] Attacker closed the connection
+2022-10-21 01:05:10.057 - [Debug] [Connection] Attacker closed the connection
+2022-10-21 01:05:10.057 - [Debug] [Connection] Attacker closed the connection
+2022-10-21 01:05:10.058 - [Debug] [Connection] Attacker closed the connection
+2022-10-21 01:05:10.058 - [Debug] [Connection] Attacker closed the connection
+2022-10-21 01:05:10.301 - [Debug] [EXEC] Noninteractive mode attacker command: uname -a
+2022-10-21 01:05:10.363 - [Debug] [EXEC] Noninteractive mode attacker command: uname -a
+2022-10-21 01:05:10.463 - [Debug] [Auth] Attacker 80.158.91.55 trying to authenticate with 'none'
+2022-10-21 01:05:10.463 - [Debug] [Auth] Attacker authentication error: No authentication method provided

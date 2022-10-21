@@ -1,0 +1,48 @@
+
+2022-10-21 07:58:00.245 - [Debug] [Auth] Attacker 34.171.55.76 trying to authenticate with 'password'
+2022-10-21 07:58:00.245 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-21 07:58:00.246 - [Debug] [Auth] Attacker: 34.171.55.76 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 07:58:00.277 - [Debug] [Auth] Attacker 34.171.55.76 trying to authenticate with 'password'
+2022-10-21 07:58:00.277 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Container user is disabled
+2022-10-21 07:58:00.278 - [Debug] [Auth] Attacker: 34.171.55.76 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 07:58:00.279 - [Debug] [Auth] Attacker 34.171.55.76 trying to authenticate with 'password'
+2022-10-21 07:58:00.279 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Container user is disabled
+2022-10-21 07:58:00.279 - [Debug] [Auth] Attacker: 34.171.55.76 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 07:58:00.279 - [Debug] [Auth] Attacker 34.171.55.76 trying to authenticate with 'password'
+2022-10-21 07:58:00.280 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Container user is disabled
+2022-10-21 07:58:00.280 - [Debug] [Auth] Attacker: 34.171.55.76 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 07:58:00.281 - [Debug] [Auth] Attacker 34.171.55.76 trying to authenticate with 'password'
+2022-10-21 07:58:00.281 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Container user is disabled
+2022-10-21 07:58:00.281 - [Debug] [Auth] Attacker: 34.171.55.76 has so far made 1 attempts. Remaining: 5 attempts
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:1355422) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_3',
+  containerIp: '10.0.3.92',
+  mitmPort: 1002,
+  autoAccessFixed: 3
+}
+2022-10-21 07:58:28.459 - [Info] MITM Version: 2
+2022-10-21 07:58:28.461 - [Info] Auto Access Enabled: true
+2022-10-21 07:58:28.461 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-21 07:58:28.472 - [Info] SSH man-in-the-middle server for 10.0.3.92 listening on 10.0.3.1:1002
+2022-10-21 08:08:56.933 - [Debug] [Connection] Attacker connected: 141.98.10.210 | Client Identification: SSH-2.0-libssh2_1.4.3
+2022-10-21 08:08:58.029 - [Debug] [Auth] Attacker 141.98.10.210 trying to authenticate with 'password'
+2022-10-21 08:08:58.030 - [Debug] [Auto Access] Attacker: 141.98.10.210, Threshold: 3, Attempts: 1
+2022-10-21 08:08:58.031 - [Debug] [Auth] Attacker authentication error: Not yet compromised
+2022-10-21 08:08:58.031 - [Debug] [Auth] Attacker: 141.98.10.210 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 08:08:58.311 - [Debug] [Connection] Attacker closed the connection

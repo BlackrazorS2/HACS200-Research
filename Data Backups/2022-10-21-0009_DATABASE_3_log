@@ -1,0 +1,60 @@
+
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:590231) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_3',
+  containerIp: '10.0.3.90',
+  mitmPort: 1002,
+  autoAccessFixed: 3
+}
+2022-10-21 00:01:54.780 - [Info] MITM Version: 2
+2022-10-21 00:01:54.783 - [Info] Auto Access Enabled: true
+2022-10-21 00:01:54.784 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-21 00:01:54.798 - [Info] SSH man-in-the-middle server for 10.0.3.90 listening on 10.0.3.1:1002
+2022-10-21 00:09:43.479 - [Debug] [Connection] Attacker connected: 35.242.161.152 | Client Identification: SSH-2.0-Go
+2022-10-21 00:09:43.510 - [Debug] [Connection] Attacker connected: 35.242.161.152 | Client Identification: SSH-2.0-Go
+2022-10-21 00:09:43.511 - [Debug] [Connection] Attacker connected: 35.242.161.152 | Client Identification: SSH-2.0-Go
+2022-10-21 00:09:43.511 - [Debug] [Connection] Attacker connected: 35.242.161.152 | Client Identification: SSH-2.0-Go
+2022-10-21 00:09:43.512 - [Debug] [Connection] Attacker connected: 35.242.161.152 | Client Identification: SSH-2.0-Go
+2022-10-21 00:09:43.512 - [Debug] [Connection] Attacker connected: 35.242.161.152 | Client Identification: SSH-2.0-Go
+2022-10-21 00:09:43.514 - [Debug] [Connection] Attacker connected: 35.242.161.152 | Client Identification: SSH-2.0-Go
+2022-10-21 00:09:43.514 - [Debug] [Connection] Attacker connected: 35.242.161.152 | Client Identification: SSH-2.0-Go
+2022-10-21 00:09:43.515 - [Debug] [Connection] Attacker connected: 35.242.161.152 | Client Identification: SSH-2.0-Go
+2022-10-21 00:09:43.516 - [Debug] [Connection] Attacker connected: 35.242.161.152 | Client Identification: SSH-2.0-Go
+2022-10-21 00:09:43.521 - [Debug] [Connection] Attacker connected: 35.242.161.152 | Client Identification: SSH-2.0-Go
+2022-10-21 00:09:43.523 - [Debug] [Connection] Attacker connected: 35.242.161.152 | Client Identification: SSH-2.0-Go
+2022-10-21 00:09:44.265 - [Debug] [Connection] Attacker connected: 35.242.161.152 | Client Identification: SSH-2.0-Go
+2022-10-21 00:09:44.307 - [Debug] [Connection] Attacker connected: 35.242.161.152 | Client Identification: SSH-2.0-Go
+2022-10-21 00:09:46.289 - [Debug] [Connection] Attacker connected: 35.242.161.152 | Client Identification: SSH-2.0-Go
+2022-10-21 00:09:49.927 - [Debug] [Auth] Attacker 35.242.161.152 trying to authenticate with 'none'
+2022-10-21 00:09:49.928 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 00:09:50.261 - [Debug] [Auth] Attacker 35.242.161.152 trying to authenticate with 'none'
+2022-10-21 00:09:50.261 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 00:09:50.416 - [Debug] [Auth] Attacker 35.242.161.152 trying to authenticate with 'none'
+2022-10-21 00:09:50.416 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 00:09:50.417 - [Debug] [Auth] Attacker 35.242.161.152 trying to authenticate with 'none'
+2022-10-21 00:09:50.417 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 00:09:51.811 - [Debug] [Auth] Attacker 35.242.161.152 trying to authenticate with 'password'
+2022-10-21 00:09:51.811 - [Debug] [Auto Access] Attacker: 35.242.161.152, Threshold: 3, Attempts: 1
+2022-10-21 00:09:51.813 - [Debug] [Auth] Attacker authentication error: Not yet compromised
+2022-10-21 00:09:51.813 - [Debug] [Auth] Attacker: 35.242.161.152 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 00:09:51.813 - [Debug] [Auth] Attacker 35.242.161.152 trying to authenticate with 'password'
+2022-10-21 00:09:51.813 - [Debug] [Auto Access] Attacker: 35.242.161.152, Threshold: 3, Attempts: 2
+2022-10-21 00:09:51.813 - [Debug] [Auth] Attacker authentication error: Not yet compromised
+2022-10-21 00:09:51.814 - [Debug] [Auth] Attacker: 35.242.161.152 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 00:09:53.339 - [Debug] [Connection] Attacker closed the connection
+2022-10-21 00:09:53.343 - [Debug] [Connection] Attacker closed the connection

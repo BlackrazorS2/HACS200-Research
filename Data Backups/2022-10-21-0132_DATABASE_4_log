@@ -1,0 +1,56 @@
+
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:688319) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_4',
+  containerIp: '10.0.3.160',
+  mitmPort: 1003,
+  autoAccessFixed: 3
+}
+2022-10-21 01:19:14.687 - [Info] MITM Version: 2
+2022-10-21 01:19:14.689 - [Info] Auto Access Enabled: true
+2022-10-21 01:19:14.690 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-21 01:19:14.731 - [Info] SSH man-in-the-middle server for 10.0.3.160 listening on 10.0.3.1:1003
+2022-10-21 01:32:22.567 - [Debug] [Connection] Attacker connected: 34.82.179.229 | Client Identification: SSH-2.0-Go
+2022-10-21 01:32:22.569 - [Debug] [Connection] Attacker connected: 34.82.179.229 | Client Identification: SSH-2.0-Go
+2022-10-21 01:32:24.445 - [Debug] [Auth] Attacker 34.82.179.229 trying to authenticate with 'none'
+2022-10-21 01:32:24.445 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 01:32:24.446 - [Debug] [Auth] Attacker 34.82.179.229 trying to authenticate with 'none'
+2022-10-21 01:32:24.446 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 01:32:24.834 - [Debug] [Connection] Attacker connected: 34.82.179.229 | Client Identification: SSH-2.0-Go
+2022-10-21 01:32:24.836 - [Debug] [Connection] Attacker connected: 34.82.179.229 | Client Identification: SSH-2.0-Go
+2022-10-21 01:32:24.836 - [Debug] [Connection] Attacker connected: 34.82.179.229 | Client Identification: SSH-2.0-Go
+2022-10-21 01:32:24.836 - [Debug] [Connection] Attacker connected: 34.82.179.229 | Client Identification: SSH-2.0-Go
+2022-10-21 01:32:24.838 - [Debug] [Connection] Attacker connected: 34.82.179.229 | Client Identification: SSH-2.0-Go
+2022-10-21 01:32:24.838 - [Debug] [Connection] Attacker connected: 34.82.179.229 | Client Identification: SSH-2.0-Go
+2022-10-21 01:32:24.841 - [Debug] [Connection] Attacker connected: 34.82.179.229 | Client Identification: SSH-2.0-Go
+2022-10-21 01:32:24.850 - [Debug] [Connection] Attacker connected: 34.82.179.229 | Client Identification: SSH-2.0-Go
+2022-10-21 01:32:25.237 - [Debug] [Auth] Attacker 34.82.179.229 trying to authenticate with 'password'
+2022-10-21 01:32:25.238 - [Debug] [Auto Access] Attacker: 34.82.179.229, Threshold: 3, Attempts: 1
+2022-10-21 01:32:25.238 - [Debug] [Auth] Attacker authentication error: Not yet compromised
+2022-10-21 01:32:25.238 - [Debug] [Auth] Attacker: 34.82.179.229 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 01:32:25.238 - [Debug] [Auth] Attacker 34.82.179.229 trying to authenticate with 'password'
+2022-10-21 01:32:25.239 - [Debug] [Auto Access] Attacker: 34.82.179.229, Threshold: 3, Attempts: 2
+2022-10-21 01:32:25.239 - [Debug] [Auth] Attacker authentication error: Not yet compromised
+2022-10-21 01:32:25.239 - [Debug] [Auth] Attacker: 34.82.179.229 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-21 01:32:25.666 - [Debug] [Connection] Attacker connected: 34.82.179.229 | Client Identification: SSH-2.0-Go
+2022-10-21 01:32:25.667 - [Debug] [Connection] Attacker connected: 34.82.179.229 | Client Identification: SSH-2.0-Go
+2022-10-21 01:32:25.667 - [Debug] [Connection] Attacker connected: 34.82.179.229 | Client Identification: SSH-2.0-Go
+2022-10-21 01:32:25.667 - [Debug] [Connection] Attacker connected: 34.82.179.229 | Client Identification: SSH-2.0-Go
+2022-10-21 01:32:25.667 - [Debug] [Connection] Attacker connected: 34.82.179.229 | Client Identification: SSH-2.0-Go
+2022-10-21 01:32:25.855 - [Debug] [Connection] Attacker closed the connection
+2022-10-21 01:32:25.857 - [Debug] [Connection] Attacker closed the connection
