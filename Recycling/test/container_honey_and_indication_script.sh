@@ -2,6 +2,10 @@
 
 containerName=$1
 
+# copy honey files over from honey folder on host
+
+sudo cp -r ./honey/* /var/lib/lxc/$containerName/rootfs/
+
 # install ssh on container
 sudo lxc-attach -n $1 -- bash -c "sudo apt-get -qq update"
 sudo lxc-attach -n $1 -- bash -c "sudo apt-get -qq install openssh-server"
@@ -26,6 +30,3 @@ fi
 sudo lxc-attach -n $containerName -- bash -c "cd /etc/ssh && echo 'PermitRootLogin yes' >> sshd_config"
 sudo lxc-attach -n $containerName -- bash -c "sudo systemctl restart ssh"
 
-# copy honey files over from honey folder on host
-sudo lxc-attach -n $1 -- bash -c "cd / && cd home && sudo mkdir jerrym && cd jerrym && sudo mkdir Desktop && sudo mkdir Documents"
-sudo cp -r ./honey/* /var/lib/lxc/$containerName/rootfs/home/jerrym/Documents/
