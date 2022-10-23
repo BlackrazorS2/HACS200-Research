@@ -1,0 +1,26 @@
+
+2022-10-23 09:32:59.050 - [Debug] [Auth] Attacker 117.80.212.33 trying to authenticate with 'none'
+2022-10-23 09:32:59.050 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 09:32:59.075 - [Debug] [Auth] Attacker 78.189.25.224 trying to authenticate with 'none'
+2022-10-23 09:32:59.075 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 09:32:59.079 - [Debug] [Connection] Attacker connected: 223.223.200.243 | Client Identification: SSH-2.0-Go
+2022-10-23 09:32:59.273 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-23 09:32:59.309 - [Debug] [Auth] Attacker 89.121.228.38 trying to authenticate with 'none'
+2022-10-23 09:32:59.309 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 09:32:59.439 - [Debug] [Auth] Attacker 78.189.25.224 trying to authenticate with 'password'
+2022-10-23 09:32:59.439 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 09:32:59.439 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.56
+2022-10-23 09:32:59.490 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 09:32:59.520 - [Debug] [Auth] Attacker 117.80.212.33 trying to authenticate with 'publickey'
+2022-10-23 09:32:59.520 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 09:32:59.521 - [Debug] [Auth] Attacker: 117.80.212.33 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 09:32:59.609 - [Debug] [Auth] Attacker 89.121.228.38 trying to authenticate with 'publickey'
+2022-10-23 09:32:59.609 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 09:32:59.610 - [Debug] [Auth] Attacker: 89.121.228.38 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 09:32:59.909 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 09:33:00.000 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 09:33:00.010 - [Debug] [Connection] Attacker closed connection
+2022-10-23 09:33:00.022 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-23 09:33:00.023 - [Debug] [LXC] Container's OpenSSH server closed connection
+2022-10-23 09:33:00.034 - [Debug] [Connection] Attacker connected: 89.121.228.38 | Client Identification: SSH-2.0-Go
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

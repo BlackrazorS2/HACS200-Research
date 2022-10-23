@@ -1,0 +1,19 @@
+
+2022-10-23 08:49:51.709 - [Debug] [Auth] Attacker 20.127.87.36 trying to authenticate with 'none'
+2022-10-23 08:49:51.710 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 08:49:51.741 - [Debug] [Auth] Attacker 20.127.87.36 trying to authenticate with 'password'
+2022-10-23 08:49:51.742 - [Debug] [Auto Access] Attacker: 20.127.87.36, Threshold: 1, Attempts: 1
+2022-10-23 08:49:51.742 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-23 08:49:51.742 - [Debug] [Auto Access] Adding the following credentials: 'root:1'
+2022-10-23 08:49:51.918 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-23 08:49:51.919 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 08:49:51.919 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.239
+2022-10-23 08:49:51.967 - [Debug] [Connection] Attacker connected: 89.212.123.191 | Client Identification: SSH-2.0-Go
+2022-10-23 08:49:52.022 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 08:49:52.104 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-23 08:49:52.161 - [Debug] [Auth] Attacker 120.236.79.182 trying to authenticate with 'none'
+2022-10-23 08:49:52.161 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 08:49:52.303 - [Debug] [Connection] Attacker closed connection
+2022-10-23 08:49:52.307 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-23 08:49:52.308 - [Debug] [LXC] Container's OpenSSH server closed connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

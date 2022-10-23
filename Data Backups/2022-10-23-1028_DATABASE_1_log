@@ -1,0 +1,59 @@
+
+2022-10-23 10:28:09.134 - [Debug] [Auth] Attacker 117.80.212.33 trying to authenticate with 'none'
+2022-10-23 10:28:09.134 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 10:28:09.539 - [Debug] [Auth] Attacker 31.14.115.42 trying to authenticate with 'none'
+2022-10-23 10:28:09.540 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:2486189) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_1',
+  containerIp: '10.0.3.16',
+  mitmPort: 1000,
+  autoAccessFixed: 1
+}
+2022-10-23 10:28:42.538 - [Info] MITM Version: 2
+2022-10-23 10:28:42.540 - [Info] Auto Access Enabled: true
+2022-10-23 10:28:42.541 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-23 10:28:42.551 - [Info] SSH man-in-the-middle server for 10.0.3.16 listening on 10.0.3.1:1000
+2022-10-23 10:28:42.686 - [Debug] [Connection] Attacker connected: 80.147.162.151 | Client Identification: SSH-2.0-Go
+2022-10-23 10:28:42.955 - [Debug] [Connection] Attacker connected: 223.171.91.155 | Client Identification: SSH-2.0-Go
+2022-10-23 10:28:43.355 - [Debug] [Connection] Attacker connected: 223.171.91.133 | Client Identification: SSH-2.0-Go
+2022-10-23 10:28:43.540 - [Debug] [Connection] Attacker connected: 85.51.217.156 | Client Identification: SSH-2.0-Go
+2022-10-23 10:28:43.770 - [Debug] [Auth] Attacker 80.147.162.151 trying to authenticate with 'none'
+2022-10-23 10:28:43.771 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 10:28:44.039 - [Debug] [Auth] Attacker 80.147.162.151 trying to authenticate with 'publickey'
+2022-10-23 10:28:44.041 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 10:28:44.042 - [Debug] [Auth] Attacker: 80.147.162.151 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 10:28:44.311 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 10:28:44.317 - [Debug] [Auth] Attacker 85.51.217.156 trying to authenticate with 'none'
+2022-10-23 10:28:44.317 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 10:28:44.408 - [Debug] [Auth] Attacker 223.171.91.155 trying to authenticate with 'none'
+2022-10-23 10:28:44.409 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 10:28:44.428 - [Debug] [Connection] Attacker connected: 80.147.162.151 | Client Identification: SSH-2.0-Go
+2022-10-23 10:28:44.580 - [Debug] [Auth] Attacker 85.51.217.156 trying to authenticate with 'password'
+2022-10-23 10:28:44.580 - [Debug] [Auto Access] Attacker: 85.51.217.156, Threshold: 1, Attempts: 1
+2022-10-23 10:28:44.581 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-23 10:28:44.581 - [Debug] [Auto Access] Adding the following credentials: 'root:1'
+2022-10-23 10:28:44.689 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-23 10:28:44.691 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 10:28:44.691 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.16
+2022-10-23 10:28:44.745 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 10:28:44.749 - [Debug] [Auth] Attacker 223.171.91.133 trying to authenticate with 'none'
+2022-10-23 10:28:44.749 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 10:28:44.931 - [Debug] [Auth] Attacker 223.171.91.155 trying to authenticate with 'password'
+2022-10-23 10:28:44.931 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 10:28:44.931 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.16

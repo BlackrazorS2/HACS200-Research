@@ -1,0 +1,42 @@
+
+022-10-23 09:17:01.160 - [Debug] [Auth] Attacker 78.187.13.206 trying to authenticate with 'publickey'
+2022-10-23 09:17:01.160 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 09:17:01.161 - [Debug] [Auth] Attacker: 78.187.13.206 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 09:17:01.229 - [Debug] [Auth] Attacker 124.221.181.83 trying to authenticate with 'publickey'
+2022-10-23 09:17:01.230 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 09:17:01.231 - [Debug] [Auth] Attacker: 124.221.181.83 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 09:17:01.412 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 09:17:01.466 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 09:17:01.471 - [Debug] [Auth] Attacker 45.120.216.114 trying to authenticate with 'publickey'
+2022-10-23 09:17:01.471 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 09:17:01.472 - [Debug] [Auth] Attacker: 45.120.216.114 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 09:17:01.505 - [Debug] [Connection] Attacker connected: 69.236.215.6 | Client Identification: SSH-2.0-Go
+2022-10-23 09:17:01.557 - [Debug] [Auth] Attacker 159.75.54.90 trying to authenticate with 'none'
+2022-10-23 09:17:01.560 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 09:17:01.616 - [Debug] [Auth] Attacker 120.236.69.162 trying to authenticate with 'password'
+2022-10-23 09:17:01.622 - [Debug] [Auto Access] Attacker: 120.236.69.162, Threshold: 1, Attempts: 1
+2022-10-23 09:17:01.622 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-23 09:17:01.622 - [Debug] [Auto Access] Adding the following credentials: 'root:1'
+2022-10-23 09:17:02.014 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-23 09:17:02.016 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 09:17:02.016 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.91
+2022-10-23 09:17:02.036 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 09:17:02.036 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 09:17:02.037 - [Debug] [Connection] Attacker connected: 78.187.13.206 | Client Identification: SSH-2.0-Go
+2022-10-23 09:17:02.038 - [Debug] [Connection] Attacker connected: 121.200.53.148 | Client Identification: SSH-2.0-Go
+2022-10-23 09:17:02.038 - [Debug] [Connection] Attacker connected: 144.22.130.100 | Client Identification: SSH-2.0-Go
+2022-10-23 09:17:02.062 - [Debug] [Auth] Attacker 159.75.54.90 trying to authenticate with 'publickey'
+2022-10-23 09:17:02.062 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 09:17:02.063 - [Debug] [Auth] Attacker: 159.75.54.90 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 09:17:02.071 - [Debug] [Auth] Attacker 223.171.91.127 trying to authenticate with 'none'
+2022-10-23 09:17:02.072 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 09:17:02.191 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 09:17:02.228 - [Debug] [Connection] Attacker connected: 45.120.216.114 | Client Identification: SSH-2.0-Go
+2022-10-23 09:17:02.237 - [Debug] [Auth] Attacker 69.236.215.6 trying to authenticate with 'none'
+2022-10-23 09:17:02.237 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 09:17:02.246 - [Debug] [Connection] Attacker connected: 182.92.162.51 | Client Identification: SSH-2.0-Go
+2022-10-23 09:17:02.349 - [Debug] [Auth] Attacker 69.236.215.6 trying to authenticate with 'publickey'
+2022-10-23 09:17:02.350 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 09:17:02.350 - [Debug] [Auth] Attacker: 69.236.215.6 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 09:17:02.456 - [Debug] [Connection] Attacker closed the connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

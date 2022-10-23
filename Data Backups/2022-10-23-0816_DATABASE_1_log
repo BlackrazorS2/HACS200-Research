@@ -1,0 +1,68 @@
+
+(node:1194489) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_1',
+  containerIp: '10.0.3.104',
+  mitmPort: 1000,
+  autoAccessFixed: 1
+}
+2022-10-23 08:16:15.327 - [Info] MITM Version: 2
+2022-10-23 08:16:15.330 - [Info] Auto Access Enabled: true
+2022-10-23 08:16:15.331 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-23 08:16:15.354 - [Info] SSH man-in-the-middle server for 10.0.3.104 listening on 10.0.3.1:1000
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:1200846) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_1',
+  containerIp: '10.0.3.144',
+  mitmPort: 1000,
+  autoAccessFixed: 1
+}
+2022-10-23 08:16:48.272 - [Info] MITM Version: 2
+2022-10-23 08:16:48.273 - [Info] Auto Access Enabled: true
+2022-10-23 08:16:48.274 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-23 08:16:48.286 - [Info] SSH man-in-the-middle server for 10.0.3.144 listening on 10.0.3.1:1000
+2022-10-23 08:16:48.962 - [Debug] [Connection] Attacker connected: 121.199.57.14 | Client Identification: SSH-2.0-Go
+2022-10-23 08:16:50.284 - [Debug] [Auth] Attacker 121.199.57.14 trying to authenticate with 'none'
+2022-10-23 08:16:50.285 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 08:16:50.752 - [Debug] [Auth] Attacker 121.199.57.14 trying to authenticate with 'publickey'
+2022-10-23 08:16:50.753 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 08:16:50.754 - [Debug] [Auth] Attacker: 121.199.57.14 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 08:16:50.938 - [Debug] [Connection] Attacker connected: 173.18.35.41 | Client Identification: SSH-2.0-Go
+2022-10-23 08:16:51.220 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 08:16:51.264 - [Debug] [Auth] Attacker 173.18.35.41 trying to authenticate with 'none'
+2022-10-23 08:16:51.264 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 08:16:51.345 - [Debug] [Auth] Attacker 173.18.35.41 trying to authenticate with 'publickey'
+2022-10-23 08:16:51.345 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 08:16:51.346 - [Debug] [Auth] Attacker: 173.18.35.41 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 08:16:51.413 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 08:16:51.430 - [Debug] [Connection] Attacker connected: 121.199.57.14 | Client Identification: SSH-2.0-Go
+2022-10-23 08:16:51.455 - [Debug] [Connection] Attacker connected: 173.18.35.41 | Client Identification: SSH-2.0-Go

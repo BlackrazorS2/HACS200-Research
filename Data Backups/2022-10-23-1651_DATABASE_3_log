@@ -1,0 +1,37 @@
+
+(node:3926255) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_3',
+  containerIp: '10.0.3.75',
+  mitmPort: 1002,
+  autoAccessFixed: 1
+}
+2022-10-23 16:51:09.845 - [Info] MITM Version: 2
+2022-10-23 16:51:09.846 - [Info] Auto Access Enabled: true
+2022-10-23 16:51:09.846 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-23 16:51:09.853 - [Info] SSH man-in-the-middle server for 10.0.3.75 listening on 10.0.3.1:1002
+2022-10-23 16:51:10.036 - [Debug] [Connection] Attacker connected: 5.28.139.161 | Client Identification: SSH-2.0-Go
+2022-10-23 16:51:10.063 - [Debug] [Connection] Attacker connected: 66.70.154.59 | Client Identification: SSH-2.0-Go
+2022-10-23 16:51:10.207 - [Debug] [Auth] Attacker 66.70.154.59 trying to authenticate with 'none'
+2022-10-23 16:51:10.208 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 16:51:10.289 - [Debug] [Auth] Attacker 66.70.154.59 trying to authenticate with 'publickey'
+2022-10-23 16:51:10.290 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 16:51:10.291 - [Debug] [Auth] Attacker: 66.70.154.59 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 16:51:10.370 - [Debug] [Connection] Attacker closed the connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:3928661) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)

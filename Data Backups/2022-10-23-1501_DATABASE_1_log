@@ -1,0 +1,25 @@
+
+2022-10-23 15:00:52.134 - [Debug] [Connection] Attacker closed connection
+2022-10-23 15:00:52.137 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-23 15:00:52.139 - [Debug] [LXC] Container's OpenSSH server closed connection
+2022-10-23 15:00:52.202 - [Debug] [Auth] Attacker 139.59.135.142 trying to authenticate with 'none'
+2022-10-23 15:00:52.202 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 15:00:52.393 - [Debug] [Auth] Attacker 139.59.135.142 trying to authenticate with 'password'
+2022-10-23 15:00:52.394 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 15:00:52.394 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.67
+2022-10-23 15:00:52.594 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 15:00:52.812 - [Debug] [Auth] Attacker 112.167.233.14 trying to authenticate with 'none'
+2022-10-23 15:00:52.812 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 15:00:53.017 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-23 15:00:53.241 - [Debug] [Connection] Attacker closed connection
+2022-10-23 15:00:53.249 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-23 15:00:53.249 - [Debug] [LXC] Container's OpenSSH server closed connection
+2022-10-23 15:00:53.257 - [Debug] [Auth] Attacker 112.167.233.14 trying to authenticate with 'publickey'
+2022-10-23 15:00:53.258 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 15:00:53.259 - [Debug] [Auth] Attacker: 112.167.233.14 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 15:00:53.266 - [Debug] [Connection] Attacker connected: 102.141.225.244 | Client Identification: SSH-2.0-Go
+2022-10-23 15:00:53.707 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 15:00:53.915 - [Debug] [Connection] Attacker connected: 112.167.233.14 | Client Identification: SSH-2.0-Go
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:3401377) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)

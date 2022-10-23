@@ -1,0 +1,110 @@
+
+(node:2250035) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_1',
+  containerIp: '10.0.3.58',
+  mitmPort: 1000,
+  autoAccessFixed: 1
+}
+2022-10-22 19:47:28.335 - [Info] MITM Version: 2
+2022-10-22 19:47:28.336 - [Info] Auto Access Enabled: true
+2022-10-22 19:47:28.337 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-22 19:47:28.346 - [Info] SSH man-in-the-middle server for 10.0.3.58 listening on 10.0.3.1:1000
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:2251319) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_1',
+  containerIp: '10.0.3.28',
+  mitmPort: 1000,
+  autoAccessFixed: 1
+}
+2022-10-22 19:47:56.318 - [Info] MITM Version: 2
+2022-10-22 19:47:56.320 - [Info] Auto Access Enabled: true
+2022-10-22 19:47:56.320 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-22 19:47:56.326 - [Info] SSH man-in-the-middle server for 10.0.3.28 listening on 10.0.3.1:1000
+2022-10-22 19:58:31.601 - [Debug] [Connection] Attacker connected: 34.75.90.40 | Client Identification: SSH-2.0-Go
+2022-10-22 19:58:31.602 - [Debug] [Connection] Attacker connected: 34.75.90.40 | Client Identification: SSH-2.0-Go
+2022-10-22 19:58:31.603 - [Debug] [Connection] Attacker connected: 34.75.90.40 | Client Identification: SSH-2.0-Go
+2022-10-22 19:58:31.603 - [Debug] [Connection] Attacker connected: 34.75.90.40 | Client Identification: SSH-2.0-Go
+2022-10-22 19:58:31.604 - [Debug] [Connection] Attacker connected: 34.75.90.40 | Client Identification: SSH-2.0-Go
+2022-10-22 19:58:31.604 - [Debug] [Connection] Attacker connected: 34.75.90.40 | Client Identification: SSH-2.0-Go
+2022-10-22 19:58:31.609 - [Debug] [Connection] Attacker connected: 34.75.90.40 | Client Identification: SSH-2.0-Go
+2022-10-22 19:58:31.610 - [Debug] [Connection] Attacker connected: 34.75.90.40 | Client Identification: SSH-2.0-Go
+2022-10-22 19:58:31.611 - [Debug] [Connection] Attacker connected: 34.75.90.40 | Client Identification: SSH-2.0-Go
+2022-10-22 19:58:31.611 - [Debug] [Connection] Attacker connected: 34.75.90.40 | Client Identification: SSH-2.0-Go
+2022-10-22 19:58:50.641 - [Debug] [Auth] Attacker 34.75.90.40 trying to authenticate with 'none'
+2022-10-22 19:58:50.641 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-22 19:58:50.642 - [Debug] [Auth] Attacker 34.75.90.40 trying to authenticate with 'none'
+2022-10-22 19:58:50.642 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-22 19:59:00.168 - [Debug] [Auth] Attacker 34.75.90.40 trying to authenticate with 'none'
+2022-10-22 19:59:00.168 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-22 19:59:00.179 - [Debug] [Auth] Attacker 34.75.90.40 trying to authenticate with 'none'
+2022-10-22 19:59:00.179 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-22 19:59:00.188 - [Debug] [Auth] Attacker 34.75.90.40 trying to authenticate with 'none'
+2022-10-22 19:59:00.188 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-22 19:59:00.230 - [Debug] [Auth] Attacker 34.75.90.40 trying to authenticate with 'password'
+2022-10-22 19:59:00.231 - [Debug] [Auto Access] Attacker: 34.75.90.40, Threshold: 1, Attempts: 1
+2022-10-22 19:59:00.231 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-22 19:59:00.231 - [Debug] [Auto Access] Adding the following credentials: 'root:!2345Asdfg'
+2022-10-22 19:59:00.288 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-22 19:59:00.290 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-22 19:59:00.290 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.28
+2022-10-22 19:59:00.297 - [Debug] [Auth] Attacker 34.75.90.40 trying to authenticate with 'none'
+2022-10-22 19:59:00.297 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-22 19:59:00.298 - [Debug] [Auth] Attacker 34.75.90.40 trying to authenticate with 'none'
+2022-10-22 19:59:00.298 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-22 19:59:00.299 - [Debug] [Auth] Attacker 34.75.90.40 trying to authenticate with 'password'
+2022-10-22 19:59:00.306 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2022-10-22 19:59:00.306 - [Debug] [Auth] Attacker: 34.75.90.40 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-22 19:59:00.306 - [Debug] [Auth] Attacker 34.75.90.40 trying to authenticate with 'none'
+2022-10-22 19:59:00.307 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-22 19:59:00.317 - [Debug] [Auth] Attacker 34.75.90.40 trying to authenticate with 'none'
+2022-10-22 19:59:00.317 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-22 19:59:00.343 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-22 19:59:05.082 - [Debug] [Auth] Attacker 34.75.90.40 trying to authenticate with 'password'
+2022-10-22 19:59:05.083 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2022-10-22 19:59:05.084 - [Debug] [Auth] Attacker: 34.75.90.40 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-22 19:59:05.087 - [Debug] [Auth] Attacker 34.75.90.40 trying to authenticate with 'password'
+2022-10-22 19:59:05.088 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2022-10-22 19:59:05.088 - [Debug] [Auth] Attacker: 34.75.90.40 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-22 19:59:05.107 - [Debug] [Auth] Attacker 34.75.90.40 trying to authenticate with 'password'
+2022-10-22 19:59:05.107 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2022-10-22 19:59:05.108 - [Debug] [Auth] Attacker: 34.75.90.40 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-22 19:59:05.141 - [Debug] [Auth] Attacker 34.75.90.40 trying to authenticate with 'password'
+2022-10-22 19:59:05.142 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2022-10-22 19:59:05.142 - [Debug] [Auth] Attacker: 34.75.90.40 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-22 19:59:05.143 - [Debug] [Connection] Attacker closed the connection
+2022-10-22 19:59:05.144 - [Debug] [Auth] Attacker 34.75.90.40 trying to authenticate with 'password'
+2022-10-22 19:59:05.145 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2022-10-22 19:59:05.145 - [Debug] [Auth] Attacker: 34.75.90.40 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-22 19:59:05.145 - [Debug] [Auth] Attacker 34.75.90.40 trying to authenticate with 'password'
+2022-10-22 19:59:05.145 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2022-10-22 19:59:05.146 - [Debug] [Auth] Attacker: 34.75.90.40 has so far made 1 attempts. Remaining: 5 attempts

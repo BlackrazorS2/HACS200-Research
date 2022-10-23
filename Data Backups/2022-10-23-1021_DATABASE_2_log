@@ -1,0 +1,18 @@
+
+022-10-23 10:20:30.563 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-23 10:20:30.565 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 10:20:30.565 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.232
+2022-10-23 10:20:30.589 - [Debug] [Auth] Attacker 124.220.163.75 trying to authenticate with 'none'
+2022-10-23 10:20:30.590 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 10:20:30.601 - [Debug] [Connection] Attacker connected: 85.53.55.133 | Client Identification: SSH-2.0-Go
+2022-10-23 10:20:30.629 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 10:20:30.777 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-23 10:20:30.939 - [Debug] [Connection] Attacker closed connection
+2022-10-23 10:20:30.948 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-23 10:20:30.949 - [Debug] [LXC] Container's OpenSSH server closed connection
+2022-10-23 10:20:31.061 - [Debug] [Auth] Attacker 124.220.163.75 trying to authenticate with 'publickey'
+2022-10-23 10:20:31.061 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 10:20:31.062 - [Debug] [Auth] Attacker: 124.220.163.75 has so far made 1 attempts. Remaining: 5 attempts
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:2423994) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)

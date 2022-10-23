@@ -1,0 +1,34 @@
+
+(node:3087563) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_2',
+  containerIp: '10.0.3.200',
+  mitmPort: 1001,
+  autoAccessFixed: 1
+}
+2022-10-23 14:28:21.801 - [Info] MITM Version: 2
+2022-10-23 14:28:21.803 - [Info] Auto Access Enabled: true
+2022-10-23 14:28:21.803 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-23 14:28:21.811 - [Info] SSH man-in-the-middle server for 10.0.3.200 listening on 10.0.3.1:1001
+2022-10-23 14:28:26.006 - [Debug] [Connection] Attacker connected: 89.121.228.38 | Client Identification: SSH-2.0-Go
+2022-10-23 14:28:26.841 - [Debug] [Auth] Attacker 89.121.228.38 trying to authenticate with 'none'
+2022-10-23 14:28:26.841 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 14:28:27.142 - [Debug] [Auth] Attacker 89.121.228.38 trying to authenticate with 'publickey'
+2022-10-23 14:28:27.144 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 14:28:27.144 - [Debug] [Auth] Attacker: 89.121.228.38 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 14:28:27.440 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 14:28:27.571 - [Debug] [Connection] Attacker connected: 89.121.228.38 | Client Identification: SSH-2.0-Go

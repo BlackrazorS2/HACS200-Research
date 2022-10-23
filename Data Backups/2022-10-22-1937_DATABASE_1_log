@@ -1,0 +1,43 @@
+
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:2220127) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_1',
+  containerIp: '10.0.3.165',
+  mitmPort: 1000,
+  autoAccessFixed: 1
+}
+2022-10-22 19:27:17.029 - [Info] MITM Version: 2
+2022-10-22 19:27:17.031 - [Info] Auto Access Enabled: true
+2022-10-22 19:27:17.031 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-22 19:27:17.039 - [Info] SSH man-in-the-middle server for 10.0.3.165 listening on 10.0.3.1:1000
+2022-10-22 19:28:44.955 - [Debug] [Connection] Attacker connected: 141.98.10.191 | Client Identification: SSH-2.0-libssh2_1.4.3
+2022-10-22 19:28:46.025 - [Debug] [Connection] Attacker closed the connection
+2022-10-22 19:37:16.105 - [Debug] [Connection] Attacker connected: 34.159.196.102 | Client Identification: SSH-2.0-Go
+2022-10-22 19:37:16.106 - [Debug] [Connection] Attacker connected: 34.159.196.102 | Client Identification: SSH-2.0-Go
+2022-10-22 19:37:16.106 - [Debug] [Connection] Attacker connected: 34.159.196.102 | Client Identification: SSH-2.0-Go
+2022-10-22 19:37:16.107 - [Debug] [Connection] Attacker connected: 34.159.196.102 | Client Identification: SSH-2.0-Go
+2022-10-22 19:37:16.108 - [Debug] [Connection] Attacker connected: 34.159.196.102 | Client Identification: SSH-2.0-Go
+2022-10-22 19:37:16.108 - [Debug] [Connection] Attacker connected: 34.159.196.102 | Client Identification: SSH-2.0-Go
+2022-10-22 19:37:16.108 - [Debug] [Connection] Attacker connected: 34.159.196.102 | Client Identification: SSH-2.0-Go
+2022-10-22 19:37:16.111 - [Debug] [Connection] Attacker connected: 34.159.196.102 | Client Identification: SSH-2.0-Go
+2022-10-22 19:37:16.118 - [Debug] [Connection] Attacker connected: 34.159.196.102 | Client Identification: SSH-2.0-Go
+2022-10-22 19:37:16.118 - [Debug] [Connection] Attacker connected: 34.159.196.102 | Client Identification: SSH-2.0-Go
+2022-10-22 19:37:16.119 - [Debug] [Connection] Attacker connected: 34.159.196.102 | Client Identification: SSH-2.0-Go
+2022-10-22 19:37:16.122 - [Debug] [Connection] Attacker connected: 34.159.196.102 | Client Identification: SSH-2.0-Go
+2022-10-22 19:37:16.122 - [Debug] [Connection] Attacker connected: 34.159.196.102 | Client Identification: SSH-2.0-Go
+2022-10-22 19:37:16.123 - [Debug] [Connection] Attacker connected: 34.159.196.102 | Client Identification: SSH-2.0-Go

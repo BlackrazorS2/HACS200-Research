@@ -1,0 +1,48 @@
+
+2022-10-23 14:37:07.634 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-23 14:37:07.635 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 14:37:07.635 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.220
+2022-10-23 14:37:07.654 - [Debug] [Auth] Attacker 93.103.126.32 trying to authenticate with 'none'
+2022-10-23 14:37:07.654 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 14:37:07.655 - [Debug] [Auth] Attacker 223.171.91.147 trying to authenticate with 'publickey'
+2022-10-23 14:37:07.660 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 14:37:07.660 - [Debug] [Auth] Attacker: 223.171.91.147 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 14:37:07.716 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 14:37:07.831 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-23 14:37:07.870 - [Debug] [Auth] Attacker 91.125.119.231 trying to authenticate with 'none'
+2022-10-23 14:37:07.870 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 14:37:07.911 - [Debug] [Auth] Attacker 93.103.126.32 trying to authenticate with 'publickey'
+2022-10-23 14:37:07.912 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 14:37:07.913 - [Debug] [Auth] Attacker: 93.103.126.32 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 14:37:07.940 - [Debug] [Connection] Attacker closed connection
+2022-10-23 14:37:07.946 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-23 14:37:07.948 - [Debug] [LXC] Container's OpenSSH server closed connection
+2022-10-23 14:37:08.104 - [Debug] [Auth] Attacker 91.125.119.231 trying to authenticate with 'password'
+2022-10-23 14:37:08.106 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 14:37:08.106 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.220
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:3172783) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_1',
+  containerIp: '10.0.3.247',
+  mitmPort: 1000,
+  autoAccessFixed: 1
+}
+2022-10-23 14:37:41.889 - [Info] MITM Version: 2
+2022-10-23 14:37:41.890 - [Info] Auto Access Enabled: true
+2022-10-23 14:37:41.891 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-23 14:37:41.901 - [Info] SSH man-in-the-middle server for 10.0.3.247 listening on 10.0.3.1:1000

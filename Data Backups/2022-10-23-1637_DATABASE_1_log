@@ -1,0 +1,17 @@
+
+2022-10-23 16:37:18.942 - [Debug] [Auth] Attacker 61.84.162.66 trying to authenticate with 'publickey'
+2022-10-23 16:37:18.942 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 16:37:18.943 - [Debug] [Auth] Attacker: 61.84.162.66 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 16:37:18.960 - [Debug] [Auth] Attacker 209.216.177.158 trying to authenticate with 'none'
+2022-10-23 16:37:18.961 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 16:37:19.169 - [Debug] [Auth] Attacker 209.216.177.158 trying to authenticate with 'password'
+2022-10-23 16:37:19.169 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 16:37:19.170 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.79
+2022-10-23 16:37:19.219 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 16:37:19.347 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 16:37:19.376 - [Debug] [EXEC] Noninteractive mode attacker command: echo > /dev/shm/ifconfig; chmod 777 /dev/shm/ifconfig; cat > /dev/shm/ifconfig
+2022-10-23 16:37:19.549 - [Debug] [Connection] Attacker connected: 61.84.162.66 | Client Identification: SSH-2.0-Go
+2022-10-23 16:37:19.645 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:3869965) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)

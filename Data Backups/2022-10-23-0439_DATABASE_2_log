@@ -1,0 +1,41 @@
+
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:3487381) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_2',
+  containerIp: '10.0.3.3',
+  mitmPort: 1001,
+  autoAccessFixed: 1
+}
+Error: ENOENT: no such file or directory, open '/var/lib/lxc/DATABASE_2/rootfs/etc/ssh/ssh_host_ecdsa_key'
+    at Object.openSync (node:fs:594:3)
+    at Object.readFileSync (node:fs:462:35)
+    at readKeys (/home/student/MITM/server/keys.js:19:18)
+    at readCTKeys (/home/student/MITM/server/keys.js:29:15)
+    at Object.loadKeys (/home/student/MITM/server/keys.js:48:12)
+    at Object.<anonymous> (/home/student/MITM/server/index.js:158:29)
+    at Module._compile (node:internal/modules/cjs/loader:1126:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1180:10)
+    at Module.load (node:internal/modules/cjs/loader:1004:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:839:12) {
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: '/var/lib/lxc/DATABASE_2/rootfs/etc/ssh/ssh_host_ecdsa_key'
+}
+[ERROR] Could not read the keys from the container! Is the container mounted/running and is openssh-server installed?
+{"level":"error","message":"Forever detected script exited with code: 1"}

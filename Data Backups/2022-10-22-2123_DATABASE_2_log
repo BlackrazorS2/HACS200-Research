@@ -1,0 +1,77 @@
+
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:2407182) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_2',
+  containerIp: '10.0.3.115',
+  mitmPort: 1001,
+  autoAccessFixed: 1
+}
+2022-10-22 20:51:07.692 - [Info] MITM Version: 2
+2022-10-22 20:51:07.693 - [Info] Auto Access Enabled: true
+2022-10-22 20:51:07.693 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-22 20:51:07.701 - [Info] SSH man-in-the-middle server for 10.0.3.115 listening on 10.0.3.1:1001
+2022-10-22 21:23:03.882 - [Debug] [Connection] Attacker connected: 34.107.7.145 | Client Identification: SSH-2.0-Go
+2022-10-22 21:23:03.884 - [Debug] [Connection] Attacker connected: 34.107.7.145 | Client Identification: SSH-2.0-Go
+2022-10-22 21:23:03.885 - [Debug] [Connection] Attacker connected: 34.107.7.145 | Client Identification: SSH-2.0-Go
+2022-10-22 21:23:03.885 - [Debug] [Connection] Attacker connected: 34.107.7.145 | Client Identification: SSH-2.0-Go
+2022-10-22 21:23:03.886 - [Debug] [Connection] Attacker connected: 34.107.7.145 | Client Identification: SSH-2.0-Go
+2022-10-22 21:23:03.886 - [Debug] [Connection] Attacker connected: 34.107.7.145 | Client Identification: SSH-2.0-Go
+2022-10-22 21:23:03.886 - [Debug] [Connection] Attacker connected: 34.107.7.145 | Client Identification: SSH-2.0-Go
+2022-10-22 21:23:03.887 - [Debug] [Connection] Attacker connected: 34.107.7.145 | Client Identification: SSH-2.0-Go
+2022-10-22 21:23:03.887 - [Debug] [Connection] Attacker connected: 34.107.7.145 | Client Identification: SSH-2.0-Go
+2022-10-22 21:23:03.888 - [Debug] [Connection] Attacker connected: 34.107.7.145 | Client Identification: SSH-2.0-Go
+2022-10-22 21:23:03.888 - [Debug] [Connection] Attacker connected: 34.107.7.145 | Client Identification: SSH-2.0-Go
+2022-10-22 21:23:03.896 - [Debug] [Connection] Attacker connected: 34.107.7.145 | Client Identification: SSH-2.0-Go
+2022-10-22 21:23:03.907 - [Debug] [Connection] Attacker connected: 34.107.7.145 | Client Identification: SSH-2.0-Go
+2022-10-22 21:23:04.864 - [Debug] [Connection] Attacker connected: 34.107.7.145 | Client Identification: SSH-2.0-Go
+2022-10-22 21:23:04.866 - [Debug] [Connection] Attacker connected: 34.107.7.145 | Client Identification: SSH-2.0-Go
+2022-10-22 21:23:07.108 - [Debug] [Connection] Attacker connected: 34.107.7.145 | Client Identification: SSH-2.0-Go
+2022-10-22 21:23:07.108 - [Debug] [Connection] Attacker connected: 34.107.7.145 | Client Identification: SSH-2.0-Go
+2022-10-22 21:23:10.501 - [Debug] [Connection] Attacker connected: 34.107.7.145 | Client Identification: SSH-2.0-Go
+2022-10-22 21:23:12.048 - [Debug] [Auth] Attacker 34.107.7.145 trying to authenticate with 'none'
+2022-10-22 21:23:12.049 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-22 21:23:12.172 - [Debug] [Auth] Attacker 34.107.7.145 trying to authenticate with 'none'
+2022-10-22 21:23:12.172 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-22 21:23:12.172 - [Debug] [Auth] Attacker 34.107.7.145 trying to authenticate with 'none'
+2022-10-22 21:23:12.172 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-22 21:23:12.522 - [Debug] [Auth] Attacker 34.107.7.145 trying to authenticate with 'none'
+2022-10-22 21:23:12.522 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-22 21:23:14.572 - [Debug] [Auth] Attacker 34.107.7.145 trying to authenticate with 'password'
+2022-10-22 21:23:14.573 - [Debug] [Auto Access] Attacker: 34.107.7.145, Threshold: 1, Attempts: 1
+2022-10-22 21:23:14.573 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-22 21:23:14.573 - [Debug] [Auto Access] Adding the following credentials: 'root:1111'
+2022-10-22 21:23:14.629 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-22 21:23:14.631 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-22 21:23:14.631 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.115
+2022-10-22 21:23:14.659 - [Debug] [Auth] Attacker 34.107.7.145 trying to authenticate with 'password'
+2022-10-22 21:23:14.660 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-22 21:23:14.660 - [Debug] [Auth] Attacker: 34.107.7.145 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-22 21:23:14.661 - [Debug] [Auth] Attacker 34.107.7.145 trying to authenticate with 'password'
+2022-10-22 21:23:14.661 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2022-10-22 21:23:14.661 - [Debug] [Auth] Attacker: 34.107.7.145 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-22 21:23:14.685 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-22 21:23:14.829 - [Debug] [Auth] Attacker 34.107.7.145 trying to authenticate with 'none'
+2022-10-22 21:23:14.829 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-22 21:23:15.016 - [Debug] [Auth] Attacker 34.107.7.145 trying to authenticate with 'password'
+2022-10-22 21:23:15.017 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2022-10-22 21:23:15.017 - [Debug] [Auth] Attacker: 34.107.7.145 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-22 21:23:17.812 - [Debug] [Connection] Attacker closed the connection
+2022-10-22 21:23:17.937 - [Debug] [Auth] Attacker 34.107.7.145 trying to authenticate with 'password'
+2022-10-22 21:23:17.937 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2022-10-22 21:23:17.937 - [Debug] [Auth] Attacker: 34.107.7.145 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-22 21:23:18.146 - [Debug] [Connection] Attacker closed the connection

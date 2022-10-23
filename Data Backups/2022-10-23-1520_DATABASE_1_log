@@ -1,0 +1,53 @@
+
+2022-10-23 15:20:13.658 - [Debug] [Auth] Attacker 223.171.91.158 trying to authenticate with 'publickey'
+2022-10-23 15:20:13.658 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 15:20:13.659 - [Debug] [Auth] Attacker: 223.171.91.158 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 15:20:13.729 - [Debug] [Connection] Attacker connected: 59.1.226.211 | Client Identification: SSH-2.0-Go
+2022-10-23 15:20:13.735 - [Debug] [Auth] Attacker 182.224.177.33 trying to authenticate with 'none'
+2022-10-23 15:20:13.736 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:3576949) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_1',
+  containerIp: '10.0.3.113',
+  mitmPort: 1000,
+  autoAccessFixed: 1
+}
+2022-10-23 15:20:42.453 - [Info] MITM Version: 2
+2022-10-23 15:20:42.455 - [Info] Auto Access Enabled: true
+2022-10-23 15:20:42.456 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-23 15:20:42.464 - [Info] SSH man-in-the-middle server for 10.0.3.113 listening on 10.0.3.1:1000
+2022-10-23 15:20:43.912 - [Debug] [Connection] Attacker connected: 101.35.211.207 | Client Identification: SSH-2.0-Go
+2022-10-23 15:20:44.910 - [Debug] [Connection] Attacker connected: 82.64.113.245 | Client Identification: SSH-2.0-Go
+2022-10-23 15:20:45.190 - [Debug] [Auth] Attacker 101.35.211.207 trying to authenticate with 'none'
+2022-10-23 15:20:45.190 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 15:20:45.464 - [Debug] [Auth] Attacker 82.64.113.245 trying to authenticate with 'none'
+2022-10-23 15:20:45.464 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 15:20:45.493 - [Debug] [Connection] Attacker connected: 223.171.91.158 | Client Identification: SSH-2.0-Go
+2022-10-23 15:20:45.645 - [Debug] [Auth] Attacker 101.35.211.207 trying to authenticate with 'publickey'
+2022-10-23 15:20:45.647 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 15:20:45.647 - [Debug] [Auth] Attacker: 101.35.211.207 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 15:20:45.673 - [Debug] [Auth] Attacker 82.64.113.245 trying to authenticate with 'publickey'
+2022-10-23 15:20:45.673 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 15:20:45.674 - [Debug] [Auth] Attacker: 82.64.113.245 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 15:20:45.895 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 15:20:45.931 - [Debug] [Connection] Attacker connected: 182.224.177.33 | Client Identification: SSH-2.0-Go
+2022-10-23 15:20:45.981 - [Debug] [Connection] Attacker connected: 82.64.113.245 | Client Identification: SSH-2.0-Go
+2022-10-23 15:20:46.097 - [Debug] [Connection] Attacker connected: 191.242.188.103 | Client Identification: SSH-2.0-Go
+2022-10-23 15:20:46.102 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 15:20:46.117 - [Debug] [Connection] Attacker connected: 112.160.137.62 | Client Identification: SSH-2.0-Go
+2022-10-23 15:20:46.337 - [Debug] [Connection] Attacker connected: 101.35.211.207 | Client Identification: SSH-2.0-Go

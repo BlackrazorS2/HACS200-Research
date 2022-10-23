@@ -1,0 +1,66 @@
+
+(node:2660432) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_1',
+  containerIp: '10.0.3.90',
+  mitmPort: 1000,
+  autoAccessFixed: 1
+}
+2022-10-23 11:37:19.765 - [Info] MITM Version: 2
+2022-10-23 11:37:19.766 - [Info] Auto Access Enabled: true
+2022-10-23 11:37:19.767 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-23 11:37:19.776 - [Info] SSH man-in-the-middle server for 10.0.3.90 listening on 10.0.3.1:1000
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:2661646) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_1',
+  containerIp: '10.0.3.10',
+  mitmPort: 1000,
+  autoAccessFixed: 1
+}
+2022-10-23 11:37:48.721 - [Info] MITM Version: 2
+2022-10-23 11:37:48.723 - [Info] Auto Access Enabled: true
+2022-10-23 11:37:48.723 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-23 11:37:48.730 - [Info] SSH man-in-the-middle server for 10.0.3.10 listening on 10.0.3.1:1000
+2022-10-23 11:37:50.221 - [Debug] [Connection] Attacker connected: 213.255.16.153 | Client Identification: SSH-2.0-Go
+2022-10-23 11:37:50.504 - [Debug] [Connection] Attacker connected: 78.189.25.224 | Client Identification: SSH-2.0-Go
+2022-10-23 11:37:50.972 - [Debug] [Auth] Attacker 213.255.16.153 trying to authenticate with 'none'
+2022-10-23 11:37:50.973 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 11:37:51.257 - [Debug] [Auth] Attacker 213.255.16.153 trying to authenticate with 'publickey'
+2022-10-23 11:37:51.258 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 11:37:51.259 - [Debug] [Auth] Attacker: 213.255.16.153 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 11:37:51.406 - [Debug] [Auth] Attacker 78.189.25.224 trying to authenticate with 'none'
+2022-10-23 11:37:51.406 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 11:37:51.541 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 11:37:51.666 - [Debug] [Connection] Attacker connected: 213.255.16.153 | Client Identification: SSH-2.0-Go
+2022-10-23 11:37:51.735 - [Debug] [Auth] Attacker 78.189.25.224 trying to authenticate with 'publickey'
+2022-10-23 11:37:51.736 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 11:37:51.737 - [Debug] [Auth] Attacker: 78.189.25.224 has so far made 1 attempts. Remaining: 5 attempts

@@ -1,0 +1,48 @@
+
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:3988330) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_4',
+  containerIp: '10.0.3.44',
+  mitmPort: 1003,
+  autoAccessFixed: 1
+}
+2022-10-23 05:54:48.069 - [Info] MITM Version: 2
+2022-10-23 05:54:48.071 - [Info] Auto Access Enabled: true
+2022-10-23 05:54:48.077 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-23 05:54:48.090 - [Info] SSH man-in-the-middle server for 10.0.3.44 listening on 10.0.3.1:1003
+2022-10-23 05:55:12.952 - [Debug] [Connection] Attacker connected: 112.186.242.154 | Client Identification: SSH-2.0-HELLOWORLD
+2022-10-23 05:55:17.217 - [Debug] [Auth] Attacker 112.186.242.154 trying to authenticate with 'password'
+2022-10-23 05:55:17.218 - [Debug] [Auto Access] Attacker: 112.186.242.154, Threshold: 1, Attempts: 1
+2022-10-23 05:55:17.218 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-23 05:55:17.218 - [Debug] [Auto Access] Adding the following credentials: 'admin:admin'
+2022-10-23 05:55:17.389 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-23 05:55:17.391 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 05:55:17.392 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.44
+2022-10-23 05:55:17.449 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 05:55:19.183 - [Debug] [SHELL] Opened shell for attacker
+2022-10-23 05:55:19.186 - [Debug] [LXC Streams] New Stream | Total Streams: 1
+2022-10-23 05:55:19.728 - [Debug] [SHELL] Attacker Keystroke: echo[Space]-e[Space]'\x67\x61\x79\x66\x67\x74'[LF]
+2022-10-23 05:55:19.733 - [Debug] [SHELL] line from reader: echo -e '\x67\x61\x79\x66\x67\x74'
+2022-10-23 05:55:19.733 - [Debug] [SHELL] Keystroke buffer: 101,99,104,111,32,45,101,32,39,92,120,54,55,92,120,54,49,92,120,55,57,92,120,54,54,92,120,54,55,92,120,55,52,39,10
+2022-10-23 05:55:20.272 - [Debug] [Connection] Attacker connected: 143.244.141.191 | Client Identification: SSH-2.0-Go
+2022-10-23 05:55:21.784 - [Debug] [Auth] Attacker 143.244.141.191 trying to authenticate with 'none'
+2022-10-23 05:55:21.784 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 05:55:22.269 - [Debug] [Auth] Attacker 143.244.141.191 trying to authenticate with 'password'
+2022-10-23 05:55:22.270 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-23 05:55:22.271 - [Debug] [Auth] Attacker: 143.244.141.191 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 05:55:22.756 - [Debug] [Connection] Attacker closed the connection

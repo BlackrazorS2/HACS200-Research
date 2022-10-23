@@ -1,0 +1,45 @@
+
+2022-10-23 11:46:07.180 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-23 11:46:07.246 - [Debug] [Auth] Attacker 118.41.204.72 trying to authenticate with 'publickey'
+2022-10-23 11:46:07.247 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 11:46:07.247 - [Debug] [Auth] Attacker: 118.41.204.72 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 11:46:07.265 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-23 11:46:07.400 - [Debug] [Auth] Attacker 223.171.91.143 trying to authenticate with 'none'
+2022-10-23 11:46:07.400 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:2683099) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_1',
+  containerIp: '10.0.3.32',
+  mitmPort: 1000,
+  autoAccessFixed: 1
+}
+2022-10-23 11:46:34.297 - [Info] MITM Version: 2
+2022-10-23 11:46:34.299 - [Info] Auto Access Enabled: true
+2022-10-23 11:46:34.299 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-23 11:46:34.312 - [Info] SSH man-in-the-middle server for 10.0.3.32 listening on 10.0.3.1:1000
+2022-10-23 11:46:36.552 - [Debug] [Connection] Attacker connected: 209.216.177.158 | Client Identification: SSH-2.0-Go
+2022-10-23 11:46:37.114 - [Debug] [Auth] Attacker 209.216.177.158 trying to authenticate with 'none'
+2022-10-23 11:46:37.114 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 11:46:37.326 - [Debug] [Auth] Attacker 209.216.177.158 trying to authenticate with 'publickey'
+2022-10-23 11:46:37.327 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 11:46:37.328 - [Debug] [Auth] Attacker: 209.216.177.158 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 11:46:37.344 - [Debug] [Connection] Attacker connected: 112.160.137.62 | Client Identification: SSH-2.0-Go
+2022-10-23 11:46:37.539 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 11:46:37.638 - [Debug] [Connection] Attacker connected: 209.216.177.158 | Client Identification: SSH-2.0-Go
+2022-10-23 11:46:37.709 - [Debug] [Connection] Attacker connected: 144.22.191.115 | Client Identification: SSH-2.0-Go
+2022-10-23 11:46:37.983 - [Debug] [Connection] Attacker connected: 101.35.211.207 | Client Identification: SSH-2.0-Go

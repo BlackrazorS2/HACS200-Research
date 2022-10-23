@@ -1,0 +1,40 @@
+
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:3199611) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_1',
+  containerIp: '10.0.3.193',
+  mitmPort: 1000,
+  autoAccessFixed: 1
+}
+2022-10-23 02:25:35.243 - [Info] MITM Version: 2
+2022-10-23 02:25:35.244 - [Info] Auto Access Enabled: true
+2022-10-23 02:25:35.245 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-23 02:25:35.251 - [Info] SSH man-in-the-middle server for 10.0.3.193 listening on 10.0.3.1:1000
+2022-10-23 03:09:08.695 - [Debug] [Connection] Attacker connected: 141.98.10.210 | Client Identification: SSH-2.0-libssh2_1.4.3
+2022-10-23 03:09:09.737 - [Debug] [Auth] Attacker 141.98.10.210 trying to authenticate with 'password'
+2022-10-23 03:09:09.738 - [Debug] [Auto Access] Attacker: 141.98.10.210, Threshold: 1, Attempts: 1
+2022-10-23 03:09:09.739 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-23 03:09:09.739 - [Debug] [Auto Access] Adding the following credentials: 'user:1'
+2022-10-23 03:09:09.960 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-23 03:09:09.962 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 03:09:09.962 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.193
+2022-10-23 03:09:10.014 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 03:09:10.564 - [Debug] [EXEC] Noninteractive mode attacker command: uname -a; sudo hive-passwd set 3ij4hgji34h5ji345ihij5h; sudo hive-passwd ij234ghji354hji4ji5h
+2022-10-23 03:09:10.847 - [Debug] [Connection] Attacker closed connection
+2022-10-23 03:09:10.853 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-23 03:09:10.854 - [Debug] [LXC] Container's OpenSSH server closed connection

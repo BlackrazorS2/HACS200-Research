@@ -1,0 +1,26 @@
+
+2022-10-23 09:56:23.120 - [Debug] [Auth] Attacker 121.200.53.148 trying to authenticate with 'password'
+2022-10-23 09:56:23.120 - [Debug] [Auto Access] Attacker: 121.200.53.148, Threshold: 1, Attempts: 1
+2022-10-23 09:56:23.120 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-23 09:56:23.120 - [Debug] [Auto Access] Adding the following credentials: 'root:1'
+2022-10-23 09:56:23.268 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-23 09:56:23.270 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 09:56:23.270 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.129
+2022-10-23 09:56:23.329 - [Debug] [Auth] Attacker 89.212.123.191 trying to authenticate with 'none'
+2022-10-23 09:56:23.330 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 09:56:23.343 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 09:56:23.351 - [Debug] [Connection] Attacker connected: 157.245.137.18 | Client Identification: SSH-2.0-Go
+2022-10-23 09:56:23.485 - [Debug] [Auth] Attacker 157.245.137.18 trying to authenticate with 'none'
+2022-10-23 09:56:23.485 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 09:56:23.555 - [Debug] [Auth] Attacker 157.245.137.18 trying to authenticate with 'publickey'
+2022-10-23 09:56:23.555 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 09:56:23.556 - [Debug] [Auth] Attacker: 157.245.137.18 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 09:56:23.559 - [Debug] [Auth] Attacker 89.212.123.191 trying to authenticate with 'password'
+2022-10-23 09:56:23.559 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 09:56:23.559 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.129
+2022-10-23 09:56:23.606 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 09:56:23.632 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 09:56:23.645 - [Debug] [Connection] Attacker connected: 157.245.137.18 | Client Identification: SSH-2.0-Go
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:2187256) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)

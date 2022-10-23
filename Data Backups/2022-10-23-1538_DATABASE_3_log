@@ -1,0 +1,37 @@
+
+2022-10-23 15:38:12.391 - [Debug] [Connection] Attacker connected: 222.165.136.99 | Client Identification: SSH-2.0-Go
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:3624896) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_3',
+  containerIp: '10.0.3.220',
+  mitmPort: 1002,
+  autoAccessFixed: 1
+}
+2022-10-23 15:38:46.666 - [Info] MITM Version: 2
+2022-10-23 15:38:46.668 - [Info] Auto Access Enabled: true
+2022-10-23 15:38:46.668 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-23 15:38:46.679 - [Info] SSH man-in-the-middle server for 10.0.3.220 listening on 10.0.3.1:1002
+2022-10-23 15:38:50.764 - [Debug] [Connection] Attacker connected: 120.197.154.22 | Client Identification: SSH-2.0-Go
+2022-10-23 15:38:52.440 - [Debug] [Auth] Attacker 120.197.154.22 trying to authenticate with 'none'
+2022-10-23 15:38:52.440 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 15:38:53.051 - [Debug] [Auth] Attacker 120.197.154.22 trying to authenticate with 'publickey'
+2022-10-23 15:38:53.052 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 15:38:53.053 - [Debug] [Auth] Attacker: 120.197.154.22 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 15:38:53.620 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 15:38:53.889 - [Debug] [Connection] Attacker connected: 120.197.154.22 | Client Identification: SSH-2.0-Go
+2022-10-23 15:38:53.918 - [Debug] [Connection] Attacker connected: 139.59.135.142 | Client Identification: SSH-2.0-Go

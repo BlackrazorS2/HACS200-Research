@@ -1,0 +1,54 @@
+
+2022-10-23 15:54:07.791 - [Debug] [Auth] Attacker 143.198.133.234 trying to authenticate with 'none'
+2022-10-23 15:54:07.791 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 15:54:07.928 - [Debug] [Auth] Attacker 143.198.133.234 trying to authenticate with 'password'
+2022-10-23 15:54:07.929 - [Debug] [Auto Access] Attacker: 143.198.133.234, Threshold: 1, Attempts: 1
+2022-10-23 15:54:07.929 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-23 15:54:07.929 - [Debug] [Auto Access] Adding the following credentials: 'root:1'
+2022-10-23 15:54:08.019 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-23 15:54:08.021 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 15:54:08.021 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.45
+2022-10-23 15:54:08.073 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 15:54:08.119 - [Debug] [Auth] Attacker 102.141.225.244 trying to authenticate with 'publickey'
+2022-10-23 15:54:08.119 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 15:54:08.120 - [Debug] [Auth] Attacker: 102.141.225.244 has so far made 1 attempts. Remaining: 5 attempts
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:3689552) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_3',
+  containerIp: '10.0.3.248',
+  mitmPort: 1002,
+  autoAccessFixed: 1
+}
+2022-10-23 15:54:39.672 - [Info] MITM Version: 2
+2022-10-23 15:54:39.674 - [Info] Auto Access Enabled: true
+2022-10-23 15:54:39.674 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-23 15:54:39.680 - [Info] SSH man-in-the-middle server for 10.0.3.248 listening on 10.0.3.1:1002
+2022-10-23 15:54:39.884 - [Debug] [Connection] Attacker connected: 194.24.174.8 | Client Identification: SSH-2.0-Go
+2022-10-23 15:54:40.089 - [Debug] [Connection] Attacker connected: 222.165.136.99 | Client Identification: SSH-2.0-Go
+2022-10-23 15:54:40.134 - [Debug] [Connection] Attacker connected: 102.141.225.244 | Client Identification: SSH-2.0-Go
+2022-10-23 15:54:40.734 - [Debug] [Auth] Attacker 194.24.174.8 trying to authenticate with 'none'
+2022-10-23 15:54:40.734 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 15:54:41.029 - [Debug] [Auth] Attacker 194.24.174.8 trying to authenticate with 'publickey'
+2022-10-23 15:54:41.031 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 15:54:41.032 - [Debug] [Auth] Attacker: 194.24.174.8 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 15:54:41.311 - [Debug] [Connection] Attacker connected: 121.200.53.148 | Client Identification: SSH-2.0-Go
+2022-10-23 15:54:41.325 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 15:54:41.451 - [Debug] [Connection] Attacker connected: 194.24.174.8 | Client Identification: SSH-2.0-Go
+2022-10-23 15:54:41.495 - [Debug] [Connection] Attacker connected: 223.223.200.243 | Client Identification: SSH-2.0-Go
+2022-10-23 15:54:41.576 - [Debug] [Auth] Attacker 102.141.225.244 trying to authenticate with 'none'
+2022-10-23 15:54:41.577 - [Debug] [Auth] Attacker authentication error: No authentication method provided

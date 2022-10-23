@@ -1,0 +1,25 @@
+
+022-10-23 07:12:46.850 - [Debug] [Auth] Attacker 82.64.113.245 trying to authenticate with 'none'
+2022-10-23 07:12:46.850 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 07:12:46.877 - [Debug] [Auth] Attacker 173.18.35.41 trying to authenticate with 'none'
+2022-10-23 07:12:46.877 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 07:12:46.960 - [Debug] [Auth] Attacker 173.18.35.41 trying to authenticate with 'password'
+2022-10-23 07:12:46.961 - [Debug] [Auto Access] Attacker: 173.18.35.41, Threshold: 1, Attempts: 1
+2022-10-23 07:12:46.961 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-23 07:12:46.961 - [Debug] [Auto Access] Adding the following credentials: 'root:1'
+2022-10-23 07:12:47.114 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-23 07:12:47.115 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 07:12:47.115 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.196
+2022-10-23 07:12:47.143 - [Debug] [Auth] Attacker 82.64.113.245 trying to authenticate with 'password'
+2022-10-23 07:12:47.143 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 07:12:47.144 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.196
+2022-10-23 07:12:47.230 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 07:12:47.297 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 07:12:47.363 - [Debug] [Connection] Attacker connected: 119.4.109.69 | Client Identification: SSH-2.0-Go
+2022-10-23 07:12:47.452 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-23 07:12:47.596 - [Debug] [Connection] Attacker connected: 118.218.209.149 | Client Identification: SSH-2.0-Go
+2022-10-23 07:12:47.664 - [Debug] [Connection] Attacker closed connection
+2022-10-23 07:12:47.672 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-23 07:12:47.673 - [Debug] [LXC] Container's OpenSSH server closed connection
+2022-10-23 07:12:47.726 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

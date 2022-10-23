@@ -1,0 +1,39 @@
+
+node:1835986) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+2022-10-23 09:22:20.884 - [Debug] [Auth] Attacker 195.87.73.208 trying to authenticate with 'none'
+2022-10-23 09:22:20.892 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_1',
+  containerIp: '10.0.3.75',
+  mitmPort: 1000,
+  autoAccessFixed: 1
+}
+2022-10-23 09:22:20.968 - [Info] MITM Version: 2
+2022-10-23 09:22:20.970 - [Info] Auto Access Enabled: true
+2022-10-23 09:22:20.970 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-23 09:22:20.978 - [Debug] listen EADDRINUSE: address already in use 10.0.3.1:1000
+2022-10-23 09:22:20.978 - [Error] Another MITM instance or another program is already listening on this port
+{"level":"error","message":"Forever detected script exited with code: 1"}
+2022-10-23 09:22:21.025 - [Debug] [Connection] Attacker connected: 175.178.247.209 | Client Identification: SSH-2.0-Go
+2022-10-23 09:22:21.175 - [Debug] [Auth] Attacker 195.87.73.208 trying to authenticate with 'password'
+2022-10-23 09:22:21.175 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Container user is disabled
+2022-10-23 09:22:21.176 - [Debug] [Auth] Attacker: 195.87.73.208 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 09:22:21.225 - [Debug] [Connection] Attacker connected: 121.200.53.148 | Client Identification: SSH-2.0-Go
+2022-10-23 09:22:21.464 - [Debug] [Connection] Attacker closed the connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:1842513) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)

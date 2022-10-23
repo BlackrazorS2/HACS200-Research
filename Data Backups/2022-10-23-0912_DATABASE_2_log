@@ -1,0 +1,20 @@
+
+2022-10-23 09:11:25.757 - [Debug] [Auth] Attacker 54.38.97.156 trying to authenticate with 'none'
+2022-10-23 09:11:25.757 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 09:11:25.972 - [Debug] [Auth] Attacker 182.224.177.33 trying to authenticate with 'publickey'
+2022-10-23 09:11:25.973 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 09:11:25.974 - [Debug] [Auth] Attacker: 182.224.177.33 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 09:11:25.981 - [Debug] [Auth] Attacker 93.103.126.32 trying to authenticate with 'none'
+2022-10-23 09:11:25.981 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 09:11:26.009 - [Debug] [Auth] Attacker 54.38.97.156 trying to authenticate with 'password'
+2022-10-23 09:11:26.011 - [Debug] [Auto Access] Attacker: 54.38.97.156, Threshold: 1, Attempts: 1
+2022-10-23 09:11:26.011 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-23 09:11:26.012 - [Debug] [Auto Access] Adding the following credentials: 'root:1'
+2022-10-23 09:11:26.412 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-23 09:11:26.413 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 09:11:26.413 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.63
+2022-10-23 09:11:26.423 - [Debug] [Auth] Attacker 93.103.126.32 trying to authenticate with 'password'
+2022-10-23 09:11:26.427 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 09:11:26.427 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.63
+2022-10-23 09:11:26.428 - [Debug] [Connection] Attacker closed the connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

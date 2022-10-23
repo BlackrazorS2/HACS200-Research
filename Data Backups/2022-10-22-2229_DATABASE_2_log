@@ -1,0 +1,72 @@
+
+2022-10-22 22:23:49.581 - [Debug] [EXEC] Noninteractive mode attacker command: uname -a
+2022-10-22 22:23:49.756 - [Debug] [Auth] Attacker 176.31.240.226 trying to authenticate with 'none'
+2022-10-22 22:23:49.756 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-22 22:23:49.892 - [Debug] [Auth] Attacker 176.31.240.226 trying to authenticate with 'none'
+2022-10-22 22:23:49.892 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:2622792) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_2',
+  containerIp: '10.0.3.22',
+  mitmPort: 1001,
+  autoAccessFixed: 1
+}
+2022-10-22 22:24:52.636 - [Info] MITM Version: 2
+2022-10-22 22:24:52.637 - [Info] Auto Access Enabled: true
+2022-10-22 22:24:52.637 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-22 22:24:52.644 - [Info] SSH man-in-the-middle server for 10.0.3.22 listening on 10.0.3.1:1001
+2022-10-22 22:28:48.343 - [Debug] [Connection] Attacker connected: 35.203.146.100 | Client Identification: SSH-2.0-Go
+2022-10-22 22:28:48.345 - [Debug] [Connection] Attacker connected: 35.203.146.100 | Client Identification: SSH-2.0-Go
+2022-10-22 22:28:48.345 - [Debug] [Connection] Attacker connected: 35.203.146.100 | Client Identification: SSH-2.0-Go
+2022-10-22 22:28:48.346 - [Debug] [Connection] Attacker connected: 35.203.146.100 | Client Identification: SSH-2.0-Go
+2022-10-22 22:28:48.346 - [Debug] [Connection] Attacker connected: 35.203.146.100 | Client Identification: SSH-2.0-Go
+2022-10-22 22:28:48.347 - [Debug] [Connection] Attacker connected: 35.203.146.100 | Client Identification: SSH-2.0-Go
+2022-10-22 22:28:48.347 - [Debug] [Connection] Attacker connected: 35.203.146.100 | Client Identification: SSH-2.0-Go
+2022-10-22 22:28:48.348 - [Debug] [Connection] Attacker connected: 35.203.146.100 | Client Identification: SSH-2.0-Go
+2022-10-22 22:28:48.349 - [Debug] [Connection] Attacker connected: 35.203.146.100 | Client Identification: SSH-2.0-Go
+2022-10-22 22:28:49.081 - [Debug] [Connection] Attacker connected: 35.203.146.100 | Client Identification: SSH-2.0-Go
+2022-10-22 22:28:49.085 - [Debug] [Connection] Attacker connected: 35.203.146.100 | Client Identification: SSH-2.0-Go
+2022-10-22 22:28:49.086 - [Debug] [Connection] Attacker connected: 35.203.146.100 | Client Identification: SSH-2.0-Go
+2022-10-22 22:28:49.098 - [Debug] [Connection] Attacker connected: 35.203.146.100 | Client Identification: SSH-2.0-Go
+2022-10-22 22:28:49.100 - [Debug] [Connection] Attacker connected: 35.203.146.100 | Client Identification: SSH-2.0-Go
+2022-10-22 22:28:49.101 - [Debug] [Connection] Attacker connected: 35.203.146.100 | Client Identification: SSH-2.0-Go
+2022-10-22 22:28:52.956 - [Debug] [Connection] Attacker connected: 35.203.146.100 | Client Identification: SSH-2.0-Go
+2022-10-22 22:28:52.956 - [Debug] [Connection] Attacker connected: 35.203.146.100 | Client Identification: SSH-2.0-Go
+2022-10-22 22:28:59.703 - [Debug] [Auth] Attacker 35.203.146.100 trying to authenticate with 'none'
+2022-10-22 22:28:59.703 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-22 22:28:59.853 - [Debug] [Auth] Attacker 35.203.146.100 trying to authenticate with 'none'
+2022-10-22 22:28:59.853 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-22 22:29:01.831 - [Debug] [Auth] Attacker 35.203.146.100 trying to authenticate with 'password'
+2022-10-22 22:29:01.832 - [Debug] [Auto Access] Attacker: 35.203.146.100, Threshold: 1, Attempts: 1
+2022-10-22 22:29:01.832 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-22 22:29:01.832 - [Debug] [Auto Access] Adding the following credentials: 'root:1234'
+2022-10-22 22:29:01.913 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-22 22:29:01.915 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-22 22:29:01.915 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.22
+2022-10-22 22:29:01.974 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-22 22:29:02.005 - [Debug] [Auth] Attacker 35.203.146.100 trying to authenticate with 'password'
+2022-10-22 22:29:02.007 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2022-10-22 22:29:02.007 - [Debug] [Auth] Attacker: 35.203.146.100 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-22 22:29:02.390 - [Debug] [Connection] Attacker connected: 35.203.146.100 | Client Identification: SSH-2.0-Go
+2022-10-22 22:29:03.166 - [Debug] [Auth] Attacker 35.203.146.100 trying to authenticate with 'none'
+2022-10-22 22:29:03.166 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-22 22:29:04.005 - [Debug] [Connection] Attacker closed the connection
+2022-10-22 22:29:04.180 - [Debug] [Auth] Attacker 35.203.146.100 trying to authenticate with 'none'
+2022-10-22 22:29:04.180 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-22 22:29:04.198 - [Debug] [Auth] Attacker 35.203.146.100 trying to authenticate with 'none'
+2022-10-22 22:29:04.198 - [Debug] [Auth] Attacker authentication error: No authentication method provided

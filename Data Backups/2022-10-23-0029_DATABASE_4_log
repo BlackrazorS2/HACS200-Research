@@ -1,0 +1,73 @@
+
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:2945134) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_4',
+  containerIp: '10.0.3.212',
+  mitmPort: 1003,
+  autoAccessFixed: 1
+}
+2022-10-23 00:24:02.727 - [Info] MITM Version: 2
+2022-10-23 00:24:02.729 - [Info] Auto Access Enabled: true
+2022-10-23 00:24:02.729 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-23 00:24:02.735 - [Info] SSH man-in-the-middle server for 10.0.3.212 listening on 10.0.3.1:1003
+2022-10-23 00:29:03.809 - [Debug] [Connection] Attacker connected: 183.146.30.163 | Client Identification: SSH-2.0-Go
+2022-10-23 00:29:03.810 - [Debug] [Connection] Attacker connected: 183.146.30.163 | Client Identification: SSH-2.0-Go
+2022-10-23 00:29:03.827 - [Debug] [Connection] Attacker connected: 183.146.30.163 | Client Identification: SSH-2.0-Go
+2022-10-23 00:29:03.827 - [Debug] [Connection] Attacker connected: 183.146.30.163 | Client Identification: SSH-2.0-Go
+2022-10-23 00:29:03.828 - [Debug] [Connection] Attacker connected: 183.146.30.163 | Client Identification: SSH-2.0-Go
+2022-10-23 00:29:03.829 - [Debug] [Connection] Attacker connected: 183.146.30.163 | Client Identification: SSH-2.0-Go
+2022-10-23 00:29:05.110 - [Debug] [Auth] Attacker 183.146.30.163 trying to authenticate with 'none'
+2022-10-23 00:29:05.110 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 00:29:05.111 - [Debug] [Auth] Attacker 183.146.30.163 trying to authenticate with 'none'
+2022-10-23 00:29:05.111 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 00:29:05.179 - [Debug] [Auth] Attacker 183.146.30.163 trying to authenticate with 'none'
+2022-10-23 00:29:05.179 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 00:29:05.182 - [Debug] [Auth] Attacker 183.146.30.163 trying to authenticate with 'none'
+2022-10-23 00:29:05.182 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 00:29:05.183 - [Debug] [Auth] Attacker 183.146.30.163 trying to authenticate with 'none'
+2022-10-23 00:29:05.183 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 00:29:05.191 - [Debug] [Auth] Attacker 183.146.30.163 trying to authenticate with 'none'
+2022-10-23 00:29:05.191 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 00:29:05.572 - [Debug] [Auth] Attacker 183.146.30.163 trying to authenticate with 'password'
+2022-10-23 00:29:05.572 - [Debug] [Auto Access] Attacker: 183.146.30.163, Threshold: 1, Attempts: 1
+2022-10-23 00:29:05.572 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-23 00:29:05.573 - [Debug] [Auto Access] Adding the following credentials: 'ubuntu:P@ssw0rd'
+2022-10-23 00:29:05.630 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-23 00:29:05.632 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 00:29:05.633 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.212
+2022-10-23 00:29:05.645 - [Debug] [Auth] Attacker 183.146.30.163 trying to authenticate with 'password'
+2022-10-23 00:29:05.645 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-23 00:29:05.646 - [Debug] [Auth] Attacker: 183.146.30.163 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 00:29:05.659 - [Debug] [Auth] Attacker 183.146.30.163 trying to authenticate with 'password'
+2022-10-23 00:29:05.659 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-23 00:29:05.660 - [Debug] [Auth] Attacker: 183.146.30.163 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 00:29:05.662 - [Debug] [Auth] Attacker 183.146.30.163 trying to authenticate with 'password'
+2022-10-23 00:29:05.662 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-23 00:29:05.662 - [Debug] [Auth] Attacker: 183.146.30.163 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 00:29:05.663 - [Debug] [Auth] Attacker 183.146.30.163 trying to authenticate with 'password'
+2022-10-23 00:29:05.663 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Container user is disabled
+2022-10-23 00:29:05.663 - [Debug] [Auth] Attacker: 183.146.30.163 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 00:29:05.676 - [Debug] [Auth] Attacker 183.146.30.163 trying to authenticate with 'password'
+2022-10-23 00:29:05.676 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Container user is disabled
+2022-10-23 00:29:05.676 - [Debug] [Auth] Attacker: 183.146.30.163 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 00:29:05.686 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 00:29:06.105 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 00:29:06.137 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 00:29:06.141 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 00:29:06.141 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 00:29:06.156 - [Debug] [Connection] Attacker closed the connection

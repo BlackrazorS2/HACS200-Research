@@ -1,0 +1,65 @@
+
+(node:2538410) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_1',
+  containerIp: '10.0.3.47',
+  mitmPort: 1000,
+  autoAccessFixed: 1
+}
+2022-10-22 21:43:57.730 - [Info] MITM Version: 2
+2022-10-22 21:43:57.731 - [Info] Auto Access Enabled: true
+2022-10-22 21:43:57.732 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-22 21:43:57.741 - [Info] SSH man-in-the-middle server for 10.0.3.47 listening on 10.0.3.1:1000
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:2539610) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_1',
+  containerIp: '10.0.3.81',
+  mitmPort: 1000,
+  autoAccessFixed: 1
+}
+2022-10-22 21:44:24.942 - [Info] MITM Version: 2
+2022-10-22 21:44:24.943 - [Info] Auto Access Enabled: true
+2022-10-22 21:44:24.944 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-22 21:44:24.951 - [Info] SSH man-in-the-middle server for 10.0.3.81 listening on 10.0.3.1:1000
+2022-10-22 21:46:40.875 - [Debug] [Connection] Attacker connected: 141.98.10.171 | Client Identification: SSH-2.0-libssh2_1.4.3
+2022-10-22 21:46:41.923 - [Debug] [Auth] Attacker 141.98.10.171 trying to authenticate with 'password'
+2022-10-22 21:46:41.925 - [Debug] [Auto Access] Attacker: 141.98.10.171, Threshold: 1, Attempts: 1
+2022-10-22 21:46:41.925 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-22 21:46:41.926 - [Debug] [Auto Access] Adding the following credentials: 'user:1'
+2022-10-22 21:46:42.246 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-22 21:46:42.248 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-22 21:46:42.248 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.81
+2022-10-22 21:46:42.312 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-22 21:46:42.865 - [Debug] [EXEC] Noninteractive mode attacker command: uname -a; sudo hive-passwd set 1sg3g31s34ghji45hji45h; sudo hive-passwd ji363434g665jh9i45jsi13h8
+2022-10-22 21:46:43.150 - [Debug] [Connection] Attacker closed connection
+2022-10-22 21:46:43.157 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-22 21:46:43.158 - [Debug] [LXC] Container's OpenSSH server closed connection

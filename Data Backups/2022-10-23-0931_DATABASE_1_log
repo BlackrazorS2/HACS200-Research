@@ -1,0 +1,73 @@
+
+2022-10-23 09:30:48.865 - [Debug] [Auth] Attacker 209.216.177.158 trying to authenticate with 'password'
+2022-10-23 09:30:48.865 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 09:30:48.865 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.142
+2022-10-23 09:30:48.915 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 09:30:49.120 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-23 09:30:49.332 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:1939202) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_1',
+  containerIp: '10.0.3.134',
+  mitmPort: 1000,
+  autoAccessFixed: 1
+}
+2022-10-23 09:31:32.516 - [Info] MITM Version: 2
+2022-10-23 09:31:32.517 - [Info] Auto Access Enabled: true
+2022-10-23 09:31:32.518 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-23 09:31:32.527 - [Info] SSH man-in-the-middle server for 10.0.3.134 listening on 10.0.3.1:1000
+2022-10-23 09:31:32.855 - [Debug] [Connection] Attacker connected: 159.75.54.90 | Client Identification: SSH-2.0-Go
+2022-10-23 09:31:33.199 - [Debug] [Connection] Attacker connected: 12.6.69.157 | Client Identification: SSH-2.0-Go
+2022-10-23 09:31:33.832 - [Debug] [Connection] Attacker connected: 187.6.3.3 | Client Identification: SSH-2.0-Go
+2022-10-23 09:31:34.210 - [Debug] [Connection] Attacker connected: 182.224.177.33 | Client Identification: SSH-2.0-Go
+2022-10-23 09:31:35.081 - [Debug] [Auth] Attacker 187.6.3.3 trying to authenticate with 'none'
+2022-10-23 09:31:35.081 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 09:31:35.125 - [Debug] [Connection] Attacker connected: 103.105.12.48 | Client Identification: SSH-2.0-Go
+2022-10-23 09:31:35.268 - [Debug] [Connection] Attacker connected: 85.51.217.156 | Client Identification: SSH-2.0-Go
+2022-10-23 09:31:35.436 - [Debug] [Auth] Attacker 182.224.177.33 trying to authenticate with 'none'
+2022-10-23 09:31:35.437 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 09:31:35.505 - [Debug] [Auth] Attacker 187.6.3.3 trying to authenticate with 'publickey'
+2022-10-23 09:31:35.507 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 09:31:35.508 - [Debug] [Auth] Attacker: 187.6.3.3 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 09:31:35.542 - [Debug] [Auth] Attacker 159.75.54.90 trying to authenticate with 'none'
+2022-10-23 09:31:35.542 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 09:31:35.830 - [Debug] [Auth] Attacker 182.224.177.33 trying to authenticate with 'publickey'
+2022-10-23 09:31:35.831 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 09:31:35.832 - [Debug] [Auth] Attacker: 182.224.177.33 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 09:31:36.028 - [Debug] [Auth] Attacker 85.51.217.156 trying to authenticate with 'none'
+2022-10-23 09:31:36.029 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 09:31:36.048 - [Debug] [Auth] Attacker 159.75.54.90 trying to authenticate with 'publickey'
+2022-10-23 09:31:36.049 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 09:31:36.050 - [Debug] [Auth] Attacker: 159.75.54.90 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 09:31:36.113 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 09:31:36.224 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 09:31:36.292 - [Debug] [Connection] Attacker connected: 187.6.3.3 | Client Identification: SSH-2.0-Go
+2022-10-23 09:31:36.305 - [Debug] [Auth] Attacker 85.51.217.156 trying to authenticate with 'password'
+2022-10-23 09:31:36.306 - [Debug] [Auto Access] Attacker: 85.51.217.156, Threshold: 1, Attempts: 1
+2022-10-23 09:31:36.306 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-23 09:31:36.306 - [Debug] [Auto Access] Adding the following credentials: 'root:1'
+2022-10-23 09:31:36.447 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-23 09:31:36.454 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 09:31:36.454 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.134
+2022-10-23 09:31:36.508 - [Debug] [Connection] Attacker connected: 182.224.177.33 | Client Identification: SSH-2.0-Go
+2022-10-23 09:31:36.562 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 09:31:36.564 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 09:31:36.785 - [Debug] [Connection] Attacker connected: 159.75.54.90 | Client Identification: SSH-2.0-Go
+2022-10-23 09:31:37.079 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-23 09:31:37.123 - [Debug] [Auth] Attacker 103.105.12.48 trying to authenticate with 'none'
+2022-10-23 09:31:37.123 - [Debug] [Auth] Attacker authentication error: No authentication method provided

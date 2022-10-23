@@ -1,0 +1,60 @@
+
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:3304403) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_4',
+  containerIp: '10.0.3.73',
+  mitmPort: 1003,
+  autoAccessFixed: 1
+}
+2022-10-23 03:06:52.961 - [Info] MITM Version: 2
+2022-10-23 03:06:52.962 - [Info] Auto Access Enabled: true
+2022-10-23 03:06:52.962 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-23 03:06:52.969 - [Info] SSH man-in-the-middle server for 10.0.3.73 listening on 10.0.3.1:1003
+2022-10-23 03:12:31.786 - [Debug] [Connection] Attacker connected: 34.89.137.160 | Client Identification: SSH-2.0-Go
+2022-10-23 03:12:31.788 - [Debug] [Connection] Attacker connected: 34.89.137.160 | Client Identification: SSH-2.0-Go
+2022-10-23 03:12:31.789 - [Debug] [Connection] Attacker connected: 34.89.137.160 | Client Identification: SSH-2.0-Go
+2022-10-23 03:12:31.794 - [Debug] [Connection] Attacker connected: 34.89.137.160 | Client Identification: SSH-2.0-Go
+2022-10-23 03:12:31.795 - [Debug] [Connection] Attacker connected: 34.89.137.160 | Client Identification: SSH-2.0-Go
+2022-10-23 03:12:31.796 - [Debug] [Connection] Attacker connected: 34.89.137.160 | Client Identification: SSH-2.0-Go
+2022-10-23 03:12:33.074 - [Debug] [Connection] Attacker connected: 34.89.137.160 | Client Identification: SSH-2.0-Go
+2022-10-23 03:12:33.075 - [Debug] [Connection] Attacker connected: 34.89.137.160 | Client Identification: SSH-2.0-Go
+2022-10-23 03:12:33.076 - [Debug] [Connection] Attacker connected: 34.89.137.160 | Client Identification: SSH-2.0-Go
+2022-10-23 03:12:33.076 - [Debug] [Connection] Attacker connected: 34.89.137.160 | Client Identification: SSH-2.0-Go
+2022-10-23 03:12:33.077 - [Debug] [Connection] Attacker connected: 34.89.137.160 | Client Identification: SSH-2.0-Go
+2022-10-23 03:12:33.077 - [Debug] [Connection] Attacker connected: 34.89.137.160 | Client Identification: SSH-2.0-Go
+2022-10-23 03:12:33.077 - [Debug] [Connection] Attacker connected: 34.89.137.160 | Client Identification: SSH-2.0-Go
+2022-10-23 03:12:33.078 - [Debug] [Connection] Attacker connected: 34.89.137.160 | Client Identification: SSH-2.0-Go
+2022-10-23 03:12:35.021 - [Debug] [Connection] Attacker connected: 34.89.137.160 | Client Identification: SSH-2.0-Go
+2022-10-23 03:12:35.021 - [Debug] [Connection] Attacker connected: 34.89.137.160 | Client Identification: SSH-2.0-Go
+2022-10-23 03:12:38.701 - [Debug] [Connection] Attacker connected: 34.89.137.160 | Client Identification: SSH-2.0-Go
+2022-10-23 03:12:38.869 - [Debug] [Auth] Attacker 34.89.137.160 trying to authenticate with 'none'
+2022-10-23 03:12:38.869 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 03:12:38.912 - [Debug] [Auth] Attacker 34.89.137.160 trying to authenticate with 'none'
+2022-10-23 03:12:38.912 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 03:12:40.451 - [Debug] [Auth] Attacker 34.89.137.160 trying to authenticate with 'password'
+2022-10-23 03:12:40.452 - [Debug] [Auto Access] Attacker: 34.89.137.160, Threshold: 1, Attempts: 1
+2022-10-23 03:12:40.452 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-23 03:12:40.452 - [Debug] [Auto Access] Adding the following credentials: 'root:anko'
+2022-10-23 03:12:40.534 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-23 03:12:40.536 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 03:12:40.536 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.73
+2022-10-23 03:12:40.545 - [Debug] [Auth] Attacker 34.89.137.160 trying to authenticate with 'password'
+2022-10-23 03:12:40.545 - [Debug] [Auth] Attacker authentication error: Invalid credentials - User does not exist
+2022-10-23 03:12:40.546 - [Debug] [Auth] Attacker: 34.89.137.160 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 03:12:40.590 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 03:12:41.867 - [Debug] [Connection] Attacker closed the connection

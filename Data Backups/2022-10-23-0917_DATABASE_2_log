@@ -1,0 +1,22 @@
+
+2022-10-23 09:16:25.724 - [Debug] [Connection] Attacker closed connection
+2022-10-23 09:16:25.733 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-23 09:16:25.735 - [Debug] [LXC] Container's OpenSSH server closed connection
+2022-10-23 09:16:25.786 - [Debug] [Auth] Attacker 69.236.215.6 trying to authenticate with 'none'
+2022-10-23 09:16:25.786 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 09:16:25.820 - [Debug] [Auth] Attacker 223.171.91.109 trying to authenticate with 'none'
+2022-10-23 09:16:25.820 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 09:16:25.839 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-23 09:16:25.867 - [Debug] [Auth] Attacker 101.43.224.103 trying to authenticate with 'publickey'
+2022-10-23 09:16:25.868 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 09:16:25.868 - [Debug] [Auth] Attacker: 101.43.224.103 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 09:16:25.887 - [Debug] [Auth] Attacker 69.236.215.6 trying to authenticate with 'publickey'
+2022-10-23 09:16:25.888 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 09:16:25.888 - [Debug] [Auth] Attacker: 69.236.215.6 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 09:16:25.982 - [Debug] [Auth] Attacker 222.165.136.99 trying to authenticate with 'publickey'
+2022-10-23 09:16:25.982 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 09:16:25.983 - [Debug] [Auth] Attacker: 222.165.136.99 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 09:16:25.983 - [Debug] [Connection] Attacker closed the connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:1792505) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)

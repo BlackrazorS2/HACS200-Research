@@ -1,0 +1,21 @@
+
+2022-10-23 10:13:14.010 - [Debug] [Connection] Attacker connected: 162.19.210.221 | Client Identification: SSH-2.0-Go
+2022-10-23 10:13:14.077 - [Debug] [Auth] Attacker 129.154.55.234 trying to authenticate with 'none'
+2022-10-23 10:13:14.077 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 10:13:14.473 - [Debug] [Auth] Attacker 129.154.55.234 trying to authenticate with 'publickey'
+2022-10-23 10:13:14.473 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 10:13:14.486 - [Debug] [Auth] Attacker: 129.154.55.234 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 10:13:14.501 - [Debug] [Auth] Attacker 81.68.253.52 trying to authenticate with 'none'
+2022-10-23 10:13:14.501 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 10:13:14.503 - [Debug] [Auth] Attacker 118.218.209.149 trying to authenticate with 'none'
+2022-10-23 10:13:14.522 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 10:13:14.794 - [Debug] [Connection] Attacker connected: 187.6.3.3 | Client Identification: SSH-2.0-Go
+2022-10-23 10:13:14.858 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 10:13:14.957 - [Debug] [Auth] Attacker 118.218.209.149 trying to authenticate with 'publickey'
+2022-10-23 10:13:14.958 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 10:13:14.958 - [Debug] [Auth] Attacker: 118.218.209.149 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 10:13:14.991 - [Debug] [Auth] Attacker 81.68.253.52 trying to authenticate with 'password'
+2022-10-23 10:13:14.992 - [Debug] [Auto Access] Attacker: 81.68.253.52, Threshold: 1, Attempts: 1
+2022-10-23 10:13:14.992 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-23 10:13:14.992 - [Debug] [Auto Access] Adding the following credentials: 'root:1'
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

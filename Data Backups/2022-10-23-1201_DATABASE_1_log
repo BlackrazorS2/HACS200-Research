@@ -1,0 +1,43 @@
+
+2022-10-23 12:01:26.089 - [Debug] [EXEC] Noninteractive mode attacker command: echo > /var/tmp/ifconfig; chmod 777 /var/tmp/ifconfig; cat > /var/tmp/ifconfig
+2022-10-23 12:01:26.303 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-23 12:01:26.356 - [Debug] [Auth] Attacker 59.1.226.211 trying to authenticate with 'none'
+2022-10-23 12:01:26.357 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 12:01:26.423 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-23 12:01:26.507 - [Debug] [Auth] Attacker 121.200.53.148 trying to authenticate with 'publickey'
+2022-10-23 12:01:26.508 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 12:01:26.509 - [Debug] [Auth] Attacker: 121.200.53.148 has so far made 1 attempts. Remaining: 5 attempts
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:2720157) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_1',
+  containerIp: '10.0.3.176',
+  mitmPort: 1000,
+  autoAccessFixed: 1
+}
+2022-10-23 12:01:54.049 - [Info] MITM Version: 2
+2022-10-23 12:01:54.050 - [Info] Auto Access Enabled: true
+2022-10-23 12:01:54.051 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-23 12:01:54.057 - [Info] SSH man-in-the-middle server for 10.0.3.176 listening on 10.0.3.1:1000
+2022-10-23 12:01:54.340 - [Debug] [Connection] Attacker connected: 112.160.137.62 | Client Identification: SSH-2.0-Go
+2022-10-23 12:01:55.601 - [Debug] [Auth] Attacker 112.160.137.62 trying to authenticate with 'none'
+2022-10-23 12:01:55.601 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 12:01:56.045 - [Debug] [Auth] Attacker 112.160.137.62 trying to authenticate with 'publickey'
+2022-10-23 12:01:56.046 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 12:01:56.047 - [Debug] [Auth] Attacker: 112.160.137.62 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 12:01:56.516 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 12:01:56.722 - [Debug] [Connection] Attacker connected: 112.160.137.62 | Client Identification: SSH-2.0-Go

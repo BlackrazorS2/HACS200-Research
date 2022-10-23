@@ -1,0 +1,53 @@
+
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:3173926) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_1',
+  containerIp: '10.0.3.19',
+  mitmPort: 1000,
+  autoAccessFixed: 1
+}
+2022-10-23 02:13:25.457 - [Info] MITM Version: 2
+2022-10-23 02:13:25.458 - [Info] Auto Access Enabled: true
+2022-10-23 02:13:25.458 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-23 02:13:25.465 - [Info] SSH man-in-the-middle server for 10.0.3.19 listening on 10.0.3.1:1000
+2022-10-23 02:20:38.795 - [Debug] [Connection] Attacker connected: 65.189.0.107 | Client Identification: SSH-2.0-OpenSSH_6.7p1 Raspbian-5+deb8u2
+2022-10-23 02:20:38.834 - [Debug] [Connection] Attacker connected: 65.189.0.107 | Client Identification: SSH-2.0-OpenSSH_6.7p1 Raspbian-5+deb8u2
+2022-10-23 02:20:39.063 - [Debug] [Auth] Attacker 65.189.0.107 trying to authenticate with 'none'
+2022-10-23 02:20:39.063 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 02:20:39.112 - [Debug] [Auth] Attacker 65.189.0.107 trying to authenticate with 'none'
+2022-10-23 02:20:39.112 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 02:20:39.157 - [Debug] [Auth] Attacker 65.189.0.107 trying to authenticate with 'password'
+2022-10-23 02:20:39.158 - [Debug] [Auto Access] Attacker: 65.189.0.107, Threshold: 1, Attempts: 1
+2022-10-23 02:20:39.158 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-23 02:20:39.158 - [Debug] [Auto Access] Adding the following credentials: 'pi:raspberry'
+2022-10-23 02:20:39.270 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-23 02:20:39.272 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 02:20:39.272 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.19
+2022-10-23 02:20:39.278 - [Debug] [Auth] Attacker 65.189.0.107 trying to authenticate with 'password'
+2022-10-23 02:20:39.278 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 02:20:39.278 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.19
+2022-10-23 02:20:39.331 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 02:20:39.337 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 02:20:39.560 - [Debug] [EXEC] Noninteractive mode attacker command: scp -t /tmp/RcO7aryw
+2022-10-23 02:20:39.565 - [Debug] [EXEC] Noninteractive mode attacker command: scp -t /tmp/RcO7aryw
+2022-10-23 02:21:00.847 - [Debug] [Connection] Attacker closed connection
+2022-10-23 02:21:00.850 - [Debug] [Connection] Attacker closed connection
+2022-10-23 02:21:00.857 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-23 02:21:00.857 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-23 02:21:00.858 - [Debug] [LXC] Container's OpenSSH server closed connection
+2022-10-23 02:21:00.859 - [Debug] [LXC] Container's OpenSSH server closed connection

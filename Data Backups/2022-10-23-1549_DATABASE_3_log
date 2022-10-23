@@ -1,0 +1,16 @@
+
+2022-10-23 15:48:53.118 - [Debug] [Auth] Attacker 191.242.188.103 trying to authenticate with 'password'
+2022-10-23 15:48:53.119 - [Debug] [Auto Access] Attacker: 191.242.188.103, Threshold: 1, Attempts: 1
+2022-10-23 15:48:53.119 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-23 15:48:53.119 - [Debug] [Auto Access] Adding the following credentials: 'root:1'
+2022-10-23 15:48:53.330 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-23 15:48:53.332 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 15:48:53.332 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.199
+2022-10-23 15:48:53.336 - [Debug] [Auth] Attacker 143.198.133.234 trying to authenticate with 'none'
+2022-10-23 15:48:53.336 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 15:48:53.384 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 15:48:53.390 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 15:48:53.475 - [Debug] [Auth] Attacker 143.198.133.234 trying to authenticate with 'password'
+2022-10-23 15:48:53.475 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 15:48:53.475 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.199
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

@@ -1,0 +1,92 @@
+
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:1945272) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_1',
+  containerIp: '10.0.3.170',
+  mitmPort: 1000,
+  autoAccessFixed: 1
+}
+2022-10-21 21:51:43.447 - [Info] MITM Version: 2
+2022-10-21 21:51:43.449 - [Info] Auto Access Enabled: true
+2022-10-21 21:51:43.449 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-21 21:51:43.456 - [Info] SSH man-in-the-middle server for 10.0.3.170 listening on 10.0.3.1:1000
+2022-10-21 21:51:45.050 - [Debug] [Connection] Attacker connected: 172.30.138.80 | Client Identification: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.2
+2022-10-21 21:53:33.086 - [Debug] [Connection] Attacker connected: 172.30.138.80 | Client Identification: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.2
+2022-10-21 21:53:33.111 - [Debug] [Auth] Attacker 172.30.138.80 trying to authenticate with 'none'
+2022-10-21 21:53:33.112 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 21:53:37.119 - [Debug] [Auth] Attacker 172.30.138.80 trying to authenticate with 'password'
+2022-10-21 21:53:37.120 - [Debug] [Auto Access] Attacker: 172.30.138.80, Threshold: 1, Attempts: 1
+2022-10-21 21:53:37.120 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-21 21:53:37.120 - [Debug] [Auto Access] Adding the following credentials: 'root:e'
+2022-10-21 21:53:37.178 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-21 21:53:37.180 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-21 21:53:37.181 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.170
+2022-10-21 21:53:37.224 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-21 21:53:37.368 - [Debug] [SHELL] Opened shell for attacker
+2022-10-21 21:53:37.370 - [Debug] [LXC Streams] New Stream | Total Streams: 1
+2022-10-21 21:53:39.426 - [Debug] [SHELL] Attacker Keystroke: l
+2022-10-21 21:53:39.499 - [Debug] [SHELL] Attacker Keystroke: s
+2022-10-21 21:53:39.606 - [Debug] [SHELL] Attacker Keystroke: [CR]
+2022-10-21 21:53:39.610 - [Debug] [SHELL] line from reader: ls
+2022-10-21 21:53:39.610 - [Debug] [SHELL] Keystroke buffer: 108,115,13
+2022-10-21 21:53:39.958 - [Debug] [SHELL] Attacker Keystroke: c
+2022-10-21 21:53:40.126 - [Debug] [SHELL] Attacker Keystroke: d
+2022-10-21 21:53:40.200 - [Debug] [SHELL] Attacker Keystroke: [Space]
+2022-10-21 21:53:40.261 - [Debug] [SHELL] Attacker Keystroke: .
+2022-10-21 21:53:40.368 - [Debug] [SHELL] Attacker Keystroke: .
+2022-10-21 21:53:40.536 - [Debug] [SHELL] Attacker Keystroke: [CR]
+2022-10-21 21:53:40.538 - [Debug] [SHELL] line from reader: cd ..
+2022-10-21 21:53:40.538 - [Debug] [SHELL] Keystroke buffer: 99,100,32,46,46,13
+2022-10-21 21:53:41.265 - [Debug] [SHELL] Attacker Keystroke: l
+2022-10-21 21:53:41.401 - [Debug] [SHELL] Attacker Keystroke: s
+2022-10-21 21:53:41.461 - [Debug] [SHELL] Attacker Keystroke: [CR]
+2022-10-21 21:53:41.469 - [Debug] [SHELL] line from reader: ls
+2022-10-21 21:53:41.469 - [Debug] [SHELL] Keystroke buffer: 108,115,13
+2022-10-21 21:53:41.909 - [Debug] [SHELL] Attacker Keystroke: c
+2022-10-21 21:53:42.068 - [Debug] [SHELL] Attacker Keystroke: d
+2022-10-21 21:53:42.174 - [Debug] [SHELL] Attacker Keystroke: [Space]
+2022-10-21 21:53:42.540 - [Debug] [SHELL] Attacker Keystroke: u
+2022-10-21 21:53:42.688 - [Debug] [SHELL] Attacker Keystroke: s
+2022-10-21 21:53:42.809 - [Debug] [SHELL] Attacker Keystroke: r
+2022-10-21 21:53:42.930 - [Debug] [SHELL] Attacker Keystroke: [CR]
+2022-10-21 21:53:42.932 - [Debug] [SHELL] line from reader: cd usr
+2022-10-21 21:53:42.932 - [Debug] [SHELL] Keystroke buffer: 99,100,32,117,115,114,13
+2022-10-21 21:53:43.237 - [Debug] [SHELL] Attacker Keystroke: l
+2022-10-21 21:53:43.372 - [Debug] [SHELL] Attacker Keystroke: s
+2022-10-21 21:53:43.431 - [Debug] [SHELL] Attacker Keystroke: [CR]
+2022-10-21 21:53:43.434 - [Debug] [SHELL] line from reader: ls
+2022-10-21 21:53:43.434 - [Debug] [SHELL] Keystroke buffer: 108,115,13
+2022-10-21 21:53:44.589 - [Debug] [SHELL] Attacker Keystroke: c
+2022-10-21 21:53:44.786 - [Debug] [SHELL] Attacker Keystroke: d
+2022-10-21 21:53:44.924 - [Debug] [SHELL] Attacker Keystroke: [Space]
+2022-10-21 21:53:52.986 - [Debug] [SHELL] Attacker Keystroke: [BS]
+2022-10-21 21:53:53.184 - [Debug] [SHELL] Attacker Keystroke: [BS]
+2022-10-21 21:53:53.352 - [Debug] [SHELL] Attacker Keystroke: [BS]
+2022-10-21 21:53:53.542 - [Debug] [SHELL] Attacker Keystroke: [BS]
+2022-10-21 21:54:04.120 - [Debug] [SHELL] Attacker Keystroke: c
+2022-10-21 21:54:04.315 - [Debug] [SHELL] Attacker Keystroke: d
+2022-10-21 21:54:04.419 - [Debug] [SHELL] Attacker Keystroke: [Space]
+2022-10-21 21:54:08.490 - [Debug] [SHELL] Attacker Keystroke: /
+2022-10-21 21:54:08.988 - [Debug] [SHELL] Attacker Keystroke: h
+2022-10-21 21:54:09.126 - [Debug] [SHELL] Attacker Keystroke: o
+2022-10-21 21:55:09.310 - [Debug] [Connection] Client error on ssh server
+2022-10-21 21:55:09.310 - [Debug] [Connection] Attacker closed connection
+2022-10-21 21:55:09.318 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-21 21:55:09.319 - [Debug] [LXC] Container's OpenSSH server closed connection
+2022-10-21 21:55:09.319 - [Debug] [LXC Streams] Removed Stream | Total streams: 0
+2022-10-21 21:55:09.319 - [Debug] [SHELL] Honeypot ended shell

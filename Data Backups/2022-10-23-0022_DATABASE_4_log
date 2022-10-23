@@ -1,0 +1,47 @@
+
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:2916500) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_4',
+  containerIp: '10.0.3.235',
+  mitmPort: 1003,
+  autoAccessFixed: 1
+}
+2022-10-23 00:05:54.679 - [Info] MITM Version: 2
+2022-10-23 00:05:54.681 - [Info] Auto Access Enabled: true
+2022-10-23 00:05:54.681 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-23 00:05:54.688 - [Info] SSH man-in-the-middle server for 10.0.3.235 listening on 10.0.3.1:1003
+2022-10-23 00:21:49.063 - [Debug] [Connection] Attacker connected: 221.158.124.89 | Client Identification: SSH-2.0-HELLOWORLD
+2022-10-23 00:21:51.590 - [Debug] [Auth] Attacker 221.158.124.89 trying to authenticate with 'password'
+2022-10-23 00:21:51.591 - [Debug] [Auto Access] Attacker: 221.158.124.89, Threshold: 1, Attempts: 1
+2022-10-23 00:21:51.591 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-23 00:21:51.591 - [Debug] [Auto Access] Adding the following credentials: 'admin:admin'
+2022-10-23 00:21:51.706 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-23 00:21:51.708 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 00:21:51.708 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.235
+2022-10-23 00:21:51.762 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 00:21:53.560 - [Debug] [SHELL] Opened shell for attacker
+2022-10-23 00:21:53.563 - [Debug] [LXC Streams] New Stream | Total Streams: 1
+2022-10-23 00:21:54.834 - [Debug] [SHELL] Attacker Keystroke: echo[Space]-e[Space]'\x67\x61\x79\x66\x67\x74'[LF]
+2022-10-23 00:21:54.838 - [Debug] [SHELL] line from reader: echo -e '\x67\x61\x79\x66\x67\x74'
+2022-10-23 00:21:54.838 - [Debug] [SHELL] Keystroke buffer: 101,99,104,111,32,45,101,32,39,92,120,54,55,92,120,54,49,92,120,55,57,92,120,54,54,92,120,54,55,92,120,55,52,39,10
+2022-10-23 00:22:55.833 - [Debug] [Connection] Client error on ssh server
+2022-10-23 00:22:55.835 - [Debug] [Connection] Attacker closed connection
+2022-10-23 00:22:55.844 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-23 00:22:55.844 - [Debug] [LXC] Container's OpenSSH server closed connection
+2022-10-23 00:22:55.845 - [Debug] [LXC Streams] Removed Stream | Total streams: 0
+2022-10-23 00:22:55.845 - [Debug] [SHELL] Honeypot ended shell

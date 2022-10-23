@@ -1,0 +1,21 @@
+
+2022-10-23 16:47:56.187 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-23 16:47:56.192 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 16:47:56.193 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.105
+2022-10-23 16:47:56.249 - [Debug] [Connection] Attacker connected: 59.1.226.211 | Client Identification: SSH-2.0-Go
+2022-10-23 16:47:56.271 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 16:47:56.486 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-23 16:47:56.523 - [Debug] [Connection] Attacker connected: 59.1.226.211 | Client Identification: SSH-2.0-Go
+2022-10-23 16:47:56.542 - [Debug] [Auth] Attacker 120.197.154.22 trying to authenticate with 'password'
+2022-10-23 16:47:56.543 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 16:47:56.543 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.105
+2022-10-23 16:47:56.589 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 16:47:56.666 - [Debug] [Auth] Attacker 120.236.79.182 trying to authenticate with 'none'
+2022-10-23 16:47:56.666 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 16:47:56.666 - [Debug] [Connection] Attacker connected: 59.1.226.211 | Client Identification: SSH-2.0-Go
+2022-10-23 16:47:56.750 - [Debug] [Connection] Attacker closed connection
+2022-10-23 16:47:56.760 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-23 16:47:56.761 - [Debug] [LXC] Container's OpenSSH server closed connection
+2022-10-23 16:47:56.822 - [Debug] [Connection] Attacker connected: 85.105.58.118 | Client Identification: SSH-2.0-Go
+2022-10-23 16:47:56.857 - [Debug] [Connection] Attacker connected: 59.1.226.211 | Client Identification: SSH-2.0-Go
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

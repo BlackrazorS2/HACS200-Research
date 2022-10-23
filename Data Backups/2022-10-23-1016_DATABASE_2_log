@@ -1,0 +1,43 @@
+
+2022-10-23 10:15:20.323 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-23 10:15:20.325 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 10:15:20.325 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.211
+2022-10-23 10:15:20.346 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 10:15:20.383 - [Debug] [Connection] Attacker connected: 120.236.79.182 | Client Identification: SSH-2.0-Go
+2022-10-23 10:15:20.417 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 10:15:20.450 - [Debug] [Connection] Attacker connected: 213.255.16.153 | Client Identification: SSH-2.0-Go
+2022-10-23 10:15:20.471 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 10:15:20.602 - [Debug] [Auth] Attacker 85.51.217.156 trying to authenticate with 'none'
+2022-10-23 10:15:20.602 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 10:15:20.664 - [Debug] [Connection] Attacker connected: 129.154.55.234 | Client Identification: SSH-2.0-Go
+2022-10-23 10:15:20.735 - [Debug] [Auth] Attacker 184.67.149.186 trying to authenticate with 'none'
+2022-10-23 10:15:20.735 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 10:15:20.857 - [Debug] [Auth] Attacker 85.51.217.156 trying to authenticate with 'password'
+2022-10-23 10:15:20.857 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 10:15:20.857 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.211
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:2375870) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_2',
+  containerIp: '10.0.3.97',
+  mitmPort: 1001,
+  autoAccessFixed: 1
+}
+2022-10-23 10:16:34.990 - [Info] MITM Version: 2
+2022-10-23 10:16:34.991 - [Info] Auto Access Enabled: true
+2022-10-23 10:16:34.992 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-23 10:16:35.007 - [Info] SSH man-in-the-middle server for 10.0.3.97 listening on 10.0.3.1:1001

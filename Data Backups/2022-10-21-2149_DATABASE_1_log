@@ -1,0 +1,56 @@
+
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:1846390) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_1',
+  containerIp: '10.0.3.43',
+  mitmPort: 1000,
+  autoAccessFixed: 1
+}
+2022-10-21 21:14:15.498 - [Info] MITM Version: 2
+2022-10-21 21:14:15.500 - [Info] Auto Access Enabled: true
+2022-10-21 21:14:15.500 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-21 21:14:15.508 - [Info] SSH man-in-the-middle server for 10.0.3.43 listening on 10.0.3.1:1000
+2022-10-21 21:48:52.499 - [Debug] [Connection] Attacker connected: 172.30.138.80 | Client Identification: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.2
+2022-10-21 21:48:53.738 - [Debug] [Auth] Attacker 172.30.138.80 trying to authenticate with 'none'
+2022-10-21 21:48:53.738 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-21 21:48:54.436 - [Debug] [Auth] Attacker 172.30.138.80 trying to authenticate with 'password'
+2022-10-21 21:48:54.437 - [Debug] [Auto Access] Attacker: 172.30.138.80, Threshold: 1, Attempts: 1
+2022-10-21 21:48:54.437 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-21 21:48:54.437 - [Debug] [Auto Access] Adding the following credentials: 'root:e'
+2022-10-21 21:48:54.498 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-21 21:48:54.500 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-21 21:48:54.500 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.43
+2022-10-21 21:48:54.548 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-21 21:48:54.697 - [Debug] [SHELL] Opened shell for attacker
+2022-10-21 21:48:54.702 - [Debug] [LXC Streams] New Stream | Total Streams: 1
+2022-10-21 21:48:54.846 - [Debug] [SHELL] Attacker Keystroke: [CR]
+2022-10-21 21:48:54.849 - [Debug] [SHELL] line from reader: 
+2022-10-21 21:48:54.849 - [Debug] [SHELL] Keystroke buffer: 13
+2022-10-21 21:48:57.843 - [Debug] [SHELL] Attacker Keystroke: e
+2022-10-21 21:48:58.041 - [Debug] [SHELL] Attacker Keystroke: x
+2022-10-21 21:48:58.205 - [Debug] [SHELL] Attacker Keystroke: i
+2022-10-21 21:48:58.531 - [Debug] [SHELL] Attacker Keystroke: t
+2022-10-21 21:49:01.551 - [Debug] [SHELL] Attacker Keystroke: [CR]
+2022-10-21 21:49:01.552 - [Debug] [SHELL] line from reader: exit
+2022-10-21 21:49:01.552 - [Debug] [SHELL] Keystroke buffer: 101,120,105,116,13
+2022-10-21 21:49:01.557 - [Debug] [LXC Streams] Removed Stream | Total streams: 0
+2022-10-21 21:49:01.558 - [Debug] [SHELL] Honeypot ended shell
+2022-10-21 21:49:01.561 - [Debug] [SHELL] Attacker ended the shell
+2022-10-21 21:49:01.564 - [Debug] [Connection] Attacker closed connection
+2022-10-21 21:49:01.574 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-21 21:49:01.575 - [Debug] [LXC] Container's OpenSSH server closed connection

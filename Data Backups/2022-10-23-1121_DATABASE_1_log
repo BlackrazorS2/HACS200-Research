@@ -1,0 +1,73 @@
+
+2022-10-23 11:21:08.090 - [Debug] [Connection] Attacker connected: 187.6.3.3 | Client Identification: SSH-2.0-Go
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:2622434) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_1',
+  containerIp: '10.0.3.45',
+  mitmPort: 1000,
+  autoAccessFixed: 1
+}
+2022-10-23 11:21:36.006 - [Info] MITM Version: 2
+2022-10-23 11:21:36.008 - [Info] Auto Access Enabled: true
+2022-10-23 11:21:36.008 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-23 11:21:36.015 - [Info] SSH man-in-the-middle server for 10.0.3.45 listening on 10.0.3.1:1000
+2022-10-23 11:21:40.480 - [Debug] [Connection] Attacker connected: 43.242.247.139 | Client Identification: SSH-2.0-Go
+2022-10-23 11:21:40.598 - [Debug] [Connection] Attacker connected: 223.171.91.173 | Client Identification: SSH-2.0-Go
+2022-10-23 11:21:40.659 - [Debug] [Connection] Attacker connected: 187.6.3.3 | Client Identification: SSH-2.0-Go
+2022-10-23 11:21:41.164 - [Debug] [Connection] Attacker connected: 222.134.240.92 | Client Identification: SSH-2.0-Go
+2022-10-23 11:21:41.623 - [Debug] [Connection] Attacker connected: 223.171.91.149 | Client Identification: SSH-2.0-Go
+2022-10-23 11:21:41.834 - [Debug] [Auth] Attacker 187.6.3.3 trying to authenticate with 'none'
+2022-10-23 11:21:41.834 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 11:21:42.018 - [Debug] [Auth] Attacker 43.242.247.139 trying to authenticate with 'none'
+2022-10-23 11:21:42.018 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 11:21:42.023 - [Debug] [Auth] Attacker 223.171.91.173 trying to authenticate with 'none'
+2022-10-23 11:21:42.023 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 11:21:42.208 - [Debug] [Auth] Attacker 187.6.3.3 trying to authenticate with 'password'
+2022-10-23 11:21:42.208 - [Debug] [Auto Access] Attacker: 187.6.3.3, Threshold: 1, Attempts: 1
+2022-10-23 11:21:42.209 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-23 11:21:42.209 - [Debug] [Auto Access] Adding the following credentials: 'root:1'
+2022-10-23 11:21:42.266 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-23 11:21:42.268 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 11:21:42.268 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.45
+2022-10-23 11:21:42.319 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 11:21:42.411 - [Debug] [Connection] Attacker connected: 209.216.177.158 | Client Identification: SSH-2.0-Go
+2022-10-23 11:21:42.515 - [Debug] [Auth] Attacker 223.171.91.173 trying to authenticate with 'publickey'
+2022-10-23 11:21:42.517 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 11:21:42.517 - [Debug] [Auth] Attacker: 223.171.91.173 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 11:21:42.558 - [Debug] [Auth] Attacker 43.242.247.139 trying to authenticate with 'publickey'
+2022-10-23 11:21:42.559 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 11:21:42.559 - [Debug] [Auth] Attacker: 43.242.247.139 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 11:21:42.753 - [Debug] [Auth] Attacker 222.134.240.92 trying to authenticate with 'none'
+2022-10-23 11:21:42.753 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 11:21:42.941 - [Debug] [Connection] Attacker connected: 118.218.209.149 | Client Identification: SSH-2.0-Go
+2022-10-23 11:21:42.970 - [Debug] [Auth] Attacker 209.216.177.158 trying to authenticate with 'none'
+2022-10-23 11:21:42.970 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 11:21:43.018 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 11:21:43.093 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 11:21:43.095 - [Debug] [Auth] Attacker 223.171.91.149 trying to authenticate with 'none'
+2022-10-23 11:21:43.095 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 11:21:43.178 - [Debug] [Auth] Attacker 209.216.177.158 trying to authenticate with 'publickey'
+2022-10-23 11:21:43.178 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 11:21:43.179 - [Debug] [Auth] Attacker: 209.216.177.158 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 11:21:43.264 - [Debug] [Auth] Attacker 222.134.240.92 trying to authenticate with 'publickey'
+2022-10-23 11:21:43.265 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 11:21:43.265 - [Debug] [Auth] Attacker: 222.134.240.92 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 11:21:43.275 - [Debug] [Connection] Attacker connected: 223.171.91.173 | Client Identification: SSH-2.0-Go
+2022-10-23 11:21:43.351 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-23 11:21:43.368 - [Debug] [Connection] Attacker connected: 43.242.247.139 | Client Identification: SSH-2.0-Go
+2022-10-23 11:21:43.385 - [Debug] [Connection] Attacker closed the connection

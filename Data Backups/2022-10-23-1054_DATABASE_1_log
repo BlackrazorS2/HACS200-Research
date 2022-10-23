@@ -1,0 +1,20 @@
+
+2022-10-23 10:54:19.791 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-23 10:54:19.796 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 10:54:19.796 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.197
+2022-10-23 10:54:19.821 - [Debug] [Auth] Attacker 113.125.191.234 trying to authenticate with 'password'
+2022-10-23 10:54:19.821 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 10:54:19.821 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.197
+2022-10-23 10:54:19.829 - [Debug] [Auth] Attacker 102.141.225.238 trying to authenticate with 'publickey'
+2022-10-23 10:54:19.829 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 10:54:19.830 - [Debug] [Auth] Attacker: 102.141.225.238 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 10:54:19.882 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 10:54:19.897 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 10:54:19.938 - [Debug] [Connection] Attacker connected: 84.16.224.173 | Client Identification: SSH-2.0-Go
+2022-10-23 10:54:20.214 - [Debug] [Connection] Attacker connected: 120.236.79.182 | Client Identification: SSH-2.0-Go
+2022-10-23 10:54:20.336 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 10:54:20.455 - [Debug] [Connection] Attacker connected: 182.224.177.33 | Client Identification: SSH-2.0-Go
+2022-10-23 10:54:20.550 - [Debug] [Auth] Attacker 84.16.224.173 trying to authenticate with 'none'
+2022-10-23 10:54:20.550 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 10:54:20.587 - [Debug] [Connection] Attacker connected: 102.141.225.238 | Client Identification: SSH-2.0-Go
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

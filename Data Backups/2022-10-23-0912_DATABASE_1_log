@@ -1,0 +1,27 @@
+
+2022-10-23 09:12:18.758 - [Debug] [Auth] Attacker 1.220.98.197 trying to authenticate with 'none'
+2022-10-23 09:12:18.761 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 09:12:18.806 - [Debug] [Connection] Attacker connected: 222.165.136.99 | Client Identification: SSH-2.0-Go
+2022-10-23 09:12:19.139 - [Debug] [Connection] Attacker connected: 157.245.137.18 | Client Identification: SSH-2.0-Go
+2022-10-23 09:12:19.246 - [Debug] [Auth] Attacker 157.245.137.18 trying to authenticate with 'none'
+2022-10-23 09:12:19.246 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 09:12:19.261 - [Debug] [Auth] Attacker 1.220.98.197 trying to authenticate with 'publickey'
+2022-10-23 09:12:19.262 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 09:12:19.262 - [Debug] [Auth] Attacker: 1.220.98.197 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 09:12:19.310 - [Debug] [Auth] Attacker 157.245.137.18 trying to authenticate with 'publickey'
+2022-10-23 09:12:19.311 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 09:12:19.311 - [Debug] [Auth] Attacker: 157.245.137.18 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 09:12:19.373 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 09:12:19.383 - [Debug] [Connection] Attacker connected: 157.245.137.18 | Client Identification: SSH-2.0-Go
+2022-10-23 09:12:19.485 - [Debug] [Auth] Attacker 157.245.137.18 trying to authenticate with 'none'
+2022-10-23 09:12:19.485 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 09:12:19.547 - [Debug] [Auth] Attacker 118.218.209.149 trying to authenticate with 'none'
+2022-10-23 09:12:19.547 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 09:12:19.549 - [Debug] [Auth] Attacker 157.245.137.18 trying to authenticate with 'password'
+2022-10-23 09:12:19.550 - [Debug] [Auto Access] Attacker: 157.245.137.18, Threshold: 1, Attempts: 1
+2022-10-23 09:12:19.550 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-23 09:12:19.550 - [Debug] [Auto Access] Adding the following credentials: 'root:1'
+2022-10-23 09:12:19.748 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-23 09:12:19.790 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 09:12:19.790 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.201
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

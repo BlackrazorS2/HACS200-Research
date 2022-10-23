@@ -1,0 +1,23 @@
+
+2022-10-23 13:16:17.014 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-23 13:16:17.015 - [Debug] [Auth] Attacker 121.200.53.148 trying to authenticate with 'password'
+2022-10-23 13:16:17.016 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 13:16:17.016 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.72
+2022-10-23 13:16:17.104 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 13:16:17.141 - [Debug] [Auth] Attacker 118.218.209.149 trying to authenticate with 'none'
+2022-10-23 13:16:17.145 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 13:16:17.181 - [Debug] [Connection] Attacker closed connection
+2022-10-23 13:16:17.273 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-23 13:16:17.274 - [Debug] [Connection] Attacker closed connection
+2022-10-23 13:16:17.288 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-23 13:16:17.296 - [Debug] [LXC] Container's OpenSSH server closed connection
+2022-10-23 13:16:17.341 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-23 13:16:17.341 - [Debug] [LXC] Container's OpenSSH server closed connection
+2022-10-23 13:16:17.584 - [Debug] [Auth] Attacker 118.218.209.149 trying to authenticate with 'password'
+2022-10-23 13:16:17.584 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 13:16:17.584 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.72
+2022-10-23 13:16:17.617 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 13:16:17.668 - [Debug] [Connection] Attacker closed connection
+2022-10-23 13:16:17.676 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-23 13:16:17.676 - [Debug] [LXC] Container's OpenSSH server closed connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

@@ -1,0 +1,55 @@
+
+2022-10-23 13:01:26.098 - [Debug] [Connection] Attacker connected: 223.171.91.143 | Client Identification: SSH-2.0-Go
+2022-10-23 13:01:26.122 - [Debug] [Connection] Attacker connected: 82.64.113.245 | Client Identification: SSH-2.0-Go
+2022-10-23 13:01:26.695 - [Debug] [Auth] Attacker 82.64.113.245 trying to authenticate with 'none'
+2022-10-23 13:01:26.695 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 13:01:26.747 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-23 13:01:26.906 - [Debug] [Auth] Attacker 82.64.113.245 trying to authenticate with 'publickey'
+2022-10-23 13:01:26.907 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 13:01:26.907 - [Debug] [Auth] Attacker: 82.64.113.245 has so far made 1 attempts. Remaining: 5 attempts
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:2865900) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_1',
+  containerIp: '10.0.3.8',
+  mitmPort: 1000,
+  autoAccessFixed: 1
+}
+2022-10-23 13:01:54.521 - [Info] MITM Version: 2
+2022-10-23 13:01:54.522 - [Info] Auto Access Enabled: true
+2022-10-23 13:01:54.522 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-23 13:01:54.529 - [Info] SSH man-in-the-middle server for 10.0.3.8 listening on 10.0.3.1:1000
+2022-10-23 13:01:54.967 - [Debug] [Connection] Attacker connected: 121.200.53.148 | Client Identification: SSH-2.0-Go
+2022-10-23 13:01:56.417 - [Debug] [Auth] Attacker 121.200.53.148 trying to authenticate with 'none'
+2022-10-23 13:01:56.417 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 13:01:56.821 - [Debug] [Connection] Attacker connected: 54.38.97.156 | Client Identification: SSH-2.0-Go
+2022-10-23 13:01:56.926 - [Debug] [Auth] Attacker 121.200.53.148 trying to authenticate with 'password'
+2022-10-23 13:01:56.927 - [Debug] [Auto Access] Attacker: 121.200.53.148, Threshold: 1, Attempts: 1
+2022-10-23 13:01:56.927 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-23 13:01:56.927 - [Debug] [Auto Access] Adding the following credentials: 'root:1'
+2022-10-23 13:01:56.978 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-23 13:01:56.980 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 13:01:56.980 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.8
+2022-10-23 13:01:57.026 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 13:01:57.439 - [Debug] [Auth] Attacker 54.38.97.156 trying to authenticate with 'none'
+2022-10-23 13:01:57.440 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 13:01:57.651 - [Debug] [Auth] Attacker 54.38.97.156 trying to authenticate with 'publickey'
+2022-10-23 13:01:57.653 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 13:01:57.653 - [Debug] [Auth] Attacker: 54.38.97.156 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 13:01:57.875 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 13:01:58.036 - [Debug] [Connection] Attacker connected: 54.38.97.156 | Client Identification: SSH-2.0-Go
+2022-10-23 13:01:58.042 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234

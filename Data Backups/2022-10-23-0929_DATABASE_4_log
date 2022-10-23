@@ -1,0 +1,55 @@
+
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:1916302) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_4',
+  containerIp: '10.0.3.203',
+  mitmPort: 1003,
+  autoAccessFixed: 1
+}
+2022-10-23 09:29:20.192 - [Info] MITM Version: 2
+2022-10-23 09:29:20.194 - [Info] Auto Access Enabled: true
+2022-10-23 09:29:20.195 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-23 09:29:20.208 - [Info] SSH man-in-the-middle server for 10.0.3.203 listening on 10.0.3.1:1003
+2022-10-23 09:29:21.306 - [Debug] [Connection] Attacker connected: 103.141.246.254 | Client Identification: SSH-2.0-Go
+2022-10-23 09:29:21.877 - [Debug] [Connection] Attacker connected: 120.224.143.251 | Client Identification: SSH-2.0-Go
+2022-10-23 09:29:22.477 - [Debug] [Connection] Attacker connected: 45.120.216.114 | Client Identification: SSH-2.0-Go
+2022-10-23 09:29:23.184 - [Debug] [Auth] Attacker 103.141.246.254 trying to authenticate with 'none'
+2022-10-23 09:29:23.184 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 09:29:23.751 - [Debug] [Auth] Attacker 120.224.143.251 trying to authenticate with 'none'
+2022-10-23 09:29:23.751 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 09:29:23.783 - [Debug] [Auth] Attacker 103.141.246.254 trying to authenticate with 'publickey'
+2022-10-23 09:29:23.786 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 09:29:23.786 - [Debug] [Auth] Attacker: 103.141.246.254 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 09:29:23.803 - [Debug] [Auth] Attacker 45.120.216.114 trying to authenticate with 'none'
+2022-10-23 09:29:23.803 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 09:29:24.269 - [Debug] [Auth] Attacker 45.120.216.114 trying to authenticate with 'publickey'
+2022-10-23 09:29:24.270 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 09:29:24.270 - [Debug] [Auth] Attacker: 45.120.216.114 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 09:29:24.358 - [Debug] [Auth] Attacker 120.224.143.251 trying to authenticate with 'password'
+2022-10-23 09:29:24.359 - [Debug] [Auto Access] Attacker: 120.224.143.251, Threshold: 1, Attempts: 1
+2022-10-23 09:29:24.359 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-23 09:29:24.359 - [Debug] [Auto Access] Adding the following credentials: 'root:1'
+2022-10-23 09:29:24.459 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-23 09:29:24.463 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 09:29:24.463 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.203
+2022-10-23 09:29:24.483 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 09:29:24.518 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 09:29:24.739 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 09:29:24.862 - [Debug] [Connection] Attacker connected: 103.141.246.254 | Client Identification: SSH-2.0-Go
+2022-10-23 09:29:24.955 - [Debug] [Connection] Attacker connected: 45.120.216.114 | Client Identification: SSH-2.0-Go
+2022-10-23 09:29:25.786 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234

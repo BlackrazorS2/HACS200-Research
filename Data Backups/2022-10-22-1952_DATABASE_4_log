@@ -1,0 +1,72 @@
+
+(node:2239862) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_4',
+  containerIp: '10.0.3.181',
+  mitmPort: 1003,
+  autoAccessFixed: 1
+}
+2022-10-22 19:29:45.928 - [Info] MITM Version: 2
+2022-10-22 19:29:45.930 - [Info] Auto Access Enabled: true
+2022-10-22 19:29:45.930 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-22 19:29:45.937 - [Info] SSH man-in-the-middle server for 10.0.3.181 listening on 10.0.3.1:1003
+2022-10-22 19:52:23.530 - [Debug] [Connection] Attacker connected: 34.107.121.154 | Client Identification: SSH-2.0-Go
+2022-10-22 19:52:23.535 - [Debug] [Connection] Attacker connected: 34.107.121.154 | Client Identification: SSH-2.0-Go
+2022-10-22 19:52:23.536 - [Debug] [Connection] Attacker connected: 34.107.121.154 | Client Identification: SSH-2.0-Go
+2022-10-22 19:52:23.539 - [Debug] [Connection] Attacker connected: 34.107.121.154 | Client Identification: SSH-2.0-Go
+2022-10-22 19:52:23.540 - [Debug] [Connection] Attacker connected: 34.107.121.154 | Client Identification: SSH-2.0-Go
+2022-10-22 19:52:23.541 - [Debug] [Connection] Attacker connected: 34.107.121.154 | Client Identification: SSH-2.0-Go
+2022-10-22 19:52:23.541 - [Debug] [Connection] Attacker connected: 34.107.121.154 | Client Identification: SSH-2.0-Go
+2022-10-22 19:52:23.541 - [Debug] [Connection] Attacker connected: 34.107.121.154 | Client Identification: SSH-2.0-Go
+2022-10-22 19:52:23.544 - [Debug] [Connection] Attacker connected: 34.107.121.154 | Client Identification: SSH-2.0-Go
+2022-10-22 19:52:23.545 - [Debug] [Connection] Attacker connected: 34.107.121.154 | Client Identification: SSH-2.0-Go
+2022-10-22 19:52:23.546 - [Debug] [Connection] Attacker connected: 34.107.121.154 | Client Identification: SSH-2.0-Go
+2022-10-22 19:52:24.651 - [Debug] [Connection] Attacker connected: 34.107.121.154 | Client Identification: SSH-2.0-Go
+2022-10-22 19:52:24.651 - [Debug] [Connection] Attacker connected: 34.107.121.154 | Client Identification: SSH-2.0-Go
+2022-10-22 19:52:24.657 - [Debug] [Connection] Attacker connected: 34.107.121.154 | Client Identification: SSH-2.0-Go
+2022-10-22 19:52:24.658 - [Debug] [Connection] Attacker connected: 34.107.121.154 | Client Identification: SSH-2.0-Go
+2022-10-22 19:52:24.658 - [Debug] [Connection] Attacker connected: 34.107.121.154 | Client Identification: SSH-2.0-Go
+2022-10-22 19:52:29.067 - [Debug] [Auth] Attacker 34.107.121.154 trying to authenticate with 'none'
+2022-10-22 19:52:29.067 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-22 19:52:29.086 - [Debug] [Auth] Attacker 34.107.121.154 trying to authenticate with 'none'
+2022-10-22 19:52:29.086 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-22 19:52:29.087 - [Debug] [Auth] Attacker 34.107.121.154 trying to authenticate with 'none'
+2022-10-22 19:52:29.087 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-22 19:52:32.545 - [Debug] [Auth] Attacker 34.107.121.154 trying to authenticate with 'none'
+2022-10-22 19:52:32.545 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-22 19:52:33.359 - [Debug] [Auth] Attacker 34.107.121.154 trying to authenticate with 'none'
+2022-10-22 19:52:33.359 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-22 19:52:33.363 - [Debug] [Auth] Attacker 34.107.121.154 trying to authenticate with 'none'
+2022-10-22 19:52:33.363 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-22 19:52:35.526 - [Debug] [Auth] Attacker 34.107.121.154 trying to authenticate with 'password'
+2022-10-22 19:52:35.527 - [Debug] [Auto Access] Attacker: 34.107.121.154, Threshold: 1, Attempts: 1
+2022-10-22 19:52:35.527 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-22 19:52:35.527 - [Debug] [Auto Access] Adding the following credentials: 'support:support'
+2022-10-22 19:52:35.644 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-22 19:52:35.646 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-22 19:52:35.646 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.181
+2022-10-22 19:52:35.649 - [Debug] [Auth] Attacker 34.107.121.154 trying to authenticate with 'password'
+2022-10-22 19:52:35.650 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Container user is disabled
+2022-10-22 19:52:35.650 - [Debug] [Auth] Attacker: 34.107.121.154 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-22 19:52:35.651 - [Debug] [Auth] Attacker 34.107.121.154 trying to authenticate with 'password'
+2022-10-22 19:52:35.651 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Container user is disabled
+2022-10-22 19:52:35.651 - [Debug] [Auth] Attacker: 34.107.121.154 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-22 19:52:35.699 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-22 19:52:40.655 - [Debug] [Connection] Attacker connected: 34.107.121.154 | Client Identification: SSH-2.0-Go
+2022-10-22 19:52:40.717 - [Debug] [Connection] Attacker closed the connection
+2022-10-22 19:52:40.718 - [Debug] [Connection] Attacker closed the connection
+2022-10-22 19:52:40.851 - [Debug] [Connection] Attacker connected: 34.107.121.154 | Client Identification: SSH-2.0-Go

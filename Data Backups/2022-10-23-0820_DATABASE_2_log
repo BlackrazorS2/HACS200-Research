@@ -1,0 +1,16 @@
+
+2022-10-23 08:19:01.234 - [Debug] [Auth] Attacker 82.64.113.245 trying to authenticate with 'none'
+2022-10-23 08:19:01.234 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 08:19:01.390 - [Debug] [Connection] Attacker closed connection
+2022-10-23 08:19:01.397 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-23 08:19:01.398 - [Debug] [LXC] Container's OpenSSH server closed connection
+2022-10-23 08:19:01.443 - [Debug] [EXEC] Noninteractive mode attacker command: echo > /dev/shm/ifconfig; chmod 777 /dev/shm/ifconfig; cat > /dev/shm/ifconfig
+2022-10-23 08:19:01.447 - [Debug] [Auth] Attacker 82.64.113.245 trying to authenticate with 'password'
+2022-10-23 08:19:01.447 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 08:19:01.447 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.85
+2022-10-23 08:19:01.474 - [Debug] [Connection] Attacker connected: 209.216.177.158 | Client Identification: SSH-2.0-Go
+2022-10-23 08:19:01.505 - [Debug] [Auth] Attacker 223.171.91.158 trying to authenticate with 'publickey'
+2022-10-23 08:19:01.506 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 08:19:01.506 - [Debug] [Auth] Attacker: 223.171.91.158 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 08:19:01.547 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

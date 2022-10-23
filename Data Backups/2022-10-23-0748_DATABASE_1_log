@@ -1,0 +1,24 @@
+
+2022-10-23 07:47:50.826 - [Debug] [Auth] Attacker 85.53.55.133 trying to authenticate with 'none'
+2022-10-23 07:47:50.828 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 07:47:50.829 - [Debug] [Connection] Attacker connected: 187.6.3.3 | Client Identification: SSH-2.0-Go
+2022-10-23 07:47:50.862 - [Debug] [Auth] Attacker 102.141.225.238 trying to authenticate with 'publickey'
+2022-10-23 07:47:50.862 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 07:47:50.863 - [Debug] [Auth] Attacker: 102.141.225.238 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 07:47:50.945 - [Debug] [Auth] Attacker 80.147.162.151 trying to authenticate with 'none'
+2022-10-23 07:47:50.945 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 07:47:51.040 - [Debug] [Auth] Attacker 85.53.55.133 trying to authenticate with 'password'
+2022-10-23 07:47:51.041 - [Debug] [Auto Access] Attacker: 85.53.55.133, Threshold: 1, Attempts: 1
+2022-10-23 07:47:51.041 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-23 07:47:51.041 - [Debug] [Auto Access] Adding the following credentials: 'root:1'
+2022-10-23 07:47:51.207 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-23 07:47:51.210 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 07:47:51.210 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.112
+2022-10-23 07:47:51.237 - [Debug] [Auth] Attacker 80.147.162.151 trying to authenticate with 'password'
+2022-10-23 07:47:51.238 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 07:47:51.239 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.112
+2022-10-23 07:47:51.433 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 07:47:51.445 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 07:47:51.447 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 07:47:51.550 - [Debug] [Connection] Attacker connected: 223.171.91.163 | Client Identification: SSH-2.0-Go
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

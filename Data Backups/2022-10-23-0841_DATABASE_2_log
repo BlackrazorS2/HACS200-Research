@@ -1,0 +1,55 @@
+
+2022-10-23 08:39:42.641 - [Debug] [Connection] Attacker connected: 62.12.108.44 | Client Identification: SSH-2.0-Go
+2022-10-23 08:39:42.826 - [Debug] [Auth] Attacker 223.171.91.159 trying to authenticate with 'none'
+2022-10-23 08:39:42.826 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 08:39:42.917 - [Debug] [Auth] Attacker 182.224.177.33 trying to authenticate with 'publickey'
+2022-10-23 08:39:42.918 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 08:39:42.918 - [Debug] [Auth] Attacker: 182.224.177.33 has so far made 1 attempts. Remaining: 5 attempts
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:1437716) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_2',
+  containerIp: '10.0.3.208',
+  mitmPort: 1001,
+  autoAccessFixed: 1
+}
+2022-10-23 08:40:55.758 - [Info] MITM Version: 2
+2022-10-23 08:40:55.759 - [Info] Auto Access Enabled: true
+2022-10-23 08:40:55.760 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-23 08:40:55.767 - [Info] SSH man-in-the-middle server for 10.0.3.208 listening on 10.0.3.1:1001
+2022-10-23 08:40:58.638 - [Debug] [Connection] Attacker connected: 223.171.91.136 | Client Identification: SSH-2.0-Go
+2022-10-23 08:40:59.299 - [Debug] [Connection] Attacker connected: 124.221.183.139 | Client Identification: SSH-2.0-Go
+2022-10-23 08:40:59.653 - [Debug] [Connection] Attacker connected: 31.14.115.42 | Client Identification: SSH-2.0-Go
+2022-10-23 08:41:00.124 - [Debug] [Auth] Attacker 223.171.91.136 trying to authenticate with 'none'
+2022-10-23 08:41:00.125 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 08:41:00.647 - [Debug] [Auth] Attacker 223.171.91.136 trying to authenticate with 'publickey'
+2022-10-23 08:41:00.650 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 08:41:00.651 - [Debug] [Auth] Attacker: 223.171.91.136 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 08:41:00.653 - [Debug] [Auth] Attacker 124.221.183.139 trying to authenticate with 'none'
+2022-10-23 08:41:00.653 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 08:41:00.872 - [Debug] [Auth] Attacker 31.14.115.42 trying to authenticate with 'none'
+2022-10-23 08:41:00.872 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 08:41:01.127 - [Debug] [Auth] Attacker 124.221.183.139 trying to authenticate with 'publickey'
+2022-10-23 08:41:01.127 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 08:41:01.128 - [Debug] [Auth] Attacker: 124.221.183.139 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 08:41:01.143 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 08:41:01.260 - [Debug] [Auth] Attacker 31.14.115.42 trying to authenticate with 'publickey'
+2022-10-23 08:41:01.261 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 08:41:01.262 - [Debug] [Auth] Attacker: 31.14.115.42 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 08:41:01.387 - [Debug] [Connection] Attacker connected: 223.171.91.136 | Client Identification: SSH-2.0-Go
+2022-10-23 08:41:01.602 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 08:41:01.613 - [Debug] [Connection] Attacker closed the connection

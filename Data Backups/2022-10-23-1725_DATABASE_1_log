@@ -1,0 +1,25 @@
+
+2022-10-23 17:24:51.558 - [Debug] [Auth] Attacker 89.100.220.200 trying to authenticate with 'none'
+2022-10-23 17:24:51.558 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 17:24:51.616 - [Debug] [Auth] Attacker 143.198.133.234 trying to authenticate with 'none'
+2022-10-23 17:24:51.616 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 17:24:51.763 - [Debug] [Auth] Attacker 143.198.133.234 trying to authenticate with 'password'
+2022-10-23 17:24:51.764 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 17:24:51.764 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.59
+2022-10-23 17:24:51.784 - [Debug] [Auth] Attacker 89.100.220.200 trying to authenticate with 'password'
+2022-10-23 17:24:51.784 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 17:24:51.784 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.59
+2022-10-23 17:24:51.853 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 17:24:51.919 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 17:24:51.943 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-23 17:24:51.951 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 17:24:52.189 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-23 17:24:52.211 - [Debug] [Connection] Attacker connected: 102.141.225.244 | Client Identification: SSH-2.0-Go
+2022-10-23 17:24:52.350 - [Debug] [Connection] Attacker closed connection
+2022-10-23 17:24:52.359 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-23 17:24:52.360 - [Debug] [LXC] Container's OpenSSH server closed connection
+2022-10-23 17:24:52.377 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-23 17:24:52.433 - [Debug] [Connection] Attacker closed connection
+2022-10-23 17:24:52.444 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-23 17:24:52.444 - [Debug] [LXC] Container's OpenSSH server closed connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

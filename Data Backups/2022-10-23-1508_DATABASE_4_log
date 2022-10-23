@@ -1,0 +1,71 @@
+
+(node:3455988) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_4',
+  containerIp: '10.0.3.13',
+  mitmPort: 1003,
+  autoAccessFixed: 1
+}
+2022-10-23 15:06:57.048 - [Info] MITM Version: 2
+2022-10-23 15:06:57.049 - [Info] Auto Access Enabled: true
+2022-10-23 15:06:57.050 - [Debug] [Init] Auto Access Theshold Achieved: false
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:3467631) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_4',
+  containerIp: '10.0.3.214',
+  mitmPort: 1003,
+  autoAccessFixed: 1
+}
+2022-10-23 15:08:14.125 - [Info] MITM Version: 2
+2022-10-23 15:08:14.127 - [Info] Auto Access Enabled: true
+2022-10-23 15:08:14.127 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-23 15:08:14.138 - [Info] SSH man-in-the-middle server for 10.0.3.214 listening on 10.0.3.1:1003
+2022-10-23 15:08:14.436 - [Debug] [Connection] Attacker connected: 120.236.79.182 | Client Identification: SSH-2.0-Go
+2022-10-23 15:08:14.586 - [Debug] [Connection] Attacker connected: 120.197.154.22 | Client Identification: SSH-2.0-Go
+2022-10-23 15:08:15.869 - [Debug] [Connection] Attacker connected: 223.171.91.143 | Client Identification: SSH-2.0-Go
+2022-10-23 15:08:16.109 - [Debug] [Auth] Attacker 120.236.79.182 trying to authenticate with 'none'
+2022-10-23 15:08:16.109 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 15:08:16.224 - [Debug] [Auth] Attacker 120.197.154.22 trying to authenticate with 'none'
+2022-10-23 15:08:16.224 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 15:08:16.679 - [Debug] [Auth] Attacker 120.236.79.182 trying to authenticate with 'publickey'
+2022-10-23 15:08:16.682 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 15:08:16.682 - [Debug] [Auth] Attacker: 120.236.79.182 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 15:08:16.796 - [Debug] [Auth] Attacker 120.197.154.22 trying to authenticate with 'publickey'
+2022-10-23 15:08:16.797 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 15:08:16.797 - [Debug] [Auth] Attacker: 120.197.154.22 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 15:08:17.245 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 15:08:17.364 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 15:08:17.427 - [Debug] [Auth] Attacker 223.171.91.143 trying to authenticate with 'none'
+2022-10-23 15:08:17.427 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 15:08:17.509 - [Debug] [Connection] Attacker connected: 120.236.79.182 | Client Identification: SSH-2.0-Go
+2022-10-23 15:08:17.630 - [Debug] [Connection] Attacker connected: 120.197.154.22 | Client Identification: SSH-2.0-Go
+2022-10-23 15:08:17.667 - [Debug] [Connection] Attacker connected: 222.134.240.91 | Client Identification: SSH-2.0-Go

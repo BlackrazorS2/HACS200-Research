@@ -1,0 +1,12 @@
+
+2022-10-23 09:48:21.201 - [Debug] [Connection] Attacker connected: 59.3.186.45 | Client Identification: SSH-2.0-Go
+2022-10-23 09:48:21.209 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 09:48:21.412 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-23 09:48:21.639 - [Debug] [Connection] Attacker closed connection
+2022-10-23 09:48:21.645 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-23 09:48:21.646 - [Debug] [LXC] Container's OpenSSH server closed connection
+2022-10-23 09:48:21.747 - [Debug] [Auth] Attacker 117.80.212.33 trying to authenticate with 'none'
+2022-10-23 09:48:21.747 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:2113388) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)

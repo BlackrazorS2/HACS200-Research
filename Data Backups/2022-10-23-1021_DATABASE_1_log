@@ -1,0 +1,74 @@
+
+2022-10-23 10:21:01.409 - [Debug] [Auth] Attacker 209.216.177.158 trying to authenticate with 'none'
+2022-10-23 10:21:01.409 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 10:21:01.444 - [Debug] [Connection] Attacker connected: 54.38.97.156 | Client Identification: SSH-2.0-Go
+2022-10-23 10:21:01.451 - [Debug] [Connection] Attacker connected: 121.200.53.148 | Client Identification: SSH-2.0-Go
+2022-10-23 10:21:01.617 - [Debug] [Auth] Attacker 209.216.177.158 trying to authenticate with 'password'
+2022-10-23 10:21:01.617 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 10:21:01.617 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.173
+2022-10-23 10:21:01.662 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 10:21:01.708 - [Debug] [Auth] Attacker 45.120.216.114 trying to authenticate with 'publickey'
+2022-10-23 10:21:01.709 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 10:21:01.710 - [Debug] [Auth] Attacker: 45.120.216.114 has so far made 1 attempts. Remaining: 5 attempts
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:2421538) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_1',
+  containerIp: '10.0.3.90',
+  mitmPort: 1000,
+  autoAccessFixed: 1
+}
+2022-10-23 10:21:33.740 - [Info] MITM Version: 2
+2022-10-23 10:21:33.742 - [Info] Auto Access Enabled: true
+2022-10-23 10:21:33.742 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-23 10:21:33.750 - [Info] SSH man-in-the-middle server for 10.0.3.90 listening on 10.0.3.1:1000
+2022-10-23 10:21:34.048 - [Debug] [Connection] Attacker connected: 121.200.53.148 | Client Identification: SSH-2.0-Go
+2022-10-23 10:21:34.157 - [Debug] [Connection] Attacker connected: 223.171.91.177 | Client Identification: SSH-2.0-Go
+2022-10-23 10:21:34.992 - [Debug] [Connection] Attacker connected: 101.43.224.103 | Client Identification: SSH-2.0-Go
+2022-10-23 10:21:35.253 - [Debug] [Connection] Attacker connected: 42.193.141.147 | Client Identification: SSH-2.0-Go
+2022-10-23 10:21:35.265 - [Debug] [Connection] Attacker connected: 102.141.225.244 | Client Identification: SSH-2.0-Go
+2022-10-23 10:21:35.470 - [Debug] [Auth] Attacker 121.200.53.148 trying to authenticate with 'none'
+2022-10-23 10:21:35.472 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 10:21:35.645 - [Debug] [Auth] Attacker 223.171.91.177 trying to authenticate with 'none'
+2022-10-23 10:21:35.645 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 10:21:36.042 - [Debug] [Auth] Attacker 121.200.53.148 trying to authenticate with 'password'
+2022-10-23 10:21:36.044 - [Debug] [Auto Access] Attacker: 121.200.53.148, Threshold: 1, Attempts: 1
+2022-10-23 10:21:36.045 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-23 10:21:36.045 - [Debug] [Auto Access] Adding the following credentials: 'root:1'
+2022-10-23 10:21:36.102 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-23 10:21:36.104 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 10:21:36.104 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.90
+2022-10-23 10:21:36.154 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 10:21:36.181 - [Debug] [Auth] Attacker 223.171.91.177 trying to authenticate with 'publickey'
+2022-10-23 10:21:36.182 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 10:21:36.183 - [Debug] [Auth] Attacker: 223.171.91.177 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 10:21:36.313 - [Debug] [Auth] Attacker 101.43.224.103 trying to authenticate with 'none'
+2022-10-23 10:21:36.313 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 10:21:36.615 - [Debug] [Auth] Attacker 42.193.141.147 trying to authenticate with 'none'
+2022-10-23 10:21:36.615 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 10:21:36.686 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 10:21:36.777 - [Debug] [Auth] Attacker 101.43.224.103 trying to authenticate with 'publickey'
+2022-10-23 10:21:36.777 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 10:21:36.778 - [Debug] [Auth] Attacker: 101.43.224.103 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 10:21:36.819 - [Debug] [Auth] Attacker 102.141.225.244 trying to authenticate with 'none'
+2022-10-23 10:21:36.819 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 10:21:36.914 - [Debug] [Connection] Attacker connected: 223.171.91.177 | Client Identification: SSH-2.0-Go
+2022-10-23 10:21:37.094 - [Debug] [Auth] Attacker 42.193.141.147 trying to authenticate with 'password'
+2022-10-23 10:21:37.094 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 10:21:37.094 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.90
+2022-10-23 10:21:37.146 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 10:21:37.153 - [Debug] [EXEC] Noninteractive mode attacker command: echo > /dev/shm/ifconfig; chmod 777 /dev/shm/ifconfig; cat > /dev/shm/ifconfig

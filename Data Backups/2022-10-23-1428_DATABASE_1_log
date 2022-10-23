@@ -1,0 +1,68 @@
+
+(node:3087750) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_1',
+  containerIp: '10.0.3.11',
+  mitmPort: 1000,
+  autoAccessFixed: 1
+}
+2022-10-23 14:28:23.338 - [Info] MITM Version: 2
+2022-10-23 14:28:23.340 - [Info] Auto Access Enabled: true
+2022-10-23 14:28:23.341 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-23 14:28:23.348 - [Info] SSH man-in-the-middle server for 10.0.3.11 listening on 10.0.3.1:1000
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:3089535) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_1',
+  containerIp: '10.0.3.179',
+  mitmPort: 1000,
+  autoAccessFixed: 1
+}
+2022-10-23 14:28:54.313 - [Info] MITM Version: 2
+2022-10-23 14:28:54.314 - [Info] Auto Access Enabled: true
+2022-10-23 14:28:54.324 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-23 14:28:54.341 - [Info] SSH man-in-the-middle server for 10.0.3.179 listening on 10.0.3.1:1000
+2022-10-23 14:28:54.607 - [Debug] [Connection] Attacker connected: 58.216.8.121 | Client Identification: SSH-2.0-Go
+2022-10-23 14:28:54.727 - [Debug] [Connection] Attacker connected: 43.143.50.198 | Client Identification: SSH-2.0-Go
+2022-10-23 14:28:55.981 - [Debug] [Auth] Attacker 58.216.8.121 trying to authenticate with 'none'
+2022-10-23 14:28:55.982 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 14:28:56.466 - [Debug] [Auth] Attacker 58.216.8.121 trying to authenticate with 'publickey'
+2022-10-23 14:28:56.467 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 14:28:56.468 - [Debug] [Auth] Attacker: 58.216.8.121 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 14:28:56.646 - [Debug] [Auth] Attacker 43.143.50.198 trying to authenticate with 'none'
+2022-10-23 14:28:56.647 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 14:28:56.953 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 14:28:57.102 - [Debug] [Auth] Attacker 43.143.50.198 trying to authenticate with 'publickey'
+2022-10-23 14:28:57.103 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 14:28:57.103 - [Debug] [Auth] Attacker: 43.143.50.198 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 14:28:57.156 - [Debug] [Connection] Attacker connected: 58.216.8.121 | Client Identification: SSH-2.0-Go
+2022-10-23 14:28:57.215 - [Debug] [Connection] Attacker connected: 223.99.166.104 | Client Identification: SSH-2.0-Go
+2022-10-23 14:28:57.560 - [Debug] [Connection] Attacker closed the connection

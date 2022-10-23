@@ -1,0 +1,31 @@
+
+2022-10-23 14:59:13.452 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-23 14:59:13.454 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 14:59:13.454 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.239
+2022-10-23 14:59:13.464 - [Debug] [Auth] Attacker 117.80.212.33 trying to authenticate with 'none'
+2022-10-23 14:59:13.464 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 14:59:13.474 - [Debug] [Auth] Attacker 78.189.25.224 trying to authenticate with 'publickey'
+2022-10-23 14:59:13.489 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 14:59:13.490 - [Debug] [Auth] Attacker: 78.189.25.224 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 14:59:13.497 - [Debug] [Connection] Attacker connected: 117.16.44.111 | Client Identification: SSH-2.0-Go
+2022-10-23 14:59:13.500 - [Debug] [Connection] Attacker connected: 118.218.209.149 | Client Identification: SSH-2.0-Go
+2022-10-23 14:59:13.534 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 14:59:13.580 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-23 14:59:13.724 - [Debug] [Auth] Attacker 191.242.188.103 trying to authenticate with 'none'
+2022-10-23 14:59:13.724 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 14:59:13.778 - [Debug] [Connection] Attacker closed connection
+2022-10-23 14:59:13.786 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-23 14:59:13.788 - [Debug] [LXC] Container's OpenSSH server closed connection
+2022-10-23 14:59:13.811 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 14:59:13.939 - [Debug] [Auth] Attacker 117.80.212.33 trying to authenticate with 'publickey'
+2022-10-23 14:59:13.940 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 14:59:13.941 - [Debug] [Auth] Attacker: 117.80.212.33 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 14:59:13.984 - [Debug] [Connection] Attacker connected: 78.189.25.224 | Client Identification: SSH-2.0-Go
+2022-10-23 14:59:13.985 - [Debug] [Auth] Attacker 191.242.188.103 trying to authenticate with 'password'
+2022-10-23 14:59:13.985 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 14:59:13.985 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.239
+2022-10-23 14:59:13.997 - [Debug] [Connection] Attacker connected: 31.14.115.42 | Client Identification: SSH-2.0-Go
+2022-10-23 14:59:14.038 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:3395794) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)

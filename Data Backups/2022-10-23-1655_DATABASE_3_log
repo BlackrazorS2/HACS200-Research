@@ -1,0 +1,54 @@
+
+2022-10-23 16:55:19.420 - [Debug] [Auth] Attacker 80.147.162.151 trying to authenticate with 'none'
+2022-10-23 16:55:19.420 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 16:55:19.507 - [Debug] [Connection] Attacker connected: 43.143.50.198 | Client Identification: SSH-2.0-Go
+2022-10-23 16:55:19.565 - [Debug] [Auth] Attacker 121.200.53.148 trying to authenticate with 'none'
+2022-10-23 16:55:19.565 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 16:55:19.688 - [Debug] [Auth] Attacker 80.147.162.151 trying to authenticate with 'password'
+2022-10-23 16:55:19.688 - [Debug] [Auto Access] Attacker: 80.147.162.151, Threshold: 1, Attempts: 1
+2022-10-23 16:55:19.688 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-23 16:55:19.688 - [Debug] [Auto Access] Adding the following credentials: 'root:1'
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:3946133) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_3',
+  containerIp: '10.0.3.224',
+  mitmPort: 1002,
+  autoAccessFixed: 1
+}
+2022-10-23 16:55:50.408 - [Info] MITM Version: 2
+2022-10-23 16:55:50.410 - [Info] Auto Access Enabled: true
+2022-10-23 16:55:50.410 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-23 16:55:50.417 - [Info] SSH man-in-the-middle server for 10.0.3.224 listening on 10.0.3.1:1002
+2022-10-23 16:55:50.994 - [Debug] [Connection] Attacker connected: 120.236.69.162 | Client Identification: SSH-2.0-Go
+2022-10-23 16:55:51.235 - [Debug] [Connection] Attacker connected: 121.200.53.148 | Client Identification: SSH-2.0-Go
+2022-10-23 16:55:52.697 - [Debug] [Auth] Attacker 121.200.53.148 trying to authenticate with 'none'
+2022-10-23 16:55:52.698 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 16:55:52.737 - [Debug] [Auth] Attacker 120.236.69.162 trying to authenticate with 'none'
+2022-10-23 16:55:52.737 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 16:55:52.903 - [Debug] [Connection] Attacker connected: 222.165.136.99 | Client Identification: SSH-2.0-Go
+2022-10-23 16:55:52.964 - [Debug] [Connection] Attacker connected: 46.170.151.34 | Client Identification: SSH-2.0-Go
+2022-10-23 16:55:53.213 - [Debug] [Auth] Attacker 121.200.53.148 trying to authenticate with 'publickey'
+2022-10-23 16:55:53.214 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 16:55:53.215 - [Debug] [Auth] Attacker: 121.200.53.148 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 16:55:53.333 - [Debug] [Auth] Attacker 120.236.69.162 trying to authenticate with 'publickey'
+2022-10-23 16:55:53.334 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 16:55:53.334 - [Debug] [Auth] Attacker: 120.236.69.162 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 16:55:53.729 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 16:55:53.912 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 16:55:53.964 - [Debug] [Connection] Attacker connected: 121.200.53.148 | Client Identification: SSH-2.0-Go
+2022-10-23 16:55:54.170 - [Debug] [Connection] Attacker connected: 120.236.69.162 | Client Identification: SSH-2.0-Go

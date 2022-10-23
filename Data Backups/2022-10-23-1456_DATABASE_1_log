@@ -1,0 +1,33 @@
+
+2022-10-23 14:56:09.084 - [Debug] [Auth] Attacker 58.216.8.121 trying to authenticate with 'password'
+2022-10-23 14:56:09.085 - [Debug] [Auto Access] Attacker: 58.216.8.121, Threshold: 1, Attempts: 1
+2022-10-23 14:56:09.085 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-23 14:56:09.085 - [Debug] [Auto Access] Adding the following credentials: 'root:1'
+2022-10-23 14:56:09.239 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-23 14:56:09.242 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 14:56:09.242 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.120
+2022-10-23 14:56:09.271 - [Debug] [Auth] Attacker 78.189.25.224 trying to authenticate with 'publickey'
+2022-10-23 14:56:09.291 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 14:56:09.292 - [Debug] [Auth] Attacker: 78.189.25.224 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 14:56:09.336 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 14:56:09.403 - [Debug] [Auth] Attacker 85.105.58.118 trying to authenticate with 'none'
+2022-10-23 14:56:09.403 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 14:56:09.454 - [Debug] [Auth] Attacker 143.198.133.234 trying to authenticate with 'none'
+2022-10-23 14:56:09.454 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 14:56:09.474 - [Debug] [Auth] Attacker 59.3.186.45 trying to authenticate with 'none'
+2022-10-23 14:56:09.474 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 14:56:09.597 - [Debug] [Auth] Attacker 143.198.133.234 trying to authenticate with 'password'
+2022-10-23 14:56:09.598 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 14:56:09.598 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.120
+2022-10-23 14:56:09.658 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 14:56:09.669 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 14:56:09.681 - [Debug] [Auth] Attacker 85.105.58.118 trying to authenticate with 'password'
+2022-10-23 14:56:09.681 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 14:56:09.681 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.120
+2022-10-23 14:56:09.706 - [Debug] [Auth] Attacker 84.16.224.173 trying to authenticate with 'none'
+2022-10-23 14:56:09.706 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 14:56:09.741 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 14:56:09.814 - [Debug] [Connection] Attacker connected: 78.189.25.224 | Client Identification: SSH-2.0-Go
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:3360459) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)

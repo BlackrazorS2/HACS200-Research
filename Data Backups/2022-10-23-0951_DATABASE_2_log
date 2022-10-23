@@ -1,0 +1,13 @@
+
+2022-10-23 09:50:07.141 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-23 09:50:07.185 - [Debug] [Auth] Attacker 78.187.13.206 trying to authenticate with 'none'
+2022-10-23 09:50:07.185 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 09:50:07.206 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 09:50:07.261 - [Debug] [Connection] Attacker connected: 120.236.74.234 | Client Identification: SSH-2.0-Go
+2022-10-23 09:50:07.302 - [Debug] [Auth] Attacker 120.236.79.182 trying to authenticate with 'none'
+2022-10-23 09:50:07.303 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 09:50:07.393 - [Debug] [Connection] Attacker connected: 223.171.91.109 | Client Identification: SSH-2.0-Go
+2022-10-23 09:50:07.473 - [Debug] [Auth] Attacker 78.187.13.206 trying to authenticate with 'publickey'
+2022-10-23 09:50:07.473 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 09:50:07.474 - [Debug] [Auth] Attacker: 78.187.13.206 has so far made 1 attempts. Remaining: 5 attempts
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

