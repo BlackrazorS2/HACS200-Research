@@ -87,31 +87,31 @@ for i in range(0, len(data["atk"])):
     db = int(data["DB"][i])
     if data["time"][i] <= 0:
         continue
-    match db:
-        case 1:
-            DB_1_avg["atk"].append(data["atk"][i])
-            DB_1_avg["etr"].append(data["etr"][i])
-            DB_1_avg["time"].append(data["time"][i])
-            DB_1_avg["cmd"].append(data["cmd"][i])
-            DB_1_avg["mods"].append(data["mods"][i])
-        case 2:
-            DB_2_avg["atk"].append(data["atk"][i])
-            DB_2_avg["etr"].append(data["etr"][i])
-            DB_2_avg["time"].append(data["time"][i])
-            DB_2_avg["cmd"].append(data["cmd"][i])
-            DB_2_avg["mods"].append(data["mods"][i])
-        case 3:
-            DB_3_avg["atk"].append(data["atk"][i])
-            DB_3_avg["etr"].append(data["etr"][i])
-            DB_3_avg["time"].append(data["time"][i])
-            DB_3_avg["cmd"].append(data["cmd"][i])
-            DB_3_avg["mods"].append(data["mods"][i])
-        case 4:
-            DB_4_avg["atk"].append(data["atk"][i])
-            DB_4_avg["etr"].append(data["etr"][i])
-            DB_4_avg["time"].append(data["time"][i])
-            DB_4_avg["cmd"].append(data["cmd"][i])
-            DB_4_avg["mods"].append(data["mods"][i])
+    # once again this would look so much better with match case but ubuntu only really likes 3.8
+    if db == 1:
+        DB_1_avg["atk"].append(data["atk"][i])
+        DB_1_avg["etr"].append(data["etr"][i])
+        DB_1_avg["time"].append(data["time"][i])
+        DB_1_avg["cmd"].append(data["cmd"][i])
+        DB_1_avg["mods"].append(data["mods"][i])
+    elif db == 2:
+        DB_2_avg["atk"].append(data["atk"][i])
+        DB_2_avg["etr"].append(data["etr"][i])
+        DB_2_avg["time"].append(data["time"][i])
+        DB_2_avg["cmd"].append(data["cmd"][i])
+        DB_2_avg["mods"].append(data["mods"][i])
+    elif db == 3:
+        DB_3_avg["atk"].append(data["atk"][i])
+        DB_3_avg["etr"].append(data["etr"][i])
+        DB_3_avg["time"].append(data["time"][i])
+        DB_3_avg["cmd"].append(data["cmd"][i])
+        DB_3_avg["mods"].append(data["mods"][i])
+    elif db == 4:
+        DB_4_avg["atk"].append(data["atk"][i])
+        DB_4_avg["etr"].append(data["etr"][i])
+        DB_4_avg["time"].append(data["time"][i])
+        DB_4_avg["cmd"].append(data["cmd"][i])
+        DB_4_avg["mods"].append(data["mods"][i])
 DB_1_avg["time_avg"] = sum(DB_1_avg["time"])/len(DB_1_avg["time"])
 DB_2_avg["time_avg"] = sum(DB_2_avg["time"])/len(DB_2_avg["time"])
 DB_3_avg["time_avg"] = sum(DB_3_avg["time"])/len(DB_3_avg["time"])
@@ -133,23 +133,23 @@ with open(f"STATS_AS_OF_{last}.csv", "w+", newline="") as csvfile:
 
     writer.writeheader()
     for i in range(0, len(data["atk"])):
-        match i:
-            case 0:
-                writer.writerow({"Attacker No.": data["atk"][i],"Database": data["DB"][i],"Time Entered": data["etr"][i],"Time Spent (S)": data["time"][i],
-                "Commands Run": data["cmd"][i],"Modification Attempts": data["mods"][i],"Filename": data["filename"][i], "Database (Avgs)": 1, "Avg Time Connected": DB_1_avg["time_avg"], 
-                "Avg Commands Run": DB_1_avg["cmd_avg"], "Avg File Modifications": DB_1_avg["mods_avg"]})
-            case 1:
-                writer.writerow({"Attacker No.": data["atk"][i],"Database": data["DB"][i],"Time Entered": data["etr"][i],"Time Spent (S)": data["time"][i],
-                "Commands Run": data["cmd"][i],"Modification Attempts": data["mods"][i],"Filename": data["filename"][i], "Database (Avgs)": 2, "Avg Time Connected": DB_2_avg["time_avg"], 
-                "Avg Commands Run": DB_2_avg["cmd_avg"], "Avg File Modifications": DB_2_avg["mods_avg"]})
-            case 2:
-                writer.writerow({"Attacker No.": data["atk"][i],"Database": data["DB"][i],"Time Entered": data["etr"][i],"Time Spent (S)": data["time"][i],
-                "Commands Run": data["cmd"][i],"Modification Attempts": data["mods"][i],"Filename": data["filename"][i], "Database (Avgs)": 3, "Avg Time Connected": DB_3_avg["time_avg"], 
-                "Avg Commands Run": DB_3_avg["cmd_avg"], "Avg File Modifications": DB_3_avg["mods_avg"]})
-            case 3:
-                writer.writerow({"Attacker No.": data["atk"][i],"Database": data["DB"][i],"Time Entered": data["etr"][i],"Time Spent (S)": data["time"][i],
-                "Commands Run": data["cmd"][i],"Modification Attempts": data["mods"][i],"Filename": data["filename"][i], "Database (Avgs)": 4, "Avg Time Connected": DB_4_avg["time_avg"], 
-                "Avg Commands Run": DB_4_avg["cmd_avg"], "Avg File Modifications": DB_4_avg["mods_avg"]})
-            case _:
-                writer.writerow({"Attacker No.": data["atk"][i],"Database": data["DB"][i],"Time Entered": data["etr"][i],"Time Spent (S)": data["time"][i],
-                "Commands Run": data["cmd"][i],"Modification Attempts": data["mods"][i],"Filename": data["filename"][i]})
+        # once again this would look so much better with match case but ubuntu only really likes 3.8
+        if i == 0:
+            writer.writerow({"Attacker No.": data["atk"][i],"Database": data["DB"][i],"Time Entered": data["etr"][i],"Time Spent (S)": data["time"][i],
+            "Commands Run": data["cmd"][i],"Modification Attempts": data["mods"][i],"Filename": data["filename"][i], "Database (Avgs)": 1, "Avg Time Connected": DB_1_avg["time_avg"], 
+            "Avg Commands Run": DB_1_avg["cmd_avg"], "Avg File Modifications": DB_1_avg["mods_avg"]})
+        elif i == 1:
+            writer.writerow({"Attacker No.": data["atk"][i],"Database": data["DB"][i],"Time Entered": data["etr"][i],"Time Spent (S)": data["time"][i],
+            "Commands Run": data["cmd"][i],"Modification Attempts": data["mods"][i],"Filename": data["filename"][i], "Database (Avgs)": 2, "Avg Time Connected": DB_2_avg["time_avg"], 
+            "Avg Commands Run": DB_2_avg["cmd_avg"], "Avg File Modifications": DB_2_avg["mods_avg"]})
+        elif i == 2:
+            writer.writerow({"Attacker No.": data["atk"][i],"Database": data["DB"][i],"Time Entered": data["etr"][i],"Time Spent (S)": data["time"][i],
+            "Commands Run": data["cmd"][i],"Modification Attempts": data["mods"][i],"Filename": data["filename"][i], "Database (Avgs)": 3, "Avg Time Connected": DB_3_avg["time_avg"], 
+            "Avg Commands Run": DB_3_avg["cmd_avg"], "Avg File Modifications": DB_3_avg["mods_avg"]})
+        elif i == 3:
+            writer.writerow({"Attacker No.": data["atk"][i],"Database": data["DB"][i],"Time Entered": data["etr"][i],"Time Spent (S)": data["time"][i],
+            "Commands Run": data["cmd"][i],"Modification Attempts": data["mods"][i],"Filename": data["filename"][i], "Database (Avgs)": 4, "Avg Time Connected": DB_4_avg["time_avg"], 
+            "Avg Commands Run": DB_4_avg["cmd_avg"], "Avg File Modifications": DB_4_avg["mods_avg"]})
+        else:
+            writer.writerow({"Attacker No.": data["atk"][i],"Database": data["DB"][i],"Time Entered": data["etr"][i],"Time Spent (S)": data["time"][i],
+            "Commands Run": data["cmd"][i],"Modification Attempts": data["mods"][i],"Filename": data["filename"][i]})
