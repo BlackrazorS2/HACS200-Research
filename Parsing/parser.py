@@ -1,7 +1,7 @@
 import csv
 import os
 import datetime
-from time import time
+import time
 
 MOD_LIST = ["rm",
             "cp",
@@ -18,7 +18,7 @@ MOD_LIST = ["rm",
             ">>"
             ]
 
-fieldnames = ["Attacker No.", "Database", "Time Entered", "Time Spent (S)", "Commands Run", "Modification Attempts","Filename", "Database (Avgs)", "Avg Time Connected", "Avg Commands Run", "Avg File Modifications"]
+fieldnames = ["Attacker No.", "Database", "Time Entered", "Time Spent (S)", "Commands Run", "Modification Attempts","Filename", "Database (Avgs)", "Total # Attackers", "# Relevant Attackers","Avg Time Connected", "Avg Commands Run", "Avg File Modifications"]
 data = {"atk": [], "DB": [], "etr": [], "time": [], "cmd": [], "mods": [], "filename": []}
 
 logs = os.listdir("../Data Backups/")
@@ -45,9 +45,7 @@ for i, file in enumerate(logs):
                 try:
                     connectEpoch = datetime.datetime(int(dateReadable[0]),int(dateReadable[1]),int(dateReadable[2]),int(timeReadable[0]),int(timeReadable[1]),int(timeReadable[2].split(".")[0])).timestamp()
                 except:
-                    print(file)
                     conEpochms = 0
-                print("found connection")
                 conEpochms = connectEpoch*1000+int(timeReadable[2].split(".")[1])
             if "Attacker closed" in line:
                 parse = line.split(" ")
@@ -56,9 +54,7 @@ for i, file in enumerate(logs):
                 try:
                     disEpoch = datetime.datetime(int(dateReadable[0]),int(dateReadable[1]),int(dateReadable[2]),int(timeReadable[0]),int(timeReadable[1]),int(timeReadable[2].split(".")[0])).timestamp()
                 except:
-                    print(file)
                     conEpochms = 0
-                print("Found disconnect")
                 disEpochms = connectEpoch*1000+int(timeReadable[2].split(".")[1])
                 deltaMS = 0
                 if conEpochms == 0:
@@ -76,15 +72,27 @@ for i, file in enumerate(logs):
                             mods += 1
         data["cmd"].append(cmds)
         data["mods"].append(mods)
-
+    if i % 100 == 0:
+        print(f"{i}/{len(logs)}")
+print("done")
+    
 # Finding averages for each database
-DB_1_avg = {"atk": [], "etr": [], "time": [], "cmd": [], "mods": [], "time_avg": 0, "cmd_avg": 0, "mods_avg": 0,}
-DB_2_avg = {"atk": [], "etr": [], "time": [], "cmd": [], "mods": [], "time_avg": 0, "cmd_avg": 0, "mods_avg": 0,}
-DB_3_avg = {"atk": [], "etr": [], "time": [], "cmd": [], "mods": [], "time_avg": 0, "cmd_avg": 0, "mods_avg": 0,}
-DB_4_avg = {"atk": [], "etr": [], "time": [], "cmd": [], "mods": [], "time_avg": 0, "cmd_avg": 0, "mods_avg": 0,}
+DB_1_avg = {"atk": [], "etr": [], "time": [], "cmd": [], "mods": [], "t_num": 0, "time_avg": 0, "cmd_avg": 0, "mods_avg": 0,}
+DB_2_avg = {"atk": [], "etr": [], "time": [], "cmd": [], "mods": [], "t_num": 0, "time_avg": 0, "cmd_avg": 0, "mods_avg": 0,}
+DB_3_avg = {"atk": [], "etr": [], "time": [], "cmd": [], "mods": [], "t_num": 0, "time_avg": 0, "cmd_avg": 0, "mods_avg": 0,}
+DB_4_avg = {"atk": [], "etr": [], "time": [], "cmd": [], "mods": [], "t_num": 0, "time_avg": 0, "cmd_avg": 0, "mods_avg": 0,}
 
 for i in range(0, len(data["atk"])):
     db = int(data["DB"][i])
+    if int(data["DB"][i]) == 1:
+        DB_1_avg["t_num"] +=1
+    if int(data["DB"][i]) == 2:
+        DB_2_avg["t_num"] +=1
+    if int(data["DB"][i]) == 3:
+        DB_3_avg["t_num"] +=1
+    if int(data["DB"][i]) == 4:
+        DB_4_avg["t_num"] +=1 
+
     if data["time"][i] <= 0:
         continue
     # once again this would look so much better with match case but ubuntu only really likes 3.8
@@ -136,19 +144,19 @@ with open(f"STATS_AS_OF_{last}.csv", "w+", newline="") as csvfile:
         # once again this would look so much better with match case but ubuntu only really likes 3.8
         if i == 0:
             writer.writerow({"Attacker No.": data["atk"][i],"Database": data["DB"][i],"Time Entered": data["etr"][i],"Time Spent (S)": data["time"][i],
-            "Commands Run": data["cmd"][i],"Modification Attempts": data["mods"][i],"Filename": data["filename"][i], "Database (Avgs)": 1, "Avg Time Connected": DB_1_avg["time_avg"], 
+            "Commands Run": data["cmd"][i],"Modification Attempts": data["mods"][i],"Filename": data["filename"][i], "Database (Avgs)": 1, "Total # Attackers": DB_1_avg["t_num"], "# Relevant Attackers": len(DB_1_avg["atk"]),"Avg Time Connected": DB_1_avg["time_avg"], 
             "Avg Commands Run": DB_1_avg["cmd_avg"], "Avg File Modifications": DB_1_avg["mods_avg"]})
         elif i == 1:
             writer.writerow({"Attacker No.": data["atk"][i],"Database": data["DB"][i],"Time Entered": data["etr"][i],"Time Spent (S)": data["time"][i],
-            "Commands Run": data["cmd"][i],"Modification Attempts": data["mods"][i],"Filename": data["filename"][i], "Database (Avgs)": 2, "Avg Time Connected": DB_2_avg["time_avg"], 
+            "Commands Run": data["cmd"][i],"Modification Attempts": data["mods"][i],"Filename": data["filename"][i], "Database (Avgs)": 2, "Total # Attackers": DB_2_avg["t_num"], "# Relevant Attackers": len(DB_2_avg["atk"]), "Avg Time Connected": DB_2_avg["time_avg"], 
             "Avg Commands Run": DB_2_avg["cmd_avg"], "Avg File Modifications": DB_2_avg["mods_avg"]})
         elif i == 2:
             writer.writerow({"Attacker No.": data["atk"][i],"Database": data["DB"][i],"Time Entered": data["etr"][i],"Time Spent (S)": data["time"][i],
-            "Commands Run": data["cmd"][i],"Modification Attempts": data["mods"][i],"Filename": data["filename"][i], "Database (Avgs)": 3, "Avg Time Connected": DB_3_avg["time_avg"], 
+            "Commands Run": data["cmd"][i],"Modification Attempts": data["mods"][i],"Filename": data["filename"][i], "Database (Avgs)": 3, "Total # Attackers": DB_3_avg["t_num"], "# Relevant Attackers": len(DB_3_avg["atk"]), "Avg Time Connected": DB_3_avg["time_avg"], 
             "Avg Commands Run": DB_3_avg["cmd_avg"], "Avg File Modifications": DB_3_avg["mods_avg"]})
         elif i == 3:
             writer.writerow({"Attacker No.": data["atk"][i],"Database": data["DB"][i],"Time Entered": data["etr"][i],"Time Spent (S)": data["time"][i],
-            "Commands Run": data["cmd"][i],"Modification Attempts": data["mods"][i],"Filename": data["filename"][i], "Database (Avgs)": 4, "Avg Time Connected": DB_4_avg["time_avg"], 
+            "Commands Run": data["cmd"][i],"Modification Attempts": data["mods"][i],"Filename": data["filename"][i], "Database (Avgs)": 4, "Total # Attackers": DB_4_avg["t_num"], "# Relevant Attackers": len(DB_4_avg["atk"]), "Avg Time Connected": DB_4_avg["time_avg"], 
             "Avg Commands Run": DB_4_avg["cmd_avg"], "Avg File Modifications": DB_4_avg["mods_avg"]})
         else:
             writer.writerow({"Attacker No.": data["atk"][i],"Database": data["DB"][i],"Time Entered": data["etr"][i],"Time Spent (S)": data["time"][i],
