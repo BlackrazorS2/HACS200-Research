@@ -37,7 +37,7 @@ then
   logpath="$dirpath/data/$1_log"
   #sudo forever -l $logpath --id $1 -a start /home/student/MITM/mitm.js -n $1 -i $IP -p $port --auto-access --auto-access-fixed 3 --debug & echo "pid $!"
 
-  sudo forever -l $logpath --id $1 -a start /home/student/MITM/mitm.js -n $1 -i $IP -p $port --mitm-ip 10.0.3.1 --auto-access --auto-access-fixed 3 --debug & echo "pid $!"
+  sudo forever -l $logpath --id $1 -a start /home/student/MITM/mitm.js -n $1 -i $IP -p $port --mitm-ip 10.0.3.1 --auto-access --auto-access-fixed 1 --debug & echo "pid $!"
   sleep 90 s
 
   sudo ip link set dev enp4s2 up
