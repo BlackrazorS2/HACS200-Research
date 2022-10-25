@@ -9,4 +9,4 @@ fi
 
 path="/home/student/data/copied_data" # extra workstation vm
 
-sudo sshpass -p $2 scp -r $1 "$path/*" $1@$3:/home/$1/HACS200-Research-Data-Backup/
+sudo sshpass -p $2 scp -r $1 "$path/*" $1@$3:/home/$1/HACS200-Research-Data-Backup/Raw_Data
