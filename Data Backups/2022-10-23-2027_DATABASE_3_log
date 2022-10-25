@@ -1,0 +1,10 @@
+
+2022-10-23 20:27:28.661 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 20:27:28.864 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-23 20:27:28.887 - [Debug] [Connection] Attacker connected: 59.1.226.211 | Client Identification: SSH-2.0-Go
+2022-10-23 20:27:28.887 - [Debug] [Auth] Attacker 43.139.28.174 trying to authenticate with 'none'
+2022-10-23 20:27:28.888 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 20:27:28.978 - [Debug] [Connection] Attacker closed connection
+2022-10-23 20:27:28.984 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-23 20:27:28.984 - [Debug] [LXC] Container's OpenSSH server closed connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

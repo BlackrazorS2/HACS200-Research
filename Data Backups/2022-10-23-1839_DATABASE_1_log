@@ -1,0 +1,61 @@
+
+2022-10-23 18:38:53.049 - [Debug] [Auth] Attacker 103.90.177.102 trying to authenticate with 'none'
+2022-10-23 18:38:53.049 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 18:38:53.585 - [Debug] [Auth] Attacker 124.221.165.133 trying to authenticate with 'none'
+2022-10-23 18:38:53.585 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 18:38:53.756 - [Debug] [Auth] Attacker 61.102.42.5 trying to authenticate with 'none'
+2022-10-23 18:38:53.758 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 18:38:54.036 - [Debug] [Auth] Attacker 124.221.165.133 trying to authenticate with 'password'
+2022-10-23 18:38:54.037 - [Debug] [Auto Access] Attacker: 124.221.165.133, Threshold: 1, Attempts: 1
+2022-10-23 18:38:54.038 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-23 18:38:54.038 - [Debug] [Auto Access] Adding the following credentials: 'root:1'
+2022-10-23 18:38:54.283 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-23 18:38:54.287 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 18:38:54.287 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.38
+2022-10-23 18:38:54.324 - [Debug] [Auth] Attacker 61.102.42.5 trying to authenticate with 'password'
+2022-10-23 18:38:54.325 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 18:38:54.326 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.38
+2022-10-23 18:38:54.415 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 18:38:54.461 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:166216) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_1',
+  containerIp: '10.0.3.231',
+  mitmPort: 1000,
+  autoAccessFixed: 1
+}
+2022-10-23 18:39:26.775 - [Info] MITM Version: 2
+2022-10-23 18:39:26.776 - [Info] Auto Access Enabled: true
+2022-10-23 18:39:26.776 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-23 18:39:26.783 - [Info] SSH man-in-the-middle server for 10.0.3.231 listening on 10.0.3.1:1000
+2022-10-23 18:39:28.326 - [Debug] [Connection] Attacker connected: 59.1.226.211 | Client Identification: SSH-2.0-Go
+2022-10-23 18:39:28.600 - [Debug] [Connection] Attacker connected: 85.53.55.133 | Client Identification: SSH-2.0-Go
+2022-10-23 18:39:29.320 - [Debug] [Auth] Attacker 85.53.55.133 trying to authenticate with 'none'
+2022-10-23 18:39:29.320 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 18:39:29.544 - [Debug] [Auth] Attacker 85.53.55.133 trying to authenticate with 'publickey'
+2022-10-23 18:39:29.548 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 18:39:29.549 - [Debug] [Auth] Attacker: 85.53.55.133 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 18:39:29.775 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 18:39:29.883 - [Debug] [Connection] Attacker connected: 85.53.55.133 | Client Identification: SSH-2.0-Go
+2022-10-23 18:39:30.434 - [Debug] [Connection] Attacker connected: 59.1.226.211 | Client Identification: SSH-2.0-Go
+2022-10-23 18:39:30.577 - [Debug] [Auth] Attacker 85.53.55.133 trying to authenticate with 'none'
+2022-10-23 18:39:30.578 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 18:39:30.791 - [Debug] [Auth] Attacker 85.53.55.133 trying to authenticate with 'password'
+2022-10-23 18:39:30.792 - [Debug] [Auto Access] Attacker: 85.53.55.133, Threshold: 1, Attempts: 1
+2022-10-23 18:39:30.792 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-23 18:39:30.793 - [Debug] [Auto Access] Adding the following credentials: 'root:1'

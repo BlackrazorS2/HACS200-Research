@@ -1,0 +1,22 @@
+
+2022-10-23 20:50:12.043 - [Debug] [Auth] Attacker 66.70.154.59 trying to authenticate with 'none'
+2022-10-23 20:50:12.043 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 20:50:12.121 - [Debug] [Auth] Attacker 66.70.154.59 trying to authenticate with 'password'
+2022-10-23 20:50:12.126 - [Debug] [Auto Access] Attacker: 66.70.154.59, Threshold: 1, Attempts: 1
+2022-10-23 20:50:12.127 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-23 20:50:12.127 - [Debug] [Auto Access] Adding the following credentials: 'root:1'
+2022-10-23 20:50:12.223 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-23 20:50:12.225 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 20:50:12.225 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.194
+2022-10-23 20:50:12.231 - [Debug] [Auth] Attacker 69.236.215.6 trying to authenticate with 'none'
+2022-10-23 20:50:12.231 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 20:50:12.233 - [Debug] [Auth] Attacker 54.38.97.156 trying to authenticate with 'none'
+2022-10-23 20:50:12.237 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 20:50:12.239 - [Debug] [Connection] Attacker connected: 103.90.177.102 | Client Identification: SSH-2.0-Go
+2022-10-23 20:50:12.242 - [Debug] [Connection] Attacker connected: 43.139.28.174 | Client Identification: SSH-2.0-Go
+2022-10-23 20:50:12.308 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 20:50:12.325 - [Debug] [Auth] Attacker 69.236.215.6 trying to authenticate with 'publickey'
+2022-10-23 20:50:12.326 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 20:50:12.327 - [Debug] [Auth] Attacker: 69.236.215.6 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 20:50:12.426 - [Debug] [Connection] Attacker closed the connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

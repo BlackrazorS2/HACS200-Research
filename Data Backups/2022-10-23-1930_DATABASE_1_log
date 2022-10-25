@@ -1,0 +1,23 @@
+
+2022-10-23 19:29:53.158 - [Debug] [Auth] Attacker 157.245.137.18 trying to authenticate with 'publickey'
+2022-10-23 19:29:53.158 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 19:29:53.159 - [Debug] [Auth] Attacker: 157.245.137.18 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 19:29:53.225 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 19:29:53.233 - [Debug] [Connection] Attacker connected: 157.245.137.18 | Client Identification: SSH-2.0-Go
+2022-10-23 19:29:53.326 - [Debug] [Connection] Attacker connected: 81.68.253.52 | Client Identification: SSH-2.0-Go
+2022-10-23 19:29:53.345 - [Debug] [Auth] Attacker 157.245.137.18 trying to authenticate with 'none'
+2022-10-23 19:29:53.345 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 19:29:53.409 - [Debug] [Auth] Attacker 157.245.137.18 trying to authenticate with 'password'
+2022-10-23 19:29:53.409 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 19:29:53.409 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.105
+2022-10-23 19:29:53.454 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 19:29:53.559 - [Debug] [Auth] Attacker 144.22.191.115 trying to authenticate with 'none'
+2022-10-23 19:29:53.560 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 19:29:53.599 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-23 19:29:53.710 - [Debug] [Connection] Attacker closed connection
+2022-10-23 19:29:53.717 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-23 19:29:53.718 - [Debug] [LXC] Container's OpenSSH server closed connection
+2022-10-23 19:29:53.806 - [Debug] [Auth] Attacker 144.22.191.115 trying to authenticate with 'password'
+2022-10-23 19:29:53.807 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 19:29:53.807 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.105
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

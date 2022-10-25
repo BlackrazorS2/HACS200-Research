@@ -1,0 +1,54 @@
+
+2022-10-23 18:44:19.862 - [Debug] [Connection] Attacker connected: 59.1.226.211 | Client Identification: SSH-2.0-Go
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:187187) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_3',
+  containerIp: '10.0.3.228',
+  mitmPort: 1002,
+  autoAccessFixed: 1
+}
+2022-10-23 18:44:52.218 - [Info] MITM Version: 2
+2022-10-23 18:44:52.219 - [Info] Auto Access Enabled: true
+2022-10-23 18:44:52.219 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-23 18:44:52.227 - [Info] SSH man-in-the-middle server for 10.0.3.228 listening on 10.0.3.1:1002
+2022-10-23 18:44:54.837 - [Debug] [Connection] Attacker connected: 59.1.226.211 | Client Identification: SSH-2.0-Go
+2022-10-23 18:44:55.337 - [Debug] [Connection] Attacker connected: 59.1.226.211 | Client Identification: SSH-2.0-Go
+2022-10-23 18:44:56.756 - [Debug] [Connection] Attacker connected: 117.16.44.111 | Client Identification: SSH-2.0-Go
+2022-10-23 18:44:56.882 - [Debug] [Connection] Attacker connected: 120.236.78.194 | Client Identification: SSH-2.0-Go
+2022-10-23 18:44:57.611 - [Debug] [Connection] Attacker connected: 144.22.191.115 | Client Identification: SSH-2.0-Go
+2022-10-23 18:44:57.895 - [Debug] [Connection] Attacker connected: 59.1.226.211 | Client Identification: SSH-2.0-Go
+2022-10-23 18:44:57.969 - [Debug] [Auth] Attacker 117.16.44.111 trying to authenticate with 'none'
+2022-10-23 18:44:57.970 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 18:44:58.396 - [Debug] [Auth] Attacker 144.22.191.115 trying to authenticate with 'none'
+2022-10-23 18:44:58.397 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 18:44:58.402 - [Debug] [Auth] Attacker 117.16.44.111 trying to authenticate with 'publickey'
+2022-10-23 18:44:58.403 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 18:44:58.403 - [Debug] [Auth] Attacker: 117.16.44.111 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 18:44:58.553 - [Debug] [Auth] Attacker 120.236.78.194 trying to authenticate with 'none'
+2022-10-23 18:44:58.553 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 18:44:58.643 - [Debug] [Auth] Attacker 144.22.191.115 trying to authenticate with 'publickey'
+2022-10-23 18:44:58.643 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 18:44:58.644 - [Debug] [Auth] Attacker: 144.22.191.115 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 18:44:58.847 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 18:44:58.862 - [Debug] [Connection] Attacker connected: 59.1.226.211 | Client Identification: SSH-2.0-Go
+2022-10-23 18:44:58.890 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 18:44:59.016 - [Debug] [Connection] Attacker connected: 144.22.191.115 | Client Identification: SSH-2.0-Go
+2022-10-23 18:44:59.046 - [Debug] [Connection] Attacker connected: 117.16.44.111 | Client Identification: SSH-2.0-Go
+2022-10-23 18:44:59.131 - [Debug] [Auth] Attacker 120.236.78.194 trying to authenticate with 'publickey'
+2022-10-23 18:44:59.132 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 18:44:59.133 - [Debug] [Auth] Attacker: 120.236.78.194 has so far made 1 attempts. Remaining: 5 attempts

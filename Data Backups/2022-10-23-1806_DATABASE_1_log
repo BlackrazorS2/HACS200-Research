@@ -1,0 +1,38 @@
+
+2022-10-23 18:06:01.193 - [Debug] [Connection] Attacker connected: 223.223.200.243 | Client Identification: SSH-2.0-Go
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:39412) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_1',
+  containerIp: '10.0.3.68',
+  mitmPort: 1000,
+  autoAccessFixed: 1
+}
+2022-10-23 18:06:36.578 - [Info] MITM Version: 2
+2022-10-23 18:06:36.580 - [Info] Auto Access Enabled: true
+2022-10-23 18:06:36.580 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-23 18:06:36.598 - [Info] SSH man-in-the-middle server for 10.0.3.68 listening on 10.0.3.1:1000
+2022-10-23 18:06:36.886 - [Debug] [Connection] Attacker connected: 209.216.177.158 | Client Identification: SSH-2.0-Go
+2022-10-23 18:06:37.183 - [Debug] [Connection] Attacker connected: 59.1.226.211 | Client Identification: SSH-2.0-Go
+2022-10-23 18:06:37.335 - [Debug] [Connection] Attacker connected: 59.1.226.211 | Client Identification: SSH-2.0-Go
+2022-10-23 18:06:37.450 - [Debug] [Auth] Attacker 209.216.177.158 trying to authenticate with 'none'
+2022-10-23 18:06:37.450 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 18:06:37.661 - [Debug] [Auth] Attacker 209.216.177.158 trying to authenticate with 'publickey'
+2022-10-23 18:06:37.663 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 18:06:37.663 - [Debug] [Auth] Attacker: 209.216.177.158 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 18:06:37.878 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 18:06:37.965 - [Debug] [Connection] Attacker connected: 209.216.177.158 | Client Identification: SSH-2.0-Go

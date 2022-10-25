@@ -1,0 +1,69 @@
+
+(node:418744) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_3',
+  containerIp: '10.0.3.241',
+  mitmPort: 1002,
+  autoAccessFixed: 1
+}
+2022-10-23 19:47:15.900 - [Info] MITM Version: 2
+2022-10-23 19:47:15.901 - [Info] Auto Access Enabled: true
+2022-10-23 19:47:15.902 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-23 19:47:15.908 - [Info] SSH man-in-the-middle server for 10.0.3.241 listening on 10.0.3.1:1002
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:419957) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_3',
+  containerIp: '10.0.3.90',
+  mitmPort: 1002,
+  autoAccessFixed: 1
+}
+2022-10-23 19:47:43.565 - [Info] MITM Version: 2
+2022-10-23 19:47:43.566 - [Info] Auto Access Enabled: true
+2022-10-23 19:47:43.566 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-23 19:47:43.573 - [Info] SSH man-in-the-middle server for 10.0.3.90 listening on 10.0.3.1:1002
+2022-10-23 19:47:43.705 - [Debug] [Connection] Attacker connected: 139.59.135.142 | Client Identification: SSH-2.0-Go
+2022-10-23 19:47:44.355 - [Debug] [Auth] Attacker 139.59.135.142 trying to authenticate with 'none'
+2022-10-23 19:47:44.355 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 19:47:44.577 - [Debug] [Auth] Attacker 139.59.135.142 trying to authenticate with 'password'
+2022-10-23 19:47:44.578 - [Debug] [Auto Access] Attacker: 139.59.135.142, Threshold: 1, Attempts: 1
+2022-10-23 19:47:44.578 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-23 19:47:44.578 - [Debug] [Auto Access] Adding the following credentials: 'root:1'
+2022-10-23 19:47:44.635 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-23 19:47:44.637 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 19:47:44.637 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.90
+2022-10-23 19:47:44.685 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 19:47:45.139 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-23 19:47:45.360 - [Debug] [Connection] Attacker closed connection
+2022-10-23 19:47:45.366 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-23 19:47:45.368 - [Debug] [LXC] Container's OpenSSH server closed connection
+2022-10-23 19:47:45.593 - [Debug] [Connection] Attacker connected: 78.187.13.206 | Client Identification: SSH-2.0-Go
+2022-10-23 19:47:45.695 - [Debug] [Connection] Attacker connected: 59.1.226.211 | Client Identification: SSH-2.0-Go

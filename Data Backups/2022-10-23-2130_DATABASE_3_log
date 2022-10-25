@@ -1,0 +1,15 @@
+
+022-10-23 21:30:00.738 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-23 21:30:00.740 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 21:30:00.740 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.176
+2022-10-23 21:30:00.787 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 21:30:00.896 - [Debug] [Auth] Attacker 144.22.191.115 trying to authenticate with 'none'
+2022-10-23 21:30:00.896 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 21:30:01.030 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-23 21:30:01.143 - [Debug] [Auth] Attacker 144.22.191.115 trying to authenticate with 'publickey'
+2022-10-23 21:30:01.143 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 21:30:01.144 - [Debug] [Auth] Attacker: 144.22.191.115 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 21:30:01.178 - [Debug] [Connection] Attacker closed connection
+2022-10-23 21:30:01.185 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-23 21:30:01.186 - [Debug] [LXC] Container's OpenSSH server closed connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

@@ -1,0 +1,33 @@
+
+2022-10-23 18:46:08.571 - [Debug] [Auth] Attacker 120.236.69.162 trying to authenticate with 'publickey'
+2022-10-23 18:46:08.571 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 18:46:08.572 - [Debug] [Auth] Attacker: 120.236.69.162 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 18:46:08.610 - [Debug] [Auth] Attacker 120.224.143.251 trying to authenticate with 'password'
+2022-10-23 18:46:08.611 - [Debug] [Auto Access] Attacker: 120.224.143.251, Threshold: 1, Attempts: 1
+2022-10-23 18:46:08.611 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-23 18:46:08.611 - [Debug] [Auto Access] Adding the following credentials: 'root:1'
+2022-10-23 18:46:08.819 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-23 18:46:08.821 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 18:46:08.821 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.154
+2022-10-23 18:46:08.836 - [Debug] [Auth] Attacker 85.105.82.39 trying to authenticate with 'none'
+2022-10-23 18:46:08.838 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 18:46:08.893 - [Debug] [Auth] Attacker 81.68.253.52 trying to authenticate with 'none'
+2022-10-23 18:46:08.895 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 18:46:08.924 - [Debug] [Auth] Attacker 124.221.183.139 trying to authenticate with 'none'
+2022-10-23 18:46:08.925 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 18:46:08.940 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 18:46:09.125 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 18:46:09.282 - [Debug] [Auth] Attacker 85.105.82.39 trying to authenticate with 'publickey'
+2022-10-23 18:46:09.283 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 18:46:09.285 - [Debug] [Auth] Attacker: 85.105.82.39 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 18:46:09.332 - [Debug] [Auth] Attacker 81.68.253.52 trying to authenticate with 'publickey'
+2022-10-23 18:46:09.351 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 18:46:09.381 - [Debug] [Auth] Attacker: 81.68.253.52 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 18:46:09.392 - [Debug] [Auth] Attacker 117.16.44.111 trying to authenticate with 'none'
+2022-10-23 18:46:09.401 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 18:46:09.402 - [Debug] [Auth] Attacker 124.221.183.139 trying to authenticate with 'publickey'
+2022-10-23 18:46:09.413 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 18:46:09.424 - [Debug] [Auth] Attacker: 124.221.183.139 has so far made 1 attempts. Remaining: 5 attempts
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:194499) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
