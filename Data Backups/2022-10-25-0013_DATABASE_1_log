@@ -1,0 +1,19 @@
+
+022-10-25 00:11:58.370 - [Debug] [Connection] Attacker connected: 222.134.240.91 | Client Identification: SSH-2.0-Go
+2022-10-25 00:11:58.742 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-25 00:11:58.772 - [Debug] [Connection] Attacker connected: 103.105.12.48 | Client Identification: SSH-2.0-Go
+2022-10-25 00:11:59.037 - [Debug] [Connection] Attacker closed connection
+2022-10-25 00:11:59.045 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-25 00:11:59.046 - [Debug] [LXC] Container's OpenSSH server closed connection
+2022-10-25 00:11:59.236 - [Debug] [Auth] Attacker 102.141.225.238 trying to authenticate with 'none'
+2022-10-25 00:11:59.236 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-25 00:11:59.565 - [Debug] [Connection] Attacker connected: 78.189.25.224 | Client Identification: SSH-2.0-Go
+2022-10-25 00:11:59.698 - [Debug] [Connection] Attacker connected: 223.99.166.104 | Client Identification: SSH-2.0-Go
+2022-10-25 00:11:59.725 - [Debug] [Auth] Attacker 102.141.225.238 trying to authenticate with 'publickey'
+2022-10-25 00:11:59.725 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-25 00:11:59.728 - [Debug] [Auth] Attacker: 102.141.225.238 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-25 00:12:00.057 - [Debug] [Auth] Attacker 222.134.240.91 trying to authenticate with 'none'
+2022-10-25 00:12:00.058 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:1614123) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)

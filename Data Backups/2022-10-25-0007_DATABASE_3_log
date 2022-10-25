@@ -1,0 +1,14 @@
+
+2022-10-25 00:06:38.736 - [Debug] [Auth] Attacker 43.139.28.174 trying to authenticate with 'none'
+2022-10-25 00:06:38.736 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-25 00:06:38.772 - [Debug] [Auth] Attacker 121.200.53.148 trying to authenticate with 'publickey'
+2022-10-25 00:06:38.774 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-25 00:06:38.774 - [Debug] [Auth] Attacker: 121.200.53.148 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-25 00:06:38.779 - [Debug] [Connection] Attacker connected: 43.242.247.139 | Client Identification: SSH-2.0-Go
+2022-10-25 00:06:38.802 - [Debug] [EXEC] Noninteractive mode attacker command: echo > /dev/shm/ifconfig; chmod 777 /dev/shm/ifconfig; cat > /dev/shm/ifconfig
+2022-10-25 00:06:39.226 - [Debug] [Auth] Attacker 43.139.28.174 trying to authenticate with 'publickey'
+2022-10-25 00:06:39.227 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-25 00:06:39.227 - [Debug] [Auth] Attacker: 43.139.28.174 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-25 00:06:39.276 - [Debug] [Connection] Attacker closed the connection
+2022-10-25 00:06:39.538 - [Debug] [Connection] Attacker connected: 121.200.53.148 | Client Identification: SSH-2.0-Go
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
