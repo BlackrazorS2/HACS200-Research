@@ -1,0 +1,23 @@
+
+2022-10-24 03:07:13.412 - [Debug] [Connection] Attacker connected: 69.236.215.6 | Client Identification: SSH-2.0-Go
+2022-10-24 03:07:13.598 - [Debug] [Auth] Attacker 113.125.191.234 trying to authenticate with 'password'
+2022-10-24 03:07:13.598 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-24 03:07:13.598 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.203
+2022-10-24 03:07:13.644 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-24 03:07:13.655 - [Debug] [Auth] Attacker 69.236.215.6 trying to authenticate with 'none'
+2022-10-24 03:07:13.656 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 03:07:13.757 - [Debug] [Auth] Attacker 69.236.215.6 trying to authenticate with 'publickey'
+2022-10-24 03:07:13.758 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-24 03:07:13.758 - [Debug] [Auth] Attacker: 69.236.215.6 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-24 03:07:13.859 - [Debug] [Connection] Attacker closed the connection
+2022-10-24 03:07:13.897 - [Debug] [Connection] Attacker connected: 69.236.215.6 | Client Identification: SSH-2.0-Go
+2022-10-24 03:07:14.156 - [Debug] [Auth] Attacker 69.236.215.6 trying to authenticate with 'none'
+2022-10-24 03:07:14.157 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 03:07:14.259 - [Debug] [Auth] Attacker 69.236.215.6 trying to authenticate with 'password'
+2022-10-24 03:07:14.260 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-24 03:07:14.260 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.203
+2022-10-24 03:07:14.316 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-24 03:07:14.514 - [Debug] [Auth] Attacker 222.165.136.99 trying to authenticate with 'none'
+2022-10-24 03:07:14.514 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 03:07:14.517 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

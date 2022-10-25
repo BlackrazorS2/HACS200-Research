@@ -1,0 +1,78 @@
+
+(node:612104) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_3',
+  containerIp: '10.0.3.23',
+  mitmPort: 1002,
+  autoAccessFixed: 1
+}
+2022-10-24 03:43:44.228 - [Info] MITM Version: 2
+2022-10-24 03:43:44.230 - [Info] Auto Access Enabled: true
+2022-10-24 03:43:44.230 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-24 03:43:44.238 - [Info] SSH man-in-the-middle server for 10.0.3.23 listening on 10.0.3.1:1002
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:626968) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_3',
+  containerIp: '10.0.3.62',
+  mitmPort: 1002,
+  autoAccessFixed: 1
+}
+2022-10-24 03:44:39.576 - [Info] MITM Version: 2
+2022-10-24 03:44:39.577 - [Info] Auto Access Enabled: true
+2022-10-24 03:44:39.578 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-24 03:44:39.590 - [Info] SSH man-in-the-middle server for 10.0.3.62 listening on 10.0.3.1:1002
+2022-10-24 03:44:40.402 - [Debug] [Connection] Attacker connected: 61.84.162.66 | Client Identification: SSH-2.0-Go
+2022-10-24 03:44:40.465 - [Debug] [Connection] Attacker connected: 81.68.253.52 | Client Identification: SSH-2.0-Go
+2022-10-24 03:44:41.195 - [Debug] [Connection] Attacker connected: 80.147.162.151 | Client Identification: SSH-2.0-Go
+2022-10-24 03:44:41.683 - [Debug] [Auth] Attacker 61.84.162.66 trying to authenticate with 'none'
+2022-10-24 03:44:41.684 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 03:44:41.759 - [Debug] [Auth] Attacker 81.68.253.52 trying to authenticate with 'none'
+2022-10-24 03:44:41.760 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 03:44:41.935 - [Debug] [Auth] Attacker 80.147.162.151 trying to authenticate with 'none'
+2022-10-24 03:44:41.936 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 03:44:42.124 - [Debug] [Auth] Attacker 61.84.162.66 trying to authenticate with 'publickey'
+2022-10-24 03:44:42.125 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-24 03:44:42.126 - [Debug] [Auth] Attacker: 61.84.162.66 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-24 03:44:42.205 - [Debug] [Auth] Attacker 80.147.162.151 trying to authenticate with 'publickey'
+2022-10-24 03:44:42.205 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-24 03:44:42.206 - [Debug] [Auth] Attacker: 80.147.162.151 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-24 03:44:42.217 - [Debug] [Auth] Attacker 81.68.253.52 trying to authenticate with 'publickey'
+2022-10-24 03:44:42.218 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-24 03:44:42.218 - [Debug] [Auth] Attacker: 81.68.253.52 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-24 03:44:42.478 - [Debug] [Connection] Attacker closed the connection
+2022-10-24 03:44:42.565 - [Debug] [Connection] Attacker closed the connection
+2022-10-24 03:44:42.619 - [Debug] [Connection] Attacker connected: 80.147.162.151 | Client Identification: SSH-2.0-Go
+2022-10-24 03:44:42.677 - [Debug] [Connection] Attacker closed the connection
+2022-10-24 03:44:42.759 - [Debug] [Connection] Attacker connected: 61.84.162.66 | Client Identification: SSH-2.0-Go
+2022-10-24 03:44:42.882 - [Debug] [Connection] Attacker connected: 81.68.253.52 | Client Identification: SSH-2.0-Go
+2022-10-24 03:44:43.334 - [Debug] [Auth] Attacker 80.147.162.151 trying to authenticate with 'none'
+2022-10-24 03:44:43.334 - [Debug] [Auth] Attacker authentication error: No authentication method provided

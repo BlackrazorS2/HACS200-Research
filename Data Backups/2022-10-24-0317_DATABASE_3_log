@@ -1,0 +1,23 @@
+
+2022-10-24 03:16:07.914 - [Debug] [Auth] Attacker 61.84.162.66 trying to authenticate with 'none'
+2022-10-24 03:16:07.915 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 03:16:07.976 - [Debug] [Auth] Attacker 222.117.95.174 trying to authenticate with 'publickey'
+2022-10-24 03:16:07.981 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-24 03:16:07.982 - [Debug] [Auth] Attacker: 222.117.95.174 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-24 03:16:08.258 - [Debug] [Auth] Attacker 118.218.209.149 trying to authenticate with 'none'
+2022-10-24 03:16:08.258 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 03:16:08.358 - [Debug] [Auth] Attacker 61.84.162.66 trying to authenticate with 'password'
+2022-10-24 03:16:08.358 - [Debug] [Auto Access] Attacker: 61.84.162.66, Threshold: 1, Attempts: 1
+2022-10-24 03:16:08.358 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-24 03:16:08.358 - [Debug] [Auto Access] Adding the following credentials: 'root:1'
+2022-10-24 03:16:08.557 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-24 03:16:08.563 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-24 03:16:08.563 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.34
+2022-10-24 03:16:08.586 - [Debug] [Connection] Attacker closed the connection
+2022-10-24 03:16:08.631 - [Debug] [Connection] Attacker connected: 222.117.95.174 | Client Identification: SSH-2.0-Go
+2022-10-24 03:16:08.679 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-24 03:16:08.715 - [Debug] [Auth] Attacker 118.218.209.149 trying to authenticate with 'password'
+2022-10-24 03:16:08.715 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-24 03:16:08.716 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.34
+2022-10-24 03:16:08.834 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

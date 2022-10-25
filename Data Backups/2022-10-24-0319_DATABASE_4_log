@@ -1,0 +1,18 @@
+
+2022-10-24 03:17:12.503 - [Debug] [EXEC] Noninteractive mode attacker command: echo > /dev/shm/ifconfig; chmod 777 /dev/shm/ifconfig; cat > /dev/shm/ifconfig
+2022-10-24 03:17:12.522 - [Debug] [Connection] Attacker connected: 223.171.91.148 | Client Identification: SSH-2.0-Go
+2022-10-24 03:17:12.814 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-24 03:17:12.917 - [Debug] [Auth] Attacker 222.117.95.174 trying to authenticate with 'none'
+2022-10-24 03:17:12.917 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 03:17:12.919 - [Debug] [Connection] Attacker closed connection
+2022-10-24 03:17:12.930 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-24 03:17:12.931 - [Debug] [LXC] Container's OpenSSH server closed connection
+2022-10-24 03:17:13.139 - [Debug] [Connection] Attacker connected: 124.220.163.75 | Client Identification: SSH-2.0-Go
+2022-10-24 03:17:13.325 - [Debug] [Connection] Attacker closed connection
+2022-10-24 03:17:13.332 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-24 03:17:13.333 - [Debug] [LXC] Container's OpenSSH server closed connection
+2022-10-24 03:17:13.368 - [Debug] [Auth] Attacker 222.117.95.174 trying to authenticate with 'password'
+2022-10-24 03:17:13.368 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-24 03:17:13.368 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.206
+2022-10-24 03:17:13.434 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

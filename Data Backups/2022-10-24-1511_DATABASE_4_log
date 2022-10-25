@@ -1,0 +1,11 @@
+
+022-10-24 15:10:18.422 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-24 15:10:18.623 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-24 15:10:18.665 - [Debug] [Auth] Attacker 31.165.5.155 trying to authenticate with 'password'
+2022-10-24 15:10:18.666 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-24 15:10:18.666 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.244
+2022-10-24 15:10:18.706 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-24 15:10:18.860 - [Debug] [Connection] Attacker closed connection
+2022-10-24 15:10:18.864 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-24 15:10:18.865 - [Debug] [LXC] Container's OpenSSH server closed connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

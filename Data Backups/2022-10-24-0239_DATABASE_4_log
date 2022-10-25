@@ -1,0 +1,22 @@
+
+2022-10-24 02:38:11.645 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-24 02:38:11.647 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-24 02:38:11.647 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.29
+2022-10-24 02:38:11.657 - [Debug] [Auth] Attacker 122.225.25.242 trying to authenticate with 'publickey'
+2022-10-24 02:38:11.662 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-24 02:38:11.668 - [Debug] [Auth] Attacker: 122.225.25.242 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-24 02:38:11.668 - [Debug] [Connection] Attacker closed the connection
+2022-10-24 02:38:11.673 - [Debug] [Connection] Attacker connected: 129.154.55.234 | Client Identification: SSH-2.0-Go
+2022-10-24 02:38:11.743 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-24 02:38:11.843 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-24 02:38:11.985 - [Debug] [Connection] Attacker closed connection
+2022-10-24 02:38:11.992 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-24 02:38:11.993 - [Debug] [LXC] Container's OpenSSH server closed connection
+2022-10-24 02:38:12.171 - [Debug] [Auth] Attacker 58.216.8.121 trying to authenticate with 'none'
+2022-10-24 02:38:12.171 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 02:38:12.182 - [Debug] [Connection] Attacker closed the connection
+2022-10-24 02:38:12.301 - [Debug] [Auth] Attacker 223.99.166.104 trying to authenticate with 'none'
+2022-10-24 02:38:12.301 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 02:38:12.402 - [Debug] [Connection] Attacker connected: 122.225.25.242 | Client Identification: SSH-2.0-Go
+2022-10-24 02:38:12.402 - [Debug] [Connection] Attacker connected: 61.102.42.5 | Client Identification: SSH-2.0-Go
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

@@ -1,0 +1,24 @@
+
+022-10-24 07:16:47.369 - [Debug] [Connection] Attacker closed the connection
+2022-10-24 07:16:47.379 - [Debug] [Connection] Attacker connected: 20.127.87.36 | Client Identification: SSH-2.0-Go
+2022-10-24 07:16:47.489 - [Debug] [Auth] Attacker 20.127.87.36 trying to authenticate with 'none'
+2022-10-24 07:16:47.490 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 07:16:47.509 - [Debug] [Auth] Attacker 20.127.87.36 trying to authenticate with 'password'
+2022-10-24 07:16:47.510 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-24 07:16:47.510 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.57
+2022-10-24 07:16:47.522 - [Debug] [Auth] Attacker 223.171.91.191 trying to authenticate with 'none'
+2022-10-24 07:16:47.522 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 07:16:47.527 - [Debug] [Connection] Attacker closed the connection
+2022-10-24 07:16:47.554 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-24 07:16:47.632 - [Debug] [Connection] Attacker connected: 223.171.91.120 | Client Identification: SSH-2.0-Go
+2022-10-24 07:16:47.651 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-24 07:16:47.702 - [Debug] [Connection] Attacker closed connection
+2022-10-24 07:16:47.710 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-24 07:16:47.710 - [Debug] [LXC] Container's OpenSSH server closed connection
+2022-10-24 07:16:47.750 - [Debug] [Connection] Attacker connected: 159.75.54.90 | Client Identification: SSH-2.0-Go
+2022-10-24 07:16:47.797 - [Debug] [Auth] Attacker 91.125.119.231 trying to authenticate with 'none'
+2022-10-24 07:16:47.798 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 07:16:47.845 - [Debug] [Connection] Attacker connected: 223.171.91.161 | Client Identification: SSH-2.0-Go
+2022-10-24 07:16:47.934 - [Debug] [Auth] Attacker 101.43.224.103 trying to authenticate with 'none'
+2022-10-24 07:16:47.935 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

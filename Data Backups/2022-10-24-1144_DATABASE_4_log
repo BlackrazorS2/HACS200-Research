@@ -1,0 +1,10 @@
+
+2022-10-24 11:43:28.172 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-24 11:43:28.315 - [Debug] [Auth] Attacker 58.216.8.121 trying to authenticate with 'publickey'
+2022-10-24 11:43:28.318 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-24 11:43:28.319 - [Debug] [Auth] Attacker: 58.216.8.121 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-24 11:43:28.347 - [Debug] [Connection] Attacker connected: 223.171.91.118 | Client Identification: SSH-2.0-Go
+2022-10-24 11:43:28.426 - [Debug] [Connection] Attacker closed connection
+2022-10-24 11:43:28.429 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-24 11:43:28.430 - [Debug] [LXC] Container's OpenSSH server closed connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

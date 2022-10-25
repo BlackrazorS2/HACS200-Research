@@ -1,0 +1,54 @@
+
+2022-10-24 06:28:00.117 - [Debug] [Auth] Attacker 113.125.191.234 trying to authenticate with 'none'
+2022-10-24 06:28:00.117 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:909295) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_1',
+  containerIp: '10.0.3.100',
+  mitmPort: 1000,
+  autoAccessFixed: 1
+}
+2022-10-24 06:28:32.664 - [Info] MITM Version: 2
+2022-10-24 06:28:32.665 - [Info] Auto Access Enabled: true
+2022-10-24 06:28:32.666 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-24 06:28:32.677 - [Info] SSH man-in-the-middle server for 10.0.3.100 listening on 10.0.3.1:1000
+2022-10-24 06:28:34.676 - [Debug] [Connection] Attacker connected: 162.19.210.221 | Client Identification: SSH-2.0-Go
+2022-10-24 06:28:35.193 - [Debug] [Connection] Attacker connected: 209.216.177.158 | Client Identification: SSH-2.0-Go
+2022-10-24 06:28:35.360 - [Debug] [Connection] Attacker connected: 223.223.200.243 | Client Identification: SSH-2.0-Go
+2022-10-24 06:28:35.753 - [Debug] [Auth] Attacker 209.216.177.158 trying to authenticate with 'none'
+2022-10-24 06:28:35.753 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 06:28:35.965 - [Debug] [Auth] Attacker 209.216.177.158 trying to authenticate with 'publickey'
+2022-10-24 06:28:35.966 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-24 06:28:35.967 - [Debug] [Auth] Attacker: 209.216.177.158 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-24 06:28:36.178 - [Debug] [Connection] Attacker closed the connection
+2022-10-24 06:28:36.264 - [Debug] [Connection] Attacker connected: 209.216.177.158 | Client Identification: SSH-2.0-Go
+2022-10-24 06:28:36.578 - [Debug] [Connection] Attacker connected: 85.105.58.118 | Client Identification: SSH-2.0-Go
+2022-10-24 06:28:36.701 - [Debug] [Auth] Attacker 223.223.200.243 trying to authenticate with 'none'
+2022-10-24 06:28:36.701 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 06:28:36.824 - [Debug] [Auth] Attacker 209.216.177.158 trying to authenticate with 'none'
+2022-10-24 06:28:36.824 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 06:28:37.034 - [Debug] [Auth] Attacker 209.216.177.158 trying to authenticate with 'password'
+2022-10-24 06:28:37.035 - [Debug] [Auto Access] Attacker: 209.216.177.158, Threshold: 1, Attempts: 1
+2022-10-24 06:28:37.035 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-24 06:28:37.035 - [Debug] [Auto Access] Adding the following credentials: 'root:1'
+2022-10-24 06:28:37.164 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-24 06:28:37.166 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-24 06:28:37.166 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.100
+2022-10-24 06:28:37.178 - [Debug] [Auth] Attacker 223.223.200.243 trying to authenticate with 'publickey'
+2022-10-24 06:28:37.184 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-24 06:28:37.185 - [Debug] [Auth] Attacker: 223.223.200.243 has so far made 1 attempts. Remaining: 5 attempts

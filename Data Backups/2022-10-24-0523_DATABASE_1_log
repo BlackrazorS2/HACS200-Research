@@ -1,0 +1,10 @@
+
+2022-10-24 05:23:00.243 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-24 05:23:00.245 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-24 05:23:00.245 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.4
+2022-10-24 05:23:00.307 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-24 05:23:00.458 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-24 05:23:00.554 - [Debug] [Connection] Attacker closed connection
+2022-10-24 05:23:00.558 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-24 05:23:00.559 - [Debug] [LXC] Container's OpenSSH server closed connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

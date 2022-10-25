@@ -1,0 +1,18 @@
+
+2022-10-24 05:26:02.483 - [Debug] [Auth] Attacker 118.218.209.149 trying to authenticate with 'publickey'
+2022-10-24 05:26:02.484 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-24 05:26:02.484 - [Debug] [Auth] Attacker: 118.218.209.149 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-24 05:26:02.791 - [Debug] [Connection] Attacker closed the connection
+2022-10-24 05:26:02.824 - [Debug] [Auth] Attacker 78.187.13.206 trying to authenticate with 'none'
+2022-10-24 05:26:02.824 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 05:26:02.925 - [Debug] [Connection] Attacker closed the connection
+2022-10-24 05:26:03.044 - [Debug] [Connection] Attacker connected: 91.125.119.231 | Client Identification: SSH-2.0-Go
+2022-10-24 05:26:03.079 - [Debug] [Connection] Attacker connected: 223.171.91.177 | Client Identification: SSH-2.0-Go
+2022-10-24 05:26:03.124 - [Debug] [Connection] Attacker connected: 118.218.209.149 | Client Identification: SSH-2.0-Go
+2022-10-24 05:26:03.133 - [Debug] [Auth] Attacker 78.187.13.206 trying to authenticate with 'password'
+2022-10-24 05:26:03.133 - [Debug] [Auto Access] Attacker: 78.187.13.206, Threshold: 1, Attempts: 1
+2022-10-24 05:26:03.134 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-24 05:26:03.134 - [Debug] [Auto Access] Adding the following credentials: 'root:1'
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:324223) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)

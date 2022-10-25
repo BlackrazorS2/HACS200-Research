@@ -1,0 +1,20 @@
+
+2022-10-24 05:40:10.013 - [Debug] [Connection] Attacker closed the connection
+2022-10-24 05:40:10.017 - [Debug] [Auth] Attacker 185.55.64.228 trying to authenticate with 'publickey'
+2022-10-24 05:40:10.018 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-24 05:40:10.018 - [Debug] [Auth] Attacker: 185.55.64.228 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-24 05:40:10.087 - [Debug] [Auth] Attacker 206.189.25.255 trying to authenticate with 'password'
+2022-10-24 05:40:10.088 - [Debug] [Auto Access] Attacker: 206.189.25.255, Threshold: 1, Attempts: 1
+2022-10-24 05:40:10.088 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-24 05:40:10.088 - [Debug] [Auto Access] Adding the following credentials: 'root:1'
+2022-10-24 05:40:10.190 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-24 05:40:10.193 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-24 05:40:10.194 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.185
+2022-10-24 05:40:10.236 - [Debug] [Connection] Attacker connected: 80.147.162.151 | Client Identification: SSH-2.0-Go
+2022-10-24 05:40:10.273 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-24 05:40:10.307 - [Debug] [Connection] Attacker closed the connection
+2022-10-24 05:40:10.383 - [Debug] [Connection] Attacker connected: 185.55.64.228 | Client Identification: SSH-2.0-Go
+2022-10-24 05:40:10.650 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-24 05:40:10.793 - [Debug] [Auth] Attacker 178.140.136.178 trying to authenticate with 'none'
+2022-10-24 05:40:10.794 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

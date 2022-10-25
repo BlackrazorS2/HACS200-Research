@@ -1,0 +1,17 @@
+
+2022-10-24 03:05:58.142 - [Debug] [Auth] Attacker 43.143.50.198 trying to authenticate with 'password'
+2022-10-24 03:05:58.142 - [Debug] [Auto Access] Attacker: 43.143.50.198, Threshold: 1, Attempts: 1
+2022-10-24 03:05:58.143 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-24 03:05:58.143 - [Debug] [Auto Access] Adding the following credentials: 'root:1'
+2022-10-24 03:05:58.280 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-24 03:05:58.282 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-24 03:05:58.282 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.69
+2022-10-24 03:05:58.310 - [Debug] [Connection] Attacker closed the connection
+2022-10-24 03:05:58.406 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-24 03:05:58.417 - [Debug] [Connection] Attacker connected: 223.171.91.159 | Client Identification: SSH-2.0-Go
+2022-10-24 03:05:58.810 - [Debug] [Auth] Attacker 159.75.54.90 trying to authenticate with 'none'
+2022-10-24 03:05:58.810 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 03:05:59.058 - [Debug] [Connection] Attacker connected: 101.43.224.103 | Client Identification: SSH-2.0-Go
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:285255) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)

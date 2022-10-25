@@ -1,0 +1,69 @@
+
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_3',
+  containerIp: '10.0.3.199',
+  mitmPort: 1002,
+  autoAccessFixed: 1
+}
+2022-10-24 02:29:08.609 - [Info] MITM Version: 2
+2022-10-24 02:29:08.625 - [Info] Auto Access Enabled: true
+2022-10-24 02:29:08.634 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-24 02:29:08.684 - [Info] SSH man-in-the-middle server for 10.0.3.199 listening on 10.0.3.1:1002
+2022-10-24 02:29:09.380 - [Debug] [Connection] Attacker connected: 222.117.95.174 | Client Identification: SSH-2.0-Go
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:50220) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_3',
+  containerIp: '10.0.3.231',
+  mitmPort: 1002,
+  autoAccessFixed: 1
+}
+2022-10-24 02:30:08.638 - [Info] MITM Version: 2
+2022-10-24 02:30:08.642 - [Info] Auto Access Enabled: true
+2022-10-24 02:30:08.643 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-24 02:30:08.688 - [Info] SSH man-in-the-middle server for 10.0.3.231 listening on 10.0.3.1:1002
+2022-10-24 02:30:10.498 - [Debug] [Connection] Attacker connected: 222.117.95.174 | Client Identification: SSH-2.0-Go
+2022-10-24 02:30:11.721 - [Debug] [Auth] Attacker 222.117.95.174 trying to authenticate with 'none'
+2022-10-24 02:30:11.721 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 02:30:12.155 - [Debug] [Auth] Attacker 222.117.95.174 trying to authenticate with 'password'
+2022-10-24 02:30:12.155 - [Debug] [Auto Access] Attacker: 222.117.95.174, Threshold: 1, Attempts: 1
+2022-10-24 02:30:12.155 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-24 02:30:12.156 - [Debug] [Auto Access] Adding the following credentials: 'root:1'
+2022-10-24 02:30:12.220 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-24 02:30:12.222 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-24 02:30:12.223 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.231
+2022-10-24 02:30:12.335 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-24 02:30:12.877 - [Debug] [Connection] Attacker connected: 223.171.91.133 | Client Identification: SSH-2.0-Go
+2022-10-24 02:30:13.635 - [Debug] [Connection] Attacker closed connection
+2022-10-24 02:30:13.649 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-24 02:30:13.650 - [Debug] [LXC] Container's OpenSSH server closed connection
+2022-10-24 02:30:13.833 - [Debug] [Connection] Attacker connected: 222.117.95.174 | Client Identification: SSH-2.0-Go
+2022-10-24 02:30:14.402 - [Debug] [Auth] Attacker 223.171.91.133 trying to authenticate with 'none'
+2022-10-24 02:30:14.402 - [Debug] [Auth] Attacker authentication error: No authentication method provided

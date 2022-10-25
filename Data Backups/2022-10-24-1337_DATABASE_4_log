@@ -1,0 +1,55 @@
+
+2022-10-24 13:36:20.844 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-24 13:36:20.891 - [Debug] [Auth] Attacker 223.171.91.158 trying to authenticate with 'none'
+2022-10-24 13:36:20.891 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:453372) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_4',
+  containerIp: '10.0.3.140',
+  mitmPort: 1003,
+  autoAccessFixed: 1
+}
+2022-10-24 13:37:25.821 - [Info] MITM Version: 2
+2022-10-24 13:37:25.823 - [Info] Auto Access Enabled: true
+2022-10-24 13:37:25.823 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-24 13:37:25.830 - [Info] SSH man-in-the-middle server for 10.0.3.140 listening on 10.0.3.1:1003
+2022-10-24 13:37:30.572 - [Debug] [Connection] Attacker connected: 120.236.69.162 | Client Identification: SSH-2.0-Go
+2022-10-24 13:37:30.719 - [Debug] [Connection] Attacker connected: 117.80.212.33 | Client Identification: SSH-2.0-Go
+2022-10-24 13:37:31.965 - [Debug] [Auth] Attacker 117.80.212.33 trying to authenticate with 'none'
+2022-10-24 13:37:31.966 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 13:37:32.301 - [Debug] [Auth] Attacker 120.236.69.162 trying to authenticate with 'none'
+2022-10-24 13:37:32.301 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 13:37:32.339 - [Debug] [Connection] Attacker connected: 80.147.162.151 | Client Identification: SSH-2.0-Go
+2022-10-24 13:37:32.407 - [Debug] [Auth] Attacker 117.80.212.33 trying to authenticate with 'publickey'
+2022-10-24 13:37:32.409 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-24 13:37:32.410 - [Debug] [Auth] Attacker: 117.80.212.33 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-24 13:37:32.847 - [Debug] [Connection] Attacker closed the connection
+2022-10-24 13:37:32.890 - [Debug] [Auth] Attacker 120.236.69.162 trying to authenticate with 'password'
+2022-10-24 13:37:32.891 - [Debug] [Auto Access] Attacker: 120.236.69.162, Threshold: 1, Attempts: 1
+2022-10-24 13:37:32.891 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-24 13:37:32.891 - [Debug] [Auto Access] Adding the following credentials: 'root:1'
+2022-10-24 13:37:32.958 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-24 13:37:32.960 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-24 13:37:32.960 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.140
+2022-10-24 13:37:33.025 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-24 13:37:33.060 - [Debug] [Auth] Attacker 80.147.162.151 trying to authenticate with 'none'
+2022-10-24 13:37:33.060 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 13:37:33.070 - [Debug] [Connection] Attacker connected: 117.80.212.33 | Client Identification: SSH-2.0-Go
+2022-10-24 13:37:33.331 - [Debug] [Auth] Attacker 80.147.162.151 trying to authenticate with 'publickey'
+2022-10-24 13:37:33.331 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-24 13:37:33.332 - [Debug] [Auth] Attacker: 80.147.162.151 has so far made 1 attempts. Remaining: 5 attempts

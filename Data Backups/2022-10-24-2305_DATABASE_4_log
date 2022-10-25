@@ -1,0 +1,48 @@
+
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:1029333) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_4',
+  containerIp: '10.0.3.42',
+  mitmPort: 1003,
+  autoAccessFixed: 1
+}
+2022-10-24 23:05:45.439 - [Info] MITM Version: 2
+2022-10-24 23:05:45.441 - [Info] Auto Access Enabled: true
+2022-10-24 23:05:45.442 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-24 23:05:45.449 - [Info] SSH man-in-the-middle server for 10.0.3.42 listening on 10.0.3.1:1003
+2022-10-24 23:05:45.815 - [Debug] [Connection] Attacker connected: 223.171.91.155 | Client Identification: SSH-2.0-Go
+2022-10-24 23:05:46.231 - [Debug] [Connection] Attacker connected: 223.99.166.104 | Client Identification: SSH-2.0-Go
+2022-10-24 23:05:46.527 - [Debug] [Connection] Attacker connected: 89.121.228.38 | Client Identification: SSH-2.0-Go
+2022-10-24 23:05:46.667 - [Debug] [Connection] Attacker connected: 223.171.91.169 | Client Identification: SSH-2.0-Go
+2022-10-24 23:05:47.244 - [Debug] [Auth] Attacker 223.171.91.155 trying to authenticate with 'none'
+2022-10-24 23:05:47.245 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 23:05:47.335 - [Debug] [Auth] Attacker 89.121.228.38 trying to authenticate with 'none'
+2022-10-24 23:05:47.335 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 23:05:47.628 - [Debug] [Auth] Attacker 89.121.228.38 trying to authenticate with 'publickey'
+2022-10-24 23:05:47.630 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-24 23:05:47.631 - [Debug] [Auth] Attacker: 89.121.228.38 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-24 23:05:47.740 - [Debug] [Auth] Attacker 223.171.91.155 trying to authenticate with 'publickey'
+2022-10-24 23:05:47.741 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-24 23:05:47.741 - [Debug] [Auth] Attacker: 223.171.91.155 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-24 23:05:47.941 - [Debug] [Connection] Attacker closed the connection
+2022-10-24 23:05:48.074 - [Debug] [Connection] Attacker connected: 89.121.228.38 | Client Identification: SSH-2.0-Go
+2022-10-24 23:05:48.081 - [Debug] [Connection] Attacker connected: 209.216.177.158 | Client Identification: SSH-2.0-Go
+2022-10-24 23:05:48.115 - [Debug] [Auth] Attacker 223.99.166.104 trying to authenticate with 'none'
+2022-10-24 23:05:48.116 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 23:05:48.159 - [Debug] [Connection] Attacker connected: 62.12.108.44 | Client Identification: SSH-2.0-Go
+2022-10-24 23:05:48.232 - [Debug] [Connection] Attacker closed the connection

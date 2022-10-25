@@ -1,0 +1,54 @@
+
+2022-10-24 17:09:28.518 - [Debug] [Connection] Attacker connected: 175.178.247.209 | Client Identification: SSH-2.0-Go
+2022-10-24 17:09:28.794 - [Debug] [Auth] Attacker 43.242.247.139 trying to authenticate with 'publickey'
+2022-10-24 17:09:28.795 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-24 17:09:28.796 - [Debug] [Auth] Attacker: 43.242.247.139 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-24 17:09:28.806 - [Debug] [Connection] Attacker connected: 31.14.115.42 | Client Identification: SSH-2.0-Go
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:2253330) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_4',
+  containerIp: '10.0.3.245',
+  mitmPort: 1003,
+  autoAccessFixed: 1
+}
+2022-10-24 17:10:33.428 - [Info] MITM Version: 2
+2022-10-24 17:10:33.429 - [Info] Auto Access Enabled: true
+2022-10-24 17:10:33.429 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-24 17:10:33.435 - [Info] SSH man-in-the-middle server for 10.0.3.245 listening on 10.0.3.1:1003
+2022-10-24 17:10:33.820 - [Debug] [Connection] Attacker connected: 45.120.216.114 | Client Identification: SSH-2.0-Go
+2022-10-24 17:10:34.478 - [Debug] [Connection] Attacker connected: 223.223.200.243 | Client Identification: SSH-2.0-Go
+2022-10-24 17:10:35.204 - [Debug] [Auth] Attacker 45.120.216.114 trying to authenticate with 'none'
+2022-10-24 17:10:35.204 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 17:10:35.502 - [Debug] [Connection] Attacker connected: 120.236.69.162 | Client Identification: SSH-2.0-Go
+2022-10-24 17:10:35.692 - [Debug] [Auth] Attacker 45.120.216.114 trying to authenticate with 'publickey'
+2022-10-24 17:10:35.693 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-24 17:10:35.693 - [Debug] [Auth] Attacker: 45.120.216.114 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-24 17:10:35.838 - [Debug] [Auth] Attacker 223.223.200.243 trying to authenticate with 'none'
+2022-10-24 17:10:35.839 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 17:10:35.860 - [Debug] [Connection] Attacker connected: 58.216.8.121 | Client Identification: SSH-2.0-Go
+2022-10-24 17:10:36.181 - [Debug] [Connection] Attacker closed the connection
+2022-10-24 17:10:36.310 - [Debug] [Auth] Attacker 223.223.200.243 trying to authenticate with 'password'
+2022-10-24 17:10:36.311 - [Debug] [Auto Access] Attacker: 223.223.200.243, Threshold: 1, Attempts: 1
+2022-10-24 17:10:36.312 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-24 17:10:36.312 - [Debug] [Auto Access] Adding the following credentials: 'root:1'
+2022-10-24 17:10:36.376 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-24 17:10:36.379 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-24 17:10:36.379 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.245
+2022-10-24 17:10:36.401 - [Debug] [Connection] Attacker connected: 121.200.53.148 | Client Identification: SSH-2.0-Go
+2022-10-24 17:10:36.418 - [Debug] [Connection] Attacker connected: 45.120.216.114 | Client Identification: SSH-2.0-Go
+2022-10-24 17:10:36.445 - [Debug] [LXC-Auth] Attacker authenticated and is inside container

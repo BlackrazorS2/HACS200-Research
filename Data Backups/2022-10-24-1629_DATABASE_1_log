@@ -1,0 +1,17 @@
+
+2022-10-24 16:28:02.584 - [Debug] [Auth] Attacker 31.165.5.155 trying to authenticate with 'none'
+2022-10-24 16:28:02.584 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 16:28:02.888 - [Debug] [Auth] Attacker 31.165.5.155 trying to authenticate with 'publickey'
+2022-10-24 16:28:02.889 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-24 16:28:02.889 - [Debug] [Auth] Attacker: 31.165.5.155 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-24 16:28:03.013 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-24 16:28:03.191 - [Debug] [Connection] Attacker closed the connection
+2022-10-24 16:28:03.325 - [Debug] [Connection] Attacker connected: 31.165.5.155 | Client Identification: SSH-2.0-Go
+2022-10-24 16:28:03.384 - [Debug] [Connection] Attacker closed connection
+2022-10-24 16:28:03.388 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-24 16:28:03.388 - [Debug] [LXC] Container's OpenSSH server closed connection
+2022-10-24 16:28:03.771 - [Debug] [Auth] Attacker 223.171.91.143 trying to authenticate with 'none'
+2022-10-24 16:28:03.771 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:1886582) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)

@@ -1,0 +1,72 @@
+
+(node:875125) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_1',
+  containerIp: '10.0.3.148',
+  mitmPort: 1000,
+  autoAccessFixed: 1
+}
+2022-10-24 06:25:09.698 - [Info] MITM Version: 2
+2022-10-24 06:25:09.700 - [Info] Auto Access Enabled: true
+2022-10-24 06:25:09.700 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-24 06:25:09.708 - [Info] SSH man-in-the-middle server for 10.0.3.148 listening on 10.0.3.1:1000
+(node:879418) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+2022-10-24 06:25:38.675 - [Debug] [Connection] Attacker connected: 223.171.91.149 | Client Identification: SSH-2.0-Go
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_1',
+  containerIp: '10.0.3.64',
+  mitmPort: 1000,
+  autoAccessFixed: 1
+}
+2022-10-24 06:25:38.805 - [Info] MITM Version: 2
+2022-10-24 06:25:38.807 - [Info] Auto Access Enabled: true
+2022-10-24 06:25:38.808 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-24 06:25:38.815 - [Debug] listen EADDRINUSE: address already in use 10.0.3.1:1000
+2022-10-24 06:25:38.815 - [Error] Another MITM instance or another program is already listening on this port
+{"level":"error","message":"Forever detected script exited with code: 1"}
+2022-10-24 06:25:39.353 - [Debug] [Connection] Attacker connected: 144.22.130.100 | Client Identification: SSH-2.0-Go
+2022-10-24 06:25:39.444 - [Debug] [Connection] Attacker connected: 175.178.247.209 | Client Identification: SSH-2.0-Go
+2022-10-24 06:25:40.128 - [Debug] [Auth] Attacker 144.22.130.100 trying to authenticate with 'none'
+2022-10-24 06:25:40.129 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 06:25:40.232 - [Debug] [Auth] Attacker 223.171.91.149 trying to authenticate with 'none'
+2022-10-24 06:25:40.232 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 06:25:40.303 - [Debug] [Connection] Attacker connected: 89.121.228.38 | Client Identification: SSH-2.0-Go
+2022-10-24 06:25:40.375 - [Debug] [Auth] Attacker 144.22.130.100 trying to authenticate with 'publickey'
+2022-10-24 06:25:40.377 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-24 06:25:40.377 - [Debug] [Auth] Attacker: 144.22.130.100 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-24 06:25:40.512 - [Debug] [Connection] Attacker connected: 58.216.8.121 | Client Identification: SSH-2.0-Go
+2022-10-24 06:25:40.623 - [Debug] [Connection] Attacker closed the connection
+2022-10-24 06:25:40.747 - [Debug] [Connection] Attacker connected: 144.22.130.100 | Client Identification: SSH-2.0-Go
+2022-10-24 06:25:40.768 - [Debug] [Auth] Attacker 223.171.91.149 trying to authenticate with 'publickey'
+2022-10-24 06:25:40.768 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-24 06:25:40.769 - [Debug] [Auth] Attacker: 223.171.91.149 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-24 06:25:40.833 - [Debug] [Auth] Attacker 175.178.247.209 trying to authenticate with 'none'
+2022-10-24 06:25:40.833 - [Debug] [Auth] Attacker authentication error: No authentication method provided

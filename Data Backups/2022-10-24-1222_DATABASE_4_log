@@ -1,0 +1,21 @@
+
+2022-10-24 12:21:44.096 - [Debug] [Connection] Attacker closed the connection
+2022-10-24 12:21:44.181 - [Debug] [Auth] Attacker 69.236.215.6 trying to authenticate with 'password'
+2022-10-24 12:21:44.181 - [Debug] [Auto Access] Attacker: 69.236.215.6, Threshold: 1, Attempts: 1
+2022-10-24 12:21:44.181 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-24 12:21:44.181 - [Debug] [Auto Access] Adding the following credentials: 'root:1'
+2022-10-24 12:21:44.248 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-24 12:21:44.249 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-24 12:21:44.250 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.201
+2022-10-24 12:21:44.272 - [Debug] [Connection] Attacker connected: 178.140.136.178 | Client Identification: SSH-2.0-Go
+2022-10-24 12:21:44.278 - [Debug] [Connection] Attacker connected: 173.18.35.41 | Client Identification: SSH-2.0-Go
+2022-10-24 12:21:44.289 - [Debug] [Auth] Attacker 102.141.225.244 trying to authenticate with 'publickey'
+2022-10-24 12:21:44.289 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-24 12:21:44.290 - [Debug] [Auth] Attacker: 102.141.225.244 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-24 12:21:44.375 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-24 12:21:44.416 - [Debug] [Connection] Attacker closed the connection
+2022-10-24 12:21:44.461 - [Debug] [Connection] Attacker connected: 120.236.79.182 | Client Identification: SSH-2.0-Go
+2022-10-24 12:21:44.597 - [Debug] [Auth] Attacker 144.22.191.115 trying to authenticate with 'none'
+2022-10-24 12:21:44.597 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 12:21:44.632 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

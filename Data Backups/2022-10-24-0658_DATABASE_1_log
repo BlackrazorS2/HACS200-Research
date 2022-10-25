@@ -1,0 +1,88 @@
+
+(node:1186110) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_1',
+  containerIp: '10.0.3.47',
+  mitmPort: 1000,
+  autoAccessFixed: 1
+}
+2022-10-24 06:57:58.271 - [Info] MITM Version: 2
+2022-10-24 06:57:58.279 - [Info] Auto Access Enabled: true
+2022-10-24 06:57:58.279 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-24 06:57:58.293 - [Info] SSH man-in-the-middle server for 10.0.3.47 listening on 10.0.3.1:1000
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:1192460) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_1',
+  containerIp: '10.0.3.212',
+  mitmPort: 1000,
+  autoAccessFixed: 1
+}
+2022-10-24 06:58:30.894 - [Info] MITM Version: 2
+2022-10-24 06:58:30.896 - [Info] Auto Access Enabled: true
+2022-10-24 06:58:30.897 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-24 06:58:30.904 - [Info] SSH man-in-the-middle server for 10.0.3.212 listening on 10.0.3.1:1000
+2022-10-24 06:58:32.040 - [Debug] [Connection] Attacker connected: 43.143.50.198 | Client Identification: SSH-2.0-Go
+2022-10-24 06:58:33.496 - [Debug] [Auth] Attacker 43.143.50.198 trying to authenticate with 'none'
+2022-10-24 06:58:33.497 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 06:58:33.739 - [Debug] [Connection] Attacker connected: 223.171.91.182 | Client Identification: SSH-2.0-Go
+2022-10-24 06:58:34.006 - [Debug] [Auth] Attacker 43.143.50.198 trying to authenticate with 'password'
+2022-10-24 06:58:34.007 - [Debug] [Auto Access] Attacker: 43.143.50.198, Threshold: 1, Attempts: 1
+2022-10-24 06:58:34.007 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-24 06:58:34.007 - [Debug] [Auto Access] Adding the following credentials: 'root:1'
+2022-10-24 06:58:34.221 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-24 06:58:34.223 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-24 06:58:34.223 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.212
+2022-10-24 06:58:34.290 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-24 06:58:34.577 - [Debug] [Connection] Attacker connected: 223.171.91.191 | Client Identification: SSH-2.0-Go
+2022-10-24 06:58:34.665 - [Debug] [Connection] Attacker connected: 120.236.74.234 | Client Identification: SSH-2.0-Go
+2022-10-24 06:58:34.978 - [Debug] [Connection] Attacker connected: 85.51.217.156 | Client Identification: SSH-2.0-Go
+2022-10-24 06:58:35.134 - [Debug] [Connection] Attacker connected: 223.171.91.128 | Client Identification: SSH-2.0-Go
+2022-10-24 06:58:35.305 - [Debug] [Auth] Attacker 223.171.91.182 trying to authenticate with 'none'
+2022-10-24 06:58:35.306 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 06:58:35.453 - [Debug] [Connection] Attacker connected: 80.147.162.151 | Client Identification: SSH-2.0-Go
+2022-10-24 06:58:35.762 - [Debug] [Auth] Attacker 85.51.217.156 trying to authenticate with 'none'
+2022-10-24 06:58:35.763 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 06:58:35.809 - [Debug] [Connection] Attacker closed connection
+2022-10-24 06:58:35.819 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-24 06:58:35.836 - [Debug] [LXC] Container's OpenSSH server closed connection
+2022-10-24 06:58:35.837 - [Debug] [Auth] Attacker 223.171.91.182 trying to authenticate with 'publickey'
+2022-10-24 06:58:35.839 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-24 06:58:35.839 - [Debug] [Auth] Attacker: 223.171.91.182 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-24 06:58:35.991 - [Debug] [Connection] Attacker connected: 43.143.50.198 | Client Identification: SSH-2.0-Go
+2022-10-24 06:58:36.033 - [Debug] [Auth] Attacker 85.51.217.156 trying to authenticate with 'publickey'
+2022-10-24 06:58:36.034 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-24 06:58:36.035 - [Debug] [Auth] Attacker: 85.51.217.156 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-24 06:58:36.056 - [Debug] [Auth] Attacker 223.171.91.191 trying to authenticate with 'none'
+2022-10-24 06:58:36.057 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 06:58:36.172 - [Debug] [Auth] Attacker 80.147.162.151 trying to authenticate with 'none'
+2022-10-24 06:58:36.172 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 06:58:36.319 - [Debug] [Connection] Attacker closed the connection

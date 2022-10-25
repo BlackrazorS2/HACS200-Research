@@ -1,0 +1,14 @@
+
+2022-10-24 03:19:36.882 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-24 03:19:37.318 - [Debug] [Auth] Attacker 223.171.91.155 trying to authenticate with 'none'
+2022-10-24 03:19:37.318 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 03:19:37.406 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-24 03:19:37.892 - [Debug] [Auth] Attacker 223.171.91.155 trying to authenticate with 'publickey'
+2022-10-24 03:19:37.892 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-24 03:19:37.893 - [Debug] [Auth] Attacker: 223.171.91.155 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-24 03:19:37.894 - [Debug] [Connection] Attacker closed connection
+2022-10-24 03:19:37.896 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-24 03:19:37.900 - [Debug] [LXC] Container's OpenSSH server closed connection
+2022-10-24 03:19:38.127 - [Debug] [Auth] Attacker 43.143.50.198 trying to authenticate with 'none'
+2022-10-24 03:19:38.127 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
