@@ -1,0 +1,56 @@
+
+(node:835361) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+error: required option '-p, --mitm-port <number>' not specified
+{"level":"error","message":"Forever detected script exited with code: 1"}
+(node:841859) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_3',
+  containerIp: '10.0.3.194',
+  mitmPort: 1002,
+  autoAccessFixed: 1
+}
+2022-10-23 22:08:15.244 - [Info] MITM Version: 2
+2022-10-23 22:08:15.266 - [Info] Auto Access Enabled: true
+2022-10-23 22:08:15.267 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-23 22:08:15.308 - [Info] SSH man-in-the-middle server for 10.0.3.194 listening on 10.0.3.1:1002
+2022-10-23 22:08:15.634 - [Debug] [Connection] Attacker connected: 121.200.53.148 | Client Identification: SSH-2.0-Go
+2022-10-23 22:08:16.123 - [Debug] [Connection] Attacker connected: 144.22.130.100 | Client Identification: SSH-2.0-Go
+2022-10-23 22:08:16.913 - [Debug] [Auth] Attacker 144.22.130.100 trying to authenticate with 'none'
+2022-10-23 22:08:16.914 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 22:08:16.923 - [Debug] [Connection] Attacker connected: 59.1.226.211 | Client Identification: SSH-2.0-Go
+2022-10-23 22:08:17.126 - [Debug] [Auth] Attacker 121.200.53.148 trying to authenticate with 'none'
+2022-10-23 22:08:17.126 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 22:08:17.162 - [Debug] [Auth] Attacker 144.22.130.100 trying to authenticate with 'publickey'
+2022-10-23 22:08:17.163 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 22:08:17.164 - [Debug] [Auth] Attacker: 144.22.130.100 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 22:08:17.412 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 22:08:17.535 - [Debug] [Connection] Attacker connected: 144.22.130.100 | Client Identification: SSH-2.0-Go
+2022-10-23 22:08:17.649 - [Debug] [Auth] Attacker 121.200.53.148 trying to authenticate with 'password'
+2022-10-23 22:08:17.649 - [Debug] [Auto Access] Attacker: 121.200.53.148, Threshold: 1, Attempts: 1
+2022-10-23 22:08:17.649 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-23 22:08:17.650 - [Debug] [Auto Access] Adding the following credentials: 'root:1'
+2022-10-23 22:08:18.032 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-23 22:08:18.034 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 22:08:18.034 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.194
+2022-10-23 22:08:18.153 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 22:08:18.610 - [Debug] [Auth] Attacker 144.22.130.100 trying to authenticate with 'none'
+2022-10-23 22:08:18.610 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 22:08:18.856 - [Debug] [Auth] Attacker 144.22.130.100 trying to authenticate with 'password'
+2022-10-23 22:08:18.857 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 22:08:18.857 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.194
+2022-10-23 22:08:18.907 - [Debug] [LXC-Auth] Attacker authenticated and is inside container

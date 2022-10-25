@@ -1,0 +1,92 @@
+
+(node:109931) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_4',
+  containerIp: '10.0.3.38',
+  mitmPort: 1003,
+  autoAccessFixed: 1
+}
+Error: ENOENT: no such file or directory, open '/var/lib/lxc/DATABASE_4/rootfs/etc/ssh/ssh_host_ecdsa_key'
+    at Object.openSync (node:fs:594:3)
+    at Object.readFileSync (node:fs:462:35)
+    at readKeys (/home/student/MITM/server/keys.js:19:18)
+    at readCTKeys (/home/student/MITM/server/keys.js:29:15)
+    at Object.loadKeys (/home/student/MITM/server/keys.js:48:12)
+    at Object.<anonymous> (/home/student/MITM/server/index.js:158:29)
+    at Module._compile (node:internal/modules/cjs/loader:1126:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1180:10)
+    at Module.load (node:internal/modules/cjs/loader:1004:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:839:12) {
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: '/var/lib/lxc/DATABASE_4/rootfs/etc/ssh/ssh_host_ecdsa_key'
+}
+[ERROR] Could not read the keys from the container! Is the container mounted/running and is openssh-server installed?
+{"level":"error","message":"Forever detected script exited with code: 1"}
+(node:122050) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_4',
+  containerIp: '10.0.3.29',
+  mitmPort: 1003,
+  autoAccessFixed: 1
+}
+2022-10-24 02:38:08.778 - [Info] MITM Version: 2
+2022-10-24 02:38:08.779 - [Info] Auto Access Enabled: true
+2022-10-24 02:38:08.779 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-24 02:38:08.786 - [Info] SSH man-in-the-middle server for 10.0.3.29 listening on 10.0.3.1:1003
+2022-10-24 02:38:09.229 - [Debug] [Connection] Attacker connected: 122.225.25.242 | Client Identification: SSH-2.0-Go
+2022-10-24 02:38:09.230 - [Debug] [Connection] Attacker connected: 129.154.55.234 | Client Identification: SSH-2.0-Go
+2022-10-24 02:38:09.469 - [Debug] [Connection] Attacker connected: 162.19.210.221 | Client Identification: SSH-2.0-Go
+2022-10-24 02:38:10.108 - [Debug] [Connection] Attacker connected: 223.99.166.104 | Client Identification: SSH-2.0-Go
+2022-10-24 02:38:10.404 - [Debug] [Connection] Attacker connected: 58.216.8.121 | Client Identification: SSH-2.0-Go
+2022-10-24 02:38:10.525 - [Debug] [Auth] Attacker 129.154.55.234 trying to authenticate with 'none'
+2022-10-24 02:38:10.553 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 02:38:10.652 - [Debug] [Auth] Attacker 122.225.25.242 trying to authenticate with 'none'
+2022-10-24 02:38:10.652 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 02:38:10.704 - [Debug] [Connection] Attacker connected: 20.127.87.36 | Client Identification: SSH-2.0-Go
+2022-10-24 02:38:10.781 - [Debug] [Connection] Attacker connected: 42.193.141.147 | Client Identification: SSH-2.0-Go
+2022-10-24 02:38:10.820 - [Debug] [Auth] Attacker 20.127.87.36 trying to authenticate with 'none'
+2022-10-24 02:38:10.821 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 02:38:10.838 - [Debug] [Auth] Attacker 20.127.87.36 trying to authenticate with 'publickey'
+2022-10-24 02:38:10.840 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-24 02:38:10.843 - [Debug] [Auth] Attacker: 20.127.87.36 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-24 02:38:10.862 - [Debug] [Connection] Attacker closed the connection
+2022-10-24 02:38:10.875 - [Debug] [Connection] Attacker connected: 20.127.87.36 | Client Identification: SSH-2.0-Go
+2022-10-24 02:38:10.944 - [Debug] [Auth] Attacker 129.154.55.234 trying to authenticate with 'publickey'
+2022-10-24 02:38:10.944 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-24 02:38:10.946 - [Debug] [Auth] Attacker: 129.154.55.234 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-24 02:38:10.967 - [Debug] [Auth] Attacker 20.127.87.36 trying to authenticate with 'none'
+2022-10-24 02:38:10.968 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 02:38:10.988 - [Debug] [Auth] Attacker 20.127.87.36 trying to authenticate with 'password'
+2022-10-24 02:38:10.988 - [Debug] [Auto Access] Attacker: 20.127.87.36, Threshold: 1, Attempts: 1
+2022-10-24 02:38:10.989 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-24 02:38:10.989 - [Debug] [Auto Access] Adding the following credentials: 'root:1'

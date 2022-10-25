@@ -1,0 +1,22 @@
+
+2022-10-23 21:13:16.367 - [Debug] [Connection] Attacker connected: 59.1.226.211 | Client Identification: SSH-2.0-Go
+2022-10-23 21:13:16.397 - [Debug] [Auth] Attacker 20.127.87.36 trying to authenticate with 'none'
+2022-10-23 21:13:16.397 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 21:13:16.417 - [Debug] [Auth] Attacker 20.127.87.36 trying to authenticate with 'publickey'
+2022-10-23 21:13:16.418 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 21:13:16.418 - [Debug] [Auth] Attacker: 20.127.87.36 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 21:13:16.437 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 21:13:16.453 - [Debug] [Connection] Attacker connected: 20.127.87.36 | Client Identification: SSH-2.0-Go
+2022-10-23 21:13:16.549 - [Debug] [Auth] Attacker 20.127.87.36 trying to authenticate with 'none'
+2022-10-23 21:13:16.549 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 21:13:16.568 - [Debug] [Auth] Attacker 20.127.87.36 trying to authenticate with 'password'
+2022-10-23 21:13:16.568 - [Debug] [Auto Access] Attacker: 20.127.87.36, Threshold: 1, Attempts: 1
+2022-10-23 21:13:16.568 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-23 21:13:16.568 - [Debug] [Auto Access] Adding the following credentials: 'root:1'
+2022-10-23 21:13:16.627 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-23 21:13:16.629 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 21:13:16.629 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.85
+2022-10-23 21:13:16.661 - [Debug] [Connection] Attacker connected: 59.1.226.211 | Client Identification: SSH-2.0-Go
+2022-10-23 21:13:16.662 - [Debug] [Auth] Attacker 213.255.16.153 trying to authenticate with 'none'
+2022-10-23 21:13:16.662 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

@@ -1,0 +1,57 @@
+
+022-10-24 06:52:31.325 - [Debug] [Auth] Attacker 93.176.229.145 trying to authenticate with 'none'
+2022-10-24 06:52:31.325 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 06:52:31.325 - [Debug] [Connection] Attacker connected: 223.171.91.176 | Client Identification: SSH-2.0-Go
+2022-10-24 06:52:31.628 - [Debug] [Auth] Attacker 93.176.229.145 trying to authenticate with 'publickey'
+2022-10-24 06:52:31.629 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-24 06:52:31.629 - [Debug] [Auth] Attacker: 93.176.229.145 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-24 06:52:31.751 - [Debug] [Connection] Attacker connected: 103.105.12.48 | Client Identification: SSH-2.0-Go
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:1148757) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_4',
+  containerIp: '10.0.3.142',
+  mitmPort: 1003,
+  autoAccessFixed: 1
+}
+2022-10-24 06:53:46.302 - [Info] MITM Version: 2
+2022-10-24 06:53:46.314 - [Info] Auto Access Enabled: true
+2022-10-24 06:53:46.315 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-24 06:53:46.323 - [Info] SSH man-in-the-middle server for 10.0.3.142 listening on 10.0.3.1:1003
+2022-10-24 06:53:46.621 - [Debug] [Connection] Attacker connected: 20.127.87.36 | Client Identification: SSH-2.0-Go
+2022-10-24 06:53:46.739 - [Debug] [Auth] Attacker 20.127.87.36 trying to authenticate with 'none'
+2022-10-24 06:53:46.740 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 06:53:46.758 - [Debug] [Auth] Attacker 20.127.87.36 trying to authenticate with 'publickey'
+2022-10-24 06:53:46.760 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-24 06:53:46.760 - [Debug] [Auth] Attacker: 20.127.87.36 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-24 06:53:46.778 - [Debug] [Connection] Attacker closed the connection
+2022-10-24 06:53:46.790 - [Debug] [Connection] Attacker connected: 20.127.87.36 | Client Identification: SSH-2.0-Go
+2022-10-24 06:53:46.892 - [Debug] [Auth] Attacker 20.127.87.36 trying to authenticate with 'none'
+2022-10-24 06:53:46.892 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 06:53:46.910 - [Debug] [Auth] Attacker 20.127.87.36 trying to authenticate with 'password'
+2022-10-24 06:53:46.911 - [Debug] [Auto Access] Attacker: 20.127.87.36, Threshold: 1, Attempts: 1
+2022-10-24 06:53:46.911 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-24 06:53:46.911 - [Debug] [Auto Access] Adding the following credentials: 'root:1'
+2022-10-24 06:53:47.038 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-24 06:53:47.040 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-24 06:53:47.040 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.142
+2022-10-24 06:53:47.072 - [Debug] [Connection] Attacker connected: 85.53.55.133 | Client Identification: SSH-2.0-Go
+2022-10-24 06:53:47.107 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-24 06:53:47.192 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-24 06:53:47.294 - [Debug] [Connection] Attacker closed connection
+2022-10-24 06:53:47.302 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-24 06:53:47.303 - [Debug] [LXC] Container's OpenSSH server closed connection

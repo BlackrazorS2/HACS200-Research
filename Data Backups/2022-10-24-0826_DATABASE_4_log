@@ -1,0 +1,72 @@
+
+(node:1964634) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_4',
+  containerIp: '10.0.3.187',
+  mitmPort: 1003,
+  autoAccessFixed: 1
+}
+2022-10-24 08:25:44.566 - [Info] MITM Version: 2
+2022-10-24 08:25:44.568 - [Info] Auto Access Enabled: true
+2022-10-24 08:25:44.569 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-24 08:25:44.580 - [Info] SSH man-in-the-middle server for 10.0.3.187 listening on 10.0.3.1:1003
+2022-10-24 08:26:47.801 - [Debug] [Connection] Attacker connected: 121.200.53.148 | Client Identification: SSH-2.0-Go
+(node:1973936) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+2022-10-24 08:26:48.013 - [Debug] [Connection] Attacker connected: 84.16.224.173 | Client Identification: SSH-2.0-Go
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_4',
+  containerIp: '10.0.3.87',
+  mitmPort: 1003,
+  autoAccessFixed: 1
+}
+2022-10-24 08:26:48.116 - [Info] MITM Version: 2
+2022-10-24 08:26:48.117 - [Info] Auto Access Enabled: true
+2022-10-24 08:26:48.118 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-24 08:26:48.125 - [Debug] listen EADDRINUSE: address already in use 10.0.3.1:1003
+2022-10-24 08:26:48.125 - [Error] Another MITM instance or another program is already listening on this port
+{"level":"error","message":"Forever detected script exited with code: 1"}
+2022-10-24 08:26:48.621 - [Debug] [Auth] Attacker 84.16.224.173 trying to authenticate with 'none'
+2022-10-24 08:26:48.622 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 08:26:48.852 - [Debug] [Auth] Attacker 84.16.224.173 trying to authenticate with 'password'
+2022-10-24 08:26:48.853 - [Debug] [Auto Access] Attacker: 84.16.224.173, Threshold: 1, Attempts: 1
+2022-10-24 08:26:48.853 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-24 08:26:48.854 - [Debug] [Auto Access] Adding the following credentials: 'root:1'
+2022-10-24 08:26:48.909 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-24 08:26:48.911 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-24 08:26:48.911 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.187
+2022-10-24 08:26:49.218 - [Debug] [Auth] Attacker 121.200.53.148 trying to authenticate with 'none'
+2022-10-24 08:26:49.219 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 08:26:49.718 - [Debug] [Auth] Attacker 121.200.53.148 trying to authenticate with 'publickey'
+2022-10-24 08:26:49.719 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-24 08:26:49.719 - [Debug] [Auth] Attacker: 121.200.53.148 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-24 08:26:49.983 - [Debug] [Connection] Attacker connected: 119.4.109.85 | Client Identification: SSH-2.0-Go
+2022-10-24 08:26:50.219 - [Debug] [Connection] Attacker closed the connection
+2022-10-24 08:26:50.448 - [Debug] [Connection] Attacker connected: 121.200.53.148 | Client Identification: SSH-2.0-Go

@@ -1,0 +1,73 @@
+
+(node:463538) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_4',
+  containerIp: '10.0.3.248',
+  mitmPort: 1003,
+  autoAccessFixed: 1
+}
+2022-10-24 03:23:40.104 - [Info] MITM Version: 2
+2022-10-24 03:23:40.122 - [Info] Auto Access Enabled: true
+2022-10-24 03:23:40.122 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-24 03:23:40.156 - [Info] SSH man-in-the-middle server for 10.0.3.248 listening on 10.0.3.1:1003
+2022-10-24 03:25:46.091 - [Debug] [Connection] Attacker connected: 117.80.212.33 | Client Identification: SSH-2.0-Go
+(node:487844) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_4',
+  containerIp: '10.0.3.45',
+  mitmPort: 1003,
+  autoAccessFixed: 1
+}
+2022-10-24 03:25:46.951 - [Info] MITM Version: 2
+2022-10-24 03:25:46.975 - [Info] Auto Access Enabled: true
+2022-10-24 03:25:46.975 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-24 03:25:46.985 - [Debug] listen EADDRINUSE: address already in use 10.0.3.1:1003
+2022-10-24 03:25:46.985 - [Error] Another MITM instance or another program is already listening on this port
+{"level":"error","message":"Forever detected script exited with code: 1"}
+2022-10-24 03:25:47.450 - [Debug] [Auth] Attacker 117.80.212.33 trying to authenticate with 'none'
+2022-10-24 03:25:47.450 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 03:25:47.931 - [Debug] [Auth] Attacker 117.80.212.33 trying to authenticate with 'password'
+2022-10-24 03:25:47.932 - [Debug] [Auto Access] Attacker: 117.80.212.33, Threshold: 1, Attempts: 1
+2022-10-24 03:25:47.932 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-24 03:25:47.933 - [Debug] [Auto Access] Adding the following credentials: 'root:1'
+2022-10-24 03:25:48.188 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-24 03:25:48.190 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-24 03:25:48.190 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.248
+2022-10-24 03:25:48.727 - [Debug] [Connection] Attacker connected: 59.1.226.211 | Client Identification: SSH-2.0-Go
+2022-10-24 03:25:51.255 - [Error] [LXC] Cannot reach the container!
+2022-10-24 03:25:51.255 - [Debug] [Auth] Attacker authentication error: Error: connect EHOSTUNREACH 10.0.3.248:22
+2022-10-24 03:25:51.256 - [Debug] [Auth] Attacker: 117.80.212.33 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-24 03:25:51.256 - [Debug] [Auth] Attacker authentication error: Error: connect EHOSTUNREACH 10.0.3.248:22
+2022-10-24 03:25:51.256 - [Debug] [Auth] Attacker: 117.80.212.33 has so far made 2 attempts. Remaining: 4 attempts
+2022-10-24 03:25:51.256 - [Debug] [LXC] Container's OpenSSH server closed connection
+2022-10-24 03:25:51.774 - [Debug] [Connection] Attacker closed the connection
+2022-10-24 03:25:51.994 - [Debug] [Connection] Attacker connected: 117.80.212.33 | Client Identification: SSH-2.0-Go
+2022-10-24 03:25:52.741 - [Debug] [Connection] Attacker connected: 103.105.12.48 | Client Identification: SSH-2.0-Go

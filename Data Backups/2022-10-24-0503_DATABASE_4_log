@@ -1,0 +1,13 @@
+
+2022-10-24 05:02:01.881 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-24 05:02:01.993 - [Debug] [Auth] Attacker 112.160.137.62 trying to authenticate with 'none'
+2022-10-24 05:02:01.993 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 05:02:02.163 - [Debug] [EXEC] Noninteractive mode attacker command: echo > /dev/shm/ifconfig; chmod 777 /dev/shm/ifconfig; cat > /dev/shm/ifconfig
+2022-10-24 05:02:02.181 - [Debug] [Connection] Attacker closed the connection
+2022-10-24 05:02:02.247 - [Debug] [Connection] Attacker closed connection
+2022-10-24 05:02:02.255 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-24 05:02:02.255 - [Debug] [LXC] Container's OpenSSH server closed connection
+2022-10-24 05:02:02.321 - [Debug] [Auth] Attacker 43.143.50.198 trying to authenticate with 'publickey'
+2022-10-24 05:02:02.321 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-24 05:02:02.322 - [Debug] [Auth] Attacker: 43.143.50.198 has so far made 1 attempts. Remaining: 5 attempts
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

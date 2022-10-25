@@ -1,0 +1,17 @@
+
+022-10-24 03:27:12.481 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-24 03:27:12.629 - [Debug] [Connection] Attacker connected: 223.171.91.148 | Client Identification: SSH-2.0-Go
+2022-10-24 03:27:12.986 - [Debug] [Auth] Attacker 14.152.78.120 trying to authenticate with 'none'
+2022-10-24 03:27:12.986 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 03:27:13.030 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-24 03:27:13.323 - [Debug] [Connection] Attacker closed connection
+2022-10-24 03:27:13.351 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-24 03:27:13.352 - [Debug] [LXC] Container's OpenSSH server closed connection
+2022-10-24 03:27:13.430 - [Debug] [Auth] Attacker 14.152.78.120 trying to authenticate with 'publickey'
+2022-10-24 03:27:13.434 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-24 03:27:13.435 - [Debug] [Auth] Attacker: 14.152.78.120 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-24 03:27:13.876 - [Debug] [Connection] Attacker closed the connection
+2022-10-24 03:27:14.074 - [Debug] [Auth] Attacker 223.171.91.148 trying to authenticate with 'none'
+2022-10-24 03:27:14.074 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 03:27:14.104 - [Debug] [Connection] Attacker connected: 14.152.78.120 | Client Identification: SSH-2.0-Go
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

@@ -1,0 +1,42 @@
+
+2022-10-23 17:42:58.330 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-23 17:42:58.332 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 17:42:58.332 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.111
+2022-10-23 17:42:58.416 - [Debug] [Auth] Attacker 5.28.139.161 trying to authenticate with 'publickey'
+2022-10-23 17:42:58.422 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 17:42:58.437 - [Debug] [Auth] Attacker: 5.28.139.161 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 17:42:58.465 - [Debug] [Connection] Attacker connected: 54.38.97.156 | Client Identification: SSH-2.0-Go
+2022-10-23 17:42:58.513 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 17:42:58.811 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 17:42:58.814 - [Debug] [Connection] Attacker connected: 112.167.233.14 | Client Identification: SSH-2.0-Go
+2022-10-23 17:42:58.960 - [Debug] [Connection] Attacker connected: 5.28.139.161 | Client Identification: SSH-2.0-Go
+2022-10-23 17:42:59.066 - [Debug] [Auth] Attacker 119.4.109.69 trying to authenticate with 'none'
+2022-10-23 17:42:59.067 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 17:42:59.150 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-23 17:42:59.152 - [Debug] [Auth] Attacker 54.38.97.156 trying to authenticate with 'none'
+2022-10-23 17:42:59.152 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 17:42:59.440 - [Debug] [Auth] Attacker 54.38.97.156 trying to authenticate with 'publickey'
+2022-10-23 17:42:59.440 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 17:42:59.441 - [Debug] [Auth] Attacker: 54.38.97.156 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 17:42:59.555 - [Debug] [Connection] Attacker closed connection
+2022-10-23 17:42:59.559 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-23 17:42:59.560 - [Debug] [LXC] Container's OpenSSH server closed connection
+2022-10-23 17:42:59.623 - [Debug] [Auth] Attacker 119.4.109.69 trying to authenticate with 'publickey'
+2022-10-23 17:42:59.624 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 17:42:59.624 - [Debug] [Auth] Attacker: 119.4.109.69 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 17:42:59.655 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 17:42:59.742 - [Debug] [Connection] Attacker connected: 54.38.97.156 | Client Identification: SSH-2.0-Go
+2022-10-23 17:42:59.894 - [Debug] [Connection] Attacker connected: 102.141.225.238 | Client Identification: SSH-2.0-Go
+2022-10-23 17:42:59.960 - [Debug] [Auth] Attacker 5.28.139.161 trying to authenticate with 'none'
+2022-10-23 17:42:59.960 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 17:43:00.163 - [Debug] [Auth] Attacker 112.167.233.14 trying to authenticate with 'none'
+2022-10-23 17:43:00.164 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 17:43:00.180 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 17:43:00.338 - [Debug] [Auth] Attacker 54.38.97.156 trying to authenticate with 'none'
+2022-10-23 17:43:00.338 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 17:43:00.351 - [Debug] [Auth] Attacker 5.28.139.161 trying to authenticate with 'password'
+2022-10-23 17:43:00.351 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 17:43:00.351 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.111
+2022-10-23 17:43:00.407 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 17:43:00.430 - [Debug] [Connection] Attacker connected: 119.4.109.69 | Client Identification: SSH-2.0-Go
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

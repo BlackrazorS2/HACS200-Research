@@ -1,0 +1,14 @@
+
+2022-10-25 00:08:34.723 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-25 00:08:34.725 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-25 00:08:34.725 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.202
+2022-10-25 00:08:34.816 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-25 00:08:35.281 - [Debug] [Connection] Attacker connected: 223.171.91.127 | Client Identification: SSH-2.0-Go
+2022-10-25 00:08:35.358 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-25 00:08:35.917 - [Debug] [Connection] Attacker connected: 146.56.115.253 | Client Identification: SSH-2.0-Go
+2022-10-25 00:08:35.951 - [Debug] [Connection] Attacker closed connection
+2022-10-25 00:08:35.970 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-25 00:08:35.974 - [Debug] [LXC] Container's OpenSSH server closed connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:1578114) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)

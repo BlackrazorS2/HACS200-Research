@@ -1,0 +1,38 @@
+
+022-10-24 03:52:14.675 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-24 03:52:14.702 - [Debug] [Auth] Attacker 1.220.98.197 trying to authenticate with 'none'
+2022-10-24 03:52:14.703 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 03:52:14.810 - [Debug] [Connection] Attacker connected: 89.212.123.191 | Client Identification: SSH-2.0-Go
+2022-10-24 03:52:14.906 - [Debug] [Auth] Attacker 85.105.58.118 trying to authenticate with 'publickey'
+2022-10-24 03:52:14.906 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-24 03:52:14.907 - [Debug] [Auth] Attacker: 85.105.58.118 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-24 03:52:14.929 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-24 03:52:15.151 - [Debug] [Auth] Attacker 1.220.98.197 trying to authenticate with 'password'
+2022-10-24 03:52:15.151 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-24 03:52:15.152 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.93
+2022-10-24 03:52:15.201 - [Debug] [Connection] Attacker closed the connection
+2022-10-24 03:52:15.227 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-24 03:52:15.262 - [Debug] [Connection] Attacker closed connection
+2022-10-24 03:52:15.301 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-24 03:52:15.302 - [Debug] [LXC] Container's OpenSSH server closed connection
+2022-10-24 03:52:15.330 - [Debug] [Connection] Attacker connected: 85.105.58.118 | Client Identification: SSH-2.0-Go
+2022-10-24 03:52:15.385 - [Debug] [Auth] Attacker 118.41.204.72 trying to authenticate with 'none'
+2022-10-24 03:52:15.386 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 03:52:15.386 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-24 03:52:15.538 - [Debug] [Auth] Attacker 89.212.123.191 trying to authenticate with 'none'
+2022-10-24 03:52:15.538 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 03:52:15.741 - [Debug] [Connection] Attacker closed connection
+2022-10-24 03:52:15.746 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-24 03:52:15.749 - [Debug] [LXC] Container's OpenSSH server closed connection
+2022-10-24 03:52:15.765 - [Debug] [Auth] Attacker 89.212.123.191 trying to authenticate with 'publickey'
+2022-10-24 03:52:15.765 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-24 03:52:15.766 - [Debug] [Auth] Attacker: 89.212.123.191 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-24 03:52:15.841 - [Debug] [Auth] Attacker 118.41.204.72 trying to authenticate with 'publickey'
+2022-10-24 03:52:15.842 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-24 03:52:15.842 - [Debug] [Auth] Attacker: 118.41.204.72 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-24 03:52:15.993 - [Debug] [Connection] Attacker closed the connection
+2022-10-24 03:52:16.112 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-24 03:52:16.204 - [Debug] [Connection] Attacker connected: 89.212.123.191 | Client Identification: SSH-2.0-Go
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:719154) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)

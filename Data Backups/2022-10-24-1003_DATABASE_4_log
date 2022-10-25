@@ -1,0 +1,71 @@
+
+(node:2799033) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_4',
+  containerIp: '10.0.3.94',
+  mitmPort: 1003,
+  autoAccessFixed: 1
+}
+2022-10-24 10:02:17.608 - [Info] MITM Version: 2
+2022-10-24 10:02:17.609 - [Info] Auto Access Enabled: true
+2022-10-24 10:02:17.610 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-24 10:02:17.618 - [Info] SSH man-in-the-middle server for 10.0.3.94 listening on 10.0.3.1:1003
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:2808379) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_4',
+  containerIp: '10.0.3.106',
+  mitmPort: 1003,
+  autoAccessFixed: 1
+}
+2022-10-24 10:03:22.024 - [Info] MITM Version: 2
+2022-10-24 10:03:22.025 - [Info] Auto Access Enabled: true
+2022-10-24 10:03:22.025 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-24 10:03:22.032 - [Info] SSH man-in-the-middle server for 10.0.3.106 listening on 10.0.3.1:1003
+2022-10-24 10:03:22.448 - [Debug] [Connection] Attacker connected: 195.87.73.208 | Client Identification: SSH-2.0-Go
+2022-10-24 10:03:22.511 - [Debug] [Connection] Attacker connected: 223.171.91.155 | Client Identification: SSH-2.0-Go
+2022-10-24 10:03:23.165 - [Debug] [Connection] Attacker connected: 78.187.13.206 | Client Identification: SSH-2.0-Go
+2022-10-24 10:03:23.377 - [Debug] [Auth] Attacker 195.87.73.208 trying to authenticate with 'none'
+2022-10-24 10:03:23.377 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 10:03:23.464 - [Debug] [Connection] Attacker connected: 95.91.13.119 | Client Identification: SSH-2.0-Go
+2022-10-24 10:03:23.670 - [Debug] [Auth] Attacker 195.87.73.208 trying to authenticate with 'publickey'
+2022-10-24 10:03:23.671 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-24 10:03:23.672 - [Debug] [Auth] Attacker: 195.87.73.208 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-24 10:03:23.919 - [Debug] [Auth] Attacker 223.171.91.155 trying to authenticate with 'none'
+2022-10-24 10:03:23.919 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 10:03:23.965 - [Debug] [Connection] Attacker closed the connection
+2022-10-24 10:03:24.104 - [Debug] [Connection] Attacker connected: 195.87.73.208 | Client Identification: SSH-2.0-Go
+2022-10-24 10:03:24.238 - [Debug] [Auth] Attacker 78.187.13.206 trying to authenticate with 'none'
+2022-10-24 10:03:24.238 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 10:03:24.402 - [Debug] [Auth] Attacker 223.171.91.155 trying to authenticate with 'password'
+2022-10-24 10:03:24.403 - [Debug] [Auto Access] Attacker: 223.171.91.155, Threshold: 1, Attempts: 1
+2022-10-24 10:03:24.403 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-24 10:03:24.403 - [Debug] [Auto Access] Adding the following credentials: 'root:1'

@@ -1,0 +1,88 @@
+
+(node:530333) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_3',
+  containerIp: '10.0.3.124',
+  mitmPort: 1002,
+  autoAccessFixed: 1
+}
+2022-10-23 20:33:16.120 - [Info] MITM Version: 2
+2022-10-23 20:33:16.121 - [Info] Auto Access Enabled: true
+2022-10-23 20:33:16.122 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-23 20:33:16.130 - [Info] SSH man-in-the-middle server for 10.0.3.124 listening on 10.0.3.1:1002
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:531573) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_3',
+  containerIp: '10.0.3.108',
+  mitmPort: 1002,
+  autoAccessFixed: 1
+}
+2022-10-23 20:33:44.813 - [Info] MITM Version: 2
+2022-10-23 20:33:44.814 - [Info] Auto Access Enabled: true
+2022-10-23 20:33:44.815 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-23 20:33:44.821 - [Info] SSH man-in-the-middle server for 10.0.3.108 listening on 10.0.3.1:1002
+2022-10-23 20:33:46.560 - [Debug] [Connection] Attacker connected: 103.105.12.48 | Client Identification: SSH-2.0-Go
+2022-10-23 20:33:47.509 - [Debug] [Connection] Attacker connected: 195.87.73.208 | Client Identification: SSH-2.0-Go
+2022-10-23 20:33:47.953 - [Debug] [Auth] Attacker 103.105.12.48 trying to authenticate with 'none'
+2022-10-23 20:33:47.953 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 20:33:48.340 - [Debug] [Connection] Attacker connected: 61.102.42.5 | Client Identification: SSH-2.0-Go
+2022-10-23 20:33:48.354 - [Debug] [Connection] Attacker connected: 59.1.226.211 | Client Identification: SSH-2.0-Go
+2022-10-23 20:33:48.435 - [Debug] [Auth] Attacker 103.105.12.48 trying to authenticate with 'publickey'
+2022-10-23 20:33:48.436 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 20:33:48.437 - [Debug] [Auth] Attacker: 103.105.12.48 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 20:33:48.478 - [Debug] [Auth] Attacker 195.87.73.208 trying to authenticate with 'none'
+2022-10-23 20:33:48.478 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 20:33:48.783 - [Debug] [Auth] Attacker 195.87.73.208 trying to authenticate with 'publickey'
+2022-10-23 20:33:48.784 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 20:33:48.784 - [Debug] [Auth] Attacker: 195.87.73.208 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 20:33:48.914 - [Debug] [Connection] Attacker connected: 40.87.11.253 | Client Identification: SSH-2.0-Go
+2022-10-23 20:33:48.923 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 20:33:48.995 - [Debug] [Auth] Attacker 40.87.11.253 trying to authenticate with 'none'
+2022-10-23 20:33:48.995 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 20:33:49.051 - [Debug] [Auth] Attacker 40.87.11.253 trying to authenticate with 'publickey'
+2022-10-23 20:33:49.052 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 20:33:49.052 - [Debug] [Auth] Attacker: 40.87.11.253 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 20:33:49.088 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 20:33:49.107 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 20:33:49.112 - [Debug] [Connection] Attacker connected: 40.87.11.253 | Client Identification: SSH-2.0-Go
+2022-10-23 20:33:49.167 - [Debug] [Connection] Attacker connected: 103.105.12.48 | Client Identification: SSH-2.0-Go
+2022-10-23 20:33:49.184 - [Debug] [Auth] Attacker 40.87.11.253 trying to authenticate with 'none'
+2022-10-23 20:33:49.184 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 20:33:49.235 - [Debug] [Connection] Attacker connected: 195.87.73.208 | Client Identification: SSH-2.0-Go
+2022-10-23 20:33:49.236 - [Debug] [Auth] Attacker 40.87.11.253 trying to authenticate with 'password'
+2022-10-23 20:33:49.237 - [Debug] [Auto Access] Attacker: 40.87.11.253, Threshold: 1, Attempts: 1
+2022-10-23 20:33:49.237 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-23 20:33:49.237 - [Debug] [Auto Access] Adding the following credentials: 'root:1'
+2022-10-23 20:33:49.335 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-23 20:33:49.337 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 20:33:49.337 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.108
+2022-10-23 20:33:49.392 - [Debug] [LXC-Auth] Attacker authenticated and is inside container

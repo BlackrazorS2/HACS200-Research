@@ -1,0 +1,15 @@
+
+2022-10-24 15:37:29.493 - [Debug] [Connection] Attacker connected: 95.91.13.119 | Client Identification: SSH-2.0-Go
+2022-10-24 15:37:29.506 - [Debug] [Auth] Attacker 139.59.135.142 trying to authenticate with 'none'
+2022-10-24 15:37:29.506 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 15:37:29.529 - [Debug] [Connection] Attacker closed the connection
+2022-10-24 15:37:29.570 - [Debug] [EXEC] Noninteractive mode attacker command: echo > /dev/shm/ifconfig; chmod 777 /dev/shm/ifconfig; cat > /dev/shm/ifconfig
+2022-10-24 15:37:29.675 - [Debug] [Connection] Attacker connected: 195.87.73.176 | Client Identification: SSH-2.0-Go
+2022-10-24 15:37:29.711 - [Debug] [Auth] Attacker 139.59.135.142 trying to authenticate with 'password'
+2022-10-24 15:37:29.712 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-24 15:37:29.712 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.221
+2022-10-24 15:37:29.717 - [Debug] [Connection] Attacker closed the connection
+2022-10-24 15:37:29.757 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-24 15:37:29.844 - [Debug] [Connection] Attacker connected: 45.120.216.114 | Client Identification: SSH-2.0-Go
+2022-10-24 15:37:29.844 - [Debug] [Connection] Attacker connected: 144.22.130.100 | Client Identification: SSH-2.0-Go
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

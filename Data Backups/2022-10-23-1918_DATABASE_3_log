@@ -1,0 +1,55 @@
+
+2022-10-23 19:17:46.935 - [Debug] [Connection] Attacker connected: 222.103.98.58 | Client Identification: SSH-2.0-Go
+2022-10-23 19:17:47.364 - [Debug] [Auth] Attacker 59.1.226.211 trying to authenticate with 'none'
+2022-10-23 19:17:47.365 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:316792) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_3',
+  containerIp: '10.0.3.254',
+  mitmPort: 1002,
+  autoAccessFixed: 1
+}
+2022-10-23 19:18:19.793 - [Info] MITM Version: 2
+2022-10-23 19:18:19.794 - [Info] Auto Access Enabled: true
+2022-10-23 19:18:19.795 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-23 19:18:19.806 - [Info] SSH man-in-the-middle server for 10.0.3.254 listening on 10.0.3.1:1002
+2022-10-23 19:18:20.075 - [Debug] [Connection] Attacker connected: 61.102.42.5 | Client Identification: SSH-2.0-Go
+2022-10-23 19:18:20.103 - [Debug] [Connection] Attacker connected: 42.193.141.147 | Client Identification: SSH-2.0-Go
+2022-10-23 19:18:20.244 - [Debug] [Connection] Attacker connected: 66.70.154.59 | Client Identification: SSH-2.0-Go
+2022-10-23 19:18:20.397 - [Debug] [Auth] Attacker 66.70.154.59 trying to authenticate with 'none'
+2022-10-23 19:18:20.399 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 19:18:20.478 - [Debug] [Auth] Attacker 66.70.154.59 trying to authenticate with 'publickey'
+2022-10-23 19:18:20.480 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 19:18:20.481 - [Debug] [Auth] Attacker: 66.70.154.59 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 19:18:20.562 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 19:18:20.580 - [Debug] [Connection] Attacker connected: 66.70.154.59 | Client Identification: SSH-2.0-Go
+2022-10-23 19:18:20.736 - [Debug] [Auth] Attacker 66.70.154.59 trying to authenticate with 'none'
+2022-10-23 19:18:20.737 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 19:18:20.814 - [Debug] [Auth] Attacker 66.70.154.59 trying to authenticate with 'password'
+2022-10-23 19:18:20.815 - [Debug] [Auto Access] Attacker: 66.70.154.59, Threshold: 1, Attempts: 1
+2022-10-23 19:18:20.815 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-23 19:18:20.815 - [Debug] [Auto Access] Adding the following credentials: 'root:1'
+2022-10-23 19:18:20.985 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-23 19:18:20.987 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 19:18:20.987 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.254
+2022-10-23 19:18:21.095 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 19:18:21.183 - [Debug] [Connection] Attacker connected: 59.1.226.211 | Client Identification: SSH-2.0-Go
+2022-10-23 19:18:21.258 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-23 19:18:21.404 - [Debug] [Connection] Attacker closed connection
+2022-10-23 19:18:21.411 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-23 19:18:21.411 - [Debug] [LXC] Container's OpenSSH server closed connection

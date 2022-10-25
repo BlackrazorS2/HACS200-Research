@@ -1,0 +1,33 @@
+
+022-10-24 03:12:51.243 - [Debug] [Connection] Attacker closed the connection
+2022-10-24 03:12:51.332 - [Debug] [Auth] Attacker 5.28.139.161 trying to authenticate with 'password'
+2022-10-24 03:12:51.332 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-24 03:12:51.332 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.64
+2022-10-24 03:12:51.371 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-24 03:12:51.449 - [Debug] [Auth] Attacker 147.182.233.56 trying to authenticate with 'none'
+2022-10-24 03:12:51.449 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 03:12:51.472 - [Debug] [Connection] Attacker connected: 117.80.212.33 | Client Identification: SSH-2.0-Go
+2022-10-24 03:12:51.536 - [Debug] [Auth] Attacker 182.224.177.28 trying to authenticate with 'password'
+2022-10-24 03:12:51.536 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-24 03:12:51.536 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.64
+2022-10-24 03:12:51.570 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-24 03:12:51.603 - [Debug] [Auth] Attacker 147.182.233.56 trying to authenticate with 'password'
+2022-10-24 03:12:51.603 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-24 03:12:51.603 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.64
+2022-10-24 03:12:51.612 - [Debug] [Auth] Attacker 101.43.224.103 trying to authenticate with 'password'
+2022-10-24 03:12:51.613 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-24 03:12:51.625 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.64
+2022-10-24 03:12:51.701 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-24 03:12:51.732 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-24 03:12:52.028 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-24 03:12:52.139 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-24 03:12:52.210 - [Debug] [Connection] Attacker closed connection
+2022-10-24 03:12:52.225 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-24 03:12:52.226 - [Debug] [LXC] Container's OpenSSH server closed connection
+2022-10-24 03:12:52.226 - [Debug] [Connection] Attacker connected: 143.198.133.234 | Client Identification: SSH-2.0-Go
+2022-10-24 03:12:52.454 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-24 03:12:52.509 - [Debug] [Auth] Attacker 124.220.163.75 trying to authenticate with 'none'
+2022-10-24 03:12:52.510 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:370232) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)

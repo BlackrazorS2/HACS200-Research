@@ -1,0 +1,23 @@
+
+022-10-25 00:01:49.690 - [Debug] [Connection] Attacker connected: 118.41.204.72 | Client Identification: SSH-2.0-Go
+2022-10-25 00:01:49.746 - [Debug] [Auth] Attacker 209.216.177.158 trying to authenticate with 'publickey'
+2022-10-25 00:01:49.747 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-25 00:01:49.747 - [Debug] [Auth] Attacker: 209.216.177.158 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-25 00:01:49.771 - [Debug] [Auth] Attacker 184.67.149.186 trying to authenticate with 'password'
+2022-10-25 00:01:49.772 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-25 00:01:49.772 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.176
+2022-10-25 00:01:49.828 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-25 00:01:49.995 - [Debug] [Connection] Attacker closed the connection
+2022-10-25 00:01:50.049 - [Debug] [Connection] Attacker connected: 209.216.177.158 | Client Identification: SSH-2.0-Go
+2022-10-25 00:01:50.109 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-25 00:01:50.265 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-25 00:01:50.294 - [Debug] [Auth] Attacker 5.28.139.161 trying to authenticate with 'none'
+2022-10-25 00:01:50.296 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-25 00:01:50.408 - [Debug] [Auth] Attacker 85.105.82.39 trying to authenticate with 'none'
+2022-10-25 00:01:50.440 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-25 00:01:50.467 - [Debug] [Connection] Attacker connected: 59.3.186.45 | Client Identification: SSH-2.0-Go
+2022-10-25 00:01:50.610 - [Debug] [Auth] Attacker 209.216.177.158 trying to authenticate with 'none'
+2022-10-25 00:01:50.610 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:1519353) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)

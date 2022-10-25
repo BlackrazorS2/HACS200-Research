@@ -1,0 +1,12 @@
+
+2022-10-24 07:32:25.241 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-24 07:32:25.265 - [Debug] [Connection] Attacker connected: 223.223.200.243 | Client Identification: SSH-2.0-Go
+2022-10-24 07:32:25.390 - [Debug] [Connection] Attacker connected: 223.171.91.143 | Client Identification: SSH-2.0-Go
+2022-10-24 07:32:25.447 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+2022-10-24 07:32:25.560 - [Debug] [Auth] Attacker 103.105.12.48 trying to authenticate with 'publickey'
+2022-10-24 07:32:25.561 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-24 07:32:25.561 - [Debug] [Auth] Attacker: 103.105.12.48 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-24 07:32:25.686 - [Debug] [Connection] Attacker closed connection
+2022-10-24 07:32:25.691 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-24 07:32:25.692 - [Debug] [LXC] Container's OpenSSH server closed connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

@@ -1,0 +1,28 @@
+
+2022-10-23 19:20:59.351 - [Debug] [Auth] Attacker 85.105.58.118 trying to authenticate with 'none'
+2022-10-23 19:20:59.352 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 19:20:59.536 - [Debug] [Auth] Attacker 93.176.229.145 trying to authenticate with 'none'
+2022-10-23 19:20:59.536 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 19:20:59.554 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 19:20:59.633 - [Debug] [Auth] Attacker 85.105.58.118 trying to authenticate with 'password'
+2022-10-23 19:20:59.633 - [Debug] [Auto Access] Attacker: 85.105.58.118, Threshold: 1, Attempts: 1
+2022-10-23 19:20:59.634 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-23 19:20:59.635 - [Debug] [Auto Access] Adding the following credentials: 'root:1'
+2022-10-23 19:21:00.657 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-23 19:21:00.659 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 19:21:00.659 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.83
+2022-10-23 19:21:00.672 - [Debug] [Auth] Attacker 85.51.217.156 trying to authenticate with 'none'
+2022-10-23 19:21:00.672 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 19:21:00.684 - [Debug] [Auth] Attacker 93.176.229.145 trying to authenticate with 'publickey'
+2022-10-23 19:21:00.689 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 19:21:00.691 - [Debug] [Auth] Attacker: 93.176.229.145 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 19:21:00.699 - [Debug] [Connection] Attacker connected: 119.4.109.85 | Client Identification: SSH-2.0-Go
+2022-10-23 19:21:00.706 - [Debug] [Connection] Attacker connected: 120.197.154.22 | Client Identification: SSH-2.0-Go
+2022-10-23 19:21:00.707 - [Debug] [Connection] Attacker connected: 54.38.97.156 | Client Identification: SSH-2.0-Go
+2022-10-23 19:21:00.747 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-23 19:21:00.973 - [Debug] [Auth] Attacker 85.51.217.156 trying to authenticate with 'publickey'
+2022-10-23 19:21:00.993 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 19:21:00.994 - [Debug] [Auth] Attacker: 85.51.217.156 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 19:21:00.994 - [Debug] [Connection] Attacker connected: 59.1.226.211 | Client Identification: SSH-2.0-Go
+2022-10-23 19:21:00.995 - [Debug] [Connection] Attacker closed the connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

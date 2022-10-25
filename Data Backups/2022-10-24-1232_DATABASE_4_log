@@ -1,0 +1,23 @@
+
+2022-10-24 12:31:39.296 - [Debug] [Auth] Attacker 139.59.135.142 trying to authenticate with 'none'
+2022-10-24 12:31:39.296 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 12:31:39.388 - [Debug] [Connection] Attacker connected: 120.236.69.162 | Client Identification: SSH-2.0-Go
+2022-10-24 12:31:39.479 - [Debug] [Auth] Attacker 139.59.135.142 trying to authenticate with 'publickey'
+2022-10-24 12:31:39.480 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-24 12:31:39.480 - [Debug] [Auth] Attacker: 139.59.135.142 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-24 12:31:39.485 - [Debug] [Auth] Attacker 14.152.78.120 trying to authenticate with 'password'
+2022-10-24 12:31:39.486 - [Debug] [Auto Access] Attacker: 14.152.78.120, Threshold: 1, Attempts: 1
+2022-10-24 12:31:39.486 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-24 12:31:39.486 - [Debug] [Auto Access] Adding the following credentials: 'root:1'
+2022-10-24 12:31:39.728 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-24 12:31:39.729 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-24 12:31:39.730 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.65
+2022-10-24 12:31:39.748 - [Debug] [Auth] Attacker 84.16.224.173 trying to authenticate with 'none'
+2022-10-24 12:31:39.748 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 12:31:39.749 - [Debug] [Connection] Attacker closed the connection
+2022-10-24 12:31:39.750 - [Debug] [Auth] Attacker 85.105.82.39 trying to authenticate with 'none'
+2022-10-24 12:31:39.750 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 12:31:39.756 - [Debug] [Connection] Attacker connected: 139.59.135.142 | Client Identification: SSH-2.0-Go
+2022-10-24 12:31:39.782 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-24 12:31:39.793 - [Debug] [Connection] Attacker closed the connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

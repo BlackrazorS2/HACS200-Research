@@ -1,0 +1,75 @@
+
+2022-10-25 00:11:35.736 - [Debug] [Auth] Attacker 80.147.162.151 trying to authenticate with 'none'
+2022-10-25 00:11:35.736 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-25 00:11:35.763 - [Debug] [Auth] Attacker 31.14.115.42 trying to authenticate with 'none'
+2022-10-25 00:11:35.763 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-25 00:11:35.821 - [Debug] [Auth] Attacker 223.171.91.144 trying to authenticate with 'none'
+2022-10-25 00:11:35.821 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-25 00:11:35.844 - [Debug] [Auth] Attacker 45.120.216.114 trying to authenticate with 'publickey'
+2022-10-25 00:11:35.845 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-25 00:11:35.845 - [Debug] [Auth] Attacker: 45.120.216.114 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-25 00:11:36.009 - [Debug] [Auth] Attacker 80.147.162.151 trying to authenticate with 'password'
+2022-10-25 00:11:36.009 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-25 00:11:36.009 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.136
+2022-10-25 00:11:36.037 - [Debug] [Auth] Attacker 223.171.91.182 trying to authenticate with 'none'
+2022-10-25 00:11:36.037 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-25 00:11:36.038 - [Debug] [Connection] Attacker connected: 223.223.200.243 | Client Identification: SSH-2.0-Go
+(node:1599807) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+2022-10-25 00:11:36.208 - [Debug] [Auth] Attacker 31.14.115.42 trying to authenticate with 'password'
+2022-10-25 00:11:36.209 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-25 00:11:36.209 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.136
+2022-10-25 00:11:36.316 - [Debug] [Connection] Attacker closed the connection
+2022-10-25 00:11:36.339 - [Debug] [Auth] Attacker 223.171.91.144 trying to authenticate with 'publickey'
+2022-10-25 00:11:36.348 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-25 00:11:36.349 - [Debug] [Auth] Attacker: 223.171.91.144 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-25 00:11:36.525 - [Debug] [Connection] Attacker connected: 45.120.216.114 | Client Identification: SSH-2.0-Go
+2022-10-25 00:11:36.542 - [Debug] [Auth] Attacker 223.171.91.182 trying to authenticate with 'publickey'
+2022-10-25 00:11:36.543 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-25 00:11:36.543 - [Debug] [Auth] Attacker: 223.171.91.182 has so far made 1 attempts. Remaining: 5 attempts
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_4',
+  containerIp: '10.0.3.66',
+  mitmPort: 1003,
+  autoAccessFixed: 1
+}
+2022-10-25 00:11:36.710 - [Info] MITM Version: 2
+2022-10-25 00:11:36.711 - [Info] Auto Access Enabled: true
+2022-10-25 00:11:36.712 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-25 00:11:36.757 - [Debug] listen EADDRINUSE: address already in use 10.0.3.1:1003
+2022-10-25 00:11:36.757 - [Error] Another MITM instance or another program is already listening on this port
+{"level":"error","message":"Forever detected script exited with code: 1"}
+2022-10-25 00:11:36.872 - [Debug] [Connection] Attacker closed the connection
+2022-10-25 00:11:37.030 - [Debug] [Connection] Attacker closed the connection
+2022-10-25 00:11:37.092 - [Error] [LXC] Cannot reach the container!
+2022-10-25 00:11:37.093 - [Debug] [Auth] Attacker authentication error: Error: connect EHOSTUNREACH 10.0.3.136:22
+2022-10-25 00:11:37.093 - [Debug] [Auth] Attacker: 40.87.11.253 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-25 00:11:37.093 - [Debug] [Auth] Attacker authentication error: Error: connect EHOSTUNREACH 10.0.3.136:22
+2022-10-25 00:11:37.093 - [Debug] [Auth] Attacker: 40.87.11.253 has so far made 2 attempts. Remaining: 4 attempts
+2022-10-25 00:11:37.094 - [Error] [LXC] Cannot reach the container!
+2022-10-25 00:11:37.094 - [Debug] [Auth] Attacker authentication error: Error: connect EHOSTUNREACH 10.0.3.136:22
+2022-10-25 00:11:37.094 - [Debug] [Auth] Attacker: 80.147.162.151 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-25 00:11:37.094 - [Debug] [Auth] Attacker authentication error: Error: connect EHOSTUNREACH 10.0.3.136:22
+2022-10-25 00:11:37.094 - [Debug] [Auth] Attacker: 80.147.162.151 has so far made 2 attempts. Remaining: 4 attempts
+2022-10-25 00:11:37.094 - [Error] [LXC] Cannot reach the container!
+2022-10-25 00:11:37.094 - [Debug] [Auth] Attacker authentication error: Error: connect EHOSTUNREACH 10.0.3.136:22
+2022-10-25 00:11:37.095 - [Debug] [Auth] Attacker: 31.14.115.42 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-25 00:11:37.095 - [Debug] [Auth] Attacker authentication error: Error: connect EHOSTUNREACH 10.0.3.136:22
+2022-10-25 00:11:37.098 - [Debug] [Auth] Attacker: 31.14.115.42 has so far made 2 attempts. Remaining: 4 attempts
+2022-10-25 00:11:37.099 - [Debug] [LXC] Container's OpenSSH server closed connection
+2022-10-25 00:11:37.099 - [Debug] [LXC] Container's OpenSSH server closed connection
+2022-10-25 00:11:37.099 - [Debug] [LXC] Container's OpenSSH server closed connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

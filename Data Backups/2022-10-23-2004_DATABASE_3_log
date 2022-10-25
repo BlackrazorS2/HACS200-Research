@@ -1,0 +1,71 @@
+
+(node:459670) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_3',
+  containerIp: '10.0.3.181',
+  mitmPort: 1002,
+  autoAccessFixed: 1
+}
+2022-10-23 20:04:04.705 - [Info] MITM Version: 2
+2022-10-23 20:04:04.706 - [Info] Auto Access Enabled: true
+2022-10-23 20:04:04.707 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-23 20:04:04.713 - [Info] SSH man-in-the-middle server for 10.0.3.181 listening on 10.0.3.1:1002
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:460925) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_3',
+  containerIp: '10.0.3.121',
+  mitmPort: 1002,
+  autoAccessFixed: 1
+}
+2022-10-23 20:04:32.740 - [Info] MITM Version: 2
+2022-10-23 20:04:32.741 - [Info] Auto Access Enabled: true
+2022-10-23 20:04:32.742 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-23 20:04:32.748 - [Info] SSH man-in-the-middle server for 10.0.3.121 listening on 10.0.3.1:1002
+2022-10-23 20:04:35.877 - [Debug] [Connection] Attacker connected: 54.38.97.156 | Client Identification: SSH-2.0-Go
+2022-10-23 20:04:36.261 - [Debug] [Connection] Attacker connected: 43.242.247.139 | Client Identification: SSH-2.0-Go
+2022-10-23 20:04:36.455 - [Debug] [Connection] Attacker connected: 147.182.233.56 | Client Identification: SSH-2.0-Go
+2022-10-23 20:04:36.479 - [Debug] [Connection] Attacker connected: 58.216.8.121 | Client Identification: SSH-2.0-Go
+2022-10-23 20:04:36.512 - [Debug] [Connection] Attacker connected: 117.80.212.33 | Client Identification: SSH-2.0-Go
+2022-10-23 20:04:36.613 - [Debug] [Auth] Attacker 54.38.97.156 trying to authenticate with 'none'
+2022-10-23 20:04:36.613 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 20:04:36.867 - [Debug] [Auth] Attacker 54.38.97.156 trying to authenticate with 'publickey'
+2022-10-23 20:04:36.868 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 20:04:36.869 - [Debug] [Auth] Attacker: 54.38.97.156 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 20:04:36.938 - [Debug] [Auth] Attacker 147.182.233.56 trying to authenticate with 'none'
+2022-10-23 20:04:36.938 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 20:04:37.081 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 20:04:37.082 - [Debug] [Auth] Attacker 147.182.233.56 trying to authenticate with 'publickey'
+2022-10-23 20:04:37.083 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 20:04:37.083 - [Debug] [Auth] Attacker: 147.182.233.56 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 20:04:37.227 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 20:04:37.299 - [Debug] [Connection] Attacker connected: 147.182.233.56 | Client Identification: SSH-2.0-Go
+2022-10-23 20:04:37.330 - [Debug] [Connection] Attacker connected: 54.38.97.156 | Client Identification: SSH-2.0-Go

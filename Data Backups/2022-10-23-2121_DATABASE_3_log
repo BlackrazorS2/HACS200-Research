@@ -1,0 +1,26 @@
+
+022-10-23 21:21:05.457 - [Debug] [Auth] Attacker 101.43.224.103 trying to authenticate with 'none'
+2022-10-23 21:21:05.457 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 21:21:05.467 - [Debug] [Auth] Attacker 195.87.73.208 trying to authenticate with 'publickey'
+2022-10-23 21:21:05.470 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 21:21:05.474 - [Debug] [Auth] Attacker: 195.87.73.208 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 21:21:05.611 - [Debug] [Auth] Attacker 80.147.162.151 trying to authenticate with 'none'
+2022-10-23 21:21:05.611 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 21:21:05.715 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 21:21:05.740 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 21:21:05.876 - [Debug] [Auth] Attacker 120.236.69.162 trying to authenticate with 'none'
+2022-10-23 21:21:05.876 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 21:21:05.899 - [Debug] [Auth] Attacker 80.147.162.151 trying to authenticate with 'password'
+2022-10-23 21:21:05.906 - [Debug] [Auto Access] Attacker: 80.147.162.151, Threshold: 1, Attempts: 1
+2022-10-23 21:21:05.920 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-23 21:21:05.921 - [Debug] [Auto Access] Adding the following credentials: 'root:1'
+2022-10-23 21:21:06.265 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-23 21:21:06.267 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-23 21:21:06.267 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.180
+2022-10-23 21:21:06.287 - [Debug] [Auth] Attacker 101.43.224.103 trying to authenticate with 'publickey'
+2022-10-23 21:21:06.288 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 21:21:06.289 - [Debug] [Auth] Attacker: 101.43.224.103 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 21:21:06.290 - [Debug] [Connection] Attacker connected: 195.87.73.208 | Client Identification: SSH-2.0-Go
+2022-10-23 21:21:06.301 - [Debug] [Connection] Attacker connected: 121.200.53.148 | Client Identification: SSH-2.0-Go
+2022-10-23 21:21:06.302 - [Debug] [Connection] Attacker connected: 119.4.109.85 | Client Identification: SSH-2.0-Go
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

@@ -1,0 +1,62 @@
+
+2022-10-24 06:10:45.788 - [Debug] [Auth] Attacker 175.178.247.209 trying to authenticate with 'none'
+2022-10-24 06:10:45.788 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 06:10:45.929 - [Debug] [Auth] Attacker 54.38.97.156 trying to authenticate with 'none'
+2022-10-24 06:10:45.929 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 06:10:46.141 - [Debug] [Auth] Attacker 54.38.97.156 trying to authenticate with 'password'
+2022-10-24 06:10:46.141 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-24 06:10:46.141 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.13
+2022-10-24 06:10:46.175 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-24 06:10:46.293 - [Debug] [Auth] Attacker 175.178.247.209 trying to authenticate with 'publickey'
+2022-10-24 06:10:46.293 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-24 06:10:46.294 - [Debug] [Auth] Attacker: 175.178.247.209 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-24 06:10:46.631 - [Debug] [EXEC] Noninteractive mode attacker command: PATH=/dev/shm/:/tmp/:./:/var/tmp/:/root/:/etc/:$PATH nc localhost 1234
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:746215) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_1',
+  containerIp: '10.0.3.25',
+  mitmPort: 1000,
+  autoAccessFixed: 1
+}
+2022-10-24 06:11:18.479 - [Info] MITM Version: 2
+2022-10-24 06:11:18.480 - [Info] Auto Access Enabled: true
+2022-10-24 06:11:18.481 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-24 06:11:18.490 - [Info] SSH man-in-the-middle server for 10.0.3.25 listening on 10.0.3.1:1000
+2022-10-24 06:11:18.825 - [Debug] [Connection] Attacker connected: 58.216.8.121 | Client Identification: SSH-2.0-Go
+2022-10-24 06:11:20.060 - [Debug] [Auth] Attacker 58.216.8.121 trying to authenticate with 'none'
+2022-10-24 06:11:20.062 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 06:11:20.234 - [Debug] [Connection] Attacker connected: 175.178.247.209 | Client Identification: SSH-2.0-Go
+2022-10-24 06:11:20.500 - [Debug] [Auth] Attacker 58.216.8.121 trying to authenticate with 'password'
+2022-10-24 06:11:20.502 - [Debug] [Auto Access] Attacker: 58.216.8.121, Threshold: 1, Attempts: 1
+2022-10-24 06:11:20.502 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-24 06:11:20.503 - [Debug] [Auto Access] Adding the following credentials: 'root:1'
+2022-10-24 06:11:20.860 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-24 06:11:20.861 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-24 06:11:20.862 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.25
+2022-10-24 06:11:20.950 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-24 06:11:21.805 - [Debug] [Auth] Attacker 175.178.247.209 trying to authenticate with 'none'
+2022-10-24 06:11:21.806 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 06:11:21.822 - [Debug] [EXEC] Noninteractive mode attacker command: echo > /dev/shm/ifconfig; chmod 777 /dev/shm/ifconfig; cat > /dev/shm/ifconfig
+2022-10-24 06:11:22.292 - [Debug] [Auth] Attacker 175.178.247.209 trying to authenticate with 'password'
+2022-10-24 06:11:22.293 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-24 06:11:22.294 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.25
+2022-10-24 06:11:22.334 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-24 06:11:23.324 - [Debug] [EXEC] Noninteractive mode attacker command: echo > ./ifconfig; chmod 777 ./ifconfig; cat > ./ifconfig
+2022-10-24 06:11:50.274 - [Debug] [Connection] Attacker closed connection
+2022-10-24 06:11:50.282 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-24 06:11:50.285 - [Debug] [LXC] Container's OpenSSH server closed connection

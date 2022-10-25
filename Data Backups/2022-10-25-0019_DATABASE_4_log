@@ -1,0 +1,14 @@
+
+2022-10-25 00:18:15.292 - [Debug] [Auth] Attacker 144.22.130.100 trying to authenticate with 'password'
+2022-10-25 00:18:15.293 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-25 00:18:15.293 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.38
+2022-10-25 00:18:15.352 - [Debug] [LXC-Auth] Attacker authenticated and is inside container
+2022-10-25 00:18:15.496 - [Debug] [Connection] Attacker connected: 93.103.126.32 | Client Identification: SSH-2.0-Go
+2022-10-25 00:18:15.529 - [Debug] [Auth] Attacker 223.171.91.169 trying to authenticate with 'publickey'
+2022-10-25 00:18:15.530 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-25 00:18:15.531 - [Debug] [Auth] Attacker: 223.171.91.169 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-25 00:18:15.541 - [Debug] [Connection] Attacker connected: 162.19.210.221 | Client Identification: SSH-2.0-Go
+2022-10-25 00:18:15.690 - [Debug] [Connection] Attacker closed connection
+2022-10-25 00:18:15.700 - [Debug] [LXC] Container's OpenSSH server ended connection
+2022-10-25 00:18:15.700 - [Debug] [LXC] Container's OpenSSH server closed connection
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}

@@ -1,0 +1,39 @@
+
+2022-10-23 21:36:11.594 - [Debug] [EXEC] Noninteractive mode attacker command: uname -a
+{"level":"error","message":"Forever detected script was killed by signal: SIGKILL"}
+(node:686554) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_3',
+  containerIp: '10.0.3.226',
+  mitmPort: 1002,
+  autoAccessFixed: 1
+}
+2022-10-23 21:36:39.335 - [Info] MITM Version: 2
+2022-10-23 21:36:39.336 - [Info] Auto Access Enabled: true
+2022-10-23 21:36:39.336 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-23 21:36:39.343 - [Info] SSH man-in-the-middle server for 10.0.3.226 listening on 10.0.3.1:1002
+2022-10-23 21:36:39.505 - [Debug] [Connection] Attacker connected: 139.59.135.142 | Client Identification: SSH-2.0-Go
+2022-10-23 21:36:40.131 - [Debug] [Auth] Attacker 139.59.135.142 trying to authenticate with 'none'
+2022-10-23 21:36:40.131 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-23 21:36:40.178 - [Debug] [Connection] Attacker connected: 59.1.226.211 | Client Identification: SSH-2.0-Go
+2022-10-23 21:36:40.325 - [Debug] [Auth] Attacker 139.59.135.142 trying to authenticate with 'publickey'
+2022-10-23 21:36:40.326 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-23 21:36:40.326 - [Debug] [Auth] Attacker: 139.59.135.142 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-23 21:36:40.535 - [Debug] [Connection] Attacker closed the connection
+2022-10-23 21:36:40.566 - [Debug] [Connection] Attacker connected: 59.1.226.211 | Client Identification: SSH-2.0-Go
+2022-10-23 21:36:40.580 - [Debug] [Connection] Attacker connected: 14.152.78.120 | Client Identification: SSH-2.0-Go
+2022-10-23 21:36:40.661 - [Debug] [Connection] Attacker connected: 139.59.135.142 | Client Identification: SSH-2.0-Go

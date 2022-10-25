@@ -1,0 +1,83 @@
+
+(node:1235549) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_4',
+  containerIp: '10.0.3.90',
+  mitmPort: 1003,
+  autoAccessFixed: 1
+}
+2022-10-24 23:30:18.708 - [Info] MITM Version: 2
+2022-10-24 23:30:18.709 - [Info] Auto Access Enabled: true
+2022-10-24 23:30:18.709 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-24 23:30:18.716 - [Info] SSH man-in-the-middle server for 10.0.3.90 listening on 10.0.3.1:1003
+(node:1244884) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Started with the following options:
+{
+  debug: true,
+  mitmIp: '10.0.3.1',
+  autoAccess: true,
+  autoAccessCache: 5000,
+  maxAttemptsPerConnection: 6,
+  sshServerIdentifier: 'SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2',
+  containerMountPathPrefix: '/var/lib/lxc',
+  containerMountPathSuffix: 'rootfs/',
+  loggingAttackerStreams: '/home/student/MITM/logs/session_streams',
+  loggingAuthenticationAttempts: '/home/student/MITM/logs/authentication_attempts',
+  loggingLogins: '/home/student/MITM/logs/logins',
+  loggingKeystrokes: '/home/student/MITM/logs/keystrokes',
+  containerName: 'DATABASE_4',
+  containerIp: '10.0.3.15',
+  mitmPort: 1003,
+  autoAccessFixed: 1
+}
+2022-10-24 23:31:20.632 - [Info] MITM Version: 2
+2022-10-24 23:31:20.633 - [Info] Auto Access Enabled: true
+2022-10-24 23:31:20.633 - [Debug] [Init] Auto Access Theshold Achieved: false
+2022-10-24 23:31:20.641 - [Debug] listen EADDRINUSE: address already in use 10.0.3.1:1003
+2022-10-24 23:31:20.641 - [Error] Another MITM instance or another program is already listening on this port
+{"level":"error","message":"Forever detected script exited with code: 1"}
+2022-10-24 23:31:20.875 - [Debug] [Connection] Attacker connected: 222.117.95.174 | Client Identification: SSH-2.0-Go
+2022-10-24 23:31:21.200 - [Debug] [Connection] Attacker connected: 78.189.25.224 | Client Identification: SSH-2.0-Go
+2022-10-24 23:31:21.641 - [Debug] [Connection] Attacker connected: 113.125.191.234 | Client Identification: SSH-2.0-Go
+2022-10-24 23:31:22.103 - [Debug] [Auth] Attacker 222.117.95.174 trying to authenticate with 'none'
+2022-10-24 23:31:22.103 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 23:31:22.146 - [Debug] [Auth] Attacker 78.189.25.224 trying to authenticate with 'none'
+2022-10-24 23:31:22.146 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 23:31:22.537 - [Debug] [Auth] Attacker 222.117.95.174 trying to authenticate with 'password'
+2022-10-24 23:31:22.538 - [Debug] [Auto Access] Attacker: 222.117.95.174, Threshold: 1, Attempts: 1
+2022-10-24 23:31:22.538 - [Debug] [Auto Access] Compromising the honeypot
+2022-10-24 23:31:22.538 - [Debug] [Auto Access] Adding the following credentials: 'root:1'
+2022-10-24 23:31:22.870 - [Debug] [Auto Access] Auto-access is now disabled for the remainder of this MITM server instance
+2022-10-24 23:31:22.872 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-24 23:31:22.873 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.90
+2022-10-24 23:31:22.877 - [Debug] [Auth] Attacker 78.189.25.224 trying to authenticate with 'password'
+2022-10-24 23:31:22.877 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-24 23:31:22.877 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.90
+2022-10-24 23:31:23.117 - [Debug] [Connection] Attacker connected: 191.242.188.103 | Client Identification: SSH-2.0-Go
+2022-10-24 23:31:23.396 - [Debug] [Auth] Attacker 113.125.191.234 trying to authenticate with 'none'
+2022-10-24 23:31:23.396 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 23:31:23.818 - [Debug] [Auth] Attacker 191.242.188.103 trying to authenticate with 'none'
+2022-10-24 23:31:23.818 - [Debug] [Auth] Attacker authentication error: No authentication method provided
+2022-10-24 23:31:23.916 - [Debug] [Auth] Attacker 113.125.191.234 trying to authenticate with 'password'
+2022-10-24 23:31:23.917 - [Debug] [Auth] Valid credentials - Password Authentication
+2022-10-24 23:31:23.917 - [Debug] [LXC] Attempting to connect to the honeypot: 10.0.3.90
+2022-10-24 23:31:24.085 - [Debug] [Auth] Attacker 191.242.188.103 trying to authenticate with 'publickey'
+2022-10-24 23:31:24.086 - [Debug] [Auth] Attacker authentication error: Publickey authentication failed
+2022-10-24 23:31:24.086 - [Debug] [Auth] Attacker: 191.242.188.103 has so far made 1 attempts. Remaining: 5 attempts
+2022-10-24 23:31:24.357 - [Debug] [Connection] Attacker closed the connection
+2022-10-24 23:31:24.467 - [Debug] [Connection] Attacker connected: 191.242.188.103 | Client Identification: SSH-2.0-Go
