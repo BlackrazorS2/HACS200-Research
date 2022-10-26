@@ -23,7 +23,8 @@ then
   sudo lxc-attach -n $containerName -- bash -c "sudo mv /etc/warning_banner /etc/motd"
 fi
 
-sudo lxc-attach -n $containerName -- bash -c "cd /etc/ssh && echo 'PermitRootLogin yes' >> sshd_config"
+sudo lxc-attach -n $containerName -- bash -c "cd /etc/ssh && sudo echo 'PermitRootLogin yes' >> sshd_config"
+sudo lxc-attach -n $containerName -- bash -c "cd /etc/ssh && sudo echo 'MaxStartups 1' >> sshd_config"
 sudo lxc-attach -n $containerName -- bash -c "sudo systemctl restart ssh"
 
 # copy honey files over from honey folder on host
