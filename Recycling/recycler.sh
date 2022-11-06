@@ -45,7 +45,26 @@ then
   #sudo forever -l $logpath --id $1 -a start /home/student/MITM/mitm.js -n $1 -i $IP -p $port --auto-access --auto-access-fixed 3 --debug & echo "pid $!"
 
   sudo pm2 -l $logpath start /home/student/MITM/mitm.js --name $1 -- -n $1 -i $IP -p $port --mitm-ip 10.0.3.1 --auto-access --auto-access-fixed 1 --debug & echo "pid $!"
-  sleep 90 s
+
+  container_num=4
+  if [[ $1 == "DATABASE_1" ]]
+  then
+    container_num=1
+  fi
+
+  if [[ $1 == "DATABASE_2" ]]
+  then
+    container_num=2
+  fi
+
+  if [[ $1 == "DATABASE_3" ]]
+  then
+    container_num=3
+  fi
+
+  #sudo ./detectexit.sh $container_num &
+
+  sleep 90s
 
   sudo ip link set dev enp4s2 up
   sudo ip addr add $2/16 brd + dev enp4s2

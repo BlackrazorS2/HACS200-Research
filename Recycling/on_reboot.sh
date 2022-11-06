@@ -13,6 +13,8 @@ sudo sysctl -p /etc/sysctl.conf
 
 sudo ./firewall_rules.sh
 
+sudo killall inotifywait
+
 sudo ./container_rotate.sh 1 0 1
 
-sudo ./restartdetect.sh
+#sudo ./restartdetect.sh
