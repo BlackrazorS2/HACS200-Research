@@ -3,6 +3,26 @@ d2_stopped=$(sudo pm2 list | grep DATABASE_2 | grep stopped | wc -l)
 d3_stopped=$(sudo pm2 list | grep DATABASE_3 | grep stopped | wc -l)
 d4_stopped=$(sudo pm2 list | grep DATABASE_4 | grep stopped | wc -l)
 
+if [ $d1_stopped -eq 0 ]
+then
+  d1_stopped=$(sudo pm2 list | grep DATABASE_1 | grep errored | wc -l)
+fi
+
+if [ $d2_stopped -eq 0 ]
+then
+  d2_stopped=$(sudo pm2 list | grep DATABASE_2 | grep errored | wc -l)
+fi
+
+if [ $d3_stopped -eq 0 ]
+then
+  d3_stopped=$(sudo pm2 list | grep DATABASE_3 | grep errored | wc -l)
+fi
+
+if [ $d4_stopped -eq 0 ]
+then
+  d4_stopped=$(sudo pm2 list | grep DATABASE_4 | grep errored | wc -l)
+fi
+
 honeypot1_ip=$(sudo cat ./properties/DATABASE_1_properties | cut -d' ' -f1)
 honeypot2_ip=$(sudo cat ./properties/DATABASE_2_properties | cut -d' ' -f1)
 honeypot3_ip=$(sudo cat ./properties/DATABASE_3_properties | cut -d' ' -f1)
