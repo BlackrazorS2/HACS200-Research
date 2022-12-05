@@ -1,7 +1,10 @@
-import csv
 import os
+import gzip
+from re import L
+from time import time
 import datetime
-import time
+import csv
+
 
 MOD_LIST = ["rm",
             "cp",
@@ -15,149 +18,165 @@ MOD_LIST = ["rm",
             "curl",
             "apt",
             "apt-get",
-            ">>"
+            ">>",
+            "chmod",
+            "tftp",
+            "scp"
             ]
-
-fieldnames = ["Attacker No.", "Database", "Time Entered", "Time Spent (S)", "Commands Run", "Modification Attempts","Filename", "Database (Avgs)", "Total # Attackers", "# Relevant Attackers","Avg Time Connected", "Avg Commands Run", "Avg File Modifications"]
-data = {"atk": [], "DB": [], "etr": [], "time": [], "cmd": [], "mods": [], "filename": []}
-
-logs = os.listdir("../Data Backups/")
+fieldnames = ["Database", "IP address","Time Entered", "Time Spent (S)", "Commands Run", "Modification Attempts", "Logname"]
+AnalNames = ["DB1 Times","DB2 Times","DB3 Times","DB4 Times","_","DB1 Cmds", "DB2 Cmds","DB3 Cmds","DB4 Cmds", "__","DB1 Mods", "DB2 Mods","DB3 Mods","DB4 Mods"]
+total_data = {"DB": [], "filename": []} # this is really just hear in case we need it later
+interactive_data = {"DB": [], "IP": [],"etr": [], "time": [], "cmd": [], "mods": [], "filename": []}
+PATH = "/home/student/MITM/logs/session_streams/"
+logs = os.listdir(PATH)
 logs.sort()
+zipped_logs = [log for log in logs if log[-2:]=="gz"] # this gets rid of any non log files in the directory
+zipped_logs.sort()
+# now we have a list of all logs
+# logs that we care about have the line:
+#-------- Attacker Keystrokes ----------
+# so we can use gzip to look for that in the file
+# Make sure to minimize verbosity to maintain performance since we're storing over 60k entries
 
-for i, file in enumerate(logs):
-    data["atk"].append(i)
-    DBnum = file.split("_")[2] # logs are formatted as DATE_DATABASE_NUMBER_log
-    data["DB"].append(DBnum)
-    data["filename"].append(file)
-    with open(f"../Data Backups/{file}", "r") as log:
-        conEpochms = 0
-        cmds = 0
-        mods = 0
-        for line in log:
-            if "Attacker connected" in line:
-                connectTime = line.split("-")
-                date = f"{connectTime[0]}-{connectTime[1]}-{connectTime[2].strip()}"
-                data["etr"].append(date)
-                parse = line.split(" ")
-    
-                dateReadable = parse[0].split('-') # split the date to convert to epoch
-                timeReadable = parse[1].split(':')
-                try:
-                    connectEpoch = datetime.datetime(int(dateReadable[0]),int(dateReadable[1]),int(dateReadable[2]),int(timeReadable[0]),int(timeReadable[1]),int(timeReadable[2].split(".")[0])).timestamp()
-                except:
-                    conEpochms = 0
-                conEpochms = connectEpoch*1000+int(timeReadable[2].split(".")[1])
-            if "Attacker closed" in line:
-                parse = line.split(" ")
-                dateReadable = parse[0].split('-') # split the date to convert to epoch
-                timeReadable = parse[1].split(':')
-                try:
-                    disEpoch = datetime.datetime(int(dateReadable[0]),int(dateReadable[1]),int(dateReadable[2]),int(timeReadable[0]),int(timeReadable[1]),int(timeReadable[2].split(".")[0])).timestamp()
-                except:
-                    conEpochms = 0
-                disEpochms = connectEpoch*1000+int(timeReadable[2].split(".")[1])
-                deltaMS = 0
-                if conEpochms == 0:
-                    data["time"].append(0)
-                else:
-                    deltaMS = (disEpochms - conEpochms) # this is in ms
-                    deltaS = deltaMS/1000 # leaving as s so we can do nice math for avgs later
-                    data["time"].append(deltaS)
-            if "line from reader" in line:
-                cmds += 1
-                for command in MOD_LIST:
-                    words = line.split(" ")
-                    for word in words:
-                        if command in word:
-                            mods += 1
-        data["cmd"].append(cmds)
-        data["mods"].append(mods)
-    if i % 100 == 0:
-        print(f"{i}/{len(logs)}")
-print("done")
-    
-# Finding averages for each database
-DB_1_avg = {"atk": [], "etr": [], "time": [], "cmd": [], "mods": [], "t_num": 0, "time_avg": 0, "cmd_avg": 0, "mods_avg": 0,}
-DB_2_avg = {"atk": [], "etr": [], "time": [], "cmd": [], "mods": [], "t_num": 0, "time_avg": 0, "cmd_avg": 0, "mods_avg": 0,}
-DB_3_avg = {"atk": [], "etr": [], "time": [], "cmd": [], "mods": [], "t_num": 0, "time_avg": 0, "cmd_avg": 0, "mods_avg": 0,}
-DB_4_avg = {"atk": [], "etr": [], "time": [], "cmd": [], "mods": [], "t_num": 0, "time_avg": 0, "cmd_avg": 0, "mods_avg": 0,}
+print("parsing...")
+for compressed in zipped_logs:
+    try:
+        #with gzip.open(f"{PATH}{compressed}", "rt", encoding="utf-8") as contents:
+        with gzip.open(compressed, mode="rt") as contents:
+            total_data["filename"].append(compressed)
+            keystrokes = False
+            for line in contents.readlines():
+                if "Container Name:" in line:
+                    container  = line.split(":")
+                    splits = container[1].split("_")
+                    db = splits[1].strip("\n")  
+                    total_data["DB"].append(db)
+                if "Attack Timestamp:" in line: # timestamp
+                    timestamp = line.split("Attack Timestamp:")[1].strip(" ").strip("\n")
+                if "Attacker IP:" in line: # address
+                    IP = line.split(":")[1].strip(" ").strip("\n")  
+                if "Attacker Keystrokes" in line:
+                    keystrokes = True # keystrokes being equal to true means we should be looking for commands and whatnot now
+                    # Its in interactive mode:
+                    # add the info we got from before
+                    interactive_data["etr"].append(timestamp)
+                    interactive_data["IP"].append(IP)
+                    interactive_data["DB"].append(db)
+                    interactive_data["filename"].append(compressed)
+                    # at this point we need total time in container, total commands run
+                    # and total number of file modifications
+                
 
-for i in range(0, len(data["atk"])):
-    db = int(data["DB"][i])
-    if int(data["DB"][i]) == 1:
-        DB_1_avg["t_num"] +=1
-    if int(data["DB"][i]) == 2:
-        DB_2_avg["t_num"] +=1
-    if int(data["DB"][i]) == 3:
-        DB_3_avg["t_num"] +=1
-    if int(data["DB"][i]) == 4:
-        DB_4_avg["t_num"] +=1 
-
-    if data["time"][i] <= 0:
+            else:
+                continue
+    except:
         continue
-    # once again this would look so much better with match case but ubuntu only really likes 3.8
-    if db == 1:
-        DB_1_avg["atk"].append(data["atk"][i])
-        DB_1_avg["etr"].append(data["etr"][i])
-        DB_1_avg["time"].append(data["time"][i])
-        DB_1_avg["cmd"].append(data["cmd"][i])
-        DB_1_avg["mods"].append(data["mods"][i])
-    elif db == 2:
-        DB_2_avg["atk"].append(data["atk"][i])
-        DB_2_avg["etr"].append(data["etr"][i])
-        DB_2_avg["time"].append(data["time"][i])
-        DB_2_avg["cmd"].append(data["cmd"][i])
-        DB_2_avg["mods"].append(data["mods"][i])
-    elif db == 3:
-        DB_3_avg["atk"].append(data["atk"][i])
-        DB_3_avg["etr"].append(data["etr"][i])
-        DB_3_avg["time"].append(data["time"][i])
-        DB_3_avg["cmd"].append(data["cmd"][i])
-        DB_3_avg["mods"].append(data["mods"][i])
-    elif db == 4:
-        DB_4_avg["atk"].append(data["atk"][i])
-        DB_4_avg["etr"].append(data["etr"][i])
-        DB_4_avg["time"].append(data["time"][i])
-        DB_4_avg["cmd"].append(data["cmd"][i])
-        DB_4_avg["mods"].append(data["mods"][i])
-DB_1_avg["time_avg"] = sum(DB_1_avg["time"])/len(DB_1_avg["time"])
-DB_2_avg["time_avg"] = sum(DB_2_avg["time"])/len(DB_2_avg["time"])
-DB_3_avg["time_avg"] = sum(DB_3_avg["time"])/len(DB_3_avg["time"])
-DB_4_avg["time_avg"] = sum(DB_4_avg["time"])/len(DB_4_avg["time"])
+print("sorting through important files...")
+for i, file in enumerate(interactive_data["filename"]):
+    with gzip.open(file, mode="rt") as tarball:
+        stream = False
+        times = False
+        commands = 0
+        mods = 0
+        timeDelta = None
+        bot = False
+        for line in tarball.readlines():
+            if "Attacker Stream Below" in line:
+                stream = True
+                times = False
+            if "Attacker Keystrokes" in line:
+                stream = False
+                times = True
+            if "$" in line and stream:
+                    # now we get the last three things
+                    line_split = line.split("$")
+                    # now formatted as date[SPACE]hour, minute, second.milisecond, commands
+                    line_commands = line_split[1].replace("||",";").replace("&&",";")
+                    line_commands = line_commands.split(";")
+                    commands += len(line_commands)
+                    for command in line_commands:
+                        for mod in MOD_LIST:
+                            if mod in command:
+                                mods+= 1
+            if times:
+                splits = line.split(":")
+                date  =  splits[0].split(" ")
+                date_p = date[0].split("-")
 
-DB_1_avg["cmd_avg"] = sum(DB_1_avg["cmd"])/len(DB_1_avg["cmd"])
-DB_2_avg["cmd_avg"] = sum(DB_2_avg["cmd"])/len(DB_2_avg["cmd"])
-DB_3_avg["cmd_avg"] = sum(DB_3_avg["cmd"])/len(DB_3_avg["cmd"])
-DB_4_avg["cmd_avg"] = sum(DB_4_avg["cmd"])/len(DB_4_avg["cmd"])
+                if timeDelta == None: # looking for bots
+                    timeDelta = datetime.datetime(int(date_p[0]),int(date_p[1]),int(date_p[2]),int(date[1]),int(splits[1]),int(splits[2].split(".")[0])).timestamp()
+                else:
+                    currentCMD = datetime.datetime(int(date_p[0]),int(date_p[1]),int(date_p[2]),int(date[1]),int(splits[1]),int(splits[2].split(".")[0])).timestamp()
+                    if abs(timeDelta-currentCMD) <= 0.1:
+                        bot = True
+                        break # we dont need to look through the rest of the file if we know its a bot
+                    else:
+                        continue
 
-DB_1_avg["mods_avg"] = sum(DB_1_avg["mods"])/len(DB_1_avg["mods"])
-DB_2_avg["mods_avg"] = sum(DB_2_avg["mods"])/len(DB_2_avg["mods"])
-DB_3_avg["mods_avg"] = sum(DB_3_avg["mods"])/len(DB_3_avg["mods"])
-DB_4_avg["mods_avg"] = sum(DB_4_avg["mods"])/len(DB_4_avg["mods"])
-
-last = logs[-1].split("_")[0]
-with open(f"STATS_AS_OF_{last}.csv", "w+", newline="") as csvfile:
-    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-
-    writer.writeheader()
-    for i in range(0, len(data["atk"])):
-        # once again this would look so much better with match case but ubuntu only really likes 3.8
-        if i == 0:
-            writer.writerow({"Attacker No.": data["atk"][i],"Database": data["DB"][i],"Time Entered": data["etr"][i],"Time Spent (S)": data["time"][i],
-            "Commands Run": data["cmd"][i],"Modification Attempts": data["mods"][i],"Filename": data["filename"][i], "Database (Avgs)": 1, "Total # Attackers": DB_1_avg["t_num"], "# Relevant Attackers": len(DB_1_avg["atk"]),"Avg Time Connected": DB_1_avg["time_avg"], 
-            "Avg Commands Run": DB_1_avg["cmd_avg"], "Avg File Modifications": DB_1_avg["mods_avg"]})
-        elif i == 1:
-            writer.writerow({"Attacker No.": data["atk"][i],"Database": data["DB"][i],"Time Entered": data["etr"][i],"Time Spent (S)": data["time"][i],
-            "Commands Run": data["cmd"][i],"Modification Attempts": data["mods"][i],"Filename": data["filename"][i], "Database (Avgs)": 2, "Total # Attackers": DB_2_avg["t_num"], "# Relevant Attackers": len(DB_2_avg["atk"]), "Avg Time Connected": DB_2_avg["time_avg"], 
-            "Avg Commands Run": DB_2_avg["cmd_avg"], "Avg File Modifications": DB_2_avg["mods_avg"]})
-        elif i == 2:
-            writer.writerow({"Attacker No.": data["atk"][i],"Database": data["DB"][i],"Time Entered": data["etr"][i],"Time Spent (S)": data["time"][i],
-            "Commands Run": data["cmd"][i],"Modification Attempts": data["mods"][i],"Filename": data["filename"][i], "Database (Avgs)": 3, "Total # Attackers": DB_3_avg["t_num"], "# Relevant Attackers": len(DB_3_avg["atk"]), "Avg Time Connected": DB_3_avg["time_avg"], 
-            "Avg Commands Run": DB_3_avg["cmd_avg"], "Avg File Modifications": DB_3_avg["mods_avg"]})
-        elif i == 3:
-            writer.writerow({"Attacker No.": data["atk"][i],"Database": data["DB"][i],"Time Entered": data["etr"][i],"Time Spent (S)": data["time"][i],
-            "Commands Run": data["cmd"][i],"Modification Attempts": data["mods"][i],"Filename": data["filename"][i], "Database (Avgs)": 4, "Total # Attackers": DB_4_avg["t_num"], "# Relevant Attackers": len(DB_4_avg["atk"]), "Avg Time Connected": DB_4_avg["time_avg"], 
-            "Avg Commands Run": DB_4_avg["cmd_avg"], "Avg File Modifications": DB_4_avg["mods_avg"]})
+        ts = interactive_data["etr"][i]
+        last_cmdTime = datetime.datetime(int(date_p[0]),int(date_p[1]),int(date_p[2]),int(date[1]),int(splits[1]),int(splits[2].split(".")[0])).timestamp()
+        conT = ts.replace("-", ":").replace(" ", ":").split(":")
+        connect = datetime.datetime(int(conT[0]),int(conT[1]),int(conT[2]),int(conT[3]),int(conT[4]),int(conT[5].split(".")[0])).timestamp()
+        t_total = last_cmdTime-connect # this is in seconds
+        if not bot:
+            interactive_data["cmd"].append(commands)
+            interactive_data["mods"].append(mods)
+            interactive_data["time"].append(t_total)
+# Now exporting to the csv
+print("writing to a csv...")
+with open(f"analysis.csv", "w+", newline="") as csvfile:
+    writer = csv.DictWriter(csvfile, fieldnames=AnalNames)
+    # putting things into nice arrays
+    db1dict = {"time": [], "cmd": [], "mods": []}
+    db2dict = {"time": [], "cmd": [], "mods": []}
+    db3dict = {"time": [], "cmd": [], "mods": []}
+    db4dict = {"time": [], "cmd": [], "mods": []}
+    for idx, database in enumerate(interactive_data["DB"]):
+        if database == "1":
+            db1dict["time"].append(interactive_data["time"][idx])
+            db1dict["cmd"].append(interactive_data["cmd"][idx])
+            db1dict["mods"].append(interactive_data["mods"][idx])
+        elif database == "2":
+            db2dict["time"].append(interactive_data["time"][idx])
+            db2dict["cmd"].append(interactive_data["cmd"][idx])
+            db2dict["mods"].append(interactive_data["mods"][idx])
+        elif database == "3":
+            db3dict["time"].append(interactive_data["time"][idx])
+            db3dict["cmd"].append(interactive_data["cmd"][idx])
+            db3dict["mods"].append(interactive_data["mods"][idx])
+        elif database == "4":
+            db4dict["time"].append(interactive_data["time"][idx])
+            db4dict["cmd"].append(interactive_data["cmd"][idx])
+            db4dict["mods"].append(interactive_data["mods"][idx])
         else:
-            writer.writerow({"Attacker No.": data["atk"][i],"Database": data["DB"][i],"Time Entered": data["etr"][i],"Time Spent (S)": data["time"][i],
-            "Commands Run": data["cmd"][i],"Modification Attempts": data["mods"][i],"Filename": data["filename"][i]})
+            continue                        
+    writer.writeheader()
+
+    # Doing the Kushkal Wallis test:
+    db1n = len(db1dict["time"])
+    db2n = len(db2dict["time"])
+    db3n = len(db3dict["time"])
+    db4n = len(db4dict["time"])
+
+    
+
+    for i in range(0, max([len(db1dict["time"]),len(db2dict["time"]),len(db3dict["time"]),len(db4dict["time"])])):
+        if i+1 >= len(db1dict["time"]):
+            db1dict["time"].append(None)
+            db1dict["cmd"].append(None)
+            db1dict["mods"].append(None)
+        if i+1 >= len(db2dict["time"]):
+            db2dict["time"].append(None)
+            db2dict["cmd"].append(None)
+            db2dict["mods"].append(None)
+        if i+1 >= len(db3dict["time"]):
+            db3dict["time"].append(None)
+            db3dict["cmd"].append(None)
+            db3dict["mods"].append(None)
+        if i+1 >= len(db4dict["time"]):
+            db4dict["time"].append(None)
+            db4dict["cmd"].append(None)
+            db4dict["mods"].append(None)
+
+        writer.writerow({"DB1 Times": db1dict["time"][i], "DB2 Times": db2dict["time"][i], "DB3 Times": db3dict["time"][i], "DB4 Times": db4dict["time"][i], "DB1 Cmds": db1dict["cmd"][i],"DB2 Cmds": db2dict["cmd"][i],"DB3 Cmds": db3dict["cmd"][i],"DB4 Cmds": db4dict["cmd"][i],"DB1 Mods": db1dict["mods"][i],"DB2 Mods": db2dict["mods"][i],"DB3 Mods": db3dict["mods"][i],"DB4 Mods": db4dict["mods"][i]})
+
