@@ -80,6 +80,7 @@ for i, file in enumerate(interactive_data["filename"]):
         mods = 0
         timeDelta = None
         bot = False
+        back = False
         for line in tarball.readlines():
             if "Attacker Stream Below" in line:
                 stream = True
@@ -88,6 +89,8 @@ for i, file in enumerate(interactive_data["filename"]):
                 stream = False
                 times = True
             if "$" in line and stream:
+                    if "[BACK]" in line:
+                            back = True
                     # now we get the last three things
                     line_split = line.split("$")
                     # now formatted as date[SPACE]hour, minute, second.milisecond, commands
@@ -107,11 +110,10 @@ for i, file in enumerate(interactive_data["filename"]):
                     timeDelta = datetime.datetime(int(date_p[0]),int(date_p[1]),int(date_p[2]),int(date[1]),int(splits[1]),int(splits[2].split(".")[0])).timestamp()
                 else:
                     currentCMD = datetime.datetime(int(date_p[0]),int(date_p[1]),int(date_p[2]),int(date[1]),int(splits[1]),int(splits[2].split(".")[0])).timestamp()
-                    if abs(timeDelta-currentCMD) <= 0.1:
+                    if abs(timeDelta-currentCMD) <= 0.1 and back != True:
                         bot = True
-                        break # we dont need to look through the rest of the file if we know its a bot
-                    else:
-                        continue
+                    if back:
+                        bot = False
 
         ts = interactive_data["etr"][i]
         last_cmdTime = datetime.datetime(int(date_p[0]),int(date_p[1]),int(date_p[2]),int(date[1]),int(splits[1]),int(splits[2].split(".")[0])).timestamp()
